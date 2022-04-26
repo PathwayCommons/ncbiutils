@@ -1,24 +1,33 @@
-from ncbiutils.ncbiutils import Fetcher
-from ncbiutils import __version__
-import os
+import pytest
+from ncbiutils.ncbiutils import Medline
 
 
-FIXTURE_DIR = os.path.join(
-    os.path.dirname(os.path.realpath(__file__)),
-    'data',
-)
+NCBI_EUTILS_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 
 
-def test_fixture(shared_datadir):
-    contents = (shared_datadir / 'sample_data.txt').read_text()
-    assert contents == 'Hello World!\n'
+class TestMedlineAttributes:
+    key = 'somekey'
+    medline = Medline(api_key=key)
+
+    def test_inherits_class_base_url(self):
+        assert Medline.base_url == f'{NCBI_EUTILS_BASE_URL}'
+
+    def test_class_efetch_url(self):
+        assert Medline.efetch_url == f'{NCBI_EUTILS_BASE_URL}efetch.fcgi'
+
+    def test_set_api_key(self):
+        assert self.medline.api_key == self.key
 
 
-def test_Fetcher_version():
-    afetcher = Fetcher()
-    print(f'afetcher.name')
-    assert afetcher.version == __version__
+class TestMedlineFetchIntegration:
+    medline = Medline()
 
+    def test_fetch_valid_uids(self):
+        uids = ['31827641', '31772623', '31766097']
+        response = self.medline.fetch(uids)
+        assert response.status_code == 200
 
-def test_Fetcher_exists():
-    assert Fetcher is not None
+    def test_fetch_invalid_uids(self):
+        uids = ['00000000']
+        with pytest.raises(Exception):
+            self.medline.fetch(uids)
