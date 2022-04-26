@@ -1,19 +1,19 @@
-# pubmedfetch
+# ncbiutils
 
-Making retrieval of article records from PubMed easy.
+Making retrieval of records from NCBI E-Utilities simple and robust.
 
 ## Installation
 
 ```bash
-$ pip install pubmedfetch
+$ pip install ncbiutils
 ```
 
 ## Usage
 
-`pubmedfetch` can be used to as follows:
+`ncbiutils` can be used to as follows:
 
 ```python
-from pubmedfetch.pubmedfetch import get
+from ncbiutils.ncbiutils import get
 
 file_path = "test.txt"  # path to your file
 get(file_path)
@@ -28,8 +28,8 @@ By contributing to this project, you agree to abide by its terms.
 
 ## License
 
-`pubmedfetch` was developed by Jeffrey Wong. It is licensed under the terms of the MIT license.
+`ncbiutils` was developed by Jeffrey Wong. It is licensed under the terms of the MIT license.
 
 ## Credits
 
-`pubmedfetch` was created with [`poetry`](https://python-poetry.org/). It leans heavily on [Bio](https://biopython.org/docs/1.75/api/Bio.html).
+`ncbiutils` was created with [`poetry`](https://python-poetry.org/). It leans heavily on [Bio](https://biopython.org/docs/1.75/api/Bio.html).

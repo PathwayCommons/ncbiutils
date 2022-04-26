@@ -1,4 +1,3 @@
-import pkg_resources
 from . import __name__
 from . import __version__
 
