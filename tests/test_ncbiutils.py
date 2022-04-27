@@ -1,6 +1,4 @@
-# import pytest
 from ncbiutils.ncbiutils import HelloWorld
-
 
 # NCBI_EUTILS_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 
@@ -39,4 +37,9 @@ class TestHelloWorld:
     def test_text(self):
         assert self.text == 'Hello World!'
 
-
+    def test_data(self, mocker):
+        mockData = 3
+        mocker.patch('tests.test_ncbiutils.HelloWorld.load_data', return_value = mockData)
+        h = HelloWorld()
+        data = h.load_data()
+        assert data == mockData
