@@ -164,3 +164,7 @@
 
 class HelloWorld:
     text = 'Hello World!'
+
+    def load_data(self):
+        data = 2
+        return data
