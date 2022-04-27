@@ -1,18 +1,40 @@
 [tool.poetry]
-name = "pubmedfetch"
+name = "ncbiutils"
 version = "0.1.0"
-description = "Retrieve article records from PubMed"
+description = "Retrieve article records from NCBI via E-utilities"
+license = "MIT"
 authors = ["Jeffrey Wong <jvwong@outlook.com>"]
+maintainers = ["Jeffrey Wong <jvwong@outlook.com>"]
+repository  = "https://github.com/jvwong/ncbiutils"
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT No Attribution License (MIT-0)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+pydantic = "^1.9.0"
+requests = "^2.27.1"
+loguru = "^0.6.0"
+bio = "^1.3.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 pytest-datadir = "^1.3.1"
 flake8 = "^4.0.1"
 black = "^22.3.0"
+pytest-cov = "^3.0.0"
+
+[tool.black]
+line-length = 119
+skip-string-normalization = true
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+
