@@ -1,6 +1,6 @@
 from pydantic import BaseModel, HttpUrl, validator
-from typing import ClassVar
-from ncbiutils.types import HttpMethodEnum
+from typing import ClassVar, List
+from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum
 from ncbiutils.http import safe_requests
 
 # from loguru import logger
@@ -26,6 +26,11 @@ class Eutil(BaseModel):
     api_key : str
         Key for NCBI E-Utilities
 
+    Methods
+    ----------
+    request(url: HttpUrl, **opts)
+        Make request with appropriate body form parameters
+
     """
 
     base_url: ClassVar[HttpUrl] = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
@@ -42,8 +47,8 @@ class Eutil(BaseModel):
         return v
 
 
-    def _get_eutil_response(self, url: HttpUrl, **opts):
-        """Call one of the NCBI E-Utilities and return a requests.Reponse"""
+    def request(self, url: HttpUrl, **opts):
+        """Call one of the NCBI E-Utilities and return (error, requests.Response)"""
         params = {'retstart': self.retstart, 'retmax': self.retmax}
         params.update(opts)
         if self.api_key:
@@ -52,49 +57,57 @@ class Eutil(BaseModel):
         return err, response
 
 
-# class Fetcher(Eutil):
-#     """
-#     A class that provides for record retrieval.
+class Efetch(Eutil):
+    """
+    A class tailored for the EFETCH E-Utility
 
-#     Class attributes
-#     ----------
-#     efetch_url : HttpUrl
-#         The E-Utilities URL for EFETCH
+    Class attributes
+    ----------
+    efetch_url : HttpUrl
+        The E-Utilities URL for EFETCH
 
-#     """
+     Methods
+    ----------
+    request(db: DbEnum, id: str, **opts)
+        Make request to EFETCH URL with constrained body form parameters
 
-#     efetch_url: ClassVar[HttpUrl] = f'{Eutil.base_url}efetch.fcgi'
+    """
 
-#     def _fetch(self, db: DbEnum, id: str, **opts):
-#         """Return raw HTTP Response given uid list and db"""
-#         efetch_params = {'db': db, 'id': id}
-#         efetch_params.update(opts)
-#         return self._get_eutil_response(self.efetch_url, **efetch_params)
+    url: ClassVar[HttpUrl] = f'{Eutil.base_url}efetch.fcgi'
+
+    def fetch(self, db: DbEnum, id: str, **opts):
+        """Call EFETCH E-Utility for the given id and db"""
+        params = {'db': db, 'id': id}
+        params.update(opts)
+        return self.request(self.url, **params)
 
 
-# class Medline(Fetcher):
-#     """
-#     A class that retrieves article text from PubMed
+class PubMedFetch(Efetch):
+    """
+    A class that retrieves article information from PubMed
 
-#     Class attributes
-#     ----------
-#     db : DbEnum
-#         The pubmed database
+    Class attributes
+    ----------
+    db : DbEnum
+        The pubmed database
 
-#     Methods
-#     -------
-#     get(uids: List[str])
-#         Retrieve text records given the list of uids
+    Methods
+    -------
+    fetch(uids: List[str])
+        Retrieve text records given the list of uids
 
-#     """
+    """
 
-#     db: ClassVar[DbEnum] = DbEnum.pubmed
+    db: ClassVar[DbEnum] = DbEnum.pubmed
 
-#     def get(self, uids: List[str]):
-#         """Return uid, and text (i.e. title + abstract) given a PubMed uid"""
-#         id = ','.join(uids)
-#         pubmed_opts = {'retmode': RetModeEnum.text, 'rettype': RetTypeEnum.medline}
-#         return self._fetch(db=self.db, id=id, **pubmed_opts)
+    retmode: RetModeEnum = RetModeEnum.text
+    rettype: RetTypeEnum = RetTypeEnum.medline
+
+    def fetch(self, uids: List[str]):
+        """Return uid, and text (i.e. title + abstract) given a PubMed uid"""
+        id = ','.join(uids)
+        params = {'retmode': self.retmode, 'rettype': self.rettype}
+        return super().fetch(db=self.db, id=id, **params)
 
 
 # class HelloWorld:
