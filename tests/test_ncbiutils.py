@@ -24,10 +24,10 @@ class TestMedlineFetchIntegration:
 
     def test_fetch_valid_uids(self):
         uids = ['31827641', '31772623', '31766097']
-        response = self.medline.fetch(uids)
+        response = self.medline.get(uids)
         assert response.status_code == 200
 
     def test_fetch_invalid_uids(self):
         uids = ['00000000']
         with pytest.raises(Exception):
-            self.medline.fetch(uids)
+            self.medline.get(uids)

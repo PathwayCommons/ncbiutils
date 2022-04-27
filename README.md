@@ -13,10 +13,8 @@ $ pip install ncbiutils
 `ncbiutils` can be used to as follows:
 
 ```python
-from ncbiutils.ncbiutils import get
+from ncbiutils.ncbiutils import Medline
 
-file_path = "test.txt"  # path to your file
-get(file_path)
 ...
 ```
 

@@ -139,25 +139,24 @@ class Fetcher(Eutil):
 
 class Medline(Fetcher):
     """
-    A class that retrieves Medline article records from PubMed
+    A class that retrieves article text from PubMed
 
     Class attributes
     ----------
     db : DbEnum
-        pubmed database
+        The pubmed database
 
     Methods
     -------
-    fetch(uids: List[str])
-        Retrieve records
+    get(uids: List[str])
+        Retrieve text records given the list of uids
 
     """
 
     db: ClassVar[DbEnum] = DbEnum.pubmed
 
-    def fetch(self, uids: List[str], **opts):
+    def get(self, uids: List[str]):
         """Return uid, and text (i.e. title + abstract) given a PubMed uid"""
         id = ','.join(uids)
-        pubmed_params = {'db': self.db, 'id': id, 'retmode': RetModeEnum.text, 'rettype': RetTypeEnum.medline}
-        pubmed_params.update(opts)
-        return self._fetch(**pubmed_params)
+        pubmed_opts = {'retmode': RetModeEnum.text, 'rettype': RetTypeEnum.medline}
+        return self._fetch(db=self.db, id=id, **pubmed_opts)
