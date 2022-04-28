@@ -1,9 +1,9 @@
 from pydantic import BaseModel, HttpUrl, validator
-from typing import ClassVar, List
+from typing import ClassVar, List, Any, Dict, Generator, Union, Optional, Tuple, Type
 from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum
 from ncbiutils.http import safe_requests
 
-# from loguru import logger
+from loguru import logger
 
 
 class Eutil(BaseModel):
@@ -46,14 +46,13 @@ class Eutil(BaseModel):
             raise ValueError(f'Must be positive number less than {cls.retmax_limit}')
         return v
 
-
-    def request(self, url: HttpUrl, **opts):
+    def request(self, url: HttpUrl, **opts) -> Tuple[Optional[Exception], Any]:
         """Call one of the NCBI E-Utilities and return (error, requests.Response)"""
         params = {'retstart': self.retstart, 'retmax': self.retmax}
         params.update(opts)
         if self.api_key:
             params.update({'api_key': self.api_key})
-        err, response = safe_requests(url, method = HttpMethodEnum.POST, files = params)
+        err, response = safe_requests(url, method=HttpMethodEnum.POST, files=params)
         return err, response
 
 
@@ -75,11 +74,12 @@ class Efetch(Eutil):
 
     url: ClassVar[HttpUrl] = f'{Eutil.base_url}efetch.fcgi'
 
-    def fetch(self, db: DbEnum, id: str, **opts):
+    def fetch(self, db: DbEnum, id: str, **opts) -> Tuple[Optional[Exception], Any]:
         """Call EFETCH E-Utility for the given id and db"""
         params = {'db': db, 'id': id}
         params.update(opts)
-        return self.request(self.url, **params)
+        err, response = self.request(self.url, **params)
+        return err, response
 
 
 class PubMedFetch(Efetch):
@@ -103,16 +103,32 @@ class PubMedFetch(Efetch):
     retmode: RetModeEnum = RetModeEnum.text
     rettype: RetTypeEnum = RetTypeEnum.medline
 
-    def fetch(self, uids: List[str]):
-        """Return uid, and text (i.e. title + abstract) given a PubMed uid"""
-        id = ','.join(uids)
+    def fetch(self, ids: List[str]) -> Tuple[Optional[Exception], Any]:
+        """Return id, and text (i.e. title + abstract) given a PubMed id"""
+        id = ','.join(ids)
         params = {'retmode': self.retmode, 'rettype': self.rettype}
-        return super().fetch(db=self.db, id=id, **params)
+        err, response = super().fetch(db=self.db, id=id, **params)
+        return err, response
 
+    def _parse_reponse(self):
+        pass
 
-# class HelloWorld:
-#     text = 'Hello World!'
-
-#     def load_data(self):
-#         data = 2
-#         return data
+    def get_articles(self, uids: List[str]) -> Generator[List[Dict[str, str]], None, None]:
+        """Return article fields for each PubMed ID"""
+        len_uids = len(uids)
+        num_fetches = (len_uids // self.retmax_limit) + (1 if len_uids % self.retmax_limit > 0 else 0)
+        for i in range(num_fetches):
+            lower = i * self.retmax_limit
+            upper = min([lower + self.retmax_limit, len_uids])
+            ids = uids[lower:upper]
+            try:
+                error, response = self.fetch(ids)
+                if error:
+                    raise error
+            except Exception as e:
+                logger.warning(f"Error encountered in uids_to_docs: {e}")
+                logger.warning(f"Bypassing docs {lower} through {upper - 1} of {len_uids - 1}")
+                continue
+            else:
+                logger.debug(f'Retrieved article {lower} through {upper - 1} of {len_uids - 1}')
+                yield self._parse_reponse(response)

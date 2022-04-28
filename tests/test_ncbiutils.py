@@ -32,44 +32,11 @@ class TestEfetchClass:
 
 class TestPubMedFetchClass:
     pubmed_fetch = PubMedFetch()
+
     def test_class_attributes(self):
         assert PubMedFetch.db == DbEnum.pubmed
         assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
         assert isinstance(self.pubmed_fetch.rettype, RetTypeEnum)
 
-
-#############################
-#   Integration tests
-#############################
-
-
-@pytest.mark.parametrize(
-    'id, db, expected', [('31827641,31772623,31766097', 'pubmed', 200), ('00000000', 'pubmed', 400)]
-)
-class TestEutilIntegration:
-    eutil = Eutil()
-
-    def test_request_pubmed_id(self, id, db, expected):
-        url = f'{Eutil.base_url}efetch.fcgi'
-        opts = {'id': id, 'db': db}
-        _, response = self.eutil.request(url, **opts)
-        assert response.status_code == expected
-
-
-@pytest.mark.parametrize(
-    'id, db, expected', [('31827641,31772623,31766097', 'pubmed', 200), ('00000000', 'pubmed', 400)]
-)
-class TestFetchIntegration:
-    efetch = Efetch()
-
-    def test_request_pubmed_id(self, id, db, expected):
-        _, response = self.efetch.fetch(db = db, id = id)
-        assert response.status_code == expected
-
-# class TestHelloWorld:
-#     def test_data(self, mocker):
-#         mockData = 3
-#         mocker.patch('tests.test_ncbiutils.HelloWorld.load_data', return_value = mockData)
-#         h = HelloWorld()
-#         data = h.load_data()
-#         assert data == mockData
+    def test_parse_response(self):
+        pass
