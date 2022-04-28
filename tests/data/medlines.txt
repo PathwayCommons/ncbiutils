@@ -136,6 +136,121 @@ AID - 10.1016/j.celrep.2022.110408 [doi]
 PST - ppublish
 SO  - Cell Rep. 2022 Feb 22;38(8):110408. doi: 10.1016/j.celrep.2022.110408.
 
+id: 33890651 Error occurred: PMID 33890651 is a duplicate of PMID 31311831
+
+PMID- 33279447
+OWN - NLM
+STAT- Publisher
+LR  - 20210525
+IS  - 2173-5743 (Electronic)
+IS  - 2173-5743 (Linking)
+DP  - 2020 Dec 2
+LID - S1699-258X(20)30268-0 [pii]
+LID - 10.1016/j.reuma.2020.11.001 [doi]
+FAU - Vicente Moreno, Jose
+AU  - Vicente Moreno J
+AD  - Presidente de Honor de la SER. Electronic address: dr.vicentemoreno@gmail.com.
+LA  - eng
+LA  - spa
+PT  - Journal Article
+TT  - Pere Barcelo.
+DEP - 20201202
+PL  - Spain
+TA  - Reumatol Clin (Engl Ed)
+JT  - Reumatologia clinica
+JID - 101717526
+SB  - IM
+EDAT- 2020/12/07 06:00
+MHDA- 2020/12/07 06:00
+CRDT- 2020/12/06 20:42
+PHST- 2020/12/06 20:42 [entrez]
+PHST- 2020/12/07 06:00 [pubmed]
+PHST- 2020/12/07 06:00 [medline]
+AID - S1699-258X(20)30268-0 [pii]
+AID - 10.1016/j.reuma.2020.11.001 [doi]
+PST - aheadofprint
+SO  - Reumatol Clin (Engl Ed). 2020 Dec 2. pii: S1699-258X(20)30268-0. doi:
+      10.1016/j.reuma.2020.11.001.
+
+PMID- 33278872
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20201217
+LR  - 20220418
+IS  - 2209-6051 (Electronic)
+IS  - 2209-6051 (Linking)
+VI  - 44
+DP  - 2020 Oct 25
+TI  - Physical distancing and non-respiratory notifiable diseases in the Northern
+      Territory, March-May 2020.
+LID - 10.33321/cdi.2020.44.90 [doi]
+AB  - ABSTRACT: Strict physical distancing measures and border controls have been
+      introduced in the Northern Territory (NT), and across Australia, to reduce the
+      spread of coronavirus disease 2019 (COVID-19). These measures have been
+      associated with reduced incidence of other respiratory illnesses such as
+      influenza. It is currently unclear what effect these measures have on
+      non-respiratory communicable diseases. The incidence of notifiable
+      non-respiratory communicable diseases within the NT, from 15 March to 15 May
+      2020, the period of most restrictive physical distancing, was monitored and is
+      here compared with two control periods: (i) the 4 months immediately prior and
+      (ii) the same two-month period from the preceding 5 years. During the study
+      period, there was a decline in incidence of communicable enteric illnesses,
+      particularly in shigellosis and rotavirus where person-to-person spread is the
+      main transmission route. There was an increase in chlamydial conjunctivitis in
+      areas with endemic trachoma, which is under further investigation. There was no
+      observed increase in conditions associated with crowding, such as those related
+      to group A streptococcal infection.
+CI  - (c) Commonwealth of Australia CC BY-NC-ND.
+FAU - Xie, Ouli
+AU  - Xie O
+AD  - Centre for Disease Control, Public Health Unit, Top End Health Service, Darwin,
+      Northern Territory, Australia.
+AD  - Menzies School of Health Research, Darwin, Northern Territory, Australia.
+FAU - Markey, Peter G
+AU  - Markey PG
+AD  - Centre for Disease Control, Public Health Unit, Top End Health Service, Darwin,
+      Northern Territory, Australia.
+FAU - Draper, Anthony D K
+AU  - Draper ADK
+AD  - Centre for Disease Control, Public Health Unit, Top End Health Service, Darwin,
+      Northern Territory, Australia.
+AD  - Menzies School of Health Research, Darwin, Northern Territory, Australia.
+FAU - Krause, Vicki L
+AU  - Krause VL
+AD  - Centre for Disease Control, Public Health Unit, Top End Health Service, Darwin,
+      Northern Territory, Australia.
+LA  - eng
+PT  - Journal Article
+DEP - 20201025
+PL  - Australia
+TA  - Commun Dis Intell (2018)
+JT  - Communicable diseases intelligence (2018)
+JID - 101735394
+SB  - IM
+MH  - COVID-19/*epidemiology/*prevention & control/transmission/virology
+MH  - Communicable Diseases/*epidemiology/microbiology
+MH  - Humans
+MH  - Incidence
+MH  - Northern Territory/epidemiology
+MH  - Pandemics/prevention & control
+MH  - *Physical Distancing
+MH  - SARS-CoV-2/isolation & purification
+OTO - NOTNLM
+OT  - Australia
+OT  - COVID-19
+OT  - Northern Territory
+OT  - physical distancing
+OT  - epidemiology
+EDAT- 2020/12/07 06:00
+MHDA- 2020/12/18 06:00
+CRDT- 2020/12/06 20:35
+PHST- 2020/12/06 20:35 [entrez]
+PHST- 2020/12/07 06:00 [pubmed]
+PHST- 2020/12/18 06:00 [medline]
+AID - 10.33321/cdi.2020.44.90 [doi]
+PST - epublish
+SO  - Commun Dis Intell (2018). 2020 Oct 25;44. doi: 10.33321/cdi.2020.44.90.
+
 PMID- 24792780
 OWN - NLM
 STAT- MEDLINE

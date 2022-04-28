@@ -4,9 +4,9 @@ from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum
 from ncbiutils.http import safe_requests
 
 import io
-import Bio
+from Bio import Medline
 
-# # from loguru import logger
+from loguru import logger
 
 
 class Eutil(BaseModel):
@@ -114,50 +114,41 @@ class PubMedFetch(Efetch):
         return err, response
 
     def _parse_medline(self, text: str) -> List[Dict[str, str]]:
-        """Return a list article records given Medline text
-        See https://www.nlm.nih.gov/bsd/mms/medlineelements.html
-        """
-        return text
-        f = io.StringIO(text)
-        records = Bio.Medline.parse(f)
-        docs = []
-        # for record in records:
-        #     if "PMID" not in record:
-        #         raise HTTPException(status_code=422, detail=record["id:"][-1])
-        #     pmid = record["PMID"]
-        #     abstract = record["AB"] if "AB" in record else ""
-        #     title = record["TI"] if "TI" in record else ""
-        #     text = " ".join(_compact([title, abstract]))
-        #     docs.append({"uid": pmid, "text": text})
-        return docs
+        """Return a list of dicts of Medline data (class 'Bio.Medline.Record') given Medline text
 
-    def _parse_reponse(self, response):
-        # if self.retmode = RetModeEnum.medline else raise ValueError(f"Unsupported eutil '{eutil}''")
-        pass
+        Caveats
+          - PMIDs can be duplicates, deleted and output garbage
+          - Output is not guaranteed to be consistent with PubMed DTD
+        See https://biopython.org/docs/1.75/api/Bio.Medline.html#Bio.Medline.Record
+        """
+        f = io.StringIO(text)
+        records = Medline.parse(f)  # class 'Bio.Medline.Record'>
+        return list(records)
+
+    def _parse_response(self, response) -> List[Dict[str, str]]:
+        """Delegate to an implementation or raise ValueError."""
+        if self.rettype == RetTypeEnum.medline:
+            return self._parse_medline(response.text)
+        else:
+            raise ValueError(f'Unsupported retmode: {self.rettype}')
 
     def _chunks(self, lst: List[str], n: int) -> Generator[List[str], None, None]:
         """Yield successive n-sized chunks from lst."""
         for i in range(0, len(lst), n):
             yield lst[i : i + n]
 
-    def get_articles(self, uids: List[str]) -> Generator[List[Dict[str, str]], None, None]:
-        """Return article fields for each PubMed ID"""
-        pass
-
-
-#         len_uids = len(uids)
-#         num_fetches = (len_uids // self.retmax_limit) + (1 if len_uids % self.retmax_limit > 0 else 0)
-#         for i in range(num_fetches):
-#             lower = i * self.retmax_limit
-#             upper = min([lower + self.retmax_limit, len_uids])
-#             ids = uids[lower:upper]
-#             try:
-#                 error, response = self.fetch(ids)
-#                 if error:
-#                     raise error
-#             except Exception as e:
-#                 logger.warning(f"Error encountered in get_articles: {e}")
-#                 continue
-#             else:
-#                 logger.info(f'Retrieved article {lower} through {upper - 1} of {len_uids - 1}')
-#                 yield self._parse_reponse(response)
+    def get_records(self, uids: List[str]) -> Generator[List[Dict[str, str]], None, None]:
+        """Yields a list of records for PubMed uids"""
+        i = 0
+        for ids in self._chunks(uids, self.retmax):
+            try:
+                error, response = self.fetch(ids)
+                if error:
+                    raise error
+            except Exception as e:
+                logger.warning(f"Error encountered in get_articles: {e}")
+                continue
+            else:
+                logger.info(f'Retrieved record chunk {i}')
+                i += 1
+                yield self._parse_response(response)
