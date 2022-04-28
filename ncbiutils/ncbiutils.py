@@ -137,18 +137,20 @@ class PubMedFetch(Efetch):
         for i in range(0, len(lst), n):
             yield lst[i : i + n]
 
-    def get_records_chunks(self, uids: List[str]) -> Generator[List[Dict[str, str]], None, None]:
-        """Yields a list of records for PubMed uids"""
+    def get_records_chunks(self, uids: List[str]) -> Generator[Tuple[Any, Optional[List[Dict[str, str]]]], None, None]:
+        """Yields a tuple of chunk error (possibly empty) and list of records for PubMed uids (possibly empty)"""
         i = 0
         for ids in self._chunks(uids, self.retmax):
+            records = None
             try:
                 error, response = self.fetch(ids)
                 if error:
                     raise error
             except Exception as e:
                 logger.warning(f"Error encountered in get_articles: {e}")
-                continue
-            else:
+            finally:
                 logger.info(f'Retrieved record chunk {i}')
                 i += 1
-                yield self._parse_response(response)
+                if not error and response:
+                    records = self._parse_response(response)
+                yield error, records
