@@ -21,7 +21,7 @@ def test_error_on_bad_status(status):
     responses.add(responses.GET, TEST_URL, body=RequestsError(status), status=status)
     error, _ = safe_requests(TEST_URL)
     assert error is not None, f'No error on bad status {status}'
-    assert isinstance(error, RequestsError), f'Wrong error type'
+    assert isinstance(error, RequestsError), 'Wrong error type'
 
 
 @responses.activate
@@ -29,5 +29,5 @@ def test_error_on_bad_status(status):
 def test_error_on_exception(body):
     responses.add(responses.GET, TEST_URL, body=body)
     error, _ = safe_requests(TEST_URL)
-    assert error is not None, f'No error on Exception'
-    assert isinstance(error, Exception), f'Wrong error type'
+    assert error is not None, 'No error on Exception'
+    assert isinstance(error, Exception), 'Wrong error type'

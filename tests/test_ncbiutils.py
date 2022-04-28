@@ -1,6 +1,7 @@
 import pytest
-from ncbiutils.ncbiutils import Eutil, Efetch, PubMedFetch, RetModeEnum, RetTypeEnum
-from ncbiutils.types import DbEnum
+from ncbiutils.ncbiutils import Eutil, Efetch  # PubMedFetch, RetModeEnum, RetTypeEnum
+
+# from ncbiutils.types import DbEnum
 
 NCBI_EUTILS_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 
@@ -30,13 +31,16 @@ class TestEfetchClass:
         assert Efetch.url == f'{NCBI_EUTILS_BASE_URL}efetch.fcgi'
 
 
-class TestPubMedFetchClass:
-    pubmed_fetch = PubMedFetch()
+# class TestPubMedFetchClass:
+#     pubmed_fetch = PubMedFetch()
 
-    def test_class_attributes(self):
-        assert PubMedFetch.db == DbEnum.pubmed
-        assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
-        assert isinstance(self.pubmed_fetch.rettype, RetTypeEnum)
+#     def test_class_attributes(self):
+#         assert PubMedFetch.db == DbEnum.pubmed
+#         assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
+#         assert isinstance(self.pubmed_fetch.rettype, RetTypeEnum)
 
-    def test_parse_response(self):
-        pass
+#     def test_parse_medline(self):
+#         pass
+
+#     def test_parse_response(self):
+#         pass

@@ -1,6 +1,7 @@
 import pytest
-from ncbiutils.ncbiutils import Eutil, Efetch, PubMedFetch, RetModeEnum, RetTypeEnum
-from ncbiutils.types import DbEnum
+from ncbiutils.ncbiutils import Eutil, Efetch  # PubMedFetch, RetModeEnum, RetTypeEnum
+
+# from ncbiutils.types import DbEnum
 
 
 #############################
@@ -32,10 +33,10 @@ class TestFetchIntegration:
         assert response.status_code == expected
 
 
-@pytest.mark.parametrize('ids, expected', [(['31827641', '31772623', '31766097'], 200), (['00000000'], 400)])
-class TestPubMedFetchIntegration:
-    pubMedFetch = PubMedFetch()
+# @pytest.mark.parametrize('ids, expected', [(['31827641', '31772623', '31766097'], 200), (['00000000'], 400)])
+# class TestPubMedFetchIntegration:
+#     pubMedFetch = PubMedFetch()
 
-    def test_request_pubmed_id(self, ids, expected):
-        _, response = self.pubMedFetch.fetch(ids)
-        assert response.status_code == expected
+#     def test_request_pubmed_id(self, ids, expected):
+#         _, response = self.pubMedFetch.fetch(ids)
+#         assert response.status_code == expected
