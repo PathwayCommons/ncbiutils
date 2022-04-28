@@ -1,10 +1,7 @@
 import pytest
 from ncbiutils.ncbiutils import Eutil, Efetch, PubMedFetch
 from ncbiutils.types import DbEnum, RetTypeEnum, RetModeEnum
-import pprint
 
-
-pp = pprint.PrettyPrinter(indent=2)
 
 NCBI_EUTILS_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 
@@ -77,9 +74,19 @@ class TestPubMedFetchClass:
             uilist_pubmed_fetch._parse_response(None)
 
     def test_get_records_chunks(self, mocker, medlines_response):
+        uids = ['35196497', '33890651', '33279447', '33278872', '24792780', '30158200', '151222']
         mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(None, medlines_response))
         # FYI these uids sync up with the 'medlines.txt' fixture
-        uids = ['35196497', '33890651', '33279447', '33278872', '24792780', '30158200', '151222']
         chunks = self.pubmed_fetch.get_records_chunks(uids)
-        only_chunk = list(chunks)[0]
+        error, only_chunk, ids = list(chunks)[0]
+        assert error is None
+        assert len(ids) == len(uids)
         assert len(only_chunk) == len(uids)
+
+    def test_get_records_chunks_on_error(self, mocker):
+        uids = ['35196497', '33890651', '33279447', '33278872', '24792780', '30158200', '151222']
+        mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(Exception, None))
+        chunks = self.pubmed_fetch.get_records_chunks(uids)
+        error, _, ids = list(chunks)[0]
+        assert error is not None
+        assert len(ids) == len(uids)
