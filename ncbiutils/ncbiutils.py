@@ -6,8 +6,6 @@ from ncbiutils.http import safe_requests
 import io
 from Bio import Medline
 
-from loguru import logger
-
 
 class Eutil(BaseModel):
     """
@@ -137,8 +135,9 @@ class PubMedFetch(Efetch):
         for i in range(0, len(lst), n):
             yield lst[i : i + n]
 
-    def get_records_chunks(self, uids: List[str]) -> Generator[
-            Tuple[Any, Optional[List[Dict[str, str]]], List[str]], None, None]:
+    def get_records_chunks(
+        self, uids: List[str]
+    ) -> Generator[Tuple[Any, Optional[List[Dict[str, str]]], List[str]], None, None]:
         """Yields chunk error, records (possibly empty) and PubMed uids"""
         for ids in self._chunks(uids, self.retmax):
             records = None
