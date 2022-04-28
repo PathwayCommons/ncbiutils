@@ -1,145 +1,93 @@
-# from enum import Enum
+from pydantic import BaseModel, HttpUrl, validator
+from typing import ClassVar, Any, Optional, Tuple  # List, Dict, Generator, Union
+from ncbiutils.types import HttpMethodEnum, DbEnum  # RetModeEnum, RetTypeEnum
+from ncbiutils.http import safe_requests
 
-# from typing import ClassVar, List
+# import io
+# import Bio
 
-# from pydantic import BaseModel, HttpUrl, EmailStr, validator
-
-# import requests
 # from loguru import logger
 
 
-# class HttpMethodEnum(str, Enum):
-#     get = 'GET'
-#     post = 'POST'
+class Eutil(BaseModel):
+    """
+    A base class for other NCBI E-Utilities
+
+    Class attributes
+    ----------
+    base_url : HttpUrl
+        Base URL for the various NCBI E-Utilities
+    retmax_limit : int
+        Maximum number of records that can be returned
+
+    Attributes
+    ----------
+    retstart : int
+        Index before the first record to return (default 0)
+    retmax : int
+        Maximum number of records to return (default 10000)
+    api_key : str
+        Key for NCBI E-Utilities
+
+    Methods
+    ----------
+    request(url: HttpUrl, **opts)
+        Make request with appropriate body form parameters
+
+    """
+
+    base_url: ClassVar[HttpUrl] = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
+    retmax_limit: ClassVar[int] = 10000
+
+    retstart: int = 0
+    retmax: int = retmax_limit
+    api_key: str = None
+
+    @validator('retmax')
+    def retmax_is_nonneg_lt_limit(cls, v):
+        if v < 0 or v > cls.retmax_limit:
+            raise ValueError(f'Must be positive number less than {cls.retmax_limit}')
+        return v
+
+    def request(self, url: HttpUrl, **opts) -> Tuple[Optional[Exception], Any]:
+        """Call one of the NCBI E-Utilities and return (error, requests.Response)"""
+        params = {'retstart': self.retstart, 'retmax': self.retmax}
+        params.update(opts)
+        if self.api_key:
+            params.update({'api_key': self.api_key})
+        err, response = safe_requests(url, method=HttpMethodEnum.POST, files=params)
+        return err, response
 
 
-# class EutilEnum(str, Enum):
-#     efetch = 'efetch'
+class Efetch(Eutil):
+    """
+    A class tailored for the EFETCH E-Utility
+
+    Class attributes
+    ----------
+    efetch_url : HttpUrl
+        The E-Utilities URL for EFETCH
+
+     Methods
+    ----------
+    request(db: DbEnum, id: str, **opts)
+        Make request to EFETCH URL with constrained body form parameters
+
+    """
+
+    url: ClassVar[HttpUrl] = f'{Eutil.base_url}efetch.fcgi'
+
+    def fetch(self, db: DbEnum, id: str, **opts) -> Tuple[Optional[Exception], Any]:
+        """Call EFETCH E-Utility for the given id and db"""
+        params = {'db': db, 'id': id}
+        params.update(opts)
+        err, response = self.request(self.url, **params)
+        return err, response
 
 
-# class DbEnum(str, Enum):
-#     pubmed = 'pubmed'
-
-
-# class RetModeEnum(str, Enum):
-#     text = 'text'
-#     xml = 'xml'
-#     asn = 'asn.1'
-
-
-# class RetTypeEnum(str, Enum):
-#     uilist = 'uilist'
-#     full = 'full'
-#     abstract = 'abstract'
-#     docsum = 'docsum'
-#     medline = 'medline'
-
-
-# class Eutil(BaseModel):
+# class PubMedFetch(Efetch):
 #     """
-#     A class that holds values related to various NCBI E-Utilities.
-
-#     Class attributes
-#     ----------
-#     name : str
-#         Package name
-#     version : str
-#         Package version
-#     package_url : HttpUrl
-#         URL for package repsitory
-#     admin_email : EmailStr
-#         Email for package maintainer
-#     base_url : HttpUrl
-#         Base URL for the various NCBI E-Utilities
-#     retmax_limit : int
-#         Maximum number of records that can be returned
-
-#     Attributes
-#     ----------
-#     http_request_timeout_seconds : int
-#         Timeout in seconds for server response (default 5)
-#     retstart : int
-#         Index before the first record to return (default 0)
-#     retmax : int
-#         Maximum number of records to return (default 10000)
-#     api_key : str
-#         API key for requests up to 10/sec
-
-#     """
-
-#     name: ClassVar[str] = 'ncbiutils'
-#     version: ClassVar[str] = '0.1.0'
-#     package_url: ClassVar[HttpUrl] = 'https://github.com/jvwong/ncbiutils'
-#     admin_email: ClassVar[EmailStr] = 'info@biofactoid.org'
-#     base_url: ClassVar[HttpUrl] = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
-#     retmax_limit: ClassVar[int] = 10000
-
-#     http_request_timeout_seconds: int = 5
-#     retstart: int = 0
-#     retmax: int = retmax_limit
-#     api_key: str = None
-
-#     @validator('retmax')
-#     def retmax_is_nonneg_lt_limit(cls, v):
-#         if v < 0 or v > cls.retmax_limit:
-#             raise ValueError(f'Must be positive number less than {cls.retmax_limit}')
-#         return v
-
-#     def _safe_request(self, url: HttpUrl, method: HttpMethodEnum = HttpMethodEnum.get, headers={}, **opts):
-#         user_agent = f'{self.name}/{self.version} ({self.package_url};mailto:{self.admin_email})'
-#         request_headers = {'user-agent': user_agent}
-#         request_headers.update(headers)
-#         try:
-#             r = requests.request(
-#                 method, url, headers=request_headers, timeout=self.http_request_timeout_seconds, **opts
-#             )
-#             r.raise_for_status()
-#         except requests.exceptions.Timeout as e:
-#             logger.error(f'Timeout error {e}')
-#             raise
-#         except requests.exceptions.HTTPError as e:
-#             logger.error(f'HTTP error {e}; status code: {r.status_code}')
-#             raise
-#         except requests.exceptions.RequestException as e:
-#             logger.error(f'Error in request {e}')
-#             raise
-#         else:
-#             return r
-
-#     def _get_eutil_response(self, url: HttpUrl, **opts):
-#         """Call one of the NCBI EUTILITIES and returns data as Python objects."""
-
-#         eutils_params = {'retstart': self.retstart, 'retmax': self.retmax}
-#         eutils_params.update(opts)
-#         if self.api_key is not None:
-#             eutils_params.update({'api_key': self.api_key})
-#         eutilResponse = self._safe_request(url, HttpMethodEnum.post, files=eutils_params)
-#         return eutilResponse
-
-
-# class Fetcher(Eutil):
-#     """
-#     A class that provides for record retrieval.
-
-#     Class attributes
-#     ----------
-#     efetch_url : HttpUrl
-#         The E-Utilities URL for EFETCH
-
-#     """
-
-#     efetch_url: ClassVar[HttpUrl] = f'{Eutil.base_url}efetch.fcgi'
-
-#     def _fetch(self, db: DbEnum, id: str, **opts):
-#         """Return raw HTTP Response given uid list and db"""
-#         efetch_params = {'db': db, 'id': id}
-#         efetch_params.update(opts)
-#         return self._get_eutil_response(self.efetch_url, **efetch_params)
-
-
-# class Medline(Fetcher):
-#     """
-#     A class that retrieves article text from PubMed
+#     A class that retrieves article information from PubMed
 
 #     Class attributes
 #     ----------
@@ -148,23 +96,60 @@
 
 #     Methods
 #     -------
-#     get(uids: List[str])
+#     fetch(uids: List[str])
 #         Retrieve text records given the list of uids
 
 #     """
 
 #     db: ClassVar[DbEnum] = DbEnum.pubmed
 
-#     def get(self, uids: List[str]):
-#         """Return uid, and text (i.e. title + abstract) given a PubMed uid"""
-#         id = ','.join(uids)
-#         pubmed_opts = {'retmode': RetModeEnum.text, 'rettype': RetTypeEnum.medline}
-#         return self._fetch(db=self.db, id=id, **pubmed_opts)
+#     retmode: RetModeEnum = RetModeEnum.text
+#     rettype: RetTypeEnum = RetTypeEnum.medline
 
+#     def fetch(self, ids: List[str]) -> Tuple[Optional[Exception], Any]:
+#         """Return id, and text (i.e. title + abstract) given a PubMed id"""
+#         id = ','.join(ids)
+#         params = {'retmode': self.retmode, 'rettype': self.rettype}
+#         err, response = super().fetch(db=self.db, id=id, **params)
+#         return err, response
 
-class HelloWorld:
-    text = 'Hello World!'
+#     def _parse_medline(self, text: str):
+#         """Return a list article records given Medline text
+#         See https://www.nlm.nih.gov/bsd/mms/medlineelements.html
+#         """
+#         f = io.StringIO(text)
+#         records = Bio.Medline.parse(f)
+#         docs = []
+#         # for record in records:
+#         #     if "PMID" not in record:
+#         #         raise HTTPException(status_code=422, detail=record["id:"][-1])
+#         #     pmid = record["PMID"]
+#         #     abstract = record["AB"] if "AB" in record else ""
+#         #     title = record["TI"] if "TI" in record else ""
+#         #     text = " ".join(_compact([title, abstract]))
+#         #     docs.append({"uid": pmid, "text": text})
+#         return docs
 
-    def load_data(self):
-        data = 2
-        return data
+#     def _parse_reponse(self, response):
+#         # if self.retmode = RetModeEnum.medline else raise ValueError(f"Unsupported eutil '{eutil}''")
+#         pass
+
+#     def get_articles(self, uids: List[str]) -> Generator[List[Dict[str, str]], None, None]:
+#         """Return article fields for each PubMed ID"""
+#         len_uids = len(uids)
+#         num_fetches = (len_uids // self.retmax_limit) + (1 if len_uids % self.retmax_limit > 0 else 0)
+#         for i in range(num_fetches):
+#             lower = i * self.retmax_limit
+#             upper = min([lower + self.retmax_limit, len_uids])
+#             ids = uids[lower:upper]
+#             try:
+#                 error, response = self.fetch(ids)
+#                 if error:
+#                     raise error
+#             except Exception as e:
+#                 logger.warning(f"Error encountered in uids_to_docs: {e}")
+#                 logger.warning(f"Bypassing docs {lower} through {upper - 1} of {len_uids - 1}")
+#                 continue
+#             else:
+#                 logger.info(f'Retrieved article {lower} through {upper - 1} of {len_uids - 1}')
+#                 yield self._parse_reponse(response)

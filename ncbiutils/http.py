@@ -1,6 +1,7 @@
 import requests
 from loguru import logger
 
+
 class RequestsError(Exception):
     """Exception to signal when a request is not OK
 
@@ -15,14 +16,13 @@ class RequestsError(Exception):
         self.message = message
         super().__init__(self.message)
 
-def safe_requests(url, method = 'GET', headers={}, timeout = 5, **opts):
+
+def safe_requests(url, method='GET', headers={}, timeout=5, **opts):
     """Wraps requests to handle bad HTTP status, exceptions"""
     error = None
     response = None
     try:
-        r = requests.request(
-            method, url, headers=headers, timeout=timeout, **opts
-        )
+        r = requests.request(method, url, headers=headers, timeout=timeout, **opts)
     except Exception as e:
         logger.error(f'Error encountered in request to {url}: {e}')
         error = e

@@ -1,45 +1,46 @@
-from ncbiutils.ncbiutils import HelloWorld
+import pytest
+from ncbiutils.ncbiutils import Eutil, Efetch  # PubMedFetch, RetModeEnum, RetTypeEnum
 
-# NCBI_EUTILS_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
+# from ncbiutils.types import DbEnum
 
-
-# class TestMedlineAttributes:
-#     key = 'somekey'
-#     medline = Medline(api_key=key)
-
-#     def test_inherits_class_base_url(self):
-#         assert Medline.base_url == f'{NCBI_EUTILS_BASE_URL}'
-
-#     def test_class_efetch_url(self):
-#         assert Medline.efetch_url == f'{NCBI_EUTILS_BASE_URL}efetch.fcgi'
-
-#     def test_set_api_key(self):
-#         assert self.medline.api_key == self.key
+NCBI_EUTILS_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 
 
-# class TestMedlineFetchIntegration:
-#     medline = Medline()
-
-#     def test_fetch_valid_uids(self):
-#         uids = ['31827641', '31772623', '31766097']
-#         response = self.medline.get(uids)
-#         assert response.status_code == 200
-
-#     def test_fetch_invalid_uids(self):
-#         uids = ['00000000']
-#         with pytest.raises(Exception):
-#             self.medline.get(uids)
+#############################
+#   Unit tests
+#############################
 
 
-class TestHelloWorld:
-    text = HelloWorld.text
+class TestEutilClass:
+    def test_class_attributes(self):
+        assert Eutil.base_url == NCBI_EUTILS_BASE_URL
 
-    def test_text(self):
-        assert self.text == 'Hello World!'
+    def test_set_api_key(self):
+        key = 'somekey'
+        eutil = Eutil(api_key=key)
+        assert eutil.api_key == key
 
-    def test_data(self, mocker):
-        mockData = 3
-        mocker.patch('tests.test_ncbiutils.HelloWorld.load_data', return_value = mockData)
-        h = HelloWorld()
-        data = h.load_data()
-        assert data == mockData
+    def test_set_invalid_retmax(self):
+        bigger_than_retmax_limit = Eutil.retmax_limit + 1
+        with pytest.raises(Exception):
+            Eutil(retmax=bigger_than_retmax_limit)
+
+
+class TestEfetchClass:
+    def test_class_attributes(self):
+        assert Efetch.url == f'{NCBI_EUTILS_BASE_URL}efetch.fcgi'
+
+
+# class TestPubMedFetchClass:
+#     pubmed_fetch = PubMedFetch()
+
+#     def test_class_attributes(self):
+#         assert PubMedFetch.db == DbEnum.pubmed
+#         assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
+#         assert isinstance(self.pubmed_fetch.rettype, RetTypeEnum)
+
+#     def test_parse_medline(self):
+#         pass
+
+#     def test_parse_response(self):
+#         pass

@@ -79,7 +79,7 @@ jobs:
           poetry run flake8 ./ncbiutils --count --exit-zero --max-complexity=10 --statistics
 
       - name: Test with pytest
-        run: poetry run pytest tests --cov ./ncbiutils --cov-report=xml
+        run: poetry run pytest tests --ignore-glob=tests/test_integration* --cov ./ncbiutils --cov-report=xml
 
     # - name: Type check with mypy
     #   run: |
