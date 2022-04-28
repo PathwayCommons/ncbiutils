@@ -1,0 +1,983 @@
+
+PMID- 35196497
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20220316
+LR  - 20220317
+IS  - 2211-1247 (Electronic)
+VI  - 38
+IP  - 8
+DP  - 2022 Feb 22
+TI  - SENP2 suppresses browning of white adipose tissues by de-conjugating SUMO from
+      C/EBPbeta.
+PG  - 110408
+LID - S2211-1247(22)00132-2 [pii]
+LID - 10.1016/j.celrep.2022.110408 [doi]
+AB  - The adipose tissue is a key site regulating energy metabolism. One of the
+      contributing factors behind this is browning of white adipose tissue (WAT).
+      However, knowledge of the intracellular determinants of the browning process
+      remains incomplete. By generating adipocyte-specific Senp2 knockout (Senp2-aKO)
+      mice, here we show that SENP2 negatively regulates browning by de-conjugating
+      small ubiquitin-like modifiers from C/EBPbeta. Senp2-aKO mice are resistant to
+      diet-induced obesity due to increased energy expenditure and heat production.
+      Senp2 knockout promotes beige adipocyte accumulation in inguinal WAT by
+      upregulation of thermogenic gene expression. In addition, SENP2 knockdown
+      promotes thermogenic adipocyte differentiation of precursor cells isolated from
+      inguinal and epididymal WATs. Mechanistically, sumoylated C/EBPbeta, a target of
+      SENP2, suppresses expression of HOXC10, a browning inhibitor, by recruiting a
+      transcriptional repressor DAXX. These findings indicate that a
+      SENP2-C/EBPbeta-HOXC10 axis operates for the control of beige adipogenesis in
+      inguinal WAT.
+CI  - Copyright (c) 2022 The Author(s). Published by Elsevier Inc. All rights reserved.
+FAU - Lee, Ji Seon
+AU  - Lee JS
+AD  - Department of Biomedical Sciences, Seoul National University College of Medicine,
+      Seoul, Korea.
+FAU - Chae, Sehyun
+AU  - Chae S
+AD  - Neurovascular Unit Research Group, Korea Brain Research Institute, Daegu, Korea.
+FAU - Nan, Jinyan
+AU  - Nan J
+AD  - Department of Biomedical Sciences, Seoul National University College of Medicine,
+      Seoul, Korea.
+FAU - Koo, Young Do
+AU  - Koo YD
+AD  - Department of Biomedical Sciences, Seoul National University College of Medicine,
+      Seoul, Korea.
+FAU - Lee, Seung-Ah
+AU  - Lee SA
+AD  - Genomic Medicine Institute, Medical Research Center, Seoul National University
+      College of Medicine, Seoul, Korea.
+FAU - Park, Young Joo
+AU  - Park YJ
+AD  - Department of Internal Medicine, Seoul National University College of Medicine,
+      Seoul, Korea; Department of Molecular Medicine and Biopharmaceutical Sciences,
+      Graduate School of Convergence Science and Technology, College of Medicine, Seoul
+      National University, Seoul, Korea.
+FAU - Hwang, Daehee
+AU  - Hwang D
+AD  - School of Biological Sciences, Seoul National University, Seoul, Korea.
+FAU - Han, Weiping
+AU  - Han W
+AD  - Institute of Molecular and Cell Biology, Agency for Science, Technology and
+      Research (A( *)STAR), Singapore 138667, Singapore; School of Laboratory Medicine
+      and Life Sciences, Wenzhou Medical University, Wenzhou, Zhejiang 325035, China.
+FAU - Lee, Dong-Sup
+AU  - Lee DS
+AD  - Department of Biomedical Sciences, Seoul National University College of Medicine,
+      Seoul, Korea.
+FAU - Kim, Young-Bum
+AU  - Kim YB
+AD  - Department of Molecular Medicine and Biopharmaceutical Sciences, Graduate School
+      of Convergence Science and Technology, College of Medicine, Seoul National
+      University, Seoul, Korea; Division of Endocrinology, Diabetes and Metabolism,
+      Department of Medicine, Beth Israel Deaconess Medical Center and Harvard Medical
+      School, Boston, MA, USA.
+FAU - Chung, Sung Soo
+AU  - Chung SS
+AD  - Biomedical Research Institute, Seoul National University Hospital, Seoul, Korea.
+      Electronic address: suschung@snu.ac.kr.
+FAU - Park, Kyong Soo
+AU  - Park KS
+AD  - Genomic Medicine Institute, Medical Research Center, Seoul National University
+      College of Medicine, Seoul, Korea; Department of Internal Medicine, Seoul
+      National University College of Medicine, Seoul, Korea; Department of Molecular
+      Medicine and Biopharmaceutical Sciences, Graduate School of Convergence Science
+      and Technology, College of Medicine, Seoul National University, Seoul, Korea.
+      Electronic address: kspark@snu.ac.kr.
+LA  - eng
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PL  - United States
+TA  - Cell Rep
+JT  - Cell reports
+JID - 101573691
+RN  - 0 (CCAAT-Enhancer-Binding Protein-beta)
+RN  - 0 (Small Ubiquitin-Related Modifier Proteins)
+RN  - EC 3.4.22.- (Cysteine Endopeptidases)
+RN  - EC 3.4.22.68 (Senp2 protein, mouse)
+SB  - IM
+MH  - *Adipocytes, Beige/metabolism
+MH  - Adipogenesis
+MH  - Adipose Tissue, Brown/metabolism
+MH  - Adipose Tissue, White/metabolism
+MH  - Animals
+MH  - *CCAAT-Enhancer-Binding Protein-beta/metabolism
+MH  - *Cysteine Endopeptidases/metabolism
+MH  - Energy Metabolism/physiology
+MH  - Mice
+MH  - Mice, Inbred C57BL
+MH  - Mice, Knockout
+MH  - *Small Ubiquitin-Related Modifier Proteins
+MH  - Thermogenesis/genetics
+OTO - NOTNLM
+OT  - *C/EBPbeta
+OT  - *HOXC10
+OT  - *SENP2
+OT  - *SUMO
+OT  - *adipocytes
+OT  - *adipogenesis
+OT  - *browning
+OT  - *obesity
+OT  - *thermogenesis
+OT  - *transcription
+COIS- Declaration of interests The authors declare no competing interest.
+EDAT- 2022/02/24 06:00
+MHDA- 2022/03/17 06:00
+CRDT- 2022/02/23 20:08
+PHST- 2021/07/06 00:00 [received]
+PHST- 2021/11/26 00:00 [revised]
+PHST- 2022/01/27 00:00 [accepted]
+PHST- 2022/02/23 20:08 [entrez]
+PHST- 2022/02/24 06:00 [pubmed]
+PHST- 2022/03/17 06:00 [medline]
+AID - S2211-1247(22)00132-2 [pii]
+AID - 10.1016/j.celrep.2022.110408 [doi]
+PST - ppublish
+SO  - Cell Rep. 2022 Feb 22;38(8):110408. doi: 10.1016/j.celrep.2022.110408.
+
+id: 33890651 Error occurred: PMID 33890651 is a duplicate of PMID 31311831
+
+PMID- 33279447
+OWN - NLM
+STAT- Publisher
+LR  - 20210525
+IS  - 2173-5743 (Electronic)
+IS  - 2173-5743 (Linking)
+DP  - 2020 Dec 2
+LID - S1699-258X(20)30268-0 [pii]
+LID - 10.1016/j.reuma.2020.11.001 [doi]
+FAU - Vicente Moreno, Jose
+AU  - Vicente Moreno J
+AD  - Presidente de Honor de la SER. Electronic address: dr.vicentemoreno@gmail.com.
+LA  - eng
+LA  - spa
+PT  - Journal Article
+TT  - Pere Barcelo.
+DEP - 20201202
+PL  - Spain
+TA  - Reumatol Clin (Engl Ed)
+JT  - Reumatologia clinica
+JID - 101717526
+SB  - IM
+EDAT- 2020/12/07 06:00
+MHDA- 2020/12/07 06:00
+CRDT- 2020/12/06 20:42
+PHST- 2020/12/06 20:42 [entrez]
+PHST- 2020/12/07 06:00 [pubmed]
+PHST- 2020/12/07 06:00 [medline]
+AID - S1699-258X(20)30268-0 [pii]
+AID - 10.1016/j.reuma.2020.11.001 [doi]
+PST - aheadofprint
+SO  - Reumatol Clin (Engl Ed). 2020 Dec 2. pii: S1699-258X(20)30268-0. doi:
+      10.1016/j.reuma.2020.11.001.
+
+PMID- 33278872
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20201217
+LR  - 20220418
+IS  - 2209-6051 (Electronic)
+IS  - 2209-6051 (Linking)
+VI  - 44
+DP  - 2020 Oct 25
+TI  - Physical distancing and non-respiratory notifiable diseases in the Northern
+      Territory, March-May 2020.
+LID - 10.33321/cdi.2020.44.90 [doi]
+AB  - ABSTRACT: Strict physical distancing measures and border controls have been
+      introduced in the Northern Territory (NT), and across Australia, to reduce the
+      spread of coronavirus disease 2019 (COVID-19). These measures have been
+      associated with reduced incidence of other respiratory illnesses such as
+      influenza. It is currently unclear what effect these measures have on
+      non-respiratory communicable diseases. The incidence of notifiable
+      non-respiratory communicable diseases within the NT, from 15 March to 15 May
+      2020, the period of most restrictive physical distancing, was monitored and is
+      here compared with two control periods: (i) the 4 months immediately prior and
+      (ii) the same two-month period from the preceding 5 years. During the study
+      period, there was a decline in incidence of communicable enteric illnesses,
+      particularly in shigellosis and rotavirus where person-to-person spread is the
+      main transmission route. There was an increase in chlamydial conjunctivitis in
+      areas with endemic trachoma, which is under further investigation. There was no
+      observed increase in conditions associated with crowding, such as those related
+      to group A streptococcal infection.
+CI  - (c) Commonwealth of Australia CC BY-NC-ND.
+FAU - Xie, Ouli
+AU  - Xie O
+AD  - Centre for Disease Control, Public Health Unit, Top End Health Service, Darwin,
+      Northern Territory, Australia.
+AD  - Menzies School of Health Research, Darwin, Northern Territory, Australia.
+FAU - Markey, Peter G
+AU  - Markey PG
+AD  - Centre for Disease Control, Public Health Unit, Top End Health Service, Darwin,
+      Northern Territory, Australia.
+FAU - Draper, Anthony D K
+AU  - Draper ADK
+AD  - Centre for Disease Control, Public Health Unit, Top End Health Service, Darwin,
+      Northern Territory, Australia.
+AD  - Menzies School of Health Research, Darwin, Northern Territory, Australia.
+FAU - Krause, Vicki L
+AU  - Krause VL
+AD  - Centre for Disease Control, Public Health Unit, Top End Health Service, Darwin,
+      Northern Territory, Australia.
+LA  - eng
+PT  - Journal Article
+DEP - 20201025
+PL  - Australia
+TA  - Commun Dis Intell (2018)
+JT  - Communicable diseases intelligence (2018)
+JID - 101735394
+SB  - IM
+MH  - COVID-19/*epidemiology/*prevention & control/transmission/virology
+MH  - Communicable Diseases/*epidemiology/microbiology
+MH  - Humans
+MH  - Incidence
+MH  - Northern Territory/epidemiology
+MH  - Pandemics/prevention & control
+MH  - *Physical Distancing
+MH  - SARS-CoV-2/isolation & purification
+OTO - NOTNLM
+OT  - Australia
+OT  - COVID-19
+OT  - Northern Territory
+OT  - physical distancing
+OT  - epidemiology
+EDAT- 2020/12/07 06:00
+MHDA- 2020/12/18 06:00
+CRDT- 2020/12/06 20:35
+PHST- 2020/12/06 20:35 [entrez]
+PHST- 2020/12/07 06:00 [pubmed]
+PHST- 2020/12/18 06:00 [medline]
+AID - 10.33321/cdi.2020.44.90 [doi]
+PST - epublish
+SO  - Commun Dis Intell (2018). 2020 Oct 25;44. doi: 10.33321/cdi.2020.44.90.
+
+PMID- 24792780
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20140806
+LR  - 20140610
+IS  - 1556-9519 (Electronic)
+IS  - 1556-3650 (Linking)
+VI  - 52
+IP  - 5
+DP  - 2014 Jun
+TI  - Evaluation of dexmedetomidine therapy for sedation in patients with toxicological
+      events at an academic medical center.
+PG  - 525-30
+LID - 10.3109/15563650.2014.913175 [doi]
+AB  - INTRODUCTION: Although clinical use of dexmedetomidine (DEX), an
+      alpha2-adrenergic receptor agonist, has increased, its role in patients admitted
+      to intensive care units secondary to toxicological sequelae has not been well
+      established. OBJECTIVES: The primary objective of this study was to describe
+      clinical and adverse effects observed in poisoned patients receiving DEX for
+      sedation. METHODS: This was an observational case series with retrospective chart
+      review of poisoned patients who received DEX for sedation at an academic medical
+      center. The primary endpoint was incidence of adverse effects of DEX therapy
+      including bradycardia, hypotension, seizures, and arrhythmias. For comparison,
+      vital signs were collected hourly for the 5 h preceding the DEX therapy and every
+      hour during DEX therapy until the therapy ended. Additional endpoints included
+      therapy duration; time within target Richmond Agitation Sedation Score (RASS);
+      and concomitant sedation, analgesia, and vasopressor requirements. RESULTS:
+      Twenty-two patients were included. Median initial and median DEX infusion rates
+      were similar to the commonly used rates for sedation. Median heart rate was lower
+      during the therapy (82 vs. 93 beats/minute, p < 0.05). Median systolic blood
+      pressure before and during therapy was similar (111 vs. 109 mmHg, p = 0.745).
+      Five patients experienced an adverse effect per study definitions during therapy.
+      No additional adverse effects were noted. Median time within target RASS and
+      duration of therapy was 6.5 and 44.5 h, respectively. Seventeen patients (77%)
+      had concomitant use of other sedation and/or analgesia with four (23%) of these
+      patients requiring additional agents after DEX initiation. Seven patients (32%)
+      had concomitant vasopressor support with four (57%) of these patients requiring
+      vasopressor support after DEX initiation. CONCLUSION: Common adverse effects of
+      DEX were noted in this study. The requirement for vasopressor support during
+      therapy warrants further investigation into the safety of DEX in poisoned
+      patients. Larger, comparative studies need to be performed before the use of DEX
+      can be routinely recommended in poisoned patients.
+FAU - Mohorn, P L
+AU  - Mohorn PL
+AD  - Department of Clinical Pharmacy and Outcomes Sciences, South Carolina College of
+      Pharmacy, University of South Carolina , Columbia, SC , USA.
+FAU - Vakkalanka, J P
+AU  - Vakkalanka JP
+FAU - Rushton, W
+AU  - Rushton W
+FAU - Hardison, L
+AU  - Hardison L
+FAU - Woloszyn, A
+AU  - Woloszyn A
+FAU - Holstege, C
+AU  - Holstege C
+FAU - Corbett, S M
+AU  - Corbett SM
+LA  - eng
+PT  - Journal Article
+DEP - 20140505
+PL  - England
+TA  - Clin Toxicol (Phila)
+JT  - Clinical toxicology (Philadelphia, Pa.)
+JID - 101241654
+RN  - 0 (Adrenergic alpha-2 Receptor Agonists)
+RN  - 0 (Hypnotics and Sedatives)
+RN  - 67VB76HONO (Dexmedetomidine)
+SB  - IM
+MH  - Academic Medical Centers
+MH  - Adolescent
+MH  - Adrenergic alpha-2 Receptor Agonists/adverse effects/*therapeutic use
+MH  - Adult
+MH  - Blood Pressure
+MH  - Dexmedetomidine/adverse effects/*therapeutic use
+MH  - Female
+MH  - Heart Rate
+MH  - Humans
+MH  - Hypnotics and Sedatives/adverse effects/*therapeutic use
+MH  - *Intensive Care Units
+MH  - Male
+MH  - Middle Aged
+MH  - Poisoning/*therapy
+MH  - Retrospective Studies
+MH  - Time Factors
+MH  - Young Adult
+OTO - NOTNLM
+OT  - Adverse effects
+OT  - Alpha2-adrenergic receptor agonist
+OT  - Overdose
+OT  - Safety
+EDAT- 2014/05/06 06:00
+MHDA- 2014/08/07 06:00
+CRDT- 2014/05/06 06:00
+PHST- 2014/05/06 06:00 [entrez]
+PHST- 2014/05/06 06:00 [pubmed]
+PHST- 2014/08/07 06:00 [medline]
+AID - 10.3109/15563650.2014.913175 [doi]
+PST - ppublish
+SO  - Clin Toxicol (Phila). 2014 Jun;52(5):525-30. doi: 10.3109/15563650.2014.913175.
+      Epub 2014 May 5.
+
+PMID- 30158200
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20190314
+LR  - 20220310
+IS  - 1756-1833 (Electronic)
+IS  - 0959-8138 (Linking)
+VI  - 362
+DP  - 2018 Aug 29
+TI  - Assessment of the genetic and clinical determinants of fracture risk: genome wide
+      association and mendelian randomisation study.
+PG  - k3225
+LID - 10.1136/bmj.k3225 [doi]
+AB  - OBJECTIVES: To identify the genetic determinants of fracture risk and assess the
+      role of 15 clinical risk factors on osteoporotic fracture risk. DESIGN:
+      Meta-analysis of genome wide association studies (GWAS) and a two-sample
+      mendelian randomisation approach. SETTING: 25 cohorts from Europe, United States,
+      east Asia, and Australia with genome wide genotyping and fracture data.
+      PARTICIPANTS: A discovery set of 37 857 fracture cases and 227 116 controls; with
+      replication in up to 147 200 fracture cases and 150 085 controls. Fracture cases
+      were defined as individuals (>18 years old) who had fractures at any skeletal
+      site confirmed by medical, radiological, or questionnaire reports. Instrumental
+      variable analyses were performed to estimate effects of 15 selected clinical risk
+      factors for fracture in a two-sample mendelian randomisation framework, using the
+      largest previously published GWAS meta-analysis of each risk factor. RESULTS: Of
+      15 fracture associated loci identified, all were also associated with bone
+      mineral density and mapped to genes clustering in pathways known to be critical
+      to bone biology (eg, SOST, WNT16, and ESR1) or novel pathways (FAM210A, GRB10,
+      and ETS2). Mendelian randomisation analyses showed a clear effect of bone mineral
+      density on fracture risk. One standard deviation decrease in genetically
+      determined bone mineral density of the femoral neck was associated with a 55%
+      increase in fracture risk (odds ratio 1.55 (95% confidence interval 1.48 to 1.63;
+      P=1.5x10(-68)). Hand grip strength was inversely associated with fracture risk,
+      but this result was not significant after multiple testing correction. The
+      remaining clinical risk factors (including vitamin D levels) showed no evidence
+      for an effect on fracture. CONCLUSIONS: This large scale GWAS meta-analysis for
+      fracture identified 15 genetic determinants of fracture, all of which also
+      influenced bone mineral density. Among the clinical risk factors for fracture
+      assessed, only bone mineral density showed a major causal effect on fracture.
+      Genetic predisposition to lower levels of vitamin D and estimated calcium intake
+      from dairy sources were not associated with fracture risk.
+CI  - Published by the BMJ Publishing Group Limited. For permission to use (where not
+      already granted under a licence) please go to
+      http://group.bmj.com/group/rights-licensing/permissions.
+FAU - Trajanoska, Katerina
+AU  - Trajanoska K
+AD  - Department of Internal Medicine, Erasmus MC, University Medical Center,
+      Rotterdam, Netherlands.
+AD  - Department of Epidemiology, Erasmus MC, University Medical Center, Rotterdam,
+      Netherlands.
+FAU - Morris, John A
+AU  - Morris JA
+AD  - Lady Davis Institute, Jewish General Hospital, McGill University, Montreal,
+      Quebec, Canada.
+AD  - Department of Human Genetics, McGill University, Montreal, Quebec, Canada.
+FAU - Oei, Ling
+AU  - Oei L
+AD  - Department of Internal Medicine, Erasmus MC, University Medical Center,
+      Rotterdam, Netherlands.
+AD  - Department of Epidemiology, Erasmus MC, University Medical Center, Rotterdam,
+      Netherlands.
+FAU - Zheng, Hou-Feng
+AU  - Zheng HF
+AD  - DaP Lab, School of Life Sciences, Westlake University and Westlake Institute for
+      Advanced Study, Hangzhou, Zhejiang, China.
+AD  - Institute of Aging Research and the Affiliated Hospital, School of Medicine,
+      Hangzhou Normal University, Hangzhou, Zhejiang, China.
+FAU - Evans, David M
+AU  - Evans DM
+AD  - Medical Research Council Integrative Epidemiology Unit, University of Bristol,
+      Bristol, UK.
+AD  - University of Queensland Diamantina Institute, University of Queensland,
+      Translational Research Institute, Brisbane, Australia.
+FAU - Kiel, Douglas P
+AU  - Kiel DP
+AD  - Institute for Aging Research, Hebrew SeniorLife, Harvard Medical School, Boston,
+      MA, USA.
+AD  - Department of Medicine, Beth Israel Deaconess Medical Center and Harvard Medical
+      School, Boston, MA, USA.
+FAU - Ohlsson, Claes
+AU  - Ohlsson C
+AD  - Centre for Bone and Arthritis Research, Department of Internal Medicine,
+      Institute of Medicine, Sahlgrenska, Gothenburg, Sweden.
+FAU - Richards, J Brent
+AU  - Richards JB
+AD  - Lady Davis Institute, Jewish General Hospital, McGill University, Montreal,
+      Quebec, Canada f.rivadeneira@erasmusmc.nl brent.richards@mcgill.ca.
+AD  - Department of Human Genetics, McGill University, Montreal, Quebec, Canada.
+FAU - Rivadeneira, Fernando
+AU  - Rivadeneira F
+AD  - Department of Internal Medicine, Erasmus MC, University Medical Center,
+      Rotterdam, Netherlands f.rivadeneira@erasmusmc.nl brent.richards@mcgill.ca.
+AD  - Department of Epidemiology, Erasmus MC, University Medical Center, Rotterdam,
+      Netherlands.
+CN  - GEFOS/GENOMOS consortium and the 23andMe research team
+LA  - eng
+GR  - UL1 RR024140/RR/NCRR NIH HHS/United States
+GR  - U01 AR045580/AR/NIAMS NIH HHS/United States
+GR  - R01 AR035582/AR/NIAMS NIH HHS/United States
+GR  - 14136/CRUK_/Cancer Research UK/United Kingdom
+GR  - R01 AG005394/AG/NIA NIH HHS/United States
+GR  - MC_UU_12013/4/MRC_/Medical Research Council/United Kingdom
+GR  - N01HC85081/HL/NHLBI NIH HHS/United States
+GR  - UL1 TR001881/TR/NCATS NIH HHS/United States
+GR  - R01 AG027574/AG/NIA NIH HHS/United States
+GR  - U01 AR045614/AR/NIAMS NIH HHS/United States
+GR  - R01 AR050066/AR/NIAMS NIH HHS/United States
+GR  - T32 AG000186/AG/NIA NIH HHS/United States
+GR  - N01HC85080/HL/NHLBI NIH HHS/United States
+GR  - U01 AR045583/AR/NIAMS NIH HHS/United States
+GR  - UL1 TR000124/TR/NCATS NIH HHS/United States
+GR  - N01 AG062103/AG/NIA NIH HHS/United States
+GR  - P01 AG005842/AG/NIA NIH HHS/United States
+GR  - R01 AR035583/AR/NIAMS NIH HHS/United States
+GR  - R01 AG023629/AG/NIA NIH HHS/United States
+GR  - G9800062/MRC_/Medical Research Council/United Kingdom
+GR  - U01 HL080295/HL/NHLBI NIH HHS/United States
+GR  - N01 HC085079/HC/NHLBI NIH HHS/United States
+GR  - R01 HL120393/HL/NHLBI NIH HHS/United States
+GR  - P30 AG012810/AG/NIA NIH HHS/United States
+GR  - U01 HL130114/HL/NHLBI NIH HHS/United States
+GR  - R01 HL103612/HL/NHLBI NIH HHS/United States
+GR  - N01 AG062106/AG/NIA NIH HHS/United States
+GR  - 110141/Z/15/Z/WT_/Wellcome Trust/United Kingdom
+GR  - MC_U147585819/MRC_/Medical Research Council/United Kingdom
+GR  - U01 AG018197/AG/NIA NIH HHS/United States
+GR  - MR/N003284/1/MRC_/Medical Research Council/United Kingdom
+GR  - MC_UU_12011/1/MRC_/Medical Research Council/United Kingdom
+GR  - R01 AG027576/AG/NIA NIH HHS/United States
+GR  - R01 AR072199/AR/NIAMS NIH HHS/United States
+GR  - N01HC85082/HL/NHLBI NIH HHS/United States
+GR  - R01 AR041398/AR/NIAMS NIH HHS/United States
+GR  - U01 AR045647/AR/NIAMS NIH HHS/United States
+GR  - U01 AR045632/AR/NIAMS NIH HHS/United States
+GR  - R01 HL105756/HL/NHLBI NIH HHS/United States
+GR  - MR/M004422/1/MRC_/Medical Research Council/United Kingdom
+GR  - MC_UP_A620_1014/MRC_/Medical Research Council/United Kingdom
+GR  - N01AG12100/AG/NIA NIH HHS/United States
+GR  - R01 AR035584/AR/NIAMS NIH HHS/United States
+GR  - N01HC55222/HL/NHLBI NIH HHS/United States
+GR  - P30 DK063491/DK/NIDDK NIH HHS/United States
+GR  - R01 AG032098/AG/NIA NIH HHS/United States
+GR  - U01 AR045654/AR/NIAMS NIH HHS/United States
+GR  - N01HC85083/HL/NHLBI NIH HHS/United States
+GR  - G0401527/MRC_/Medical Research Council/United Kingdom
+GR  - R01 AG026720/AG/NIA NIH HHS/United States
+GR  - N01HC85086/HL/NHLBI NIH HHS/United States
+GR  - N01 AG062101/AG/NIA NIH HHS/United States
+GR  - G1000143/MRC_/Medical Research Council/United Kingdom
+GR  - U01 AG027810/AG/NIA NIH HHS/United States
+GR  - R01 AG005407/AG/NIA NIH HHS/United States
+GR  - R01 HL087652/HL/NHLBI NIH HHS/United States
+PT  - Journal Article
+PT  - Meta-Analysis
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, N.I.H., Intramural
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20180829
+PL  - England
+TA  - BMJ
+JT  - BMJ (Clinical research ed.)
+JID - 8900488
+SB  - IM
+MH  - Adolescent
+MH  - Adult
+MH  - Aged
+MH  - Bone Density/*genetics
+MH  - Fractures, Bone/epidemiology/*genetics/physiopathology/prevention & control
+MH  - Genetic Predisposition to Disease/epidemiology
+MH  - *Genome-Wide Association Study
+MH  - Humans
+MH  - *Mendelian Randomization Analysis
+MH  - Middle Aged
+MH  - Multicenter Studies as Topic
+MH  - Osteoporosis/epidemiology/*genetics/physiopathology
+MH  - Risk Factors
+MH  - Young Adult
+PMC - PMC6113773
+COIS- Competing interests: All authors have completed the ICMJE uniform disclosure form
+      at www.icmje.org/coi_disclosure.pdf and declare: support from the organisations
+      listed in the funding statement for the submitted work; BMP serves on the data
+      safety monitoring board of a clinical trial funded by the manufacturer (Zoll
+      LifeCor) and on the Steering Committee of the Yale Open Data Access Project
+      funded by Johnson and Johnson; CEE is currently employed by AstraZeneca; SR has
+      received grants from Eli Lilly, Amgen, UCB, and Ultragenyx, and has provided
+      consultation for Novartis; KE is currently employed by Biogen; US, UT, GT, and
+      KSt are employed by deCODE genetics/Amgen; and AK, JYT, and DAH are employed by
+      23andMe, and hold stock or stock options in 23andMe.
+IR  - Forgett V
+FIR - Forgett, Vincenzo
+IR  - Leong A
+FIR - Leong, Aaron
+IR  - Ahmad OS
+FIR - Ahmad, Omar S
+IR  - Laurin C
+FIR - Laurin, Charles
+IR  - Mokry LE
+FIR - Mokry, Lauren E
+IR  - Ross S
+FIR - Ross, Stephanie
+IR  - Elks CE
+FIR - Elks, Cathy E
+IR  - Bowden J
+FIR - Bowden, Jack
+IR  - Warrington NM
+FIR - Warrington, Nicole M
+IR  - Kleinman A
+FIR - Kleinman, Aaron
+IR  - Willems SM
+FIR - Willems, Sara M
+IR  - Wright D
+FIR - Wright, Daniel
+IR  - Day FR
+FIR - Day, Felix R
+IR  - Murray A
+FIR - Murray, Anna
+IR  - Ruth KS
+FIR - Ruth, Katherine S
+IR  - Tsilidis KK
+FIR - Tsilidis, Konstantinos K
+IR  - Ackert-Bicknell CL
+FIR - Ackert-Bicknell, Cheryl L
+IR  - Bassett JHD
+FIR - Bassett, J H Duncan
+IR  - van der Eerden BCJ
+FIR - van der Eerden, Bram C J
+IR  - Gautvik K
+FIR - Gautvik, Kaare M
+IR  - Reppe S
+FIR - Reppe, Sjur
+IR  - Williams GR
+FIR - Williams, Graham R
+IR  - Medina-Gomez C
+FIR - Medina-Gomez, Carolina
+IR  - Estrada K
+FIR - Estrada, Karol
+IR  - Amin N
+FIR - Amin, Najaf
+IR  - Bis JC
+FIR - Bis, Joshua C
+IR  - Breda S
+FIR - Breda, Stephan
+IR  - Chasman DI
+FIR - Chasman, Daniel I
+IR  - Demissie S
+FIR - Demissie, Serkalem
+IR  - Enneman AW
+FIR - Enneman, Anke W
+IR  - Hsu YH
+FIR - Hsu, Yi-Hsiang
+IR  - Ingvarsson T
+FIR - Ingvarsson, Thorvaldur
+IR  - Kahonen M
+FIR - Kahonen, Mika
+IR  - Kammerer C
+FIR - Kammerer, Candace
+IR  - Lacroix AZ
+FIR - Lacroix, Andrea Z
+IR  - Li G
+FIR - Li, Guo
+IR  - Liu CT
+FIR - Liu, Ching-Ti
+IR  - Liu Y
+FIR - Liu, Yongmei
+IR  - Lorentzon M
+FIR - Lorentzon, Mattias
+IR  - Magi R
+FIR - Magi, Reedik
+IR  - Mihailov E
+FIR - Mihailov, Evelin
+IR  - Mlani L
+FIR - Mlani, Lili
+IR  - Moayyeri A
+FIR - Moayyeri, Alireza
+IR  - Nielson CM
+FIR - Nielson, Carrie M
+IR  - Nerea A
+FIR - Nerea, Alonso
+IR  - Sham PC
+FIR - Sham, Pack Chung
+IR  - Siggeirsdotir K
+FIR - Siggeirsdotir, Kristin
+IR  - Sigurdsson G
+FIR - Sigurdsson, Gunnar
+IR  - Thorsteinsdottir U
+FIR - Thorsteinsdottir, Unnur
+IR  - Trompet S
+FIR - Trompet, Stella
+IR  - Thorleifsson G
+FIR - Thorleifsson, Gudmar
+IR  - Vandenput L
+FIR - Vandenput, Liesbeth
+IR  - van der Velde N
+FIR - van der Velde, Nathalie
+IR  - Viikari J
+FIR - Viikari, Jorma
+IR  - Xiao SM
+FIR - Xiao, Su-Mei
+IR  - Hua Zhao J
+FIR - Hua Zhao, Jing
+IR  - Akesson KE
+FIR - Akesson, Kristina E
+IR  - Andersen M
+FIR - Andersen, Marianne
+IR  - Atanasovska B
+FIR - Atanasovska, Biljana
+IR  - Balcells S
+FIR - Balcells, Susana
+IR  - Eriksson J
+FIR - Eriksson, Joel
+IR  - Formosa MM
+FIR - Formosa, Melissa M
+IR  - Garcia-Ibarbia C
+FIR - Garcia-Ibarbia, Carmen
+IR  - Gonzalez-Macias J
+FIR - Gonzalez-Macias, Jesus
+IR  - Garcia-Giralt N
+FIR - Garcia-Giralt, Natalia
+IR  - Hallmans G
+FIR - Hallmans, Goran
+IR  - Karlsson M
+FIR - Karlsson, Magnus
+IR  - Khusainova R
+FIR - Khusainova, Rita
+IR  - Kim BJ
+FIR - Kim, Beom-Jun
+IR  - Lee SH
+FIR - Lee, Seung Hun
+IR  - Leung PC
+FIR - Leung, Ping C
+IR  - Mallmin H
+FIR - Mallmin, Hans
+IR  - Kwok TCY
+FIR - Kwok, Timothy C Y
+IR  - Masi L
+FIR - Masi, Laura
+IR  - Melin BS
+FIR - Melin, Beatrice S
+IR  - Mencej-Bedrac S
+FIR - Mencej-Bedrac, Simona
+IR  - Nethander M
+FIR - Nethander, Maria
+IR  - Olmos JM
+FIR - Olmos, Jose M
+IR  - Kollia P
+FIR - Kollia, Panagoula
+IR  - Prezelj J
+FIR - Prezelj, Janez
+IR  - Van Schoor NM
+FIR - Van Schoor, Natasja M
+IR  - Svensson O
+FIR - Svensson, Olle
+IR  - Szulc P
+FIR - Szulc, Pawel
+IR  - Valero C
+FIR - Valero, Carmen
+IR  - Woo J
+FIR - Woo, Jean
+IR  - Brandi M
+FIR - Brandi, Maria
+IR  - Cheng S
+FIR - Cheng, Sulin
+IR  - Chapurlat R
+FIR - Chapurlat, Roland
+IR  - Christiansen C
+FIR - Christiansen, Claus
+IR  - Cooper C
+FIR - Cooper, Cyrus
+IR  - Dedoussis G
+FIR - Dedoussis, George
+IR  - Eisman JA
+FIR - Eisman, John A
+IR  - Frost M
+FIR - Frost, Morten
+IR  - Giroux S
+FIR - Giroux, Sylvie
+IR  - Grinberg D
+FIR - Grinberg, Daniel
+IR  - Goltzman D
+FIR - Goltzman, David
+IR  - Hocking LJ
+FIR - Hocking, Lynne J
+IR  - Van Hul W
+FIR - Van Hul, Wim
+IR  - Koh JM
+FIR - Koh, Jung-Min
+IR  - Rejnmark L
+FIR - Rejnmark, Lars
+IR  - Jensen JB
+FIR - Jensen, Jens-Erik B
+IR  - Langdahl B
+FIR - Langdahl, Bente
+IR  - Lewis JR
+FIR - Lewis, Joshua R
+IR  - Lorenc RS
+FIR - Lorenc, Roman S
+IR  - Khusnutdinova E
+FIR - Khusnutdinova, Elza
+IR  - Marc J
+FIR - Marc, Janja
+IR  - McGuigan FE
+FIR - McGuigan, Fiona E
+IR  - Mellstrom D
+FIR - Mellstrom, Dan
+IR  - Michaelsson K
+FIR - Michaelsson, Karl
+IR  - Nogues X
+FIR - Nogues, Xavier
+IR  - Nordstrom P
+FIR - Nordstrom, Peter
+IR  - Obermayer-Pietsch B
+FIR - Obermayer-Pietsch, Barbara
+IR  - Pettersson-Kymmer U
+FIR - Pettersson-Kymmer, Ulrika
+IR  - Prince RL
+FIR - Prince, Richard L
+IR  - Reeve J
+FIR - Reeve, Jonathan
+IR  - Reid DM
+FIR - Reid, David M
+IR  - Riancho JA
+FIR - Riancho, Jose A
+IR  - Rousseau F
+FIR - Rousseau, Francois
+IR  - Tang NLS
+FIR - Tang, Nelson L S
+IR  - Xuereb-Anastasi A
+FIR - Xuereb-Anastasi, Angela
+IR  - Leslie WD
+FIR - Leslie, William D
+IR  - Evans DS
+FIR - Evans, Daniel S
+IR  - Cummings SR
+FIR - Cummings, Steven R
+IR  - Cauley J
+FIR - Cauley, Jane
+IR  - van Duijn CM
+FIR - van Duijn, Cornelia M
+IR  - Brown M
+FIR - Brown, Matt
+IR  - Duncan EL
+FIR - Duncan, Emma L
+IR  - de Groot LC
+FIR - de Groot, Lisette CPGM
+IR  - Esko T
+FIR - Esko, Tonu
+IR  - Gudnason V
+FIR - Gudnason, Vilmundar
+IR  - Harris TB
+FIR - Harris, Tamara B
+IR  - Jackson RD
+FIR - Jackson, Rebecca D
+IR  - Jukema JW
+FIR - Jukema, J Wouter
+IR  - Ikram MA
+FIR - Ikram, M Arfan
+IR  - Karasik D
+FIR - Karasik, David
+IR  - Kaptoge S
+FIR - Kaptoge, Stephen
+IR  - Khaw KT
+FIR - Khaw, Kay-Tee
+IR  - Kung AW
+FIR - Kung, Annie Wai-Chee
+IR  - Lehtimaki T
+FIR - Lehtimaki, Terho
+IR  - Lyytikainen LP
+FIR - Lyytikainen, Leo-Pekka
+IR  - Lips P
+FIR - Lips, Paul
+IR  - Luben R
+FIR - Luben, Robert
+IR  - Metspalu A
+FIR - Metspalu, Andres
+IR  - van Meurs JBJ
+FIR - van Meurs, Joyce B J
+IR  - Minster RL
+FIR - Minster, Ryan L
+IR  - Orwoll E
+FIR - Orwoll, Eric
+IR  - Oei E
+FIR - Oei, Edwin
+IR  - Psaty BM
+FIR - Psaty, Bruce M
+IR  - Raitakari OT
+FIR - Raitakari, Olli T
+IR  - Ralston SH
+FIR - Ralston, Stuart H
+IR  - Ridker PM
+FIR - Ridker, Paul M
+IR  - Robbins JA
+FIR - Robbins, John A
+IR  - Smith AV
+FIR - Smith, Albert V
+IR  - Spector TD
+FIR - Spector, Tim D
+IR  - Styrkarsdottir U
+FIR - Styrkarsdottir, Unnur
+IR  - Zmuda J
+FIR - Zmuda, Joseph
+IR  - Tranah GJ
+FIR - Tranah, Gregory J
+IR  - Stefansson K
+FIR - Stefansson, Kari
+IR  - Uitterlinden AG
+FIR - Uitterlinden, Andre G
+IR  - Zillikens MC
+FIR - Zillikens, M Carola
+IR  - Ntzani EE
+FIR - Ntzani, Evangelia E
+IR  - Evangelou E
+FIR - Evangelou, Evangelos
+IR  - Ioannidis JPA
+FIR - Ioannidis, John P A
+IR  - Perry JRB
+FIR - Perry, John R B
+IR  - Tung JY
+FIR - Tung, Joyce Y
+IR  - Hinds DA
+FIR - Hinds, David A
+IR  - Scott R
+FIR - Scott, Robert
+IR  - Agee M
+FIR - Agee, Michelle
+IR  - Alipanahi B
+FIR - Alipanahi, Babak
+IR  - Auton A
+FIR - Auton, Adam
+IR  - Bell RK
+FIR - Bell, Robert K
+IR  - Bryc K
+FIR - Bryc, Katarzyna
+IR  - Elson SL
+FIR - Elson, Sarah L
+IR  - Fontanillas P
+FIR - Fontanillas, Pierre
+IR  - Furlotte NA
+FIR - Furlotte, Nicholas A
+IR  - Huber KE
+FIR - Huber, Karen E
+IR  - Litterman NK
+FIR - Litterman, Nadia K
+IR  - McIntyre MH
+FIR - McIntyre, Matthew H
+IR  - Mountain JL
+FIR - Mountain, Joanna L
+IR  - Noblin ES
+FIR - Noblin, Elizabeth S
+IR  - Northover CAM
+FIR - Northover, Carrie A M
+IR  - Pitts SJ
+FIR - Pitts, Steven J
+IR  - Sathirapongsasuti JF
+FIR - Sathirapongsasuti, J Fah
+IR  - Sazonova OV
+FIR - Sazonova, Olga V
+IR  - Shelton JF
+FIR - Shelton, Janie F
+IR  - Tian S
+FIR - Tian, Suyash
+IR  - Tian C
+FIR - Tian, Chao
+IR  - Vacic V
+FIR - Vacic, Vladimir
+IR  - Wilson. CH
+FIR - Wilson., Catherine H
+EDAT- 2018/08/31 06:00
+MHDA- 2019/03/15 06:00
+CRDT- 2018/08/31 06:00
+PHST- 2018/08/31 06:00 [entrez]
+PHST- 2018/08/31 06:00 [pubmed]
+PHST- 2019/03/15 06:00 [medline]
+AID - 10.1136/bmj.k3225 [doi]
+PST - epublish
+SO  - BMJ. 2018 Aug 29;362:k3225. doi: 10.1136/bmj.k3225.
+
+PMID- 151222
+OWN - NLM
+STAT- MEDLINE
+DCOM- 19781118
+LR  - 20041117
+IS  - 0377-5038 (Print)
+IS  - 0377-5038 (Linking)
+VI  - 24
+IP  - 3
+DP  - 1978 Jul-Sep
+TI  - Histochemical and histoenzymic researches in coronary sudden death.
+PG  - 229-32
+AB  - Using Lie's technique in order to evidence the fuchsinophilia of the early
+      ischaemic zones and Falck-Hillarp's technique to appreciate the disappearance of
+      the myocardial adrenergic network, the authors followed up the concordance
+      between the precocity of the ischaemia and the frequency of the acidophilia.
+      Studying 54 cases of coronary sudden death by using 100-300 slides in each case,
+      the fuchsinophilic zones were evidenced in 46 per cent of the cases, aspects
+      indicating the morphologic substrate of the sudden death with ectopic ventricular
+      electrical activity centres. The results of fluorescence Falck-Hillarps's
+      technique are the same as those obtained by light microscopy, which is to be
+      preferred in routine practice. Farber-Louviere's microscopic histoenzymic method
+      for succinate-dehydrogenase presents multiple advantages, so that it is
+      preferable to Kollin-Neoral's macroscopic reaction.
+FAU - Alexandru, E
+AU  - Alexandru E
+FAU - Dobrescu, G
+AU  - Dobrescu G
+LA  - eng
+PT  - Journal Article
+PL  - Romania
+TA  - Morphol Embryol (Bucur)
+JT  - Morphologie et embryologie
+JID - 7512183
+RN  - 0 (Catecholamines)
+RN  - EC 1.3.99.1 (Succinate Dehydrogenase)
+SB  - IM
+MH  - Catecholamines/*metabolism
+MH  - Coronary Disease/*metabolism/pathology
+MH  - Death, Sudden/*etiology
+MH  - Histocytochemistry
+MH  - Humans
+MH  - Myocardium/*metabolism/pathology
+MH  - Succinate Dehydrogenase/*metabolism
+EDAT- 1978/07/01 00:00
+MHDA- 1978/07/01 00:01
+CRDT- 1978/07/01 00:00
+PHST- 1978/07/01 00:00 [pubmed]
+PHST- 1978/07/01 00:01 [medline]
+PHST- 1978/07/01 00:00 [entrez]
+PST - ppublish
+SO  - Morphol Embryol (Bucur). 1978 Jul-Sep;24(3):229-32.

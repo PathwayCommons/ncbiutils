@@ -1,12 +1,12 @@
-from pydantic import BaseModel, HttpUrl, validator
-from typing import ClassVar, Any, Optional, Tuple  # List, Dict, Generator, Union
-from ncbiutils.types import HttpMethodEnum, DbEnum  # RetModeEnum, RetTypeEnum
+from pydantic import BaseModel, validator
+from typing import ClassVar, Any, Optional, Tuple, List, Dict, Generator, Union
+from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum
 from ncbiutils.http import safe_requests
 
-# import io
-# import Bio
+import io
+from Bio import Medline
 
-# from loguru import logger
+from loguru import logger
 
 
 class Eutil(BaseModel):
@@ -15,7 +15,7 @@ class Eutil(BaseModel):
 
     Class attributes
     ----------
-    base_url : HttpUrl
+    base_url : str
         Base URL for the various NCBI E-Utilities
     retmax_limit : int
         Maximum number of records that can be returned
@@ -31,17 +31,17 @@ class Eutil(BaseModel):
 
     Methods
     ----------
-    request(url: HttpUrl, **opts)
+    request(url: str, **opts)
         Make request with appropriate body form parameters
 
     """
 
-    base_url: ClassVar[HttpUrl] = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
+    base_url: ClassVar[str] = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
     retmax_limit: ClassVar[int] = 10000
 
     retstart: int = 0
     retmax: int = retmax_limit
-    api_key: str = None
+    api_key: Optional[str] = None
 
     @validator('retmax')
     def retmax_is_nonneg_lt_limit(cls, v):
@@ -49,9 +49,9 @@ class Eutil(BaseModel):
             raise ValueError(f'Must be positive number less than {cls.retmax_limit}')
         return v
 
-    def request(self, url: HttpUrl, **opts) -> Tuple[Optional[Exception], Any]:
+    def request(self, url: str, **opts) -> Tuple[Optional[Exception], Any]:
         """Call one of the NCBI E-Utilities and return (error, requests.Response)"""
-        params = {'retstart': self.retstart, 'retmax': self.retmax}
+        params: Dict[str, Union[str, int]] = {'retstart': self.retstart, 'retmax': self.retmax}
         params.update(opts)
         if self.api_key:
             params.update({'api_key': self.api_key})
@@ -65,7 +65,7 @@ class Efetch(Eutil):
 
     Class attributes
     ----------
-    efetch_url : HttpUrl
+    efetch_url : str
         The E-Utilities URL for EFETCH
 
      Methods
@@ -75,81 +75,80 @@ class Efetch(Eutil):
 
     """
 
-    url: ClassVar[HttpUrl] = f'{Eutil.base_url}efetch.fcgi'
+    url: ClassVar[str] = f'{Eutil.base_url}efetch.fcgi'
 
-    def fetch(self, db: DbEnum, id: str, **opts) -> Tuple[Optional[Exception], Any]:
+    def _fetch(self, db: DbEnum, id: str, **opts) -> Tuple[Optional[Exception], Any]:
         """Call EFETCH E-Utility for the given id and db"""
-        params = {'db': db, 'id': id}
+        params: Dict[str, Union[str, int]] = {'db': db, 'id': id}
         params.update(opts)
         err, response = self.request(self.url, **params)
         return err, response
 
 
-# class PubMedFetch(Efetch):
-#     """
-#     A class that retrieves article information from PubMed
+class PubMedFetch(Efetch):
+    """
+    A class that retrieves article information from PubMed
 
-#     Class attributes
-#     ----------
-#     db : DbEnum
-#         The pubmed database
+    Class attributes
+    ----------
+    db : DbEnum
+        The pubmed database
 
-#     Methods
-#     -------
-#     fetch(uids: List[str])
-#         Retrieve text records given the list of uids
+    Methods
+    -------
+    fetch(uids: List[str])
+        Retrieve text records given the list of uids
 
-#     """
+    """
 
-#     db: ClassVar[DbEnum] = DbEnum.pubmed
+    db: ClassVar[DbEnum] = DbEnum.pubmed
 
-#     retmode: RetModeEnum = RetModeEnum.text
-#     rettype: RetTypeEnum = RetTypeEnum.medline
+    retmode: RetModeEnum = RetModeEnum.text
+    rettype: RetTypeEnum = RetTypeEnum.medline
 
-#     def fetch(self, ids: List[str]) -> Tuple[Optional[Exception], Any]:
-#         """Return id, and text (i.e. title + abstract) given a PubMed id"""
-#         id = ','.join(ids)
-#         params = {'retmode': self.retmode, 'rettype': self.rettype}
-#         err, response = super().fetch(db=self.db, id=id, **params)
-#         return err, response
+    def fetch(self, ids: List[str]) -> Tuple[Optional[Exception], Any]:
+        """Return id, and text (i.e. title + abstract) given a PubMed id"""
+        id = ','.join(ids)
+        params: Dict[str, Union[str, int]] = {'retmode': self.retmode, 'rettype': self.rettype}
+        err, response = self._fetch(db=self.db, id=id, **params)
+        return err, response
 
-#     def _parse_medline(self, text: str):
-#         """Return a list article records given Medline text
-#         See https://www.nlm.nih.gov/bsd/mms/medlineelements.html
-#         """
-#         f = io.StringIO(text)
-#         records = Bio.Medline.parse(f)
-#         docs = []
-#         # for record in records:
-#         #     if "PMID" not in record:
-#         #         raise HTTPException(status_code=422, detail=record["id:"][-1])
-#         #     pmid = record["PMID"]
-#         #     abstract = record["AB"] if "AB" in record else ""
-#         #     title = record["TI"] if "TI" in record else ""
-#         #     text = " ".join(_compact([title, abstract]))
-#         #     docs.append({"uid": pmid, "text": text})
-#         return docs
+    def _parse_medline(self, text: str) -> List[Dict[str, str]]:
+        """Return a list of dicts of Medline data (class 'Bio.Medline.Record') given Medline text
 
-#     def _parse_reponse(self, response):
-#         # if self.retmode = RetModeEnum.medline else raise ValueError(f"Unsupported eutil '{eutil}''")
-#         pass
+        Caveats
+          - PMIDs can be duplicates, deleted and output garbage
+          - Output is not guaranteed to be consistent with PubMed DTD
+        See https://biopython.org/docs/1.75/api/Bio.Medline.html#Bio.Medline.Record
+        """
+        f = io.StringIO(text)
+        records = Medline.parse(f)  # class 'Bio.Medline.Record'>
+        return list(records)
 
-#     def get_articles(self, uids: List[str]) -> Generator[List[Dict[str, str]], None, None]:
-#         """Return article fields for each PubMed ID"""
-#         len_uids = len(uids)
-#         num_fetches = (len_uids // self.retmax_limit) + (1 if len_uids % self.retmax_limit > 0 else 0)
-#         for i in range(num_fetches):
-#             lower = i * self.retmax_limit
-#             upper = min([lower + self.retmax_limit, len_uids])
-#             ids = uids[lower:upper]
-#             try:
-#                 error, response = self.fetch(ids)
-#                 if error:
-#                     raise error
-#             except Exception as e:
-#                 logger.warning(f"Error encountered in uids_to_docs: {e}")
-#                 logger.warning(f"Bypassing docs {lower} through {upper - 1} of {len_uids - 1}")
-#                 continue
-#             else:
-#                 logger.info(f'Retrieved article {lower} through {upper - 1} of {len_uids - 1}')
-#                 yield self._parse_reponse(response)
+    def _parse_response(self, response) -> List[Dict[str, str]]:
+        """Delegate to an implementation or raise ValueError."""
+        if self.rettype == RetTypeEnum.medline:
+            return self._parse_medline(response.text)
+        else:
+            raise ValueError(f'Unsupported retmode: {self.rettype}')
+
+    def _chunks(self, lst: List[str], n: int) -> Generator[List[str], None, None]:
+        """Yield successive n-sized chunks from lst."""
+        for i in range(0, len(lst), n):
+            yield lst[i : i + n]
+
+    def get_records(self, uids: List[str]) -> Generator[List[Dict[str, str]], None, None]:
+        """Yields a list of records for PubMed uids"""
+        i = 0
+        for ids in self._chunks(uids, self.retmax):
+            try:
+                error, response = self.fetch(ids)
+                if error:
+                    raise error
+            except Exception as e:
+                logger.warning(f"Error encountered in get_articles: {e}")
+                continue
+            else:
+                logger.info(f'Retrieved record chunk {i}')
+                i += 1
+                yield self._parse_response(response)
