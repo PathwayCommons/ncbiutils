@@ -77,7 +77,7 @@ class TestPubMedFetchClass:
             uilist_pubmed_fetch._parse_response(None)
 
     def test_get_records(self, mocker, medlines_response):
-        mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value = (None, medlines_response))
+        mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(None, medlines_response))
         # FYI these uids sync up with the 'medlines.txt' fixture
         uids = ['35196497', '33890651', '33279447', '33278872', '24792780', '30158200', '151222']
         chunks = self.pubmed_fetch.get_records(uids)

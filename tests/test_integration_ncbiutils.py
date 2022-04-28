@@ -1,7 +1,5 @@
 import pytest
-from ncbiutils.ncbiutils import Eutil, Efetch, PubMedFetch, RetModeEnum, RetTypeEnum
-
-# from ncbiutils.types import DbEnum
+from ncbiutils.ncbiutils import Eutil, Efetch, PubMedFetch
 
 
 #############################
