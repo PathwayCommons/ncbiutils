@@ -1,14 +1,13 @@
 import pytest
-from ncbiutils.ncbiutils import Eutil, Efetch  # PubMedFetch, RetModeEnum, RetTypeEnum
-
-# from ncbiutils.types import DbEnum
+from ncbiutils.ncbiutils import Eutil, Efetch, PubMedFetch
+from ncbiutils.types import DbEnum, RetTypeEnum, RetModeEnum
 
 NCBI_EUTILS_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 
 
-#############################
-#   Unit tests
-#############################
+# #############################
+# #   Unit tests
+# #############################
 
 
 class TestEutilClass:
@@ -31,16 +30,22 @@ class TestEfetchClass:
         assert Efetch.url == f'{NCBI_EUTILS_BASE_URL}efetch.fcgi'
 
 
-# class TestPubMedFetchClass:
-#     pubmed_fetch = PubMedFetch()
+class TestPubMedFetchClass:
+    pubmed_fetch = PubMedFetch()
 
-#     def test_class_attributes(self):
-#         assert PubMedFetch.db == DbEnum.pubmed
-#         assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
-#         assert isinstance(self.pubmed_fetch.rettype, RetTypeEnum)
+    @pytest.fixture(autouse=False)
+    def medlines_text(self, shared_datadir):
+        text = (shared_datadir / 'medlines_valid.txt').read_text()
+        return text
 
-#     def test_parse_medline(self):
-#         pass
+    def test_class_attributes(self):
+        assert PubMedFetch.db == DbEnum.pubmed
+        assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
+        assert isinstance(self.pubmed_fetch.rettype, RetTypeEnum)
 
-#     def test_parse_response(self):
-#         pass
+    def test_parse_medline(self, medlines_text):
+        parsed = self.pubmed_fetch._parse_medline(medlines_text)
+        assert parsed is not None
+
+    def test_get_articles(self):
+        assert self.pubmed_fetch.get_articles is not None

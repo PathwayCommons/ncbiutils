@@ -81,9 +81,9 @@ jobs:
       - name: Test with pytest
         run: poetry run pytest tests --ignore-glob=tests/test_integration* --cov ./ncbiutils --cov-report=xml
 
-    # - name: Type check with mypy
-    #   run: |
-    #     mypy . --cache-dir=/dev/null
+      - name: Type check with mypy
+        run: poetry run mypy . --cache-dir=/dev/null
+
     # - name: Upload coverage to Codecov
     #   # We don't want to push coverge for every job in the matrix.
     #   # Rather arbitrarily, choose to push on Ubuntu with Python 3.7.
