@@ -112,16 +112,16 @@ class PubMedFetch(Efetch):
         err, response = self._fetch(db=self.db, id=id, **params)
         return err, response
 
-    def _parse_xml(self, response) -> List[Citation]:
+    def _parse_xml(self, data: bytes) -> List[Citation]:
         """Return a list of Citations given the server response"""
         parser = PubmedXmlParser()
-        records = parser.parse(response.raw)
+        records = parser.parse(data)
         return list(records)
 
-    def _parse_response(self, response) -> List[Citation]:
+    def _parse_response(self, data: bytes) -> List[Citation]:
         """Delegate to an implementation or raise ValueError."""
         if self.retmode == RetModeEnum.xml and self.rettype is None:
-            return self._parse_xml(response)
+            return self._parse_xml(data)
         else:
             raise ValueError(f'Unsupported retmode: {self.retmode}')
 
@@ -138,5 +138,5 @@ class PubMedFetch(Efetch):
             records = None
             error, response = self.fetch(ids)
             if not error and response:
-                records = self._parse_response(response)
+                records = self._parse_response(response.content)
             yield error, records, ids
