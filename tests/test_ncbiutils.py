@@ -12,8 +12,8 @@ NCBI_EUTILS_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 
 
 class MockResponse:
-    def __init__(self, raw):
-        self.raw = raw
+    def __init__(self, content):
+        self.content = content
 
 
 # #############################
@@ -61,7 +61,7 @@ class TestPubMedFetchClass:
     def test_parse_reponse(self):
         uilist_pubmed_fetch = PubMedFetch(rettype=RetTypeEnum.uilist)
         with pytest.raises(ValueError):
-            uilist_pubmed_fetch._parse_response(None)
+            uilist_pubmed_fetch._parse_response(b'')
 
     def test_get_records_chunks(self, mocker, fetch_response):
         uids = ['35196497', '33278872', '24792780', '30158200', '151222']
