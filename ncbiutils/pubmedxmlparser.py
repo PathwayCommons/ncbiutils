@@ -1,32 +1,46 @@
-from pydantic import BaseModel, NoneIsAllowedError
-from typing import Optional, List, Generator, Dict
+from pydantic import BaseModel
+from typing import Optional, List, Generator, Any
 from lxml import etree
 import re
+from typing_extensions import TypeAlias
 
 #############################
 #   Aliases
 #############################
 
-XmlTree = etree._ElementTree
-Element = etree._Element
-PubmedArticle = Element
-PubmedArticleSet = Element
+XmlTree: TypeAlias = etree._ElementTree
+Element: TypeAlias = etree._Element
+PubmedArticle: TypeAlias = Element
+PubmedArticleSet: TypeAlias = Element
 
 
-#############################
-#   Helpers
-#############################
+##################################
+#   XML package-specific
+##################################
 
+def _from_raw(data: bytes) -> XmlTree:
+    """Parse an xml tree representation from bytes
 
-def _find_safe( element: Element, xpath: str ) -> Optional[Element]:
-    """Safe find, where None is returned in case xpath returns no element"""
+    Do not provide parser text - ambiguity wrt prolog encoding can occur
+    See https://lxml.de/parsing.html#python-unicode-strings
+    """
+    root = etree.XML(data)
+    element_tree = etree.ElementTree(root)
+    return element_tree
+
+def _find_all(element: Element, xpath: str) -> List[Element]:
+    """Wrapper for finding elements for xpath query, possibly empty"""
+    return element.findall(xpath);
+
+def _find_safe(element: Element, xpath: str) -> Optional[Element]:
+    """Safe find, where None is returned in case xpath query returns no element"""
     optional = element.find(xpath)
     return optional if etree.iselement(optional) else None
 
 
-def _text_safe( element: Element, xpath: str ) -> Optional[str]:
-    """Safe get for element text, where None is returned in case  xpath returns no element"""
-    optional = _find_safe( element, xpath )
+def _text_safe(element: Element, xpath: str) -> Optional[str]:
+    """Safe get for element text, where None is returned in case xpath query returns no element"""
+    optional = _find_safe(element, xpath)
     return optional.text if optional is not None else None
 
 
@@ -42,9 +56,11 @@ def _collect_element_text_with_prefix(element: Element, attribute: str):
     return ': '.join([prefix, text]) if prefix else text
 
 
+
 #############################
 #   Classes
 #############################
+
 
 class Author(BaseModel):
     """
@@ -72,16 +88,15 @@ class Author(BaseModel):
     fore_name: Optional[str]
     last_name: Optional[str]
     initials: Optional[str]
-    emails: Optional[str]
     collective_name: Optional[str]
     orcid: Optional[str]
     affiliations: Optional[List[str]]
     emails: Optional[List[str]]
 
 
-class PubmedCitation(BaseModel):
+class Citation(BaseModel):
     """
-    A wrapper for PubmedArticle data
+    A custom represenation of Pubmed article data
 
     Attributes
     ----------
@@ -125,17 +140,17 @@ class PubmedXmlParser(BaseModel):
 
     """
 
-    def _get_pmid(self, pubmed_article: PubmedArticle) -> str:
+    def _get_pmid(self, pubmed_article: PubmedArticle) -> Optional[str]:
         pmid = _text_safe(pubmed_article, './/MedlineCitation/PMID')
         return pmid
 
     def _get_doi(self, pubmed_article: PubmedArticle) -> Optional[str]:
-        doi = _text_safe( pubmed_article, './/PubmedData/ArticleIdList/ArticleId[@IdType="doi"]')
+        doi = _text_safe(pubmed_article, './/PubmedData/ArticleIdList/ArticleId[@IdType="doi"]')
         return doi
 
     def _get_abstract(self, pubmed_article: PubmedArticle) -> Optional[str]:
         abstract = []
-        AbstractTexts = pubmed_article.findall('.//MedlineCitation/Article/Abstract/AbstractText')
+        AbstractTexts = _find_all(pubmed_article, './/MedlineCitation/Article/Abstract/AbstractText')
         for AbstractText in AbstractTexts:
             abstract.append(_collect_element_text_with_prefix(AbstractText, 'Label'))
         return ' '.join(abstract) if len(abstract) > 0 else None
@@ -146,18 +161,19 @@ class PubmedXmlParser(BaseModel):
         return text
 
     def _get_affiliations(self, author: Element) -> Optional[List[str]]:
-        affiliations = author.findall('.//AffiliationInfo/Affiliation')
+        affiliations = _find_all(author, './/AffiliationInfo/Affiliation')
         alist = [_collect_element_text(affiliation) for affiliation in affiliations]
         return alist if len(alist) > 0 else None
 
     def _get_emails(self, author: Element) -> Optional[List[str]]:
-        emails = []
-        afilliations = author.findall('.//AffiliationInfo/Affiliation')
-        for affiliation in afilliations:
+        emails: List[str] = []
+        email_regex = re.compile('[\w.+-]+@[\w-]+\.[\w.-]+')
+        affiliations = _find_all(author, './/AffiliationInfo/Affiliation')
+        for affiliation in affiliations:
             line = _collect_element_text(affiliation)
-            match = re.findall(r'[\w.+-]+@[\w-]+\.[\w.-]+', line)
-            santizied = [m.strip('.') for m in match]
-            emails = emails + santizied
+            sanitized = line.strip('.')  #  Trailing period
+            matches = re.findall(email_regex, sanitized)
+            emails = emails + matches
         return emails if len(emails) > 0 else None
 
     def _get_author(self, author: Element) -> Author:
@@ -172,25 +188,19 @@ class PubmedXmlParser(BaseModel):
         )
 
     def _get_author_list(self, pubmed_article: PubmedArticle) -> Optional[List[Author]]:
-        authors = pubmed_article.findall('.//MedlineCitation/Article/AuthorList/Author')
+        authors = _find_all(pubmed_article, './/MedlineCitation/Article/AuthorList/Author')
         author_list = [self._get_author(author) for author in authors]
         return author_list if len(author_list) > 0 else None
 
     def _get_PubmedArticleSet(self, xml_tree: XmlTree) -> PubmedArticleSet:
         pubmed_article_set = xml_tree.getroot()
-        # if pubmed_article_set is None:
-        #     raise ValueError('There is no PubmedArticleSet available')
-        # if pubmed_article_set.tag != 'PubmedArticleSet':
-        #     raise ValueError('There is no PubmedArticleSet available')
+        if pubmed_article_set.tag != 'PubmedArticleSet':
+            raise ValueError('XML document does not contain a PubmedArticleSet')
         return pubmed_article_set
 
-    def _from_text(self, text: str) -> XmlTree:
-        root = etree.XML(text)
-        element_tree = etree.ElementTree(root)
-        return element_tree
-
-    def parse(self, text: str) -> Generator[PubmedCitation, None, None]:
-        xml_tree = self._from_text(text)
+    def parse(self, data: bytes) -> Generator[Citation, None, None]:
+        """Parse an XML document to a list of custom citations"""
+        xml_tree = _from_raw(data)
         pubmed_article_set = self._get_PubmedArticleSet(xml_tree)
 
         for pubmed_article in pubmed_article_set:
@@ -199,11 +209,5 @@ class PubmedXmlParser(BaseModel):
             title = self._get_title(pubmed_article)
             abstract = self._get_abstract(pubmed_article)
             author_list = self._get_author_list(pubmed_article)
-            citation = PubmedCitation(
-                pmid = pmid,
-                title = title,
-                doi = doi,
-                abstract = abstract,
-                author_list = author_list
-                )
+            citation = Citation(pmid=pmid, title=title, doi=doi, abstract=abstract, author_list=author_list)
             yield citation
