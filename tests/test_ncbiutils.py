@@ -12,8 +12,8 @@ NCBI_EUTILS_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
 
 
 class MockResponse:
-    def __init__(self, text):
-        self.text = text
+    def __init__(self, raw):
+        self.raw = raw
 
 
 # #############################
@@ -45,38 +45,27 @@ class TestPubMedFetchClass:
     pubmed_fetch = PubMedFetch()
 
     @pytest.fixture
-    def medlines_text(self, shared_datadir):
-        text = (shared_datadir / 'medlines.txt').read_text()
-        return text
+    def pubmed_data(self, shared_datadir):
+        data = (shared_datadir / 'pubmed.xml').read_bytes()
+        return data
 
     @pytest.fixture
-    def medlines_response(self, medlines_text):
-        return MockResponse(medlines_text)
+    def fetch_response(self, pubmed_data):
+        return MockResponse(pubmed_data)
 
     def test_attributes(self):
         assert PubMedFetch.db == DbEnum.pubmed
         assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
-        assert isinstance(self.pubmed_fetch.rettype, RetTypeEnum)
-
-    def test_parse_medline(self, medlines_text):
-        """Cannot guarantee the constituents whatsover
-        Each element instance of class 'Bio.Medline.Record'>
-        """
-        parsed = self.pubmed_fetch._parse_medline(medlines_text)
-        print(type(parsed))
-        assert parsed is not None
-        for item in parsed:
-            assert isinstance(item, dict)
+        assert self.pubmed_fetch.rettype is None
 
     def test_parse_reponse(self):
         uilist_pubmed_fetch = PubMedFetch(rettype=RetTypeEnum.uilist)
         with pytest.raises(ValueError):
             uilist_pubmed_fetch._parse_response(None)
 
-    def test_get_records_chunks(self, mocker, medlines_response):
-        uids = ['35196497', '33890651', '33279447', '33278872', '24792780', '30158200', '151222']
-        mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(None, medlines_response))
-        # FYI these uids sync up with the 'medlines.txt' fixture
+    def test_get_records_chunks(self, mocker, fetch_response):
+        uids = ['35196497', '33278872', '24792780', '30158200', '151222']
+        mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(None, fetch_response))
         chunks = self.pubmed_fetch.get_records_chunks(uids)
         error, only_chunk, ids = list(chunks)[0]
         assert error is None

@@ -2,9 +2,7 @@ from pydantic import BaseModel, validator
 from typing import ClassVar, Any, Optional, Tuple, List, Dict, Generator, Union
 from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum
 from ncbiutils.http import safe_requests
-
-import io
-from Bio import Medline
+from ncbiutils.pubmedxmlparser import Citation, PubmedXmlParser
 
 
 class Eutil(BaseModel):
@@ -53,7 +51,7 @@ class Eutil(BaseModel):
         params.update(opts)
         if self.api_key:
             params.update({'api_key': self.api_key})
-        err, response = safe_requests(url, method=HttpMethodEnum.POST, files=params)
+        err, response = safe_requests(url, method=HttpMethodEnum.POST, files=params, stream=True)
         return err, response
 
 
@@ -101,34 +99,31 @@ class PubMedFetch(Efetch):
 
     db: ClassVar[DbEnum] = DbEnum.pubmed
 
-    retmode: RetModeEnum = RetModeEnum.text
-    rettype: RetTypeEnum = RetTypeEnum.medline
+    retmode: RetModeEnum = RetModeEnum.xml
+    rettype: Optional[RetTypeEnum]
 
     def fetch(self, ids: List[str]) -> Tuple[Optional[Exception], Any]:
         """Return id, and text (i.e. title + abstract) given a PubMed id"""
         id = ','.join(ids)
-        params: Dict[str, Union[str, int]] = {'retmode': self.retmode, 'rettype': self.rettype}
+        params: Dict[str, Union[str, int, RetModeEnum, Optional[RetTypeEnum]]] = {
+            'retmode': self.retmode,
+            'rettype': self.rettype,
+        }
         err, response = self._fetch(db=self.db, id=id, **params)
         return err, response
 
-    def _parse_medline(self, text: str) -> List[Dict[str, str]]:
-        """Return a list of dicts of Medline data (class 'Bio.Medline.Record') given Medline text
-
-        Caveats
-          - PMIDs can be duplicates, deleted and output garbage
-          - Output is not guaranteed to be consistent with PubMed DTD
-        See https://biopython.org/docs/1.75/api/Bio.Medline.html#Bio.Medline.Record
-        """
-        f = io.StringIO(text)
-        records = Medline.parse(f)  # class 'Bio.Medline.Record'>
+    def _parse_xml(self, response) -> List[Citation]:
+        """Return a list of Citations given the server response"""
+        parser = PubmedXmlParser()
+        records = parser.parse(response.raw)
         return list(records)
 
-    def _parse_response(self, response) -> List[Dict[str, str]]:
+    def _parse_response(self, response) -> List[Citation]:
         """Delegate to an implementation or raise ValueError."""
-        if self.rettype == RetTypeEnum.medline:
-            return self._parse_medline(response.text)
+        if self.retmode == RetModeEnum.xml and self.rettype is None:
+            return self._parse_xml(response)
         else:
-            raise ValueError(f'Unsupported retmode: {self.rettype}')
+            raise ValueError(f'Unsupported retmode: {self.retmode}')
 
     def _chunks(self, lst: List[str], n: int) -> Generator[List[str], None, None]:
         """Yield successive n-sized chunks from lst."""
@@ -137,7 +132,7 @@ class PubMedFetch(Efetch):
 
     def get_records_chunks(
         self, uids: List[str]
-    ) -> Generator[Tuple[Any, Optional[List[Dict[str, str]]], List[str]], None, None]:
+    ) -> Generator[Tuple[Any, Optional[List[Citation]], List[str]], None, None]:
         """Yields chunk error, records (possibly empty) and PubMed uids"""
         for ids in self._chunks(uids, self.retmax):
             records = None
