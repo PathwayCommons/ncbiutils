@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional, List, Generator, Any
+from typing import Optional, List, Generator
 from lxml import etree
 import re
 from typing_extensions import TypeAlias
@@ -18,6 +18,7 @@ PubmedArticleSet: TypeAlias = Element
 #   XML package-specific
 ##################################
 
+
 def _from_raw(data: bytes) -> XmlTree:
     """Parse an xml tree representation from bytes
 
@@ -28,9 +29,11 @@ def _from_raw(data: bytes) -> XmlTree:
     element_tree = etree.ElementTree(root)
     return element_tree
 
+
 def _find_all(element: Element, xpath: str) -> List[Element]:
     """Wrapper for finding elements for xpath query, possibly empty"""
-    return element.findall(xpath);
+    return element.findall(xpath)
+
 
 def _find_safe(element: Element, xpath: str) -> Optional[Element]:
     """Safe find, where None is returned in case xpath query returns no element"""
@@ -45,7 +48,10 @@ def _text_safe(element: Element, xpath: str) -> Optional[str]:
 
 
 def _collect_element_text(element: Element) -> str:
-    """Collect all text from child elements as a single string"""
+    """Collect all text from child elements as a single string
+
+    Note: This implemenation essentially ignores text and math markup
+    """
     return ' '.join(element.xpath('string()').split())
 
 
@@ -54,7 +60,6 @@ def _collect_element_text_with_prefix(element: Element, attribute: str):
     prefix = element.get(attribute)
     text = _collect_element_text(element)
     return ': '.join([prefix, text]) if prefix else text
-
 
 
 #############################
@@ -167,24 +172,24 @@ class PubmedXmlParser(BaseModel):
 
     def _get_emails(self, author: Element) -> Optional[List[str]]:
         emails: List[str] = []
-        email_regex = re.compile('[\w.+-]+@[\w-]+\.[\w.-]+')
+        email_regex = re.compile(r'[\w.+-]+@[\w-]+\.[\w.-]+')
         affiliations = _find_all(author, './/AffiliationInfo/Affiliation')
         for affiliation in affiliations:
             line = _collect_element_text(affiliation)
-            sanitized = line.strip('.')  #  Trailing period
+            sanitized = line.strip('.')
             matches = re.findall(email_regex, sanitized)
             emails = emails + matches
         return emails if len(emails) > 0 else None
 
     def _get_author(self, author: Element) -> Author:
         return Author(
-            fore_name = _text_safe(author, './/ForeName'),
-            last_name = _text_safe(author, './/LastName'),
-            initials = _text_safe(author, './/Initials'),
-            collective_name = _text_safe(author, './/CollectiveName'),
-            orcid = _text_safe(author, './/Identifier[@Source="ORCID"]'),
-            affiliations = self._get_affiliations(author),
-            emails = self._get_emails(author)
+            fore_name=_text_safe(author, './/ForeName'),
+            last_name=_text_safe(author, './/LastName'),
+            initials=_text_safe(author, './/Initials'),
+            collective_name=_text_safe(author, './/CollectiveName'),
+            orcid=_text_safe(author, './/Identifier[@Source="ORCID"]'),
+            affiliations=self._get_affiliations(author),
+            emails=self._get_emails(author),
         )
 
     def _get_author_list(self, pubmed_article: PubmedArticle) -> Optional[List[Author]]:

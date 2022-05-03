@@ -1,6 +1,5 @@
 import pytest
-from ncbiutils.pubmedxmlparser import PubmedXmlParser, Citation, PubmedArticleSet, _from_raw
-from io import StringIO
+from ncbiutils.pubmedxmlparser import PubmedXmlParser, Citation, _from_raw
 
 #############################
 #   Unit tests
@@ -39,6 +38,12 @@ class TestPubmedXmlParserClass(object):
         with pytest.raises(ValueError):
             self.xmlparser._get_PubmedArticleSet(xml_tree)
 
+    def test_duplicate_pmid(self, shared_datadir):
+        data = (shared_datadir / 'duplicate.xml').read_bytes()
+        parse_result = self.xmlparser.parse(data)
+        result = list(parse_result)
+        assert len(result) == 0
+
     @pytest.mark.parametrize(
         'pmid, doi, abstract, title, last_name, email',
         [
@@ -70,14 +75,13 @@ class TestPubmedXmlParserClass(object):
         assert anauthor is not None
         assert email in anauthor.emails if email is not None else True
 
-
     @pytest.mark.parametrize(
         'pmid, doi, abstract, title, last_name, email',
         [
             (
                 '33279447',
                 '10.1016/j.reuma.2020.11.001',
-                 None,
+                None,
                 '',
                 'Vicente Moreno',
                 'dr.vicentemoreno@gmail.com',
@@ -94,3 +98,56 @@ class TestPubmedXmlParserClass(object):
         anauthor = next(author for author in result.author_list if author.last_name == last_name)
         assert anauthor is not None
         assert email in anauthor.emails if email is not None else True
+
+    @pytest.mark.parametrize(
+        'pmid, doi, abstract, title, last_name, email, collective_name',
+        [
+            (
+                '30158200',
+                '10.1136/bmj.k3225',
+                'RESULTS: Of 15 fracture associated loci identified, all were also associated with bone mineral',
+                'Assessment of the genetic and clinical determinants of',
+                'Rivadeneira',
+                'brent.richards@mcgill.ca',
+                'GEFOS/GENOMOS consortium and the 23andMe research team',
+            ),
+        ],
+    )
+    def test_strucabstract_markup_collectivename(
+        self, pmid, doi, abstract, title, last_name, email, collective_name, shared_datadir
+    ):
+        data = (shared_datadir / 'markup.xml').read_bytes()
+        parse_result = self.xmlparser.parse(data)
+        result = next(r for r in parse_result if r.pmid == pmid)
+        assert result.doi == doi
+        assert abstract in result.abstract
+        assert title in result.title
+        anauthor = next(author for author in result.author_list if author.last_name == last_name)
+        assert anauthor is not None
+        assert email in anauthor.emails if email is not None else True
+        cauthor = next(author for author in result.author_list if author.collective_name == collective_name)
+        assert cauthor is not None
+
+    @pytest.mark.parametrize(
+        'pmid, doi, abstract, title, last_name, orcid',
+        [
+            (
+                '32820036',
+                '10.1101/gad.337584.120',
+                'In Ptch1 +/- ; Bcor ΔE9-10 tumors',
+                'Functional loss of a noncanonical BCOR-PRC1.1',
+                'Kutscher',
+                '0000-0002-1130-4582',
+            ),
+        ],
+    )
+    def test_markup_orcid(self, pmid, doi, abstract, title, last_name, orcid, shared_datadir):
+        data = (shared_datadir / 'orcid.xml').read_bytes()
+        parse_result = self.xmlparser.parse(data)
+        result = next(r for r in parse_result if r.pmid == pmid)
+        assert result.doi == doi
+        assert abstract in result.abstract
+        assert title in result.title
+        anauthor = next(author for author in result.author_list if author.last_name == last_name)
+        assert anauthor is not None
+        assert orcid == anauthor.orcid
