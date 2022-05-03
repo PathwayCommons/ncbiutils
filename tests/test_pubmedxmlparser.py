@@ -45,7 +45,7 @@ class TestPubmedXmlParserClass(object):
         assert len(result) == 0
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, email',
+        'pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year',
         [
             (
                 '31302001',
@@ -54,6 +54,11 @@ class TestPubmedXmlParserClass(object):
                 'SENP1-Sirt3 Signaling Controls Mitochondrial',
                 'Cheng',
                 'jkcheng@shsmu.edu.cn',
+                'Molecular cell',
+                '1097-4164',
+                '75',
+                '4',
+                '2019',
             ),
             (
                 '22454523',
@@ -62,10 +67,17 @@ class TestPubmedXmlParserClass(object):
                 'Botulinum neurotoxin D-C uses synaptotagmin',
                 'Dong',
                 None,
+                'Journal of cell science',
+                '1477-9137',
+                '125',
+                'Pt 13',
+                '2012',
             ),
         ],
     )
-    def test_complete_citation_attributes_match(self, pmid, doi, abstract, title, last_name, email, double_xml):
+    def test_complete_citation_attributes_match(
+        self, pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, double_xml
+    ):
         parse_result = self.xmlparser.parse(double_xml)
         result = next(r for r in parse_result if r.pmid == pmid)
         assert result.doi == doi
@@ -74,9 +86,15 @@ class TestPubmedXmlParserClass(object):
         anauthor = next(author for author in result.author_list if author.last_name == last_name)
         assert anauthor is not None
         assert email in anauthor.emails if email is not None else True
+        journal = result.journal
+        assert journal.title == jtitle
+        assert issn in journal.issn
+        assert journal.volume == volume
+        assert journal.issue == issue
+        assert journal.pub_year == pub_year
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, email',
+        'pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year',
         [
             (
                 '33279447',
@@ -85,10 +103,17 @@ class TestPubmedXmlParserClass(object):
                 '',
                 'Vicente Moreno',
                 'dr.vicentemoreno@gmail.com',
+                'Reumatologia clinica',
+                '2173-5743',
+                None,
+                None,
+                '2020',
             ),
         ],
     )
-    def test_no_abstract_empty_title(self, pmid, doi, abstract, title, last_name, email, shared_datadir):
+    def test_no_abstract_empty_title(
+        self, pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, shared_datadir
+    ):
         data = (shared_datadir / 'no_title_abstract.xml').read_bytes()
         parse_result = self.xmlparser.parse(data)
         result = next(r for r in parse_result if r.pmid == pmid)
@@ -98,9 +123,15 @@ class TestPubmedXmlParserClass(object):
         anauthor = next(author for author in result.author_list if author.last_name == last_name)
         assert anauthor is not None
         assert email in anauthor.emails if email is not None else True
+        journal = result.journal
+        assert journal.title == jtitle
+        assert issn in journal.issn
+        assert journal.volume == volume
+        assert journal.issue == issue
+        assert journal.pub_year == pub_year
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, email, collective_name',
+        'pmid, doi, abstract, title, last_name, email, collective_name, jtitle, issn, volume, issue, pub_year',
         [
             (
                 '30158200',
@@ -110,11 +141,29 @@ class TestPubmedXmlParserClass(object):
                 'Rivadeneira',
                 'brent.richards@mcgill.ca',
                 'GEFOS/GENOMOS consortium and the 23andMe research team',
+                'BMJ (Clinical research ed.)',
+                '1756-1833',
+                '362',
+                None,
+                '2018',
             ),
         ],
     )
     def test_strucabstract_markup_collectivename(
-        self, pmid, doi, abstract, title, last_name, email, collective_name, shared_datadir
+        self,
+        pmid,
+        doi,
+        abstract,
+        title,
+        last_name,
+        email,
+        collective_name,
+        jtitle,
+        issn,
+        volume,
+        issue,
+        pub_year,
+        shared_datadir,
     ):
         data = (shared_datadir / 'markup.xml').read_bytes()
         parse_result = self.xmlparser.parse(data)
@@ -127,9 +176,15 @@ class TestPubmedXmlParserClass(object):
         assert email in anauthor.emails if email is not None else True
         cauthor = next(author for author in result.author_list if author.collective_name == collective_name)
         assert cauthor is not None
+        journal = result.journal
+        assert journal.title == jtitle
+        assert issn in journal.issn
+        assert journal.volume == volume
+        assert journal.issue == issue
+        assert journal.pub_year == pub_year
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, orcid',
+        'pmid, doi, abstract, title, last_name, orcid, jtitle, issn, volume, issue, pub_year',
         [
             (
                 '32820036',
@@ -138,10 +193,17 @@ class TestPubmedXmlParserClass(object):
                 'Functional loss of a noncanonical BCOR-PRC1.1',
                 'Kutscher',
                 '0000-0002-1130-4582',
+                'Genes & development',
+                '1549-5477',
+                '34',
+                '17-18',
+                '2020',
             ),
         ],
     )
-    def test_markup_orcid(self, pmid, doi, abstract, title, last_name, orcid, shared_datadir):
+    def test_markup_orcid(
+        self, pmid, doi, abstract, title, last_name, orcid, jtitle, issn, volume, issue, pub_year, shared_datadir
+    ):
         data = (shared_datadir / 'orcid.xml').read_bytes()
         parse_result = self.xmlparser.parse(data)
         result = next(r for r in parse_result if r.pmid == pmid)
@@ -151,3 +213,9 @@ class TestPubmedXmlParserClass(object):
         anauthor = next(author for author in result.author_list if author.last_name == last_name)
         assert anauthor is not None
         assert orcid == anauthor.orcid
+        journal = result.journal
+        assert journal.title == jtitle
+        assert issn in journal.issn
+        assert journal.volume == volume
+        assert journal.issue == issue
+        assert journal.pub_year == pub_year

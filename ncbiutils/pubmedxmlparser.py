@@ -99,6 +99,37 @@ class Author(BaseModel):
     emails: Optional[List[str]]
 
 
+class Journal(BaseModel):
+    """
+    A wrapper for Journal data
+
+    Attributes
+    ----------
+    title : Optional[str]
+        Journal name
+    issn : Optional[List[str]]
+        International Standard Serial Number
+    volume : Optional[str]
+        Journal volume
+    issue : Optional[str]
+        Journal issue
+    pub_year : Optional[str]
+        Year of publication
+    pub_month : Optional[str]
+        Month of publication
+    pub_day : Optional[str]
+        Day of publication
+    """
+
+    title: Optional[str]
+    issn: Optional[List[str]]
+    volume: Optional[str]
+    issue: Optional[str]
+    pub_year: Optional[str]
+    pub_month: Optional[str]
+    pub_day: Optional[str]
+
+
 class Citation(BaseModel):
     """
     A custom represenation of Pubmed article data
@@ -123,6 +154,7 @@ class Citation(BaseModel):
     title: str
     abstract: Optional[str]
     author_list: Optional[List[Author]]
+    journal: Journal
 
 
 class PubmedXmlParser(BaseModel):
@@ -203,6 +235,19 @@ class PubmedXmlParser(BaseModel):
             raise ValueError('XML document does not contain a PubmedArticleSet')
         return pubmed_article_set
 
+    def _get_journal(self, pubmed_article: PubmedArticle) -> Journal:
+        journal = _find_safe(pubmed_article, './/MedlineCitation/Article/Journal')
+        issn = [_collect_element_text(issn) for issn in _find_all(journal, './/ISSN')]
+        title = _text_safe(journal, './/Title')
+        volume = _text_safe(journal, './/JournalIssue/Volume')
+        issue = _text_safe(journal, './/JournalIssue/Issue')
+        pub_year = _text_safe(journal, './/JournalIssue/PubDate/Year')
+        pub_month = _text_safe(journal, './/JournalIssue/PubDate/Month')
+        pub_day = _text_safe(journal, './/JournalIssue/PubDate/Day')
+        return Journal(
+            issn=issn, title=title, volume=volume, issue=issue, pub_year=pub_year, pub_month=pub_month, pub_day=pub_day
+        )
+
     def parse(self, data: bytes) -> Generator[Citation, None, None]:
         """Parse an XML document to a list of custom citations"""
         xml_tree = _from_raw(data)
@@ -214,5 +259,8 @@ class PubmedXmlParser(BaseModel):
             title = self._get_title(pubmed_article)
             abstract = self._get_abstract(pubmed_article)
             author_list = self._get_author_list(pubmed_article)
-            citation = Citation(pmid=pmid, title=title, doi=doi, abstract=abstract, author_list=author_list)
+            journal = self._get_journal(pubmed_article)
+            citation = Citation(
+                pmid=pmid, title=title, doi=doi, abstract=abstract, author_list=author_list, journal=journal
+            )
             yield citation
