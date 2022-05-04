@@ -2,6 +2,7 @@
 
 ![build](https://github.com/jvwong/ncbiutils/actions/workflows/build.yml/badge.svg)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/jvwong/ncbiutils/LICENSE)
+[![codecov](https://codecov.io/gh/jvwong/ncbiutils/branch/development/graph/badge.svg?token=CANP9DIS00)](https://codecov.io/gh/jvwong/ncbiutils)
 
 Making retrieval of records from [National Center for Biotechnology Information (NCBI)](https://www.ncbi.nlm.nih.gov/) [E-Utilities](https://www.ncbi.nlm.nih.gov/books/NBK25499/) simpler.
 
