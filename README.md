@@ -89,15 +89,17 @@ Under the hood, the tests are run with [pytest](https://docs.pytest.org/). The t
 
 As this project was built with [poetry](https://python-poetry.org), you'll need to [install poetry](https://python-poetry.org/docs/#installation) first.
 
+### Test
+
 Make sure the tests, linting and type checks are passing:
 
 ```bash
 $ ./test.sh
 ```
 
-We'll use [Python Semantic Release (PSR)](https://python-semantic-release.readthedocs.io/en/latest/) to manage versioning.
+### Version
 
-By making a commit with a well-defined message structure, PSR will scan commit messages and bump the version accordingly in accordance with [semver](https://python-poetry.org/docs/cli/#version).
+We'll use [Python Semantic Release (PSR)](https://python-semantic-release.readthedocs.io/en/latest/) to manage versioning. By making a commit with a well-defined message structure, PSR will scan commit messages and bump the version accordingly in accordance with [semver](https://python-poetry.org/docs/cli/#version).
 
 For a patch bump:
 
@@ -117,34 +119,27 @@ For a release:
 $ git commit -m "feat(mod_plotting): some comment for this release\n\nBREAKING CHANGE: other footer text."
 ```
 
-Run the tool to automatically scan commits and update the version accordingly:
+Use PSR to scan commits and update the version accordingly:
 
 ```bash
 $ semantic-release version -v DEBUG
 ```
 
-### Update the GitHub remote
+This step automatically updated our package’s version in the pyproject.toml file and created a new tag for our package, which you could view by typing `git tag --list` at the command line.
 
-Tag the release:
-
-```bash
-$ git tag -a v0.1.0 -m "my version 0.1.0"
 ```
-
-Push the release:
-```bash
-$ git push origin --tags
+$ git push --tags
 ```
 
 ### Publish to PyPI
 
-Publish to [PyPI](https://pypi.org/):
+Build the project:
 
 ```bash
-$ poetry publish
+$ poetry build
 ```
 
-Alternatively, configure the test site, [TestPyPI](https://test.pypi.org/):
+Optionally, test on [TestPyPI](https://test.pypi.org/):
 
 ```bash
 $ poetry config repositories.test-pypi https://test.pypi.org/legacy/
@@ -156,3 +151,10 @@ To install from TestPyPI:
 ```bash
 $ pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple testncbi
 ```
+
+Publish to [PyPI](https://pypi.org/):
+
+```bash
+$ poetry publish
+```
+
