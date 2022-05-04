@@ -88,13 +88,9 @@ jobs:
       #              reporting
       #----------------------------------------------
 
-    # - name: Upload coverage to Codecov
-    #   if: matrix.python-version == '3.7' && matrix.os == 'ubuntu-latest'  && (github.event_name == 'push' || github.event_name == 'pull_request')
-    #   uses: codecov/codecov-action@v3
-    #   with:
-    #     file: ./coverage.xml
-    #     # Ignore codecov failures as the codecov server is not
-    #     # very reliable but we don't want to report a failure
-    #     # in the github UI just because the coverage report failed to
-    #     # be published.
-    #     fail_ci_if_error: false
+      - name: Use Codecov to track coverage
+        if: matrix.python-version == '3.8' && matrix.os == 'ubuntu-latest'  && (github.event_name == 'push' || github.event_name == 'pull_request')
+        uses: codecov/codecov-action@v2
+      with:
+        file: ./coverage.xml
+        fail_ci_if_error: false
