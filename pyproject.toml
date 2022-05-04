@@ -31,10 +31,14 @@ pytest-cov = "^3.0.0"
 responses = "^0.20.0"
 pytest-mock = "^3.7.0"
 mypy = "^0.950"
+python-semantic-release = "^7.28.1"
 
 [tool.black]
 line-length = 119
 skip-string-normalization = true
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

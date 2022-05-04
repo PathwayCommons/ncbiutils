@@ -95,15 +95,32 @@ Make sure the tests, linting and type checks are passing:
 $ ./test.sh
 ```
 
-Bump the version number with `poetry version`, in accordance with [semver](https://python-poetry.org/docs/cli/#version). The `version` command in `poetry` updates `poetry.toml`
-  - For a bug fix / patch release, run `poetry version patch`.
-  - For a new feature release, run `poetry version minor`.
-  - For a breaking API change, run `poetry version major.`
+We'll use [Python Semantic Release (PSR)](https://python-semantic-release.readthedocs.io/en/latest/) to manage versioning.
 
-Build the project: `$ ./test.sh`
+By making a commit with a well-defined message structure, PSR will scan commit messages and bump the version accordingly in accordance with [semver](https://python-poetry.org/docs/cli/#version).
+
+For a patch bump:
 
 ```bash
-$ poetry build
+$ git commit -m "fix(ncbiutils): some comment for this patch version"
+```
+
+For a minor bump:
+
+```bash
+$ git commit -m "feat(ncbiutils): some comment for this minor version bump"
+```
+
+For a release:
+
+```bash
+$ git commit -m "feat(mod_plotting): some comment for this release\n\nBREAKING CHANGE: other footer text."
+```
+
+Run the tool to automatically scan commits and update the version accordingly:
+
+```bash
+$ semantic-release version -v DEBUG
 ```
 
 ### Update the GitHub remote

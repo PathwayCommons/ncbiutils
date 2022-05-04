@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: CI
+name: ci-cd
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
     branches: [ main, development ]
 
 jobs:
-  build:
+  ci:
     #----------------------------------------------
     #       os and python versions to test on
     #----------------------------------------------
@@ -94,3 +94,31 @@ jobs:
         with:
           file: ./coverage.xml
           fail_ci_if_error: false
+
+  # cd:
+  #   # Only run this job if the "ci" job passes
+  #   needs: ci
+
+  #   # Only run this job if new work is merged into the "main" branch
+  #   if: github.event.pull_request.merged == true && github.ref == 'refs/heads/main'
+
+  #   # Set up operating system
+  #   runs-on: ubuntu-latest
+
+  #   # Define job steps
+  #   steps:
+  #   - name: Set up Python 3.8
+  #     uses: actions/setup-python@v2
+  #     with:
+  #       python-version: 3.8
+
+  #   - name: Check-out repository
+  #     uses: actions/checkout@v2
+  #     with:
+  #       fetch-depth: 0
+
+  #   - name: Install poetry
+  #     uses: snok/install-poetry@v1
+
+  #   - name: Install package
+  #     run: poetry install --no-interaction
