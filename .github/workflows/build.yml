@@ -100,7 +100,7 @@ jobs:
     needs: ci
 
     # Only run this job if new work is merged into the "main" branch
-    if: github.event.pull_request.merged == true && github.ref == 'refs/heads/main'
+    if: (github.event_name == 'push' || github.event.pull_request.merged == true) && github.ref == 'refs/heads/main'
 
     #----------------------------------------------
     #       os and python versions to test on
