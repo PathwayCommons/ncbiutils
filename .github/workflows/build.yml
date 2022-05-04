@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: CI
+name: ci-cd
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
     branches: [ main, development ]
 
 jobs:
-  build:
+  ci:
     #----------------------------------------------
     #       os and python versions to test on
     #----------------------------------------------
@@ -79,20 +79,85 @@ jobs:
           poetry run flake8 ./ncbiutils --count --exit-zero --max-complexity=10 --statistics
 
       - name: Test with pytest
-        run: poetry run pytest tests --cov ./ncbiutils --cov-report=xml
+        run: poetry run pytest tests --ignore-glob=tests/test_integration* --cov ./ncbiutils --cov-report=xml
 
-    # - name: Type check with mypy
-    #   run: |
-    #     mypy . --cache-dir=/dev/null
-    # - name: Upload coverage to Codecov
-    #   # We don't want to push coverge for every job in the matrix.
-    #   # Rather arbitrarily, choose to push on Ubuntu with Python 3.7.
-    #   if: matrix.python-version == '3.7' && matrix.os == 'ubuntu-latest'  && (github.event_name == 'push' || github.event_name == 'pull_request')
-    #   uses: codecov/codecov-action@v3
-    #   with:
-    #     file: ./coverage.xml
-    #     # Ignore codecov failures as the codecov server is not
-    #     # very reliable but we don't want to report a failure
-    #     # in the github UI just because the coverage report failed to
-    #     # be published.
-    #     fail_ci_if_error: false
+      - name: Type check with mypy
+        run: poetry run mypy . --cache-dir=/dev/null
+
+      #----------------------------------------------
+      #              reporting
+      #----------------------------------------------
+
+      - name: Use Codecov to track coverage
+        if: matrix.python-version == '3.8' && matrix.os == 'ubuntu-latest'  && (github.event_name == 'push' || github.event_name == 'pull_request')
+        uses: codecov/codecov-action@v2
+        with:
+          file: ./coverage.xml
+          fail_ci_if_error: false
+
+  cd:
+    # Only run this job if the "ci" job passes
+    needs: ci
+
+    # Only run this job if new work is merged into the "main" branch
+    if: (github.event_name == 'push' || github.event.pull_request.merged == true) && github.ref == 'refs/heads/main'
+
+    #----------------------------------------------
+    #       os and python versions to test on
+    #----------------------------------------------
+    runs-on: ubuntu-latest
+
+    # Define job steps
+    steps:
+      #----------------------------------------------
+      #       check-out repo and set-up python
+      #----------------------------------------------
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Check-out repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      #----------------------------------------------
+      #       Install Poetry and PSR
+      #----------------------------------------------
+      - name: Install poetry
+        uses: snok/install-poetry@v1
+
+      - name: Install package
+        run: poetry install --no-interaction
+
+      - name: Use Python Semantic Release to prepare release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            poetry run semantic-release publish
+
+      #----------------------------------------------
+      #       Publish to TestPyPI and check
+      #----------------------------------------------
+      - name: Publish to TestPyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository_url: https://test.pypi.org/legacy/
+
+      - name: Test install from TestPyPI
+        run: |
+            pip install \
+            --index-url https://test.pypi.org/simple/ \
+            --extra-index-url https://pypi.org/simple \
+            ncbiutils
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
