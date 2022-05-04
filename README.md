@@ -87,6 +87,8 @@ Under the hood, the tests are run with [pytest](https://docs.pytest.org/). The t
 
 ## Publishing a release
 
+Note: The GitHub Actions in this repository are setup to perform automatic CI and CD. Below, we provide instructions for manually publishing a release.
+
 As this project was built with [poetry](https://python-poetry.org), you'll need to [install poetry](https://python-poetry.org/docs/#installation) first.
 
 ### Test

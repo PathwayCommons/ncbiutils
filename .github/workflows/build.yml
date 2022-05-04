@@ -95,30 +95,69 @@ jobs:
           file: ./coverage.xml
           fail_ci_if_error: false
 
-  # cd:
-  #   # Only run this job if the "ci" job passes
-  #   needs: ci
+  cd:
+    # Only run this job if the "ci" job passes
+    needs: ci
 
-  #   # Only run this job if new work is merged into the "main" branch
-  #   if: github.event.pull_request.merged == true && github.ref == 'refs/heads/main'
+    # Only run this job if new work is merged into the "main" branch
+    if: github.event.pull_request.merged == true && github.ref == 'refs/heads/main'
 
-  #   # Set up operating system
-  #   runs-on: ubuntu-latest
+    #----------------------------------------------
+    #       os and python versions to test on
+    #----------------------------------------------
+    runs-on: ubuntu-latest
 
-  #   # Define job steps
-  #   steps:
-  #   - name: Set up Python 3.8
-  #     uses: actions/setup-python@v2
-  #     with:
-  #       python-version: 3.8
+    # Define job steps
+    steps:
+      #----------------------------------------------
+      #       check-out repo and set-up python
+      #----------------------------------------------
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
 
-  #   - name: Check-out repository
-  #     uses: actions/checkout@v2
-  #     with:
-  #       fetch-depth: 0
+      - name: Check-out repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
-  #   - name: Install poetry
-  #     uses: snok/install-poetry@v1
+      #----------------------------------------------
+      #       Install Poetry and PSR
+      #----------------------------------------------
+      - name: Install poetry
+        uses: snok/install-poetry@v1
 
-  #   - name: Install package
-  #     run: poetry install --no-interaction
+      - name: Install package
+        run: poetry install --no-interaction
+
+      - name: Use Python Semantic Release to prepare release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            poetry run semantic-release publish
+
+      #----------------------------------------------
+      #       Publish to TestPyPI and check
+      #----------------------------------------------
+      - name: Publish to TestPyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository_url: https://test.pypi.org/legacy/
+
+      - name: Test install from TestPyPI
+        run: |
+            pip install \
+            --index-url https://test.pypi.org/simple/ \
+            --extra-index-url https://pypi.org/simple \
+            ncbiutils
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
