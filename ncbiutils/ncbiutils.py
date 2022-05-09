@@ -1,8 +1,16 @@
 from pydantic import BaseModel, validator
-from typing import ClassVar, Any, Optional, Tuple, List, Dict, Generator, Union
+from typing import ClassVar, Any, Optional, Tuple, List, Dict, Generator, Union, NamedTuple
 from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum
 from ncbiutils.http import safe_requests
 from ncbiutils.pubmedxmlparser import Citation, PubmedXmlParser
+
+
+class Chunk(NamedTuple):
+    """Article records are delivered in multiple Chunks"""
+
+    error: Optional[Exception]
+    records: Optional[List[Citation]]
+    ids: Optional[List[str]]
 
 
 class Eutil(BaseModel):
@@ -130,13 +138,11 @@ class PubMedFetch(Efetch):
         for i in range(0, len(lst), n):
             yield lst[i : i + n]
 
-    def get_records_chunks(
-        self, uids: List[str]
-    ) -> Generator[Tuple[Any, Optional[List[Citation]], List[str]], None, None]:
-        """Yields chunk error, records (possibly empty) and PubMed uids"""
+    def get_citations(self, uids: List[str]) -> Generator[Chunk, None, None]:
+        """Yields Chunk error, records (possibly empty) and PubMed uids"""
         for ids in self._chunks(uids, self.retmax):
             records = None
             error, response = self.fetch(ids)
             if not error and response:
                 records = self._parse_response(response.content)
-            yield error, records, ids
+            yield Chunk(error, records, ids)
