@@ -36,11 +36,11 @@ pubmed_fetch = PubMedFetch()
 
 # Retrieve the records
 # Returns a generator that yields results for a chunk of the input PMIDs (see Options)
-chunks = pubmed_fetch.get_records_chunks(uids)
+chunks = pubmed_fetch.get_citations(uids)
 
 # Iterate over the results
 for chunk in chunks:
-    # Each chunk consists of a 3-tuple:
+    # A Chunk is a namedtuple with 3 fields:
     #   - error: Includes network errors as well as HTTP status >=400
     #   - citations: article records, each wrapped as a Citation
     #   - ids: input ids for chunk
