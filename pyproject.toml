@@ -1,18 +1,19 @@
 [tool.poetry]
 name = "ncbiutils"
-version = "0.3.1"
+version = "0.3.2"
 description = "Retrieve article records from NCBI via E-utilities"
 license = "MIT"
-authors = ["Jeffrey Wong <jvwong@outlook.com>"]
-maintainers = ["Jeffrey Wong <jvwong@outlook.com>"]
-readme="README.md"
-repository  = "https://github.com/jvwong/ncbiutils"
+authors = ["Biofactoid <support@biofactoid.org>"]
+maintainers = ["Biofactoid <support@biofactoid.org>"]
+readme = "README.md"
+repository  = "https://github.com/PathwayCommons/ncbiutils"
 classifiers = [
     "Environment :: Console",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT No Attribution License (MIT-0)",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
     "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]
 
