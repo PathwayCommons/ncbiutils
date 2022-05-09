@@ -6,10 +6,10 @@ from ncbiutils.pubmedxmlparser import Citation, PubmedXmlParser
 
 
 class Chunk(NamedTuple):
-    """Article records are delivered in multiple Chunks"""
+    """Article citations are delivered in multiple Chunks"""
 
     error: Optional[Exception]
-    records: Optional[List[Citation]]
+    citations: Optional[List[Citation]]
     ids: Optional[List[str]]
 
 
@@ -139,10 +139,10 @@ class PubMedFetch(Efetch):
             yield lst[i : i + n]
 
     def get_citations(self, uids: List[str]) -> Generator[Chunk, None, None]:
-        """Yields Chunk error, records (possibly empty) and PubMed uids"""
+        """Yields Chunk error, citations (possibly empty) and PubMed uids"""
         for ids in self._chunks(uids, self.retmax):
-            records = None
+            citations = None
             error, response = self.fetch(ids)
             if not error and response:
-                records = self._parse_response(response.content)
-            yield Chunk(error, records, ids)
+                citations = self._parse_response(response.content)
+            yield Chunk(error, citations, ids)

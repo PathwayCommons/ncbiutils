@@ -70,7 +70,7 @@ class TestPubMedFetchClass:
         chunk = list(chunks)[0]
         assert chunk.error is None
         assert len(chunk.ids) == len(uids)
-        assert len(chunk.records) == len(uids)
+        assert len(chunk.citations) == len(uids)
 
     def test_get_citations_on_error(self, mocker):
         uids = ['35196497', '33890651', '33279447', '33278872', '24792780', '30158200', '151222']
