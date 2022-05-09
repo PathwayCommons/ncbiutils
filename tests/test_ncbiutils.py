@@ -63,19 +63,19 @@ class TestPubMedFetchClass:
         with pytest.raises(ValueError):
             uilist_pubmed_fetch._parse_response(b'')
 
-    def test_get_records_chunks(self, mocker, fetch_response):
+    def test_get_citations(self, mocker, fetch_response):
         uids = ['35196497', '33278872', '24792780', '30158200', '151222']
         mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(None, fetch_response))
-        chunks = self.pubmed_fetch.get_records_chunks(uids)
-        error, only_chunk, ids = list(chunks)[0]
-        assert error is None
-        assert len(ids) == len(uids)
-        assert len(only_chunk) == len(uids)
+        chunks = self.pubmed_fetch.get_citations(uids)
+        chunk = list(chunks)[0]
+        assert chunk.error is None
+        assert len(chunk.ids) == len(uids)
+        assert len(chunk.records) == len(uids)
 
-    def test_get_records_chunks_on_error(self, mocker):
+    def test_get_citations_on_error(self, mocker):
         uids = ['35196497', '33890651', '33279447', '33278872', '24792780', '30158200', '151222']
         mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(Exception, None))
-        chunks = self.pubmed_fetch.get_records_chunks(uids)
+        chunks = self.pubmed_fetch.get_citations(uids)
         error, _, ids = list(chunks)[0]
         assert error is not None
         assert len(ids) == len(uids)
