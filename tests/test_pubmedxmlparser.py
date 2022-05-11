@@ -45,7 +45,7 @@ class TestPubmedXmlParserClass(object):
         assert len(result) == 0
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year',
+        'pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type',
         [
             (
                 '31302001',
@@ -59,6 +59,7 @@ class TestPubmedXmlParserClass(object):
                 '75',
                 '4',
                 '2019',
+                'D016428',
             ),
             (
                 '22454523',
@@ -72,11 +73,12 @@ class TestPubmedXmlParserClass(object):
                 '125',
                 'Pt 13',
                 '2012',
+                'D016428',
             ),
         ],
     )
     def test_complete_citation_attributes_match(
-        self, pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, double_xml
+        self, pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type, double_xml
     ):
         parse_result = self.xmlparser.parse(double_xml)
         result = next(r for r in parse_result if r.pmid == pmid)
@@ -92,9 +94,10 @@ class TestPubmedXmlParserClass(object):
         assert journal.volume == volume
         assert journal.issue == issue
         assert journal.pub_year == pub_year
+        assert pub_type in result.publication_type_list
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year',
+        'pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type',
         [
             (
                 '33279447',
@@ -108,11 +111,12 @@ class TestPubmedXmlParserClass(object):
                 None,
                 None,
                 '2020',
+                'D016428'
             ),
         ],
     )
     def test_no_abstract_empty_title(
-        self, pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, shared_datadir
+        self, pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type, shared_datadir
     ):
         data = (shared_datadir / 'no_title_abstract.xml').read_bytes()
         parse_result = self.xmlparser.parse(data)
@@ -129,9 +133,10 @@ class TestPubmedXmlParserClass(object):
         assert journal.volume == volume
         assert journal.issue == issue
         assert journal.pub_year == pub_year
+        assert pub_type in result.publication_type_list
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, email, collective_name, jtitle, issn, volume, issue, pub_year',
+        'pmid, doi, abstract, title, last_name, email, collective_name, jtitle, issn, volume, issue, pub_year, pub_type',
         [
             (
                 '30158200',
@@ -146,6 +151,7 @@ class TestPubmedXmlParserClass(object):
                 '362',
                 None,
                 '2018',
+                'D017418'
             ),
         ],
     )
@@ -163,6 +169,7 @@ class TestPubmedXmlParserClass(object):
         volume,
         issue,
         pub_year,
+        pub_type,
         shared_datadir,
     ):
         data = (shared_datadir / 'markup.xml').read_bytes()
@@ -182,9 +189,10 @@ class TestPubmedXmlParserClass(object):
         assert journal.volume == volume
         assert journal.issue == issue
         assert journal.pub_year == pub_year
+        assert pub_type in result.publication_type_list
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, orcid, jtitle, issn, volume, issue, pub_year',
+        'pmid, doi, abstract, title, last_name, orcid, jtitle, issn, volume, issue, pub_year, pub_type',
         [
             (
                 '32820036',
@@ -198,11 +206,12 @@ class TestPubmedXmlParserClass(object):
                 '34',
                 '17-18',
                 '2020',
+                'D052061'
             ),
         ],
     )
     def test_markup_orcid(
-        self, pmid, doi, abstract, title, last_name, orcid, jtitle, issn, volume, issue, pub_year, shared_datadir
+        self, pmid, doi, abstract, title, last_name, orcid, jtitle, issn, volume, issue, pub_year, pub_type, shared_datadir
     ):
         data = (shared_datadir / 'orcid.xml').read_bytes()
         parse_result = self.xmlparser.parse(data)
@@ -219,3 +228,4 @@ class TestPubmedXmlParserClass(object):
         assert journal.volume == volume
         assert journal.issue == issue
         assert journal.pub_year == pub_year
+        assert pub_type in result.publication_type_list
