@@ -155,6 +155,7 @@ class Citation(BaseModel):
     abstract: Optional[str]
     author_list: Optional[List[Author]]
     journal: Journal
+    publication_type_list: List[str]
 
 
 class PubmedXmlParser(BaseModel):
@@ -248,6 +249,11 @@ class PubmedXmlParser(BaseModel):
             issn=issn, title=title, volume=volume, issue=issue, pub_year=pub_year, pub_month=pub_month, pub_day=pub_day
         )
 
+    def _get_pubtypes(self, pubmed_article: PubmedArticle) -> List[str]:
+        publication_types = _find_all(pubmed_article, './/MedlineCitation/Article/PublicationTypeList/PublicationType')
+        uids = [element.get('UI') for element in publication_types]
+        return uids
+
     def parse(self, data: bytes) -> Generator[Citation, None, None]:
         """Parse an XML document to a list of custom citations"""
         xml_tree = _from_raw(data)
@@ -260,7 +266,14 @@ class PubmedXmlParser(BaseModel):
             abstract = self._get_abstract(pubmed_article)
             author_list = self._get_author_list(pubmed_article)
             journal = self._get_journal(pubmed_article)
+            publication_type_list = self._get_pubtypes(pubmed_article)
             citation = Citation(
-                pmid=pmid, title=title, doi=doi, abstract=abstract, author_list=author_list, journal=journal
+                pmid=pmid,
+                title=title,
+                doi=doi,
+                abstract=abstract,
+                author_list=author_list,
+                journal=journal,
+                publication_type_list=publication_type_list,
             )
             yield citation
