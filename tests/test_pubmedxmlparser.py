@@ -149,7 +149,8 @@ class TestPubmedXmlParserClass(object):
         assert pub_type in result.publication_type_list
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, email, collective_name, jtitle, issn, volume, issue, pub_year, pub_type',
+        'pmid, doi, abstract, title, last_name, email, collective_name, jtitle,'
+        ' issn, volume, issue, pub_year, pub_type',
         [
             (
                 '30158200',

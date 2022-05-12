@@ -1,10 +1,10 @@
 import pytest
-from ncbiutils.ncbiutils import Eutil, Efetch, PubMedFetch
+from ncbiutils.ncbiutils import Eutil, Efetch, PubMedFetch, PubMedDownload
 from ncbiutils.types import DbEnum, RetTypeEnum, RetModeEnum
 
 
 NCBI_EUTILS_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/'
-
+NCBI_PUBMED_FTP_URL = 'https://ftp.ncbi.nlm.nih.gov/pubmed/'
 
 # #############################
 # #   Helpers
@@ -79,3 +79,34 @@ class TestPubMedFetchClass:
         error, _, ids = list(chunks)[0]
         assert error is not None
         assert len(ids) == len(uids)
+
+
+class TestPubMedDownloadClass:
+    def test_class_attributes(self):
+        assert PubMedDownload.base_url == NCBI_PUBMED_FTP_URL
+        assert PubMedDownload.updatefiles_path is not None
+        assert PubMedDownload.baselinefiles_path is not None
+
+
+class TestPubMedDownload:
+    pubmed_download = PubMedDownload()
+
+    @pytest.fixture
+    def pubmed_data(self, shared_datadir):
+        data = (shared_datadir / 'pubmed22n1115.xml.gz').read_bytes()
+        return data
+
+    @pytest.fixture
+    def fetch_response(self, pubmed_data):
+        return MockResponse(pubmed_data)
+
+    def test_get_citations_updatefiles(self, mocker, fetch_response):
+        first_file = 'pubmed22n1115.xml.gz'
+        second_file = 'pubmed22n1313.xml.gz'
+        files = [first_file, second_file]
+        mocker.patch('ncbiutils.ncbiutils.PubMedDownload._request', return_value=(None, fetch_response))
+        chunks = self.pubmed_download.get_citations(files)
+        chunk = next(chunks)
+        assert chunk.error is None
+        assert chunk.ids[0] == first_file
+        assert len(chunk.citations) == 3

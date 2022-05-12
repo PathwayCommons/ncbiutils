@@ -1,8 +1,9 @@
 from pydantic import BaseModel, validator
 from typing import ClassVar, Any, Optional, Tuple, List, Dict, Generator, Union, NamedTuple
-from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum
+from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum, DownloadPathEnum
 from ncbiutils.http import safe_requests
 from ncbiutils.pubmedxmlparser import Citation, PubmedXmlParser
+import gzip
 
 
 class Chunk(NamedTuple):
@@ -143,6 +144,67 @@ class PubMedFetch(Efetch):
         for ids in self._chunks(uids, self.retmax):
             citations = None
             error, response = self.fetch(ids)
+            if not error and response:
+                citations = self._parse_response(response.content)
+            yield Chunk(error, citations, ids)
+
+
+class PubMedDownload(BaseModel):
+    """
+    A class that retrieves article information from PubMed FTP file server
+
+    Class attributes
+    ----------
+    base_url : str
+        Base URL for the FTP download site
+    updatefiles_path: str
+        Base path for Daily update files
+    baselinefiles_path: str
+        Base path for Annual baseline files
+
+    Attributes
+    ----------
+    retmax : int
+        Maximum number of records to return (default 10000)
+
+    Methods
+    ----------
+    fetch(url: str)
+        Make request with appropriate body form parameters
+    get_citations(files: List[str],
+      download_path: DownloadPathEnum = DownloadPathEnum.updateFiles) -> Generator[Chunk, None, None]
+        Retrieve the Citations from the indicated files, optional path from DownloadPathEnum
+    """
+
+    base_url: ClassVar[str] = 'https://ftp.ncbi.nlm.nih.gov/pubmed/'
+    updatefiles_path: ClassVar[str] = 'updatefiles'
+    baselinefiles_path: ClassVar[str] = 'baseline'
+
+    def _request(self, url: str) -> Tuple[Optional[Exception], Any]:
+        """Retrieve from NCBI PubMed download sites and return (error, requests.Response)"""
+        err, response = safe_requests(url, method=HttpMethodEnum.GET, stream=True)
+        return err, response
+
+    def _parse_xml(self, data: bytes) -> List[Citation]:
+        """Return a list of Citations given the server response"""
+        parser = PubmedXmlParser()
+        records = parser.parse(data)
+        return list(records)
+
+    def _parse_response(self, data: bytes) -> List[Citation]:
+        """Delegate to an implementation or raise ValueError."""
+        decompressed = gzip.decompress(data)
+        return self._parse_xml(decompressed)
+
+    def get_citations(
+        self, files: List[str], download_path: DownloadPathEnum = DownloadPathEnum.updatefiles
+    ) -> Generator[Chunk, None, None]:
+        url = f'{self.base_url}{download_path}'
+        for file in files:
+            ids = [file]
+            file_url = f'{url}/{file}'
+            citations = None
+            error, response = self._request(file_url)
             if not error and response:
                 citations = self._parse_response(response.content)
             yield Chunk(error, citations, ids)
