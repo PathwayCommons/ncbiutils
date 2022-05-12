@@ -28,3 +28,8 @@ class RetTypeEnum(str, Enum):
     abstract = 'abstract'
     docsum = 'docsum'
     medline = 'medline'
+
+
+class DownloadPathEnum(str, Enum):
+    updatefiles = 'updatefiles'
+    baseline = 'baseline'

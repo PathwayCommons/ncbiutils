@@ -1,0 +1,1740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
+<PubmedArticleSet>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+      <PMID Version="1">17212035</PMID>
+      <DateCompleted>
+        <Year>2007</Year>
+        <Month>03</Month>
+        <Day>09</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2022</Year>
+        <Month>05</Month>
+        <Day>10</Day>
+      </DateRevised>
+      <Article PubModel="Print">
+        <Journal>
+          <ISSN IssnType="Print">0022-5010</ISSN>
+          <JournalIssue CitedMedium="Print">
+            <Volume>39</Volume>
+            <Issue>1</Issue>
+            <PubDate>
+              <Year>2006</Year>
+              <Season>Spring</Season>
+            </PubDate>
+          </JournalIssue>
+          <Title>Journal of the history of biology</Title>
+          <ISOAbbreviation>J Hist Biol</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>Method as a function of "disciplinary landscape": C.D. Darlington and cytology, genetics and evolution, 1932-1950.</ArticleTitle>
+        <Pagination>
+          <MedlinePgn>165-97</MedlinePgn>
+        </Pagination>
+        <Abstract>
+          <AbstractText>This article considers the reception of British cytogeneticist C.D. Darlington's controversial 1932 book, Recent Advances in Cytology. Darlington's cytogenetic work, and the manner in which he made it relevant to evolutionary biology, marked an abrupt shift in the status and role of cytology in the life sciences. By focusing on Darlington's scientific method--a stark departure from anti-theoretical, empirical reasoning to a theoretical and speculative approach based on deduction from genetic first principles--the article characterises the relationships defining the "disciplinary landscape" of the life sciences of the time, namely those between cytology, genetics, and evolutionary theory.</AbstractText>
+        </Abstract>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Harman</LastName>
+            <ForeName>Oren Solomon</ForeName>
+            <Initials>OS</Initials>
+            <AffiliationInfo>
+              <Affiliation>Harman@vms.huji.ac.il</Affiliation>
+            </AffiliationInfo>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <PublicationTypeList>
+          <PublicationType UI="D019215">Biography</PublicationType>
+          <PublicationType UI="D016456">Historical Article</PublicationType>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+        </PublicationTypeList>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>Germany</Country>
+        <MedlineTA>J Hist Biol</MedlineTA>
+        <NlmUniqueID>0202503</NlmUniqueID>
+        <ISSNLinking>0022-5010</ISSNLinking>
+      </MedlineJournalInfo>
+      <CommentsCorrectionsList>
+        <CommentsCorrections RefType="ErratumIn">
+          <RefSource>J Hist Biol. 2022 Mar;55(1):203</RefSource>
+          <PMID Version="1">35486258</PMID>
+        </CommentsCorrections>
+      </CommentsCorrectionsList>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D005075" MajorTopicYN="Y">Biological Evolution</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D035843" MajorTopicYN="N">Biomedical Research</DescriptorName>
+          <QualifierName UI="Q000266" MajorTopicYN="N">history</QualifierName>
+          <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D002875" MajorTopicYN="N">Chromosomes</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D003582" MajorTopicYN="N">Cytogenetics</DescriptorName>
+          <QualifierName UI="Q000266" MajorTopicYN="Y">history</QualifierName>
+          <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D003584" MajorTopicYN="N">Cytological Techniques</DescriptorName>
+          <QualifierName UI="Q000266" MajorTopicYN="Y">history</QualifierName>
+          <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D040941" MajorTopicYN="N">Heredity</DescriptorName>
+          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D049673" MajorTopicYN="N">History, 20th Century</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D008093" MajorTopicYN="N">Literature, Modern</DescriptorName>
+          <QualifierName UI="Q000266" MajorTopicYN="N">history</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D006113" MajorTopicYN="N">United Kingdom</DescriptorName>
+        </MeshHeading>
+      </MeshHeadingList>
+      <PersonalNameSubjectList>
+        <PersonalNameSubject>
+          <LastName>Darlington</LastName>
+          <ForeName>Cyril Dean</ForeName>
+          <Initials>CD</Initials>
+        </PersonalNameSubject>
+      </PersonalNameSubjectList>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2007</Year>
+          <Month>1</Month>
+          <Day>11</Day>
+          <Hour>9</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2007</Year>
+          <Month>3</Month>
+          <Day>10</Day>
+          <Hour>9</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2007</Year>
+          <Month>1</Month>
+          <Day>11</Day>
+          <Hour>9</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">17212035</ArticleId>
+        <ArticleId IdType="doi">10.1007/s10739-004-2085-4</ArticleId>
+      </ArticleIdList>
+      <ReferenceList>
+        <Reference>
+          <Citation>Stud Hist Biol. 1978;2:167-92</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">11610409</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Genetics. 1993 Jul;134(3):671-4</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">8349102</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Centaurus. 1970;15(3):228-314</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">4944075</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Science. 1922 Jan 20;55(1412):55-61</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17753924</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Hist Biol. 1985 Fall;18(3):295-329</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">11620726</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Hist Biol. 2003 Summer;36(2):309-52</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">12945539</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Isis. 1987 Sep;78(293):337-64</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">3319942</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Genetics. 1955 Nov;40(6):850-73</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17247595</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Proc Natl Acad Sci U S A. 1924 Mar;10(3):116-20</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">16576791</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Science. 1948 Feb 13;107(2772):155-9</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">17756602</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Nature. 1960 Sep 10;187:892-5</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">13719778</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Proc Natl Acad Sci U S A. 1931 Aug;17(8):492-7</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">16587654</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Proc R Soc Lond B Biol Sci. 1956 Jul 24;145(920):350-64</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">13359390</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Annu Rev Genet. 1999;33:603-754</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">10690419</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Hist Philos Life Sci. 1987;9(2):277-308</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">3327080</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Int J Dev Biol. 2001;45(1):97-132</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">11291875</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Hist Biol. 1974 Spring;7(1):5-30</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">11610096</ArticleId>
+          </ArticleIdList>
+        </Reference>
+      </ReferenceList>
+    </PubmedData>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+      <PMID Version="1">7308376</PMID>
+      <DateCompleted>
+        <Year>1982</Year>
+        <Month>02</Month>
+        <Day>25</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2022</Year>
+        <Month>05</Month>
+        <Day>10</Day>
+      </DateRevised>
+      <Article PubModel="Print">
+        <Journal>
+          <ISSN IssnType="Print">0014-4886</ISSN>
+          <JournalIssue CitedMedium="Print">
+            <Volume>74</Volume>
+            <Issue>3</Issue>
+            <PubDate>
+              <Year>1981</Year>
+              <Month>Dec</Month>
+            </PubDate>
+          </JournalIssue>
+          <Title>Experimental neurology</Title>
+          <ISOAbbreviation>Exp Neurol</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>Discharge pattern of reticular formation unit pairs in waking and REM sleep.</ArticleTitle>
+        <Pagination>
+          <MedlinePgn>875-91</MedlinePgn>
+        </Pagination>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Siegel</LastName>
+            <ForeName>J M</ForeName>
+            <Initials>JM</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Nienhuis</LastName>
+            <ForeName>R</ForeName>
+            <Initials>R</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Wheeler</LastName>
+            <ForeName>R L</ForeName>
+            <Initials>RL</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>McGinty</LastName>
+            <ForeName>D J</ForeName>
+            <Initials>DJ</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Harper</LastName>
+            <ForeName>R M</ForeName>
+            <Initials>RM</Initials>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <GrantList CompleteYN="Y">
+          <Grant>
+            <GrantID>R01 NS014610</GrantID>
+            <Acronym>NS</Acronym>
+            <Agency>NINDS NIH HHS</Agency>
+            <Country>United States</Country>
+          </Grant>
+          <Grant>
+            <GrantID>R37 HL041370</GrantID>
+            <Acronym>HL</Acronym>
+            <Agency>NHLBI NIH HHS</Agency>
+            <Country>United States</Country>
+          </Grant>
+          <Grant>
+            <GrantID>R37 NS014610</GrantID>
+            <Acronym>NS</Acronym>
+            <Agency>NINDS NIH HHS</Agency>
+            <Country>United States</Country>
+          </Grant>
+          <Grant>
+            <GrantID>NS14610</GrantID>
+            <Acronym>NS</Acronym>
+            <Agency>NINDS NIH HHS</Agency>
+            <Country>United States</Country>
+          </Grant>
+        </GrantList>
+        <PublicationTypeList>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+          <PublicationType UI="D013486">Research Support, U.S. Gov't, Non-P.H.S.</PublicationType>
+          <PublicationType UI="D013487">Research Support, U.S. Gov't, P.H.S.</PublicationType>
+        </PublicationTypeList>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>United States</Country>
+        <MedlineTA>Exp Neurol</MedlineTA>
+        <NlmUniqueID>0370712</NlmUniqueID>
+        <ISSNLinking>0014-4886</ISSNLinking>
+      </MedlineJournalInfo>
+      <CitationSubset>IM</CitationSubset>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D002415" MajorTopicYN="N">Cats</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D004553" MajorTopicYN="N">Electric Conductivity</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D009474" MajorTopicYN="N">Neurons</DescriptorName>
+          <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D012154" MajorTopicYN="N">Reticular Formation</DescriptorName>
+          <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D012895" MajorTopicYN="N">Sleep, REM</DescriptorName>
+          <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D013569" MajorTopicYN="N">Synapses</DescriptorName>
+          <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D014851" MajorTopicYN="N">Wakefulness</DescriptorName>
+          <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+        </MeshHeading>
+      </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>1981</Year>
+          <Month>12</Month>
+          <Day>1</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>1981</Year>
+          <Month>12</Month>
+          <Day>1</Day>
+          <Hour>0</Hour>
+          <Minute>1</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>1981</Year>
+          <Month>12</Month>
+          <Day>1</Day>
+          <Hour>0</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">7308376</ArticleId>
+        <ArticleId IdType="doi">10.1016/0014-4886(81)90260-0</ArticleId>
+        <ArticleId IdType="pmc">PMC9079967</ArticleId>
+        <ArticleId IdType="mid">NIHMS1788707</ArticleId>
+      </ArticleIdList>
+      <ReferenceList>
+        <Reference>
+          <Citation>Exp Brain Res. 1974 Jan 22;19(1):1-19</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">4591655</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Science. 1977 May 6;196(4290):678-80</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">193185</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Exp Neurol. 1972 Jan;34(1):140-57</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">4333207</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Brain Res. 1980 Oct 20;199(2):343-58</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">7417788</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Exp Neurol. 1973 Feb;38(2):301-10</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">4120444</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Neurophysiol. 1973 Mar;36(2):205-25</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">4350356</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Exp Neurol. 1977 Sep;56(3):553-73</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">195831</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Exp Neurol. 1975 Jun;47(3):581-98</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">1093865</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Biophys J. 1970 Sep;10(9):876-900</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">4322240</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Neurophysiol. 1979 Sep;42(5):1199-1211</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">490195</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Comp Neurol. 1968 Aug;133(4):463-75</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">4896656</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Nature. 1963 Aug 31;199:876-95 PASSIM</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">14079897</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Neurophysiol. 1975 May;38(3):513-30</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">1127454</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Brain Res. 1979 Dec 21;179(1):49-60</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">228803</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Neurophysiol. 1980 May;43(5):1284-95</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">7373367</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Brain Res. 1977 Jun 3;128(1):146-52</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">194653</ArticleId>
+          </ArticleIdList>
+        </Reference>
+      </ReferenceList>
+    </PubmedData>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+      <PMID Version="1">17955499</PMID>
+      <DateCompleted>
+        <Year>2008</Year>
+        <Month>08</Month>
+        <Day>28</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2022</Year>
+        <Month>05</Month>
+        <Day>10</Day>
+      </DateRevised>
+      <Article PubModel="Print">
+        <Journal>
+          <ISSN IssnType="Electronic">1097-4644</ISSN>
+          <JournalIssue CitedMedium="Internet">
+            <Volume>103</Volume>
+            <Issue>6</Issue>
+            <PubDate>
+              <Year>2008</Year>
+              <Month>Apr</Month>
+              <Day>15</Day>
+            </PubDate>
+          </JournalIssue>
+          <Title>Journal of cellular biochemistry</Title>
+          <ISOAbbreviation>J Cell Biochem</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>High glucose levels upregulate upstream stimulatory factor 2 gene transcription in mesangial cells.</ArticleTitle>
+        <Pagination>
+          <MedlinePgn>1952-61</MedlinePgn>
+        </Pagination>
+        <Abstract>
+          <AbstractText>Previously, we demonstrated that upstream stimulatory factor 2 (USF2) mediates high glucose-induced thrombospondin1 (TSP1) gene expression and TGF-beta activity in glomerular mesangial cells and plays a role in diabetic renal complications. In the present studies, we further determined the molecular mechanisms by which high glucose levels regulate USF2 gene expression. In primary rat mesangial cells, we found that glucose treatment time and dose-dependently up-regulated USF2 expression (mRNA and protein). By using cycloheximide to block the de novo protein synthesis, similar rate of USF2 degradation was found under either normal glucose or high glucose conditions. USF2 mRNA stability was not altered by high glucose treatment. Furthermore, high glucose treatment stimulated USF2 gene promoter activity. By using the luciferase-promoter deletion assay, site-directed mutagenesis, and transactivation assay, we identified a glucose-responsive element in the USF2 gene promoter (-1,740 to -1,620, relative to the transcription start site) and demonstrated that glucose-induced USF2 expression is mediated through a cAMP-response element-binding protein (CREB)-dependent transactivation of the USF2 promoter. Furthermore, siRNA-mediated CREB knock down abolished glucose-induced USF2 expression. Taken together, these data indicate that high glucose levels up-regulate USF2 gene transcription in mesangial cells through CREB-dependent transactivation of the USF2 promoter.</AbstractText>
+        </Abstract>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Shi</LastName>
+            <ForeName>Lihua</ForeName>
+            <Initials>L</Initials>
+            <AffiliationInfo>
+              <Affiliation>Graduate Center for Nutritional Sciences, University of Kentucky, Lexington, Kentucky 40536, USA.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Liu</LastName>
+            <ForeName>Shu</ForeName>
+            <Initials>S</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Nikolic</LastName>
+            <ForeName>Dejan</ForeName>
+            <Initials>D</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Wang</LastName>
+            <ForeName>Shuxia</ForeName>
+            <Initials>S</Initials>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <GrantList CompleteYN="Y">
+          <Grant>
+            <GrantID>R01 DK081555</GrantID>
+            <Acronym>DK</Acronym>
+            <Agency>NIDDK NIH HHS</Agency>
+            <Country>United States</Country>
+          </Grant>
+        </GrantList>
+        <PublicationTypeList>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+          <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+        </PublicationTypeList>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>United States</Country>
+        <MedlineTA>J Cell Biochem</MedlineTA>
+        <NlmUniqueID>8205768</NlmUniqueID>
+        <ISSNLinking>0730-2312</ISSNLinking>
+      </MedlineJournalInfo>
+      <ChemicalList>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D017362">Cyclic AMP Response Element-Binding Protein</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D051720">Upstream Stimulatory Factors</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="C497187">Usf2 protein, rat</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>IY9XDZ35W2</RegistryNumber>
+          <NameOfSubstance UI="D005947">Glucose</NameOfSubstance>
+        </Chemical>
+      </ChemicalList>
+      <CitationSubset>IM</CitationSubset>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D002478" MajorTopicYN="N">Cells, Cultured</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D017362" MajorTopicYN="N">Cyclic AMP Response Element-Binding Protein</DescriptorName>
+          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
+          <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D005947" MajorTopicYN="N">Glucose</DescriptorName>
+          <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D050527" MajorTopicYN="N">Mesangial Cells</DescriptorName>
+          <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D011401" MajorTopicYN="N">Promoter Regions, Genetic</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D051381" MajorTopicYN="N">Rats</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D015533" MajorTopicYN="N">Transcriptional Activation</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D015854" MajorTopicYN="N">Up-Regulation</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D051720" MajorTopicYN="N">Upstream Stimulatory Factors</DescriptorName>
+          <QualifierName UI="Q000096" MajorTopicYN="Y">biosynthesis</QualifierName>
+          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
+        </MeshHeading>
+      </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2007</Year>
+          <Month>10</Month>
+          <Day>24</Day>
+          <Hour>9</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2008</Year>
+          <Month>8</Month>
+          <Day>30</Day>
+          <Hour>9</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2007</Year>
+          <Month>10</Month>
+          <Day>24</Day>
+          <Hour>9</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">17955499</ArticleId>
+        <ArticleId IdType="doi">10.1002/jcb.21585</ArticleId>
+        <ArticleId IdType="pmc">PMC9084927</ArticleId>
+        <ArticleId IdType="mid">NIHMS1801874</ArticleId>
+      </ArticleIdList>
+      <ReferenceList>
+        <Reference>
+          <Citation>J Biol Chem. 1999 Nov 26;274(48):34020-8</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">10567368</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Endocrinology. 2002 Aug;143(8):2922-9</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">12130557</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Pigment Cell Res. 2005 Oct;18(5):337-48</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">16162174</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Biol Chem. 1996 Dec 13;271(50):32375-80</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">8943301</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Nihon Jinzo Gakkai Shi. 1992 Jan;34(1):9-17</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">1593802</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Biol Chem. 2004 Aug 13;279(33):34311-22</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">15184388</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Proc Natl Acad Sci U S A. 2001 Jul 17;98(15):8780-5</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">11447267</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>In Vitro Cell Dev Biol Anim. 2001 Nov-Dec;37(10):684-90</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">11776974</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Endocrinol Metab Clin North Am. 1996 Jun;25(2):243-54</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">8799699</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Biol Chem. 2006 Apr 21;281(16):10849-55</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">16488890</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Biol Chem. 1998 Aug 7;273(32):20175-9</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">9685363</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Biol Chem. 2004 Apr 16;279(16):15908-15</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">14757763</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Diabetes Care. 2005 Mar;28(3):745-51</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">15735220</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Biol Chem. 1997 Jan 17;272(3):1753-60</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">8999857</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Biol Chem. 2002 Mar 22;277(12):9880-8</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">11784717</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Am J Pathol. 2000 Oct;157(4):1353-63</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">11021838</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Cell. 1985 Nov;43(1):165-75</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">4075392</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Biol Chem. 1997 Aug 29;272(35):21944-9</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">9268329</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Diabetes. 2005 Jul;54(7):1976-84</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">15983197</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Biol Chem. 2002 Nov 15;277(46):44485-96</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">12200434</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Nucleic Acids Res. 1994 Feb 11;22(3):427-33</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">8127680</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Mol Cell Biol. 1998 Feb;18(2):967-77</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">9447994</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>J Am Soc Nephrol. 2003 Aug;14(8 Suppl 3):S271-8</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">12874445</ArticleId>
+          </ArticleIdList>
+        </Reference>
+        <Reference>
+          <Citation>Biochem J. 1999 Jul 15;341 ( Pt 2):315-22</Citation>
+          <ArticleIdList>
+            <ArticleId IdType="pubmed">10393088</ArticleId>
+          </ArticleIdList>
+        </Reference>
+      </ReferenceList>
+    </PubmedData>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+      <PMID Version="1">18046398</PMID>
+      <DateCompleted>
+        <Year>2008</Year>
+        <Month>01</Month>
+        <Day>07</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2022</Year>
+        <Month>05</Month>
+        <Day>10</Day>
+      </DateRevised>
+      <Article PubModel="Print">
+        <Journal>
+          <ISSN IssnType="Electronic">1476-4687</ISSN>
+          <JournalIssue CitedMedium="Internet">
+            <Volume>450</Volume>
+            <Issue>7170</Issue>
+            <PubDate>
+              <Year>2007</Year>
+              <Month>Nov</Month>
+              <Day>29</Day>
+            </PubDate>
+          </JournalIssue>
+          <Title>Nature</Title>
+          <ISOAbbreviation>Nature</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>The loss of ions from Venus through the plasma wake.</ArticleTitle>
+        <Pagination>
+          <MedlinePgn>650-3</MedlinePgn>
+        </Pagination>
+        <Abstract>
+          <AbstractText>Venus, unlike Earth, is an extremely dry planet although both began with similar masses, distances from the Sun, and presumably water inventories. The high deuterium-to-hydrogen ratio in the venusian atmosphere relative to Earth's also indicates that the atmosphere has undergone significantly different evolution over the age of the Solar System. Present-day thermal escape is low for all atmospheric species. However, hydrogen can escape by means of collisions with hot atoms from ionospheric photochemistry, and although the bulk of O and O2 are gravitationally bound, heavy ions have been observed to escape through interaction with the solar wind. Nevertheless, their relative rates of escape, spatial distribution, and composition could not be determined from these previous measurements. Here we report Venus Express measurements showing that the dominant escaping ions are O+, He+ and H+. The escaping ions leave Venus through the plasma sheet (a central portion of the plasma wake) and in a boundary layer of the induced magnetosphere. The escape rate ratios are Q(H+)/Q(O+) = 1.9; Q(He+)/Q(O+) = 0.07. The first of these implies that the escape of H+ and O+, together with the estimated escape of neutral hydrogen and oxygen, currently takes place near the stoichometric ratio corresponding to water.</AbstractText>
+        </Abstract>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Barabash</LastName>
+            <ForeName>S</ForeName>
+            <Initials>S</Initials>
+            <AffiliationInfo>
+              <Affiliation>Swedish Institute of Space Physics, S-98128 Kiruna, Sweden. stas@irf.se</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Fedorov</LastName>
+            <ForeName>A</ForeName>
+            <Initials>A</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Sauvaud</LastName>
+            <ForeName>J J</ForeName>
+            <Initials>JJ</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Lundin</LastName>
+            <ForeName>R</ForeName>
+            <Initials>R</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Russell</LastName>
+            <ForeName>C T</ForeName>
+            <Initials>CT</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Futaana</LastName>
+            <ForeName>Y</ForeName>
+            <Initials>Y</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Zhang</LastName>
+            <ForeName>T L</ForeName>
+            <Initials>TL</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Andersson</LastName>
+            <ForeName>H</ForeName>
+            <Initials>H</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Brinkfeldt</LastName>
+            <ForeName>K</ForeName>
+            <Initials>K</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Grigoriev</LastName>
+            <ForeName>A</ForeName>
+            <Initials>A</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Holmström</LastName>
+            <ForeName>M</ForeName>
+            <Initials>M</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Yamauchi</LastName>
+            <ForeName>M</ForeName>
+            <Initials>M</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Asamura</LastName>
+            <ForeName>K</ForeName>
+            <Initials>K</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Baumjohann</LastName>
+            <ForeName>W</ForeName>
+            <Initials>W</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Lammer</LastName>
+            <ForeName>H</ForeName>
+            <Initials>H</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Coates</LastName>
+            <ForeName>A J</ForeName>
+            <Initials>AJ</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Kataria</LastName>
+            <ForeName>D O</ForeName>
+            <Initials>DO</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Linder</LastName>
+            <ForeName>D R</ForeName>
+            <Initials>DR</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Curtis</LastName>
+            <ForeName>C C</ForeName>
+            <Initials>CC</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Hsieh</LastName>
+            <ForeName>K C</ForeName>
+            <Initials>KC</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Sandel</LastName>
+            <ForeName>B R</ForeName>
+            <Initials>BR</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Grande</LastName>
+            <ForeName>M</ForeName>
+            <Initials>M</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Gunell</LastName>
+            <ForeName>H</ForeName>
+            <Initials>H</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Koskinen</LastName>
+            <ForeName>H E J</ForeName>
+            <Initials>HE</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Kallio</LastName>
+            <ForeName>E</ForeName>
+            <Initials>E</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Riihelä</LastName>
+            <ForeName>P</ForeName>
+            <Initials>P</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Säles</LastName>
+            <ForeName>T</ForeName>
+            <Initials>T</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Schmidt</LastName>
+            <ForeName>W</ForeName>
+            <Initials>W</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Kozyra</LastName>
+            <ForeName>J</ForeName>
+            <Initials>J</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Krupp</LastName>
+            <ForeName>N</ForeName>
+            <Initials>N</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Fränz</LastName>
+            <ForeName>M</ForeName>
+            <Initials>M</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Woch</LastName>
+            <ForeName>J</ForeName>
+            <Initials>J</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Luhmann</LastName>
+            <ForeName>J</ForeName>
+            <Initials>J</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>McKenna-Lawlor</LastName>
+            <ForeName>S</ForeName>
+            <Initials>S</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Mazelle</LastName>
+            <ForeName>C</ForeName>
+            <Initials>C</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Thocaven</LastName>
+            <ForeName>J-J</ForeName>
+            <Initials>JJ</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Orsini</LastName>
+            <ForeName>S</ForeName>
+            <Initials>S</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Cerulli-Irelli</LastName>
+            <ForeName>R</ForeName>
+            <Initials>R</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Mura</LastName>
+            <ForeName>M</ForeName>
+            <Initials>M</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Milillo</LastName>
+            <ForeName>M</ForeName>
+            <Initials>M</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Maggi</LastName>
+            <ForeName>M</ForeName>
+            <Initials>M</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Roelof</LastName>
+            <ForeName>E</ForeName>
+            <Initials>E</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Brandt</LastName>
+            <ForeName>P</ForeName>
+            <Initials>P</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Szego</LastName>
+            <ForeName>K</ForeName>
+            <Initials>K</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Winningham</LastName>
+            <ForeName>J D</ForeName>
+            <Initials>JD</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Frahm</LastName>
+            <ForeName>R A</ForeName>
+            <Initials>RA</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Scherrer</LastName>
+            <ForeName>J</ForeName>
+            <Initials>J</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Sharber</LastName>
+            <ForeName>J R</ForeName>
+            <Initials>JR</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Wurz</LastName>
+            <ForeName>P</ForeName>
+            <Initials>P</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Bochsler</LastName>
+            <ForeName>P</ForeName>
+            <Initials>P</Initials>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <PublicationTypeList>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+        </PublicationTypeList>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>England</Country>
+        <MedlineTA>Nature</MedlineTA>
+        <NlmUniqueID>0410462</NlmUniqueID>
+        <ISSNLinking>0028-0836</ISSNLinking>
+      </MedlineJournalInfo>
+      <CommentsCorrectionsList>
+        <CommentsCorrections RefType="ErratumIn">
+          <RefSource>Nature. 2022 May 9;:</RefSource>
+          <PMID Version="1">35534627</PMID>
+        </CommentsCorrections>
+      </CommentsCorrectionsList>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="received">
+          <Year>2007</Year>
+          <Month>06</Month>
+          <Day>26</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="accepted">
+          <Year>2007</Year>
+          <Month>10</Month>
+          <Day>29</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2007</Year>
+          <Month>11</Month>
+          <Day>30</Day>
+          <Hour>9</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2007</Year>
+          <Month>11</Month>
+          <Day>30</Day>
+          <Hour>9</Hour>
+          <Minute>1</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2007</Year>
+          <Month>11</Month>
+          <Day>30</Day>
+          <Hour>9</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">18046398</ArticleId>
+        <ArticleId IdType="pii">nature06434</ArticleId>
+        <ArticleId IdType="doi">10.1038/nature06434</ArticleId>
+      </ArticleIdList>
+    </PubmedData>
+  </PubmedArticle>
+  <DeleteCitation>
+<PMID Version="1">21334990</PMID>
+<PMID Version="1">28296071</PMID>
+<PMID Version="1">28297399</PMID>
+<PMID Version="1">30141285</PMID>
+<PMID Version="1">35097495</PMID>
+<PMID Version="1">35097496</PMID>
+<PMID Version="1">35097497</PMID>
+<PMID Version="1">35097498</PMID>
+<PMID Version="1">35097499</PMID>
+<PMID Version="1">35097500</PMID>
+<PMID Version="1">35097501</PMID>
+<PMID Version="1">35097502</PMID>
+<PMID Version="1">35097503</PMID>
+<PMID Version="1">35097504</PMID>
+<PMID Version="1">35097505</PMID>
+<PMID Version="1">35097506</PMID>
+<PMID Version="1">35097507</PMID>
+<PMID Version="1">35097508</PMID>
+<PMID Version="1">35097509</PMID>
+<PMID Version="1">35097510</PMID>
+<PMID Version="1">35097511</PMID>
+<PMID Version="1">35097512</PMID>
+<PMID Version="1">35097513</PMID>
+<PMID Version="1">35097514</PMID>
+<PMID Version="1">35097515</PMID>
+<PMID Version="1">35097516</PMID>
+<PMID Version="1">35097517</PMID>
+<PMID Version="1">35097518</PMID>
+<PMID Version="1">35097519</PMID>
+<PMID Version="1">35097520</PMID>
+<PMID Version="1">35097521</PMID>
+<PMID Version="1">35097522</PMID>
+<PMID Version="1">35097523</PMID>
+<PMID Version="1">35097524</PMID>
+<PMID Version="1">35097525</PMID>
+<PMID Version="1">35097526</PMID>
+<PMID Version="1">35097527</PMID>
+<PMID Version="1">35097528</PMID>
+<PMID Version="1">35097529</PMID>
+<PMID Version="1">35097530</PMID>
+<PMID Version="1">35097531</PMID>
+<PMID Version="1">35097532</PMID>
+<PMID Version="1">35097533</PMID>
+<PMID Version="1">35097534</PMID>
+<PMID Version="1">35097535</PMID>
+<PMID Version="1">35097536</PMID>
+<PMID Version="1">35097537</PMID>
+<PMID Version="1">35097538</PMID>
+<PMID Version="1">35097539</PMID>
+<PMID Version="1">35097540</PMID>
+<PMID Version="1">35097541</PMID>
+<PMID Version="1">35097542</PMID>
+<PMID Version="1">35097543</PMID>
+<PMID Version="1">35097544</PMID>
+<PMID Version="1">35097545</PMID>
+<PMID Version="1">35097546</PMID>
+<PMID Version="1">35097547</PMID>
+<PMID Version="1">35097548</PMID>
+<PMID Version="1">35097549</PMID>
+<PMID Version="1">35097550</PMID>
+<PMID Version="1">35097551</PMID>
+<PMID Version="1">35097552</PMID>
+<PMID Version="1">35097553</PMID>
+<PMID Version="1">35097554</PMID>
+<PMID Version="1">35097555</PMID>
+<PMID Version="1">35097556</PMID>
+<PMID Version="1">35097557</PMID>
+<PMID Version="1">35097558</PMID>
+<PMID Version="1">35097559</PMID>
+<PMID Version="1">35097560</PMID>
+<PMID Version="1">35097561</PMID>
+<PMID Version="1">35097562</PMID>
+<PMID Version="1">35097563</PMID>
+<PMID Version="1">35097564</PMID>
+<PMID Version="1">35097565</PMID>
+<PMID Version="1">35097566</PMID>
+<PMID Version="1">35097567</PMID>
+<PMID Version="1">35097568</PMID>
+<PMID Version="1">35097569</PMID>
+<PMID Version="1">35097570</PMID>
+<PMID Version="1">35097571</PMID>
+<PMID Version="1">35097572</PMID>
+<PMID Version="1">35097573</PMID>
+<PMID Version="1">35097574</PMID>
+<PMID Version="1">35097575</PMID>
+<PMID Version="1">35097576</PMID>
+<PMID Version="1">35097577</PMID>
+<PMID Version="1">35097578</PMID>
+<PMID Version="1">35097579</PMID>
+<PMID Version="1">35097580</PMID>
+<PMID Version="1">35097581</PMID>
+<PMID Version="1">35097582</PMID>
+<PMID Version="1">35097583</PMID>
+<PMID Version="1">35097584</PMID>
+<PMID Version="1">35097585</PMID>
+<PMID Version="1">35097586</PMID>
+<PMID Version="1">35097587</PMID>
+<PMID Version="1">35097588</PMID>
+<PMID Version="1">35097589</PMID>
+<PMID Version="1">35097590</PMID>
+<PMID Version="1">35097591</PMID>
+<PMID Version="1">35097592</PMID>
+<PMID Version="1">35097593</PMID>
+<PMID Version="1">35097594</PMID>
+<PMID Version="1">35097595</PMID>
+<PMID Version="1">35097596</PMID>
+<PMID Version="1">35097597</PMID>
+<PMID Version="1">35097598</PMID>
+<PMID Version="1">35097599</PMID>
+<PMID Version="1">35097600</PMID>
+<PMID Version="1">35097601</PMID>
+<PMID Version="1">35097602</PMID>
+<PMID Version="1">35097603</PMID>
+<PMID Version="1">35097604</PMID>
+<PMID Version="1">35097605</PMID>
+<PMID Version="1">35097606</PMID>
+<PMID Version="1">35097607</PMID>
+<PMID Version="1">35097608</PMID>
+<PMID Version="1">35097609</PMID>
+<PMID Version="1">35097610</PMID>
+<PMID Version="1">35097611</PMID>
+<PMID Version="1">35097612</PMID>
+<PMID Version="1">35097613</PMID>
+<PMID Version="1">35097614</PMID>
+<PMID Version="1">35097615</PMID>
+<PMID Version="1">35097616</PMID>
+<PMID Version="1">35097617</PMID>
+<PMID Version="1">35097618</PMID>
+<PMID Version="1">35097619</PMID>
+<PMID Version="1">35097620</PMID>
+<PMID Version="1">35097621</PMID>
+<PMID Version="1">35097622</PMID>
+<PMID Version="1">35097623</PMID>
+<PMID Version="1">35097624</PMID>
+<PMID Version="1">35097625</PMID>
+<PMID Version="1">35097626</PMID>
+<PMID Version="1">35097627</PMID>
+<PMID Version="1">35097628</PMID>
+<PMID Version="1">35097629</PMID>
+<PMID Version="1">35097630</PMID>
+<PMID Version="1">35097631</PMID>
+<PMID Version="1">35097632</PMID>
+<PMID Version="1">35097633</PMID>
+<PMID Version="1">35097634</PMID>
+<PMID Version="1">35097635</PMID>
+<PMID Version="1">35097636</PMID>
+<PMID Version="1">35097637</PMID>
+<PMID Version="1">35097638</PMID>
+<PMID Version="1">35097639</PMID>
+<PMID Version="1">35097640</PMID>
+<PMID Version="1">35097641</PMID>
+<PMID Version="1">35097642</PMID>
+<PMID Version="1">35097643</PMID>
+<PMID Version="1">35097644</PMID>
+<PMID Version="1">35097645</PMID>
+<PMID Version="1">35097646</PMID>
+<PMID Version="1">35097647</PMID>
+<PMID Version="1">35097648</PMID>
+<PMID Version="1">35097649</PMID>
+<PMID Version="1">35097650</PMID>
+<PMID Version="1">35097651</PMID>
+<PMID Version="1">35097652</PMID>
+<PMID Version="1">35097653</PMID>
+<PMID Version="1">35097654</PMID>
+<PMID Version="1">35097655</PMID>
+<PMID Version="1">35097656</PMID>
+<PMID Version="1">35097657</PMID>
+<PMID Version="1">35097658</PMID>
+<PMID Version="1">35097659</PMID>
+<PMID Version="1">35097660</PMID>
+<PMID Version="1">35097661</PMID>
+<PMID Version="1">35097662</PMID>
+<PMID Version="1">35097663</PMID>
+<PMID Version="1">35097664</PMID>
+<PMID Version="1">35097665</PMID>
+<PMID Version="1">35097666</PMID>
+<PMID Version="1">35097667</PMID>
+<PMID Version="1">35097668</PMID>
+<PMID Version="1">35097669</PMID>
+<PMID Version="1">35097670</PMID>
+<PMID Version="1">35097671</PMID>
+<PMID Version="1">35097672</PMID>
+<PMID Version="1">35097673</PMID>
+<PMID Version="1">35097674</PMID>
+<PMID Version="1">35097675</PMID>
+<PMID Version="1">35097676</PMID>
+<PMID Version="1">35097677</PMID>
+<PMID Version="1">35097678</PMID>
+<PMID Version="1">35097679</PMID>
+<PMID Version="1">35097680</PMID>
+<PMID Version="1">35097681</PMID>
+<PMID Version="1">35097682</PMID>
+<PMID Version="1">35097683</PMID>
+<PMID Version="1">35097684</PMID>
+<PMID Version="1">35097685</PMID>
+<PMID Version="1">35097686</PMID>
+<PMID Version="1">35097687</PMID>
+<PMID Version="1">35097688</PMID>
+<PMID Version="1">35097689</PMID>
+<PMID Version="1">35097690</PMID>
+<PMID Version="1">35097691</PMID>
+<PMID Version="1">35097692</PMID>
+<PMID Version="1">35097693</PMID>
+<PMID Version="1">35097694</PMID>
+<PMID Version="1">35097695</PMID>
+<PMID Version="1">35097696</PMID>
+<PMID Version="1">35097697</PMID>
+<PMID Version="1">35097698</PMID>
+<PMID Version="1">35097699</PMID>
+<PMID Version="1">35097700</PMID>
+<PMID Version="1">35097701</PMID>
+<PMID Version="1">35097702</PMID>
+<PMID Version="1">35097703</PMID>
+<PMID Version="1">35097704</PMID>
+<PMID Version="1">35097705</PMID>
+<PMID Version="1">35097706</PMID>
+<PMID Version="1">35097707</PMID>
+<PMID Version="1">35097708</PMID>
+<PMID Version="1">35097709</PMID>
+<PMID Version="1">35097710</PMID>
+<PMID Version="1">35097711</PMID>
+<PMID Version="1">35097712</PMID>
+<PMID Version="1">35097713</PMID>
+<PMID Version="1">35097714</PMID>
+<PMID Version="1">35097715</PMID>
+<PMID Version="1">35097716</PMID>
+<PMID Version="1">35097717</PMID>
+<PMID Version="1">35097718</PMID>
+<PMID Version="1">35097719</PMID>
+<PMID Version="1">35097720</PMID>
+<PMID Version="1">35097721</PMID>
+<PMID Version="1">35097722</PMID>
+<PMID Version="1">35097723</PMID>
+<PMID Version="1">35097724</PMID>
+<PMID Version="1">35097725</PMID>
+<PMID Version="1">35097726</PMID>
+<PMID Version="1">35097727</PMID>
+<PMID Version="1">35097728</PMID>
+<PMID Version="1">35097729</PMID>
+<PMID Version="1">35097730</PMID>
+<PMID Version="1">35097731</PMID>
+<PMID Version="1">35097732</PMID>
+<PMID Version="1">35097733</PMID>
+<PMID Version="1">35097734</PMID>
+<PMID Version="1">35097735</PMID>
+<PMID Version="1">35097736</PMID>
+<PMID Version="1">35097737</PMID>
+<PMID Version="1">35097738</PMID>
+<PMID Version="1">35097739</PMID>
+<PMID Version="1">35097740</PMID>
+<PMID Version="1">35097741</PMID>
+<PMID Version="1">35097742</PMID>
+<PMID Version="1">35097743</PMID>
+<PMID Version="1">35097744</PMID>
+<PMID Version="1">35097745</PMID>
+<PMID Version="1">35097746</PMID>
+<PMID Version="1">35097747</PMID>
+<PMID Version="1">35097748</PMID>
+<PMID Version="1">35097749</PMID>
+<PMID Version="1">35097750</PMID>
+<PMID Version="1">35097751</PMID>
+<PMID Version="1">35097752</PMID>
+<PMID Version="1">35097753</PMID>
+<PMID Version="1">35097754</PMID>
+<PMID Version="1">35097755</PMID>
+<PMID Version="1">35097756</PMID>
+<PMID Version="1">35097757</PMID>
+<PMID Version="1">35097758</PMID>
+<PMID Version="1">35097759</PMID>
+<PMID Version="1">35097760</PMID>
+<PMID Version="1">35097761</PMID>
+<PMID Version="1">35097762</PMID>
+<PMID Version="1">35097763</PMID>
+<PMID Version="1">35097764</PMID>
+<PMID Version="1">35097765</PMID>
+<PMID Version="1">35097766</PMID>
+<PMID Version="1">35097767</PMID>
+<PMID Version="1">35097768</PMID>
+<PMID Version="1">35097769</PMID>
+<PMID Version="1">35097770</PMID>
+<PMID Version="1">35097771</PMID>
+<PMID Version="1">35097772</PMID>
+<PMID Version="1">35097773</PMID>
+<PMID Version="1">35097774</PMID>
+<PMID Version="1">35097775</PMID>
+<PMID Version="1">35097776</PMID>
+<PMID Version="1">35097777</PMID>
+<PMID Version="1">35097778</PMID>
+<PMID Version="1">35097779</PMID>
+<PMID Version="1">35097780</PMID>
+<PMID Version="1">35097781</PMID>
+<PMID Version="1">35097782</PMID>
+<PMID Version="1">35097783</PMID>
+<PMID Version="1">35097784</PMID>
+<PMID Version="1">35097785</PMID>
+<PMID Version="1">35097786</PMID>
+<PMID Version="1">35097787</PMID>
+<PMID Version="1">35097788</PMID>
+<PMID Version="1">35097789</PMID>
+<PMID Version="1">35097790</PMID>
+<PMID Version="1">35097791</PMID>
+<PMID Version="1">35097792</PMID>
+<PMID Version="1">35097793</PMID>
+<PMID Version="1">35097794</PMID>
+<PMID Version="1">35097795</PMID>
+<PMID Version="1">35097796</PMID>
+<PMID Version="1">35097797</PMID>
+<PMID Version="1">35097798</PMID>
+<PMID Version="1">35097799</PMID>
+<PMID Version="1">35097800</PMID>
+<PMID Version="1">35097801</PMID>
+<PMID Version="1">35097802</PMID>
+<PMID Version="1">35097803</PMID>
+<PMID Version="1">35097804</PMID>
+<PMID Version="1">35097805</PMID>
+<PMID Version="1">35097806</PMID>
+<PMID Version="1">35097807</PMID>
+<PMID Version="1">35097808</PMID>
+<PMID Version="1">35097809</PMID>
+<PMID Version="1">35097810</PMID>
+<PMID Version="1">35097811</PMID>
+<PMID Version="1">35097812</PMID>
+<PMID Version="1">35097813</PMID>
+<PMID Version="1">35097814</PMID>
+<PMID Version="1">35097815</PMID>
+<PMID Version="1">35097816</PMID>
+<PMID Version="1">35097817</PMID>
+<PMID Version="1">35097818</PMID>
+<PMID Version="1">35097819</PMID>
+<PMID Version="1">35097820</PMID>
+<PMID Version="1">35097821</PMID>
+<PMID Version="1">35097822</PMID>
+<PMID Version="1">35097823</PMID>
+<PMID Version="1">35097824</PMID>
+<PMID Version="1">35097825</PMID>
+<PMID Version="1">35097826</PMID>
+<PMID Version="1">35097827</PMID>
+<PMID Version="1">35097828</PMID>
+<PMID Version="1">35097829</PMID>
+<PMID Version="1">35097830</PMID>
+<PMID Version="1">35097831</PMID>
+<PMID Version="1">35097832</PMID>
+<PMID Version="1">35097833</PMID>
+<PMID Version="1">35097834</PMID>
+<PMID Version="1">35097835</PMID>
+<PMID Version="1">35097836</PMID>
+<PMID Version="1">35097837</PMID>
+<PMID Version="1">35097838</PMID>
+<PMID Version="1">35097839</PMID>
+<PMID Version="1">35097840</PMID>
+<PMID Version="1">35097841</PMID>
+<PMID Version="1">35097842</PMID>
+<PMID Version="1">35097843</PMID>
+<PMID Version="1">35097844</PMID>
+<PMID Version="1">35097845</PMID>
+<PMID Version="1">35097846</PMID>
+<PMID Version="1">35097847</PMID>
+<PMID Version="1">35097848</PMID>
+<PMID Version="1">35097849</PMID>
+<PMID Version="1">35097850</PMID>
+<PMID Version="1">35097851</PMID>
+<PMID Version="1">35097852</PMID>
+<PMID Version="1">35097853</PMID>
+<PMID Version="1">35097854</PMID>
+<PMID Version="1">35097855</PMID>
+<PMID Version="1">35097856</PMID>
+<PMID Version="1">35097857</PMID>
+<PMID Version="1">35097858</PMID>
+<PMID Version="1">35097859</PMID>
+<PMID Version="1">35097860</PMID>
+<PMID Version="1">35097861</PMID>
+<PMID Version="1">35097862</PMID>
+<PMID Version="1">35097863</PMID>
+<PMID Version="1">35097864</PMID>
+<PMID Version="1">35097865</PMID>
+<PMID Version="1">35097866</PMID>
+<PMID Version="1">35097867</PMID>
+<PMID Version="1">35097868</PMID>
+<PMID Version="1">35097869</PMID>
+<PMID Version="1">35097870</PMID>
+<PMID Version="1">35097871</PMID>
+<PMID Version="1">35097872</PMID>
+<PMID Version="1">35097873</PMID>
+<PMID Version="1">35097874</PMID>
+<PMID Version="1">35097875</PMID>
+<PMID Version="1">35097876</PMID>
+<PMID Version="1">35097877</PMID>
+<PMID Version="1">35097878</PMID>
+<PMID Version="1">35097879</PMID>
+<PMID Version="1">35097880</PMID>
+<PMID Version="1">35097881</PMID>
+<PMID Version="1">35097882</PMID>
+<PMID Version="1">35097883</PMID>
+<PMID Version="1">35097884</PMID>
+<PMID Version="1">35097885</PMID>
+<PMID Version="1">35097886</PMID>
+<PMID Version="1">35097887</PMID>
+<PMID Version="1">35097888</PMID>
+<PMID Version="1">35097889</PMID>
+<PMID Version="1">35097890</PMID>
+<PMID Version="1">35097891</PMID>
+<PMID Version="1">35097892</PMID>
+<PMID Version="1">35097893</PMID>
+<PMID Version="1">35097894</PMID>
+<PMID Version="1">35097895</PMID>
+<PMID Version="1">35097896</PMID>
+<PMID Version="1">35097897</PMID>
+<PMID Version="1">35097898</PMID>
+<PMID Version="1">35097899</PMID>
+<PMID Version="1">35097900</PMID>
+<PMID Version="1">35097901</PMID>
+<PMID Version="1">35097902</PMID>
+<PMID Version="1">35097903</PMID>
+<PMID Version="1">35097904</PMID>
+<PMID Version="1">35097905</PMID>
+<PMID Version="1">35097906</PMID>
+<PMID Version="1">35097907</PMID>
+<PMID Version="1">35097908</PMID>
+<PMID Version="1">35097909</PMID>
+<PMID Version="1">35097910</PMID>
+<PMID Version="1">35097911</PMID>
+<PMID Version="1">35097912</PMID>
+<PMID Version="1">35097913</PMID>
+<PMID Version="1">35097914</PMID>
+<PMID Version="1">35097915</PMID>
+<PMID Version="1">35097916</PMID>
+<PMID Version="1">35097917</PMID>
+<PMID Version="1">35097918</PMID>
+<PMID Version="1">35097919</PMID>
+<PMID Version="1">35097920</PMID>
+<PMID Version="1">35097921</PMID>
+<PMID Version="1">35097922</PMID>
+<PMID Version="1">35097923</PMID>
+<PMID Version="1">35097924</PMID>
+<PMID Version="1">35097925</PMID>
+<PMID Version="1">35097926</PMID>
+<PMID Version="1">35097927</PMID>
+<PMID Version="1">35097928</PMID>
+<PMID Version="1">35097929</PMID>
+<PMID Version="1">35097930</PMID>
+<PMID Version="1">35097931</PMID>
+<PMID Version="1">35097932</PMID>
+<PMID Version="1">35097933</PMID>
+<PMID Version="1">35097934</PMID>
+<PMID Version="1">35097935</PMID>
+<PMID Version="1">35097936</PMID>
+<PMID Version="1">35097937</PMID>
+<PMID Version="1">35097938</PMID>
+<PMID Version="1">35097939</PMID>
+<PMID Version="1">35097940</PMID>
+<PMID Version="1">35097941</PMID>
+<PMID Version="1">35097942</PMID>
+<PMID Version="1">35097943</PMID>
+<PMID Version="1">35097944</PMID>
+<PMID Version="1">35097945</PMID>
+<PMID Version="1">35097946</PMID>
+<PMID Version="1">35097947</PMID>
+<PMID Version="1">35097948</PMID>
+<PMID Version="1">35097949</PMID>
+<PMID Version="1">35097950</PMID>
+<PMID Version="1">35097951</PMID>
+<PMID Version="1">35097952</PMID>
+<PMID Version="1">35097953</PMID>
+<PMID Version="1">35097954</PMID>
+<PMID Version="1">35097955</PMID>
+<PMID Version="1">35097956</PMID>
+<PMID Version="1">35097957</PMID>
+<PMID Version="1">35097958</PMID>
+<PMID Version="1">35097959</PMID>
+<PMID Version="1">35097960</PMID>
+<PMID Version="1">35097961</PMID>
+<PMID Version="1">35097962</PMID>
+<PMID Version="1">35097963</PMID>
+<PMID Version="1">35097964</PMID>
+<PMID Version="1">35097965</PMID>
+<PMID Version="1">35097966</PMID>
+<PMID Version="1">35097967</PMID>
+<PMID Version="1">35097968</PMID>
+<PMID Version="1">35097969</PMID>
+<PMID Version="1">35097970</PMID>
+<PMID Version="1">35097971</PMID>
+<PMID Version="1">35097972</PMID>
+<PMID Version="1">35097973</PMID>
+<PMID Version="1">35097974</PMID>
+<PMID Version="1">35097975</PMID>
+<PMID Version="1">35097976</PMID>
+<PMID Version="1">35097977</PMID>
+<PMID Version="1">35097978</PMID>
+<PMID Version="1">35097979</PMID>
+<PMID Version="1">35097980</PMID>
+<PMID Version="1">35097981</PMID>
+<PMID Version="1">35097982</PMID>
+<PMID Version="1">35097983</PMID>
+<PMID Version="1">35097984</PMID>
+<PMID Version="1">35097985</PMID>
+<PMID Version="1">35097986</PMID>
+<PMID Version="1">35097987</PMID>
+<PMID Version="1">35097988</PMID>
+<PMID Version="1">35097989</PMID>
+<PMID Version="1">35097990</PMID>
+<PMID Version="1">35097991</PMID>
+<PMID Version="1">35097992</PMID>
+<PMID Version="1">35097993</PMID>
+<PMID Version="1">35097994</PMID>
+<PMID Version="1">35097995</PMID>
+<PMID Version="1">35097996</PMID>
+<PMID Version="1">35097997</PMID>
+<PMID Version="1">35097998</PMID>
+<PMID Version="1">35097999</PMID>
+<PMID Version="1">35098000</PMID>
+<PMID Version="1">35098001</PMID>
+<PMID Version="1">35098002</PMID>
+<PMID Version="1">35145011</PMID>
+<PMID Version="1">35230506</PMID>
+<PMID Version="1">35248516</PMID>
+<PMID Version="1">35257192</PMID>
+<PMID Version="1">35347891</PMID>
+<PMID Version="1">35390288</PMID>
+<PMID Version="1">35393028</PMID>
+<PMID Version="1">35393037</PMID>
+<PMID Version="1">35410918</PMID>
+<PMID Version="1">35413734</PMID>
+<PMID Version="1">35435819</PMID>
+<PMID Version="1">35437268</PMID>
+<PMID Version="1">35441474</PMID>
+<PMID Version="1">35447639</PMID>
+<PMID Version="1">35447640</PMID>
+<PMID Version="1">35447642</PMID>
+<PMID Version="1">35447644</PMID>
+<PMID Version="1">35464130</PMID>
+<PMID Version="1">35473841</PMID>
+<PMID Version="1">35501044</PMID>
+<PMID Version="1">35526101</PMID>
+<PMID Version="1">35527379</PMID>
+<PMID Version="1">35527393</PMID>
+<PMID Version="1">35527568</PMID>
+<PMID Version="1">35530258</PMID>
+<PMID Version="1">35531624</PMID>
+<PMID Version="1">35531663</PMID>
+<PMID Version="1">35531854</PMID>
+<PMID Version="1">35531855</PMID>
+<PMID Version="1">35531856</PMID>
+<PMID Version="1">35531913</PMID>
+<PMID Version="1">35531915</PMID>
+<PMID Version="1">35531920</PMID>
+<PMID Version="1">35531937</PMID>
+<PMID Version="1">35531975</PMID>
+<PMID Version="1">35532057</PMID>
+<PMID Version="1">35532058</PMID>
+<PMID Version="1">35532119</PMID>
+<PMID Version="1">35532290</PMID>
+<PMID Version="1">35532304</PMID>
+<PMID Version="1">35532381</PMID>
+<PMID Version="1">35532738</PMID>
+<PMID Version="1">35532739</PMID>
+<PMID Version="1">35532748</PMID>
+<PMID Version="1">35533095</PMID>
+<PMID Version="1">35533099</PMID>
+<PMID Version="1">35533218</PMID>
+</DeleteCitation>
+</PubmedArticleSet>
