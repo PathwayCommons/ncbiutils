@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2019//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd">
+<PubmedArticleSet>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+      <PMID Version="1">22395128</PMID>
+      <DateCompleted>
+        <Year>2012</Year>
+        <Month>08</Month>
+        <Day>06</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2021</Year>
+        <Month>12</Month>
+        <Day>13</Day>
+      </DateRevised>
+      <Article PubModel="Print-Electronic">
+        <Journal>
+          <ISSN IssnType="Electronic">1467-9280</ISSN>
+          <JournalIssue CitedMedium="Internet">
+            <Volume>23</Volume>
+            <Issue>4</Issue>
+            <PubDate>
+              <Year>2012</Year>
+              <Month>04</Month>
+            </PubDate>
+          </JournalIssue>
+          <Title>Psychological science</Title>
+          <ISOAbbreviation>Psychol Sci</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>Is it light or dark? Recalling moral behavior changes perception of brightness.</ArticleTitle>
+        <Pagination>
+          <MedlinePgn>407-9</MedlinePgn>
+        </Pagination>
+        <ELocationID EIdType="doi" ValidYN="Y">10.1177/0956797611432497</ELocationID>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Banerjee</LastName>
+            <ForeName>Pronobesh</ForeName>
+            <Initials>P</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of Management and Marketing, Winston-Salem State University, USA.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Chatterjee</LastName>
+            <ForeName>Promothesh</ForeName>
+            <Initials>P</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Sinha</LastName>
+            <ForeName>Jayati</ForeName>
+            <Initials>J</Initials>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <PublicationTypeList>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+        </PublicationTypeList>
+        <ArticleDate DateType="Electronic">
+          <Year>2012</Year>
+          <Month>03</Month>
+          <Day>06</Day>
+        </ArticleDate>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>United States</Country>
+        <MedlineTA>Psychol Sci</MedlineTA>
+        <NlmUniqueID>9007542</NlmUniqueID>
+        <ISSNLinking>0956-7976</ISSNLinking>
+      </MedlineJournalInfo>
+      <CitationSubset>IM</CitationSubset>
+      <CommentsCorrectionsList>
+        <CommentsCorrections RefType="ExpressionOfConcernIn">
+          <RefSource>Psychol Sci. 2021 Nov 9;:9567976211058727</RefSource>
+          <PMID Version="1">34752162</PMID>
+        </CommentsCorrections>
+      </CommentsCorrectionsList>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName UI="D001519" MajorTopicYN="Y">Behavior</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D003624" MajorTopicYN="Y">Darkness</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D008027" MajorTopicYN="Y">Light</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D009014" MajorTopicYN="Y">Morals</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D014796" MajorTopicYN="Y">Visual Perception</DescriptorName>
+        </MeshHeading>
+      </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2012</Year>
+          <Month>3</Month>
+          <Day>8</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2012</Year>
+          <Month>3</Month>
+          <Day>8</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2012</Year>
+          <Month>8</Month>
+          <Day>7</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">22395128</ArticleId>
+        <ArticleId IdType="pii">0956797611432497</ArticleId>
+        <ArticleId IdType="doi">10.1177/0956797611432497</ArticleId>
+      </ArticleIdList>
+    </PubmedData>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+      <PMID Version="1">20868729</PMID>
+      <DateCompleted>
+        <Year>2011</Year>
+        <Month>10</Month>
+        <Day>31</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2021</Year>
+        <Month>12</Month>
+        <Day>13</Day>
+      </DateRevised>
+      <Article PubModel="Print-Electronic">
+        <Journal>
+          <ISSN IssnType="Electronic">1873-7544</ISSN>
+          <JournalIssue CitedMedium="Internet">
+            <Volume>171</Volume>
+            <Issue>3</Issue>
+            <PubDate>
+              <Year>2010</Year>
+              <Month>Dec</Month>
+              <Day>15</Day>
+            </PubDate>
+          </JournalIssue>
+          <Title>Neuroscience</Title>
+          <ISOAbbreviation>Neuroscience</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>Distinct effects of sonic hedgehog and Wnt-7a on differentiation of neonatal neural stem/progenitor cells in vitro.</ArticleTitle>
+        <Pagination>
+          <MedlinePgn>693-711</MedlinePgn>
+        </Pagination>
+        <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroscience.2010.09.023</ELocationID>
+        <Abstract>
+          <AbstractText>Sonic hedgehog (Shh) and Wnt-7a are morphogens involved in embryonic as well as ongoing adult neurogenesis. Their effects on the differentiation and membrane properties of neonatal neural stem/progenitor cells (NS/PCs) were studied in vitro using NS/PCs transduced with either Shh or Wnt-7a. Eight days after the onset of in vitro differentiation the cells were analyzed for the expression of neuronal and glial markers using immunocytochemical and Western blot analysis, and their membrane properties were characterized using the patch-clamp technique. Our results showed that both Shh and Wnt-7a increased the numbers of cells expressing neuronal markers; however, quantitative immunocytochemical analysis showed that only Wnt-7a enhanced the outgrowth and the development of processes in these cells. In addition, Wnt-7a markedly suppressed gliogenesis. The electrophysiological analysis revealed that Wnt-7a increased, while Shh decreased the incidence of cells displaying a neuron-like current pattern, represented by outwardly rectifying K(+) currents and tetrodotoxin-sensitive Na(+) currents. Additionally, Wnt-7a increased cell proliferation only at the early stages of differentiation, while Shh promoted proliferation within the entire course of differentiation. Thus we can conclude that Shh and Wnt-7a interfere differently with the process of neuronal differentiation and that they promote distinct stages of neuronal differentiation in neonatal NS/PCs.</AbstractText>
+          <CopyrightInformation>Copyright © 2010 IBRO. Published by Elsevier Ltd. All rights reserved.</CopyrightInformation>
+        </Abstract>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Prajerova</LastName>
+            <ForeName>I</ForeName>
+            <Initials>I</Initials>
+            <AffiliationInfo>
+              <Affiliation>Laboratory of Neurobiology, Department of Cellular Neurophysiology, Institute of Experimental Medicine The Academy of Sciences of the Czech Republic, Videnska 1083, 142 20 Prague 4, Czech Republic.</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Honsa</LastName>
+            <ForeName>P</ForeName>
+            <Initials>P</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Chvatal</LastName>
+            <ForeName>A</ForeName>
+            <Initials>A</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Anderova</LastName>
+            <ForeName>M</ForeName>
+            <Initials>M</Initials>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <PublicationTypeList>
+          <PublicationType UI="D003160">Comparative Study</PublicationType>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+          <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+        </PublicationTypeList>
+        <ArticleDate DateType="Electronic">
+          <Year>2010</Year>
+          <Month>09</Month>
+          <Day>21</Day>
+        </ArticleDate>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>United States</Country>
+        <MedlineTA>Neuroscience</MedlineTA>
+        <NlmUniqueID>7605074</NlmUniqueID>
+        <ISSNLinking>0306-4522</ISSNLinking>
+      </MedlineJournalInfo>
+      <ChemicalList>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D053823">Hedgehog Proteins</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="C465570">Shh protein, mouse</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="D051153">Wnt Proteins</NameOfSubstance>
+        </Chemical>
+        <Chemical>
+          <RegistryNumber>0</RegistryNumber>
+          <NameOfSubstance UI="C490508">Wnt7a protein, mouse</NameOfSubstance>
+        </Chemical>
+      </ChemicalList>
+      <CitationSubset>IM</CitationSubset>
+      <CommentsCorrectionsList>
+        <CommentsCorrections RefType="ErratumIn">
+          <RefSource>Neuroscience. 2021 Dec 9;:</RefSource>
+          <PMID Version="1">34895915</PMID>
+        </CommentsCorrections>
+      </CommentsCorrectionsList>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D000831" MajorTopicYN="N">Animals, Newborn</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D002454" MajorTopicYN="N">Cell Differentiation</DescriptorName>
+          <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D002478" MajorTopicYN="N">Cells, Cultured</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D053823" MajorTopicYN="N">Hedgehog Proteins</DescriptorName>
+          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
+          <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D051379" MajorTopicYN="N">Mice</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D008810" MajorTopicYN="N">Mice, Inbred C57BL</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D058953" MajorTopicYN="N">Neural Stem Cells</DescriptorName>
+          <QualifierName UI="Q000166" MajorTopicYN="N">cytology</QualifierName>
+          <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D055495" MajorTopicYN="N">Neurogenesis</DescriptorName>
+          <QualifierName UI="Q000235" MajorTopicYN="Y">genetics</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D013234" MajorTopicYN="N">Stem Cells</DescriptorName>
+          <QualifierName UI="Q000166" MajorTopicYN="N">cytology</QualifierName>
+          <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D051153" MajorTopicYN="N">Wnt Proteins</DescriptorName>
+          <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
+          <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+        </MeshHeading>
+      </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="received">
+          <Year>2010</Year>
+          <Month>05</Month>
+          <Day>11</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="revised">
+          <Year>2010</Year>
+          <Month>08</Month>
+          <Day>09</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="accepted">
+          <Year>2010</Year>
+          <Month>09</Month>
+          <Day>14</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2010</Year>
+          <Month>9</Month>
+          <Day>28</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2010</Year>
+          <Month>9</Month>
+          <Day>28</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2011</Year>
+          <Month>11</Month>
+          <Day>1</Day>
+          <Hour>6</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">20868729</ArticleId>
+        <ArticleId IdType="pii">S0306-4522(10)01270-4</ArticleId>
+        <ArticleId IdType="doi">10.1016/j.neuroscience.2010.09.023</ArticleId>
+      </ArticleIdList>
+    </PubmedData>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+      <PMID Version="1">12657199</PMID>
+      <DateCompleted>
+        <Year>2003</Year>
+        <Month>07</Month>
+        <Day>03</Day>
+      </DateCompleted>
+      <DateRevised>
+        <Year>2021</Year>
+        <Month>12</Month>
+        <Day>13</Day>
+      </DateRevised>
+      <Article PubModel="Print">
+        <Journal>
+          <ISSN IssnType="Print">0148-396X</ISSN>
+          <JournalIssue CitedMedium="Print">
+            <Volume>52</Volume>
+            <Issue>4</Issue>
+            <PubDate>
+              <Year>2003</Year>
+              <Month>Apr</Month>
+            </PubDate>
+          </JournalIssue>
+          <Title>Neurosurgery</Title>
+          <ISOAbbreviation>Neurosurgery</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>Emergency image transfer system through a mobile telephone in Japan: technical note.</ArticleTitle>
+        <Pagination>
+          <MedlinePgn>986-8; discussion 988-90</MedlinePgn>
+        </Pagination>
+        <Abstract>
+          <AbstractText Label="OBJECTIVE" NlmCategory="OBJECTIVE">We report the first application and usefulness of image transfer through a mobile telephone, which can be used between the hospital and another location.</AbstractText>
+          <AbstractText Label="METHODS" NlmCategory="METHODS">With this system, brain computed tomographic scans, magnetic resonance images, and angiograms obtained from more than 100 patients in the emergency department were transferred and diagnostically analyzed via a mobile phone. The mobile phone had a 110,000-pixel digital camera and a built-in thin-film transistor liquid crystal display. We reviewed the distribution of pathological characteristics on the transferred images and compared them with the diagnoses made using full-scale original film.</AbstractText>
+          <AbstractText Label="RESULTS" NlmCategory="RESULTS">This system of transferring images was useful in all cases for correct early diagnosis and early treatment. The quality of magnetic resonance images received was better than that of computed tomographic scans. Hemorrhage provided better contrast than infarction for allowing easy identification. Cerebral angiography revealed small aneurysms if the target area was focused properly. Image quality was sufficient for interpretation despite the small dimensions of the monitor. Ease of operation and portability were both satisfactory. The mean time from commencement of image uptake to complete reception was 2 to 3 minutes.</AbstractText>
+          <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">The mobile phone system is adequately useful for early diagnosis and initiation of treatment in emergent cases. This is attributable to its low cost and ease of handling for sending images to remote areas and between hospitals, despite the small dimensions of the monitor. Better-quality image transfer will be realized through an advanced mobile phone system based on the new International Mobile Telecommunication 2000 standards, which also will be useful in the development of telemedicine and telecare.</AbstractText>
+        </Abstract>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y">
+            <LastName>Yamada</LastName>
+            <ForeName>Mikito</ForeName>
+            <Initials>M</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of Neurosurgery, Murakami Memorial Hospital, Asahi University, Gifu, Japan. mickey@dent.asahi-u.ac.jp</Affiliation>
+            </AffiliationInfo>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Watarai</LastName>
+            <ForeName>Hirotaka</ForeName>
+            <Initials>H</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Andou</LastName>
+            <ForeName>Takashi</ForeName>
+            <Initials>T</Initials>
+          </Author>
+          <Author ValidYN="Y">
+            <LastName>Sakai</LastName>
+            <ForeName>Noboru</ForeName>
+            <Initials>N</Initials>
+          </Author>
+        </AuthorList>
+        <Language>eng</Language>
+        <PublicationTypeList>
+          <PublicationType UI="D016428">Journal Article</PublicationType>
+        </PublicationTypeList>
+      </Article>
+      <MedlineJournalInfo>
+        <Country>United States</Country>
+        <MedlineTA>Neurosurgery</MedlineTA>
+        <NlmUniqueID>7802914</NlmUniqueID>
+        <ISSNLinking>0148-396X</ISSNLinking>
+      </MedlineJournalInfo>
+      <CitationSubset>IM</CitationSubset>
+      <CommentsCorrectionsList>
+        <CommentsCorrections RefType="CommentIn">
+          <RefSource>World Neurosurg. 2021 Oct;154:e437-e442</RefSource>
+          <PMID Version="1">34280543</PMID>
+        </CommentsCorrections>
+      </CommentsCorrectionsList>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName UI="D001930" MajorTopicYN="N">Brain Injuries</DescriptorName>
+          <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+          <QualifierName UI="Q000628" MajorTopicYN="N">therapy</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D040421" MajorTopicYN="Y">Cell Phone</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D002533" MajorTopicYN="N">Cerebral Angiography</DescriptorName>
+          <QualifierName UI="Q000295" MajorTopicYN="Y">instrumentation</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D002543" MajorTopicYN="N">Cerebral Hemorrhage</DescriptorName>
+          <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+          <QualifierName UI="Q000628" MajorTopicYN="N">therapy</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D002544" MajorTopicYN="N">Cerebral Infarction</DescriptorName>
+          <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+          <QualifierName UI="Q000628" MajorTopicYN="N">therapy</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D004631" MajorTopicYN="Y">Emergency Medical Service Communication Systems</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D004632" MajorTopicYN="N">Emergency Medical Services</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+          <QualifierName UI="Q000295" MajorTopicYN="Y">instrumentation</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D021621" MajorTopicYN="N">Imaging, Three-Dimensional</DescriptorName>
+          <QualifierName UI="Q000295" MajorTopicYN="Y">instrumentation</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D007564" MajorTopicYN="N">Japan</DescriptorName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D013345" MajorTopicYN="N">Subarachnoid Hemorrhage</DescriptorName>
+          <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+          <QualifierName UI="Q000628" MajorTopicYN="N">therapy</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D019112" MajorTopicYN="N">Teleradiology</DescriptorName>
+          <QualifierName UI="Q000295" MajorTopicYN="Y">instrumentation</QualifierName>
+        </MeshHeading>
+        <MeshHeading>
+          <DescriptorName UI="D014057" MajorTopicYN="N">Tomography, X-Ray Computed</DescriptorName>
+          <QualifierName UI="Q000295" MajorTopicYN="Y">instrumentation</QualifierName>
+        </MeshHeading>
+      </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+      <History>
+        <PubMedPubDate PubStatus="received">
+          <Year>2002</Year>
+          <Month>04</Month>
+          <Day>29</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="accepted">
+          <Year>2002</Year>
+          <Month>11</Month>
+          <Day>11</Day>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="pubmed">
+          <Year>2003</Year>
+          <Month>3</Month>
+          <Day>27</Day>
+          <Hour>5</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="medline">
+          <Year>2003</Year>
+          <Month>7</Month>
+          <Day>4</Day>
+          <Hour>5</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+        <PubMedPubDate PubStatus="entrez">
+          <Year>2003</Year>
+          <Month>3</Month>
+          <Day>27</Day>
+          <Hour>5</Hour>
+          <Minute>0</Minute>
+        </PubMedPubDate>
+      </History>
+      <PublicationStatus>ppublish</PublicationStatus>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">12657199</ArticleId>
+        <ArticleId IdType="doi">10.1227/01.neu.0000053152.45258.74</ArticleId>
+      </ArticleIdList>
+    </PubmedData>
+  </PubmedArticle>
+  <DeleteCitation>
+<PMID Version="1">33952505</PMID>
+<PMID Version="1">34078659</PMID>
+<PMID Version="1">34192908</PMID>
+<PMID Version="1">34192934</PMID>
+<PMID Version="1">34284993</PMID>
+<PMID Version="1">34374307</PMID>
+<PMID Version="1">34428912</PMID>
+<PMID Version="1">34470544</PMID>
+<PMID Version="1">34475095</PMID>
+<PMID Version="1">34475097</PMID>
+<PMID Version="1">34554563</PMID>
+<PMID Version="1">34598058</PMID>
+<PMID Version="1">34698536</PMID>
+<PMID Version="1">34700982</PMID>
+<PMID Version="1">34701574</PMID>
+<PMID Version="1">34732463</PMID>
+<PMID Version="1">34738513</PMID>
+<PMID Version="1">34738517</PMID>
+<PMID Version="1">34773412</PMID>
+<PMID Version="1">34792572</PMID>
+<PMID Version="1">34797776</PMID>
+<PMID Version="1">34806903</PMID>
+<PMID Version="1">34876694</PMID>
+<PMID Version="1">34878560</PMID>
+<PMID Version="1">34878561</PMID>
+<PMID Version="1">34878562</PMID>
+<PMID Version="1">34878666</PMID>
+<PMID Version="1">34879159</PMID>
+<PMID Version="1">34879165</PMID>
+<PMID Version="1">34879167</PMID>
+<PMID Version="1">34879168</PMID>
+<PMID Version="1">34894165</PMID>
+<PMID Version="1">34894379</PMID>
+<PMID Version="1">34894415</PMID>
+</DeleteCitation>
+</PubmedArticleSet>

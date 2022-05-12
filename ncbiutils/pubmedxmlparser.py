@@ -258,8 +258,9 @@ class PubmedXmlParser(BaseModel):
         """Parse an XML document to a list of custom citations"""
         xml_tree = _from_raw(data)
         pubmed_article_set = self._get_PubmedArticleSet(xml_tree)
+        pubmed_articles = _find_all(pubmed_article_set, './/PubmedArticle')
 
-        for pubmed_article in pubmed_article_set:
+        for pubmed_article in pubmed_articles:
             pmid = self._get_pmid(pubmed_article)
             doi = self._get_doi(pubmed_article)
             title = self._get_title(pubmed_article)
