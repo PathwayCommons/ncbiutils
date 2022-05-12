@@ -111,12 +111,25 @@ class TestPubmedXmlParserClass(object):
                 None,
                 None,
                 '2020',
-                'D016428'
+                'D016428',
             ),
         ],
     )
     def test_no_abstract_empty_title(
-        self, pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type, shared_datadir
+        self,
+        pmid,
+        doi,
+        abstract,
+        title,
+        last_name,
+        email,
+        jtitle,
+        issn,
+        volume,
+        issue,
+        pub_year,
+        pub_type,
+        shared_datadir,
     ):
         data = (shared_datadir / 'no_title_abstract.xml').read_bytes()
         parse_result = self.xmlparser.parse(data)
@@ -151,7 +164,7 @@ class TestPubmedXmlParserClass(object):
                 '362',
                 None,
                 '2018',
-                'D017418'
+                'D017418',
             ),
         ],
     )
@@ -206,12 +219,25 @@ class TestPubmedXmlParserClass(object):
                 '34',
                 '17-18',
                 '2020',
-                'D052061'
+                'D052061',
             ),
         ],
     )
     def test_markup_orcid(
-        self, pmid, doi, abstract, title, last_name, orcid, jtitle, issn, volume, issue, pub_year, pub_type, shared_datadir
+        self,
+        pmid,
+        doi,
+        abstract,
+        title,
+        last_name,
+        orcid,
+        jtitle,
+        issn,
+        volume,
+        issue,
+        pub_year,
+        pub_type,
+        shared_datadir,
     ):
         data = (shared_datadir / 'orcid.xml').read_bytes()
         parse_result = self.xmlparser.parse(data)
