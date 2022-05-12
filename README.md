@@ -49,7 +49,8 @@ for chunk in chunks:
     print(citations[0].dict())
 ```
 
-### Options
+*Options*
+
 Configure the `PubMedFetch` instance through its constructor:
 
 - retmax : int
@@ -57,6 +58,9 @@ Configure the `PubMedFetch` instance through its constructor:
 - api_key : str
   - API key for NCBI E-Utilities
 
+---
+
+Also available is `PubMedDownload` that can retrieve records from the PubMed FTP server for both [baseline and daily updates](https://pubmed.ncbi.nlm.nih.gov/download/).
 
 ## Testing
 
