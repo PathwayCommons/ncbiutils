@@ -45,10 +45,11 @@ class TestPubmedXmlParserClass(object):
         assert len(result) == 0
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type',
+        'pmid, pmc, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type',
         [
             (
                 '31302001',
+                None,
                 '10.1016/j.molcel.2019.06.008',
                 'Sirt3, as a major mitochondrial nicotinamide',
                 'SENP1-Sirt3 Signaling Controls Mitochondrial',
@@ -63,6 +64,7 @@ class TestPubmedXmlParserClass(object):
             ),
             (
                 '22454523',
+                'PMC4067266',
                 '10.1242/jcs.103564',
                 'Botulinum neurotoxins (BoNTs) are classified',
                 'Botulinum neurotoxin D-C uses synaptotagmin',
@@ -78,10 +80,11 @@ class TestPubmedXmlParserClass(object):
         ],
     )
     def test_complete_citation_attributes_match(
-        self, pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type, double_xml
+        self, pmid, pmc, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type, double_xml
     ):
         parse_result = self.xmlparser.parse(double_xml)
         result = next(r for r in parse_result if r.pmid == pmid)
+        assert result.pmc == pmc
         assert result.doi == doi
         assert abstract in result.abstract
         assert title in result.title
@@ -149,11 +152,12 @@ class TestPubmedXmlParserClass(object):
         assert pub_type in result.publication_type_list
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, email, collective_name, jtitle,'
+        'pmid, pmc, doi, abstract, title, last_name, email, collective_name, jtitle,'
         ' issn, volume, issue, pub_year, pub_type',
         [
             (
                 '30158200',
+                'PMC6113773',
                 '10.1136/bmj.k3225',
                 'RESULTS: Of 15 fracture associated loci identified, all were also associated with bone mineral',
                 'Assessment of the genetic and clinical determinants of',
@@ -172,6 +176,7 @@ class TestPubmedXmlParserClass(object):
     def test_strucabstract_markup_collectivename(
         self,
         pmid,
+        pmc,
         doi,
         abstract,
         title,
@@ -189,6 +194,7 @@ class TestPubmedXmlParserClass(object):
         data = (shared_datadir / 'markup.xml').read_bytes()
         parse_result = self.xmlparser.parse(data)
         result = next(r for r in parse_result if r.pmid == pmid)
+        assert result.pmc == pmc
         assert result.doi == doi
         assert abstract in result.abstract
         assert title in result.title
@@ -206,10 +212,11 @@ class TestPubmedXmlParserClass(object):
         assert pub_type in result.publication_type_list
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, orcid, jtitle, issn, volume, issue, pub_year, pub_type',
+        'pmid, pmc, doi, abstract, title, last_name, orcid, jtitle, issn, volume, issue, pub_year, pub_type',
         [
             (
                 '32820036',
+                'PMC7462063',
                 '10.1101/gad.337584.120',
                 'In Ptch1 +/- ; Bcor ΔE9-10 tumors',
                 'Functional loss of a noncanonical BCOR-PRC1.1',
@@ -227,6 +234,7 @@ class TestPubmedXmlParserClass(object):
     def test_markup_orcid(
         self,
         pmid,
+        pmc,
         doi,
         abstract,
         title,
@@ -243,6 +251,7 @@ class TestPubmedXmlParserClass(object):
         data = (shared_datadir / 'orcid.xml').read_bytes()
         parse_result = self.xmlparser.parse(data)
         result = next(r for r in parse_result if r.pmid == pmid)
+        assert result.pmc == pmc
         assert result.doi == doi
         assert abstract in result.abstract
         assert title in result.title

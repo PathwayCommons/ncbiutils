@@ -138,6 +138,8 @@ class Citation(BaseModel):
     ----------
     pmid : str
         PubMed unique id (uid)
+    pmc : Optional[str]
+        PubMedCentral id
     doi : Optional[str]
         Digital Object Identifier
     title : str
@@ -150,6 +152,7 @@ class Citation(BaseModel):
     """
 
     pmid: str
+    pmc: Optional[str]
     doi: Optional[str]
     title: str
     abstract: Optional[str]
@@ -185,6 +188,10 @@ class PubmedXmlParser(BaseModel):
     def _get_doi(self, pubmed_article: PubmedArticle) -> Optional[str]:
         doi = _text_safe(pubmed_article, './/PubmedData/ArticleIdList/ArticleId[@IdType="doi"]')
         return doi
+
+    def _get_pmc(self, pubmed_article: PubmedArticle) -> Optional[str]:
+        pmc = _text_safe(pubmed_article, './/PubmedData/ArticleIdList/ArticleId[@IdType="pmc"]')
+        return pmc
 
     def _get_abstract(self, pubmed_article: PubmedArticle) -> Optional[str]:
         abstract = []
@@ -262,6 +269,7 @@ class PubmedXmlParser(BaseModel):
 
         for pubmed_article in pubmed_articles:
             pmid = self._get_pmid(pubmed_article)
+            pmc = self._get_pmc(pubmed_article)
             doi = self._get_doi(pubmed_article)
             title = self._get_title(pubmed_article)
             abstract = self._get_abstract(pubmed_article)
@@ -270,6 +278,7 @@ class PubmedXmlParser(BaseModel):
             publication_type_list = self._get_pubtypes(pubmed_article)
             citation = Citation(
                 pmid=pmid,
+                pmc=pmc,
                 title=title,
                 doi=doi,
                 abstract=abstract,
