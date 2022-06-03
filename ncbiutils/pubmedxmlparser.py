@@ -27,17 +27,9 @@ class PubmedXmlParser(BaseModel):
     Capabilities to parse PubMed XML.
     See DTD http://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd
 
-    Class attributes
-    ----------
-
-    Attributes
-    ----------
-    citations : List[Optional[PubMedCitation]] = []
-        List of PubMedCitation
-
     Methods
     ----------
-    parse(text: str) -> List[Optional[PubMedCitation]]
+    parse(text: str) -> Generator[Citation, None, None]
         Return a list of article data given PubMed XML text
 
     """
