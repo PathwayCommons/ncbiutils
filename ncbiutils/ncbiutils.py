@@ -2,7 +2,8 @@ from pydantic import BaseModel, validator
 from typing import ClassVar, Any, Optional, Tuple, List, Dict, Generator, Union, NamedTuple
 from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum, DownloadPathEnum
 from ncbiutils.http import safe_requests
-from ncbiutils.pubmedxmlparser import Citation, PubmedXmlParser
+from ncbiutils.pubmedxmlparser import PubmedXmlParser
+from ncbiutils.pubmed import Citation
 import gzip
 
 
