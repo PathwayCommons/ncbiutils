@@ -29,8 +29,8 @@ class PubmedXmlParser(BaseModel):
 
     Methods
     ----------
-    parse(text: str) -> Generator[Citation, None, None]
-        Return a list of article data given PubMed XML text
+    parse(data: bytes) -> Generator[Citation, None, None]
+        Return a list of article data given PubMed XML bytes
 
     """
 
