@@ -1,5 +1,6 @@
 import pytest
-from ncbiutils.pubmedxmlparser import PubmedXmlParser, Citation
+from ncbiutils.pubmedxmlparser import PubmedXmlParser
+from ncbiutils.pubmed import Citation
 from ncbiutils.xml import _from_raw
 
 #############################

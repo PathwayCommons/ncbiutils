@@ -98,5 +98,3 @@ class Citation(BaseModel):
     author_list: Optional[List[Author]]
     journal: Journal
     publication_type_list: List[str]
-
-
