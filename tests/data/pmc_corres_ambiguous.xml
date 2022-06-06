@@ -1,0 +1,932 @@
+<?xml version="1.0"?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTDARTICLESET2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+    <article
+        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+        <!--The publisher of this article does not allow downloading of the full text in XML form.-->
+        <front>
+            <journal-meta>
+                <journal-id journal-id-type="nlm-ta">Mol Cell Biol</journal-id>
+                <journal-id journal-id-type="iso-abbrev">Mol Cell Biol</journal-id>
+                <journal-id journal-id-type="hwp">mcb</journal-id>
+                <journal-id journal-id-type="pmc">mcb</journal-id>
+                <journal-id journal-id-type="publisher-id">MCB</journal-id>
+                <journal-title-group>
+                    <journal-title>Molecular and Cellular Biology</journal-title>
+                </journal-title-group>
+                <issn pub-type="ppub">0270-7306</issn>
+                <issn pub-type="epub">1098-5549</issn>
+                <publisher>
+                    <publisher-name>American Society for Microbiology</publisher-name>
+                    <publisher-loc>1752 N St., N.W., Washington, DC</publisher-loc>
+                </publisher>
+            </journal-meta>
+            <article-meta>
+                <article-id pub-id-type="pmid">33077497</article-id>
+                <article-id pub-id-type="pmc">7849395</article-id>
+                <article-id pub-id-type="publisher-id">00480-20</article-id>
+                <article-id pub-id-type="doi">10.1128/MCB.00480-20</article-id>
+                <article-categories>
+                    <subj-group subj-group-type="heading">
+                        <subject>Research Article</subject>
+                    </subj-group>
+                </article-categories>
+                <title-group>
+                    <article-title>Alternative Splicing and Cleavage of GLUT8</article-title>
+                    <alt-title alt-title-type="running-head">Alternative Splicing and Cleavage of GLUT8</alt-title>
+                    <alt-title alt-title-type="short-authors">Alexander et al.</alt-title>
+                </title-group>
+                <contrib-group>
+                    <contrib contrib-type="author" corresp="yes">
+                        <contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-7830-8043</contrib-id>
+                        <name>
+                            <surname>Alexander</surname>
+                            <given-names>Caroline M.</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="aff1">
+                            <sup>a</sup>
+                        </xref>
+                    </contrib>
+                    <contrib contrib-type="author">
+                        <name>
+                            <surname>Martin</surname>
+                            <given-names>Joshua A.</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="aff1">
+                            <sup>a</sup>
+                        </xref>
+                    </contrib>
+                    <contrib contrib-type="author">
+                        <name>
+                            <surname>Oxman</surname>
+                            <given-names>Elias</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="aff1">
+                            <sup>a</sup>
+                        </xref>
+                    </contrib>
+                    <contrib contrib-type="author">
+                        <name>
+                            <surname>Kasza</surname>
+                            <given-names>Ildiko</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="aff1">
+                            <sup>a</sup>
+                        </xref>
+                    </contrib>
+                    <contrib contrib-type="author">
+                        <name>
+                            <surname>Senn</surname>
+                            <given-names>Katherine A.</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="aff2">
+                            <sup>b</sup>
+                        </xref>
+                    </contrib>
+                    <contrib contrib-type="author">
+                        <name>
+                            <surname>Dvinge</surname>
+                            <given-names>Heidi</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="aff2">
+                            <sup>b</sup>
+                        </xref>
+                        <xref ref-type="author-notes" rid="fn1">&#x2020;</xref>
+                    </contrib>
+                    <aff id="aff1">
+                        <label>a</label>
+                        <addr-line>McArdle Laboratory for Cancer Research, School of Medicine and Public Health, University of Wisconsin&#x2014;Madison, Madison, Wisconsin, USA</addr-line>
+                    </aff>
+                    <aff id="aff2">
+                        <label>b</label>
+                        <addr-line>Department of Biomolecular Chemistry, School of Medicine and Public Health, University of Wisconsin&#x2014;Madison, Madison, Wisconsin, USA</addr-line>
+                    </aff>
+                </contrib-group>
+                <author-notes>
+                    <corresp id="cor1">Address correspondence to Caroline M. Alexander,
+                        <email>cmalexander@wisc.edu</email>.
+                    </corresp>
+                    <fn id="fn1" fn-type="deceased">
+                        <label>&#x2020;</label>
+                        <p>Deceased.</p>
+                    </fn>
+                    <fn fn-type="other">
+                        <p>
+                            <bold>Citation</bold>
+                            Alexander CM, Martin JA, Oxman E, Kasza I, Senn KA, Dvinge H. 2021. Alternative splicing and cleavage of GLUT8. Mol Cell Biol 41:e00480-20.
+                            <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1128/MCB.00480-20">https://doi.org/10.1128/MCB.00480-20</ext-link>.
+                        </p>
+                    </fn>
+                </author-notes>
+                <pub-date pub-type="epreprint">
+                    <day>19</day>
+                    <month>10</month>
+                    <year>2020</year>
+                </pub-date>
+                <pub-date pub-type="epub">
+                    <day>21</day>
+                    <month>12</month>
+                    <year>2020</year>
+                </pub-date>
+                <pub-date pub-type="collection">
+                    <month>1</month>
+                    <year>2021</year>
+                </pub-date>
+                <volume>41</volume>
+                <issue>1</issue>
+                <elocation-id>e00480-20</elocation-id>
+                <history>
+                    <date date-type="received">
+                        <day>10</day>
+                        <month>9</month>
+                        <year>2020</year>
+                    </date>
+                    <date date-type="accepted">
+                        <day>1</day>
+                        <month>10</month>
+                        <year>2020</year>
+                    </date>
+                </history>
+                <permissions>
+                    <copyright-statement>Copyright &#xA9; 2020 American Society for Microbiology.</copyright-statement>
+                    <copyright-year>2020</copyright-year>
+                    <copyright-holder>American Society for Microbiology</copyright-holder>
+                    <license license-type="asm" xlink:href="https://doi.org/10.1128/ASMCopyrightv2">
+                        <license-p>
+                            <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1128/ASMCopyrightv2">All Rights Reserved</ext-link>.
+                        </license-p>
+                    </license>
+                </permissions>
+                <self-uri content-type="pdf" xlink:href="MCB.00480-20.pdf"/>
+                <abstract abstract-type="precis">
+                    <p>The GLUT (
+                        <italic>SLC2</italic>) family of membrane-associated transporters are described as glucose transporters. However, this family is divided into three classes and, though the regulated transporter activity of class I proteins is becoming better understood, class III protein functions continue to be obscure. We have cataloged the relative expression and splicing of
+                        <italic>SLC2</italic>
+                        mRNA isomers in tumors and normal tissues, with a focus on breast tumors and cell lines. mRNA for the class III protein GLUT8 is the predominant
+                        <italic>SLC2</italic>
+                        species expressed alongside GLUT1 in many tissues, but GLUT8 mRNA exists mostly as an untranslated splice form in tumors.
+                    </p>
+                </abstract>
+                <abstract>
+                    <title>ABSTRACT</title>
+                    <p>The GLUT (
+                        <italic>SLC2</italic>) family of membrane-associated transporters are described as glucose transporters. However, this family is divided into three classes and, though the regulated transporter activity of class I proteins is becoming better understood, class III protein functions continue to be obscure. We have cataloged the relative expression and splicing of
+                        <italic>SLC2</italic>
+                        mRNA isomers in tumors and normal tissues, with a focus on breast tumors and cell lines. mRNA for the class III protein GLUT8 is the predominant
+                        <italic>SLC2</italic>
+                        species expressed alongside GLUT1 in many tissues, but GLUT8 mRNA exists mostly as an untranslated splice form in tumors. We confirm that GLUT8 is not presented at the cell surface and does not transport glucose directly. However, we reveal a lysosome-dependent reaction that cleaves the GLUT8 protein and releases the carboxy-terminal peptide to a separate vesicle population. Given the localization of GLUT8 at a major metabolic hub (the late endosomal/lysosomal interface) and its regulated cleavage reaction, we evaluated TXNIP-mediated hexosamine homeostasis and speculate that GLUT8 may function as a sensory component of this reaction.
+                    </p>
+                </abstract>
+                <kwd-group>
+                    <title>KEYWORDS</title>
+                    <kwd>GLUT8</kwd>
+                    <kwd>
+                        <italic>SLC2</italic>
+                    </kwd>
+                    <kwd>TXNIP</kwd>
+                    <kwd>alternative splicing</kwd>
+                    <kwd>breast cancer</kwd>
+                    <kwd>chromophobe renal cell carcinoma</kwd>
+                    <kwd>cleavage</kwd>
+                    <kwd>glucose transport</kwd>
+                    <kwd>late endosomal-lysosomal boundary</kwd>
+                    <kwd>metabolic sensor</kwd>
+                </kwd-group>
+                <funding-group>
+                    <award-group id="award1">
+                        <funding-source>
+                            <institution-wrap>
+                                <institution>National Cancer Institute (NCI)</institution>
+                            </institution-wrap>
+                        </funding-source>
+                        <award-id>P30 CA014520</award-id>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Alexander</surname>
+                                <given-names>Caroline</given-names>
+                            </name>
+                        </principal-award-recipient>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Martin</surname>
+                                <given-names>Josh</given-names>
+                            </name>
+                        </principal-award-recipient>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Senn</surname>
+                                <given-names>Katherine A.</given-names>
+                            </name>
+                        </principal-award-recipient>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Kasza</surname>
+                                <given-names>Ildiko</given-names>
+                            </name>
+                        </principal-award-recipient>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Dvinge</surname>
+                                <given-names>Heidi</given-names>
+                            </name>
+                        </principal-award-recipient>
+                    </award-group>
+                    <award-group id="award2">
+                        <funding-source>
+                            <institution-wrap>
+                                <institution>HHS | NIH | National Cancer Institute (NCI)</institution>
+                                <institution-id>https://doi.org/10.13039/100000054</institution-id>
+                            </institution-wrap>
+                        </funding-source>
+                        <award-id>T32 CA009135</award-id>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Martin</surname>
+                                <given-names>Josh</given-names>
+                            </name>
+                        </principal-award-recipient>
+                    </award-group>
+                    <award-group id="award3">
+                        <funding-source>
+                            <institution-wrap>
+                                <institution>HHS | NIH | National Institute of General Medical Sciences (NIGMS)</institution>
+                                <institution-id>https://doi.org/10.13039/100000057</institution-id>
+                            </institution-wrap>
+                        </funding-source>
+                        <award-id>GM113142</award-id>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Alexander</surname>
+                                <given-names>Caroline</given-names>
+                            </name>
+                        </principal-award-recipient>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Martin</surname>
+                                <given-names>Josh</given-names>
+                            </name>
+                        </principal-award-recipient>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Kasza</surname>
+                                <given-names>Ildiko</given-names>
+                            </name>
+                        </principal-award-recipient>
+                    </award-group>
+                    <award-group id="award4">
+                        <funding-source>
+                            <institution-wrap>
+                                <institution>HHS | NIH | National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS)</institution>
+                                <institution-id>https://doi.org/10.13039/100000069</institution-id>
+                            </institution-wrap>
+                        </funding-source>
+                        <award-id>P30 AR066524</award-id>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Alexander</surname>
+                                <given-names>Caroline</given-names>
+                            </name>
+                        </principal-award-recipient>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Martin</surname>
+                                <given-names>Josh</given-names>
+                            </name>
+                        </principal-award-recipient>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Senn</surname>
+                                <given-names>Katherine A.</given-names>
+                            </name>
+                        </principal-award-recipient>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Kasza</surname>
+                                <given-names>Ildiko</given-names>
+                            </name>
+                        </principal-award-recipient>
+                        <principal-award-recipient>
+                            <name>
+                                <surname>Dvinge</surname>
+                                <given-names>Heidi</given-names>
+                            </name>
+                        </principal-award-recipient>
+                    </award-group>
+                </funding-group>
+                <counts>
+                    <count count="1" count-type="supplementary-material"/>
+                    <fig-count count="9"/>
+                    <table-count count="2"/>
+                    <equation-count count="0"/>
+                    <ref-count count="71"/>
+                    <page-count count="20"/>
+                    <word-count count="11144"/>
+                </counts>
+                <custom-meta-group>
+                    <custom-meta>
+                        <meta-name>cover-date</meta-name>
+                        <meta-value>January 2021</meta-value>
+                    </custom-meta>
+                </custom-meta-group>
+            </article-meta>
+        </front>
+    </article>
+    <article
+        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article">
+        <!--The publisher of this article does not allow downloading of the full text in XML form.-->
+        <front>
+            <journal-meta>
+                <journal-id journal-id-type="nlm-ta">EMBO J</journal-id>
+                <journal-id journal-id-type="iso-abbrev">EMBO J</journal-id>
+                <journal-id journal-id-type="doi">10.1002/(ISSN)1460-2075</journal-id>
+                <journal-id journal-id-type="publisher-id">EMBJ</journal-id>
+                <journal-id journal-id-type="hwp">embojnl</journal-id>
+                <journal-title-group>
+                    <journal-title>The EMBO Journal</journal-title>
+                </journal-title-group>
+                <issn pub-type="ppub">0261-4189</issn>
+                <issn pub-type="epub">1460-2075</issn>
+                <publisher>
+                    <publisher-name>John Wiley and Sons Inc.</publisher-name>
+                    <publisher-loc>Hoboken</publisher-loc>
+                </publisher>
+            </journal-meta>
+            <article-meta>
+                <article-id pub-id-type="pmid">31436334</article-id>
+                <article-id pub-id-type="pmc">6745503</article-id>
+                <article-id pub-id-type="doi">10.15252/embj.2018100811</article-id>
+                <article-id pub-id-type="publisher-id">EMBJ2018100811</article-id>
+                <article-categories>
+                    <subj-group subj-group-type="overline">
+                        <subject>Resource</subject>
+                    </subj-group>
+                    <subj-group subj-group-type="heading">
+                        <subject>Resources</subject>
+                    </subj-group>
+                </article-categories>
+                <title-group>
+                    <article-title>A single&#x2010;cell transcriptome atlas of the adult human retina</article-title>
+                    <alt-title alt-title-type="left-running-head">Samuel W Lukowski
+                        <italic>et&#xA0;al</italic>
+                    </alt-title>
+                </title-group>
+                <contrib-group>
+                    <contrib id="embj2018100811-cr-0001" contrib-type="author">
+                        <name>
+                            <surname>Lukowski</surname>
+                            <given-names>Samuel W</given-names>
+                        </name>
+                        <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-8598-7902</contrib-id>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0001">
+                            <sup>1</sup>
+                        </xref>
+                        <xref ref-type="author-notes" rid="embj2018100811-note-0001">
+                            <sup>&#x2020;</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0002" contrib-type="author">
+                        <name>
+                            <surname>Lo</surname>
+                            <given-names>Camden Y</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0002">
+                            <sup>2</sup>
+                        </xref>
+                        <xref ref-type="author-notes" rid="embj2018100811-note-0001">
+                            <sup>&#x2020;</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0003" contrib-type="author">
+                        <name>
+                            <surname>Sharov</surname>
+                            <given-names>Alexei A</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0003">
+                            <sup>3</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0004" contrib-type="author">
+                        <name>
+                            <surname>Nguyen</surname>
+                            <given-names>Quan</given-names>
+                        </name>
+                        <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-7870-5703</contrib-id>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0001">
+                            <sup>1</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0005" contrib-type="author">
+                        <name>
+                            <surname>Fang</surname>
+                            <given-names>Lyujie</given-names>
+                        </name>
+                        <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-2286-0023</contrib-id>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0004">
+                            <sup>4</sup>
+                        </xref>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0005">
+                            <sup>5</sup>
+                        </xref>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0006">
+                            <sup>6</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0006" contrib-type="author">
+                        <name>
+                            <surname>Hung</surname>
+                            <given-names>Sandy SC</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0004">
+                            <sup>4</sup>
+                        </xref>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0005">
+                            <sup>5</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0007" contrib-type="author">
+                        <name>
+                            <surname>Zhu</surname>
+                            <given-names>Ling</given-names>
+                        </name>
+                        <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0003-0776-1630</contrib-id>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0007">
+                            <sup>7</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0008" contrib-type="author">
+                        <name>
+                            <surname>Zhang</surname>
+                            <given-names>Ting</given-names>
+                        </name>
+                        <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-8074-8999</contrib-id>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0007">
+                            <sup>7</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0009" contrib-type="author">
+                        <name>
+                            <surname>Gr&#xFC;nert</surname>
+                            <given-names>Ulrike</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0007">
+                            <sup>7</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0010" contrib-type="author">
+                        <name>
+                            <surname>Nguyen</surname>
+                            <given-names>Tu</given-names>
+                        </name>
+                        <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-6165-1822</contrib-id>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0004">
+                            <sup>4</sup>
+                        </xref>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0005">
+                            <sup>5</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0011" contrib-type="author">
+                        <name>
+                            <surname>Senabouth</surname>
+                            <given-names>Anne</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0008">
+                            <sup>8</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0012" contrib-type="author">
+                        <name>
+                            <surname>Jabbari</surname>
+                            <given-names>Jafar S</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0009">
+                            <sup>9</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0013" contrib-type="author">
+                        <name>
+                            <surname>Welby</surname>
+                            <given-names>Emily</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0010">
+                            <sup>10</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0014" contrib-type="author">
+                        <name>
+                            <surname>Sowden</surname>
+                            <given-names>Jane C</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0010">
+                            <sup>10</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0015" contrib-type="author">
+                        <name>
+                            <surname>Waugh</surname>
+                            <given-names>Hayley S</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0011">
+                            <sup>11</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0016" contrib-type="author">
+                        <name>
+                            <surname>Mackey</surname>
+                            <given-names>Adrienne</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0011">
+                            <sup>11</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0017" contrib-type="author">
+                        <name>
+                            <surname>Pollock</surname>
+                            <given-names>Graeme</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0011">
+                            <sup>11</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0018" contrib-type="author">
+                        <name>
+                            <surname>Lamb</surname>
+                            <given-names>Trevor D</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0012">
+                            <sup>12</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0019" contrib-type="author">
+                        <name>
+                            <surname>Wang</surname>
+                            <given-names>Peng&#x2010;Yuan</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0013">
+                            <sup>13</sup>
+                        </xref>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0014">
+                            <sup>14</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0020" contrib-type="author">
+                        <name>
+                            <surname>Hewitt</surname>
+                            <given-names>Alex W</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0004">
+                            <sup>4</sup>
+                        </xref>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0005">
+                            <sup>5</sup>
+                        </xref>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0015">
+                            <sup>15</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0021" contrib-type="author">
+                        <name>
+                            <surname>Gillies</surname>
+                            <given-names>Mark C</given-names>
+                        </name>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0007">
+                            <sup>7</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0022" contrib-type="author">
+                        <name>
+                            <surname>Powell</surname>
+                            <given-names>Joseph E</given-names>
+                        </name>
+                        <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-9031-6356</contrib-id>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0008">
+                            <sup>8</sup>
+                        </xref>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0016">
+                            <sup>16</sup>
+                        </xref>
+                        <xref ref-type="author-notes" rid="embj2018100811-note-0002">
+                            <sup>&#x2021;</sup>
+                        </xref>
+                    </contrib>
+                    <contrib id="embj2018100811-cr-0023" contrib-type="author" corresp="yes">
+                        <name>
+                            <surname>Wong</surname>
+                            <given-names>Raymond CB</given-names>
+                        </name>
+                        <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-8092-9455</contrib-id>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0004">
+                            <sup>4</sup>
+                        </xref>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0005">
+                            <sup>5</sup>
+                        </xref>
+                        <xref ref-type="aff" rid="embj2018100811-aff-0017">
+                            <sup>17</sup>
+                        </xref>
+                        <xref ref-type="author-notes" rid="embj2018100811-note-0002">
+                            <sup>&#x2021;</sup>
+                        </xref>
+                        <address>
+                            <email>wongcb@unimelb.edu.au</email>
+                        </address>
+                    </contrib>
+                </contrib-group>
+                <aff id="embj2018100811-aff-0001">
+                    <label>
+                        <sup>1</sup>
+                    </label>
+                    <named-content content-type="organisation-division">Institute for Molecular Bioscience</named-content>
+                    <institution>University of Queensland</institution>
+                    <named-content content-type="city">Brisbane</named-content>
+                    <named-content content-type="country-part">Qld</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0002">
+                    <label>
+                        <sup>2</sup>
+                    </label>
+                    <institution>Monash University</institution>
+                    <named-content content-type="city">Melbourne</named-content>
+                    <named-content content-type="country-part">Vic.</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0003">
+                    <label>
+                        <sup>3</sup>
+                    </label>
+                    <named-content content-type="organisation-division">National Institute for Aging</named-content>
+                    <institution>National Institutes of Health</institution>
+                    <named-content content-type="city">Baltimore</named-content>
+                    <named-content content-type="country-part">MD</named-content>
+                    <country country="US">USA</country>
+                </aff>
+                <aff id="embj2018100811-aff-0004">
+                    <label>
+                        <sup>4</sup>
+                    </label>
+                    <institution>Centre for Eye Research Australia</institution>
+                    <named-content content-type="city">Melbourne</named-content>
+                    <named-content content-type="country-part">Vic.</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0005">
+                    <label>
+                        <sup>5</sup>
+                    </label>
+                    <named-content content-type="organisation-division">Ophthalmology</named-content>
+                    <named-content content-type="organisation-division">Department of Surgery</named-content>
+                    <institution>University of Melbourne</institution>
+                    <named-content content-type="city">Melbourne</named-content>
+                    <named-content content-type="country-part">Vic.</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0006">
+                    <label>
+                        <sup>6</sup>
+                    </label>
+                    <institution>Jinan University</institution>
+                    <named-content content-type="city">Guangzhou</named-content>
+                    <country country="CN">China</country>
+                </aff>
+                <aff id="embj2018100811-aff-0007">
+                    <label>
+                        <sup>7</sup>
+                    </label>
+                    <named-content content-type="organisation-division">The University of Sydney</named-content>
+                    <institution>Faculty of Medicine</institution>
+                    <institution>Save Sight Institute</institution>
+                    <named-content content-type="city">Sydney</named-content>
+                    <named-content content-type="country-part">NSW</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0008">
+                    <label>
+                        <sup>8</sup>
+                    </label>
+                    <named-content content-type="organisation-division">Garvan&#x2010;Weizmann Centre for Cellular Genomics</named-content>
+                    <institution>Garvan Institute of Medical Research</institution>
+                    <named-content content-type="city">Sydney</named-content>
+                    <named-content content-type="country-part">NSW</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0009">
+                    <label>
+                        <sup>9</sup>
+                    </label>
+                    <institution>Australian Genome Research Facility</institution>
+                    <named-content content-type="city">Melbourne</named-content>
+                    <named-content content-type="country-part">Vic.</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0010">
+                    <label>
+                        <sup>10</sup>
+                    </label>
+                    <named-content content-type="organisation-division">Stem Cells and Regenerative Medicine Section</named-content>
+                    <named-content content-type="organisation-division">NIHR Great Ormond Street Hospital Biomedical Research Centre</named-content>
+                    <institution>UCL Great Ormond Street Institute of Child Health</institution>
+                    <named-content content-type="city">London</named-content>
+                    <country country="GB">UK</country>
+                </aff>
+                <aff id="embj2018100811-aff-0011">
+                    <label>
+                        <sup>11</sup>
+                    </label>
+                    <institution>Lions Eye Donation Services</institution>
+                    <named-content content-type="city">Melbourne</named-content>
+                    <named-content content-type="country-part">Vic.</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0012">
+                    <label>
+                        <sup>12</sup>
+                    </label>
+                    <named-content content-type="organisation-division">John Curtin School of Medical Research</named-content>
+                    <institution>The Australian National University</institution>
+                    <named-content content-type="city">Canberra</named-content>
+                    <named-content content-type="country-part">ACT</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0013">
+                    <label>
+                        <sup>13</sup>
+                    </label>
+                    <named-content content-type="organisation-division">Department of Chemistry and Biotechnology</named-content>
+                    <institution>Swinburne University of Technology</institution>
+                    <named-content content-type="city">Melbourne</named-content>
+                    <named-content content-type="country-part">Vic.</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0014">
+                    <label>
+                        <sup>14</sup>
+                    </label>
+                    <named-content content-type="organisation-division">Center for Human Tissues and Organs Degeneration</named-content>
+                    <named-content content-type="organisation-division">Institute of Biomedicine and Biotechnology</named-content>
+                    <named-content content-type="organisation-division">Shenzhen Institute of Advanced Technology</named-content>
+                    <institution>Chinese Academy of Science</institution>
+                    <named-content content-type="city">Shenzhen</named-content>
+                    <country country="CN">China</country>
+                </aff>
+                <aff id="embj2018100811-aff-0015">
+                    <label>
+                        <sup>15</sup>
+                    </label>
+                    <named-content content-type="organisation-division">Menzies Institute for Medical Research</named-content>
+                    <institution>University of Tasmania</institution>
+                    <named-content content-type="city">Hobart</named-content>
+                    <named-content content-type="country-part">Tas.</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0016">
+                    <label>
+                        <sup>16</sup>
+                    </label>
+                    <named-content content-type="organisation-division">UNSW Cellular Genomics Futures Institute</named-content>
+                    <institution>University of New South Wales</institution>
+                    <named-content content-type="city">Sydney</named-content>
+                    <named-content content-type="country-part">NSW</named-content>
+                    <country country="AU">Australia</country>
+                </aff>
+                <aff id="embj2018100811-aff-0017">
+                    <label>
+                        <sup>17</sup>
+                    </label>
+                    <institution>Shenzhen Eye Hospital</institution>
+                    <institution>Shenzhen University School of Medicine</institution>
+                    <named-content content-type="city">Shenzhen</named-content>
+                    <country country="CN">China</country>
+                </aff>
+                <author-notes>
+                    <corresp id="correspondenceTo">
+                        <label>*</label>Corresponding author. Tel: +613&#xA0;85321962; E&#x2010;mail:
+                        <email>wongcb@unimelb.edu.au</email>
+                    </corresp>
+                    <fn fn-type="equal" id="embj2018100811-note-0001">
+                        <label>&#x2020;</label>
+                        <p>These authors contributed equally to this work as first authors</p>
+                    </fn>
+                    <fn fn-type="equal" id="embj2018100811-note-0002">
+                        <label>&#x2021;</label>
+                        <p>These authors contributed equally to this work as senior authors</p>
+                    </fn>
+                </author-notes>
+                <pub-date pub-type="epub">
+                    <day>22</day>
+                    <month>8</month>
+                    <year>2019</year>
+                </pub-date>
+                <pub-date pub-type="ppub">
+                    <day>16</day>
+                    <month>9</month>
+                    <year>2019</year>
+                </pub-date>
+                <volume>38</volume>
+                <issue>18</issue>
+                <issue-id pub-id-type="doi">10.1002/embj.v38.18</issue-id>
+                <elocation-id>e100811</elocation-id>
+                <history>
+                    <date date-type="received">
+                        <day>28</day>
+                        <month>9</month>
+                        <year>2018</year>
+                    </date>
+                    <date date-type="rev-recd">
+                        <day>29</day>
+                        <month>7</month>
+                        <year>2019</year>
+                    </date>
+                    <date date-type="accepted">
+                        <day>31</day>
+                        <month>7</month>
+                        <year>2019</year>
+                    </date>
+                </history>
+                <permissions>
+                    <!--<copyright-statement content-type="issue-copyright"> &#x000a9; 2019 EMBO <copyright-statement>-->
+                    <copyright-statement content-type="article-copyright">&#xA9; 2019 The Authors</copyright-statement>
+                </permissions>
+                <self-uri content-type="pdf" xlink:type="simple" xlink:href="file:EMBJ-38-e100811.pdf"/>
+                <abstract id="embj2018100811-abs-0001">
+                    <title>Abstract</title>
+                    <p>The retina is a specialized neural tissue that senses light and initiates image processing. Although the functional organization of specific retina cells has been well studied, the molecular profile of many cell types remains unclear in humans. To comprehensively profile the human retina, we performed single&#x2010;cell
+                        <styled-content style="fixed-case">RNA</styled-content>
+                        sequencing on 20,009 cells from three donors and compiled a reference transcriptome atlas. Using unsupervised clustering analysis, we identified 18 transcriptionally distinct cell populations representing all known neural retinal cells: rod photoreceptors, cone photoreceptors, M&#xFC;ller glia, bipolar cells, amacrine cells, retinal ganglion cells, horizontal cells, astrocytes, and microglia. Our data captured molecular profiles for healthy and putative early degenerating rod photoreceptors, and revealed the loss of
+                        <italic>
+                            <styled-content style="fixed-case">MALAT</styled-content>1
+                        </italic>
+                        expression with longer post&#x2010;mortem time, which potentially suggested a novel role of
+                        <italic>
+                            <styled-content style="fixed-case">MALAT</styled-content>1
+                        </italic>
+                        in rod photoreceptor degeneration. We have demonstrated the use of this retina transcriptome atlas to benchmark pluripotent stem cell&#x2010;derived cone photoreceptors and an adult M&#xFC;ller glia cell line. This work provides an important reference with unprecedented insights into the transcriptional landscape of human retinal cells, which is fundamental to understanding retinal biology and disease.
+                    </p>
+                </abstract>
+                <kwd-group kwd-group-type="author-generated">
+                    <kwd id="embj2018100811-kwd-0001">photoreceptor subtypes</kwd>
+                    <kwd id="embj2018100811-kwd-0002">retina</kwd>
+                    <kwd id="embj2018100811-kwd-0003">single&#x2010;cell
+                        <styled-content style="fixed-case">RNA</styled-content>
+                        sequencing
+                    </kwd>
+                    <kwd id="embj2018100811-kwd-0004">transcriptome</kwd>
+                </kwd-group>
+                <kwd-group kwd-group-type="subject-categories">
+                    <title>Subject Categories</title>
+                    <kwd>Development &amp; Differentiation</kwd>
+                    <kwd>Methods &amp; Resources</kwd>
+                </kwd-group>
+                <funding-group>
+                    <award-group>
+                        <funding-source>The Ophthalmic Research Institute of Australia (ORIA)</funding-source>
+                    </award-group>
+                    <award-group>
+                        <funding-source>University of Melbourne De Brettiville Trust</funding-source>
+                    </award-group>
+                    <award-group>
+                        <funding-source>Kel and Rosie Day Foundation</funding-source>
+                    </award-group>
+                    <award-group>
+                        <funding-source>GOSHCC</funding-source>
+                    </award-group>
+                </funding-group>
+                <counts>
+                    <fig-count count="11"/>
+                    <table-count count="0"/>
+                    <page-count count="15"/>
+                    <word-count count="10367"/>
+                </counts>
+                <custom-meta-group>
+                    <custom-meta>
+                        <meta-name>source-schema-version-number</meta-name>
+                        <meta-value>2.0</meta-value>
+                    </custom-meta>
+                    <custom-meta>
+                        <meta-name>component-id</meta-name>
+                        <meta-value>embj2018100811</meta-value>
+                    </custom-meta>
+                    <custom-meta>
+                        <meta-name>cover-date</meta-name>
+                        <meta-value>16 September 2019</meta-value>
+                    </custom-meta>
+                    <custom-meta>
+                        <meta-name>details-of-publishers-convertor</meta-name>
+                        <meta-value>Converter:WILEY_ML3GV2_TO_NLMPMC version:5.6.9 mode:remove_FC converted:16.09.2019</meta-value>
+                    </custom-meta>
+                </custom-meta-group>
+            </article-meta>
+            <notes>
+                <p content-type="self-citation">
+                    <mixed-citation publication-type="journal" id="embj2018100811-cit-1001">
+                        <source xml:lang="en">The EMBO Journal</source>
+                        (
+                        <year>2019</year>)
+                        <volume>38</volume>:
+                        <elocation-id>e100811</elocation-id>
+                    </mixed-citation>
+                </p>
+            </notes>
+        </front>
+    </article>
+</pmc-articleset>

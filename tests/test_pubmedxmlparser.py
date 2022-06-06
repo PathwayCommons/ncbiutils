@@ -1,5 +1,7 @@
 import pytest
-from ncbiutils.pubmedxmlparser import PubmedXmlParser, Citation, _from_raw
+from ncbiutils.pubmedxmlparser import PubmedXmlParser
+from ncbiutils.pubmed import Citation
+from ncbiutils.xml import _from_raw
 
 #############################
 #   Unit tests
@@ -80,7 +82,21 @@ class TestPubmedXmlParserClass(object):
         ],
     )
     def test_complete_citation_attributes_match(
-        self, pmid, pmc, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type, double_xml
+        self,
+        pmid,
+        pmc,
+        doi,
+        abstract,
+        title,
+        last_name,
+        email,
+        jtitle,
+        issn,
+        volume,
+        issue,
+        pub_year,
+        pub_type,
+        double_xml,
     ):
         parse_result = self.xmlparser.parse(double_xml)
         result = next(r for r in parse_result if r.pmid == pmid)

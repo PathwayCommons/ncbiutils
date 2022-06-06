@@ -60,7 +60,9 @@ Configure the `PubMedFetch` instance through its constructor:
 
 ---
 
-Also available is `PubMedDownload` that can retrieve records from the PubMed FTP server for both [baseline and daily updates](https://pubmed.ncbi.nlm.nih.gov/download/).
+Also available is:
+  - `PubMedDownload` that can retrieve records from the PubMed FTP server for both [baseline and daily updates](https://pubmed.ncbi.nlm.nih.gov/download/).
+  - `PmcFetch` that can retrieve `pmc-articleset` formatted data (coming soon)
 
 ## Testing
 

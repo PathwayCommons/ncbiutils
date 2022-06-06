@@ -105,7 +105,7 @@ class TestPubMedDownload:
         second_file = 'pubmed22n1313.xml.gz'
         files = [first_file, second_file]
         mocker.patch('ncbiutils.ncbiutils.PubMedDownload._request', return_value=(None, fetch_response))
-        chunks = self.pubmed_download.get_citations(files, download_path= DownloadPathEnum.updatefiles)
+        chunks = self.pubmed_download.get_citations(files, download_path=DownloadPathEnum.updatefiles)
         chunk = next(chunks)
         assert chunk.error is None
         assert chunk.ids[0] == first_file
