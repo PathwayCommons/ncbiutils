@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import Optional, List, Dict, Any
 
 #############################
 #   Classes
@@ -87,7 +87,10 @@ class Citation(BaseModel):
         Sanitized and joined from various text elements
     author_list : Optional[List[Author]]
         List of Authors
-
+    publication_type_list: List[str]
+        MeSH codes https://www.nlm.nih.gov/mesh/pubtypes.html
+    correspondence: List[Dict[str, Any]]
+        Catch-all for correspondence fields
     """
 
     pmid: str
@@ -98,3 +101,4 @@ class Citation(BaseModel):
     author_list: Optional[List[Author]]
     journal: Journal
     publication_type_list: List[str]
+    correspondence: List[Dict[str, Any]]

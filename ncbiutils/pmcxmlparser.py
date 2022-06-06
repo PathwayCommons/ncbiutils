@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional, List, Generator
+from typing import Optional, List, Generator, Dict, Any
 from typing_extensions import TypeAlias
 from ncbiutils.pubmed import Citation, Author, Journal
 from ncbiutils.xml import (
@@ -11,6 +11,11 @@ from ncbiutils.xml import (
     _find_all,
     _collect_element_text,
 )
+
+
+def unique_list(alist):
+    return list(dict.fromkeys(alist))
+
 
 #############################
 #   Aliases
@@ -78,7 +83,7 @@ class PmcXmlParser(BaseModel):
             corresp_emails = _find_all(corresp_elt, './/email')
             for corresp_email in corresp_emails:
                 emails.append(_collect_element_text(corresp_email))
-        return emails if len(emails) > 0 else None
+        return unique_list(emails) if len(emails) > 0 else None
 
     def _get_author(self, author: Element, pmc_article: PmcArticle) -> Author:
         return Author(
@@ -118,6 +123,18 @@ class PmcXmlParser(BaseModel):
             issn=issn, title=title, volume=volume, issue=issue, pub_year=pub_year, pub_month=pub_month, pub_day=pub_day
         )
 
+    def _get_correspondence(self, pmc_article: PmcArticle) -> List[Dict[str, Any]]:
+        correspondence = []
+        corresp_elts = _find_all(pmc_article, './/author-notes/corresp')
+        for corresp_elt in corresp_elts:
+            emails = []
+            corresp_emails = _find_all(corresp_elt, './/email')
+            for corresp_email in corresp_emails:
+                emails.append(_collect_element_text(corresp_email))
+            notes = _collect_element_text(corresp_elt)
+            correspondence.append({'emails': emails, 'notes': notes})
+        return correspondence
+
     def parse(self, data: bytes) -> Generator[Citation, None, None]:
         """Parse an XML document to a list of custom citations"""
         xml_tree = _from_raw(data)
@@ -132,6 +149,7 @@ class PmcXmlParser(BaseModel):
             abstract = self._get_abstract(pmc_article)
             author_list = self._get_author_list(pmc_article)
             journal = self._get_journal(pmc_article)
+            correspondence = self._get_correspondence(pmc_article)
             citation = Citation(
                 pmid=pmid,
                 pmc=pmc,
@@ -141,5 +159,6 @@ class PmcXmlParser(BaseModel):
                 author_list=author_list,
                 journal=journal,
                 publication_type_list=[],
+                correspondence=correspondence,
             )
             yield citation

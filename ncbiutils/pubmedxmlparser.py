@@ -138,5 +138,6 @@ class PubmedXmlParser(BaseModel):
                 author_list=author_list,
                 journal=journal,
                 publication_type_list=publication_type_list,
+                correspondence=[],
             )
             yield citation
