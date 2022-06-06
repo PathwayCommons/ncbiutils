@@ -1,164 +1,24 @@
 from pydantic import BaseModel
 from typing import Optional, List, Generator
-from lxml import etree
 import re
 from typing_extensions import TypeAlias
+from ncbiutils.pubmed import Author, Journal, Citation
+from ncbiutils.xml import (
+    Element,
+    XmlTree,
+    _find_safe,
+    _text_safe,
+    _find_all,
+    _collect_element_text_with_prefix,
+    _collect_element_text,
+)
 
 #############################
 #   Aliases
 #############################
 
-XmlTree: TypeAlias = etree._ElementTree
-Element: TypeAlias = etree._Element
 PubmedArticle: TypeAlias = Element
 PubmedArticleSet: TypeAlias = Element
-
-
-##################################
-#   XML package-specific
-##################################
-
-
-def _from_raw(data: bytes) -> XmlTree:
-    """Parse an xml tree representation from bytes
-
-    Do not provide parser text - ambiguity wrt prolog encoding can occur
-    See https://lxml.de/parsing.html#python-unicode-strings
-    """
-    root = etree.XML(data)
-    element_tree = etree.ElementTree(root)
-    return element_tree
-
-
-def _find_all(element: Element, xpath: str) -> List[Element]:
-    """Wrapper for finding elements for xpath query, possibly empty"""
-    return element.findall(xpath)
-
-
-def _find_safe(element: Element, xpath: str) -> Optional[Element]:
-    """Safe find, where None is returned in case xpath query returns no element"""
-    optional = element.find(xpath)
-    return optional if etree.iselement(optional) else None
-
-
-def _text_safe(element: Element, xpath: str) -> Optional[str]:
-    """Safe get for element text, where None is returned in case xpath query returns no element"""
-    optional = _find_safe(element, xpath)
-    return optional.text if optional is not None else None
-
-
-def _collect_element_text(element: Element) -> str:
-    """Collect all text from child elements as a single string
-
-    Note: This implemenation essentially ignores text and math markup
-    """
-    return ' '.join(element.xpath('string()').split())
-
-
-def _collect_element_text_with_prefix(element: Element, attribute: str):
-    """Collect all text from child elements, prefixed by attribute from this Element"""
-    prefix = element.get(attribute)
-    text = _collect_element_text(element)
-    return ': '.join([prefix, text]) if prefix else text
-
-
-#############################
-#   Classes
-#############################
-
-
-class Author(BaseModel):
-    """
-    A wrapper for Author data
-
-    Attributes
-    ----------
-    fore_name : Optional[str]
-        First name
-    last_name : Optional[str]
-        Last name
-    initials : Optional[str]
-        Initials
-    email : Optional[str]
-        Email address
-    collective_name : Optional[str]
-        Organization name
-    orcid : Optional[str]
-        ORCID
-    affiliations: Optional[List[str]]
-        List of the affiliations
-
-    """
-
-    fore_name: Optional[str]
-    last_name: Optional[str]
-    initials: Optional[str]
-    collective_name: Optional[str]
-    orcid: Optional[str]
-    affiliations: Optional[List[str]]
-    emails: Optional[List[str]]
-
-
-class Journal(BaseModel):
-    """
-    A wrapper for Journal data
-
-    Attributes
-    ----------
-    title : Optional[str]
-        Journal name
-    issn : Optional[List[str]]
-        International Standard Serial Number
-    volume : Optional[str]
-        Journal volume
-    issue : Optional[str]
-        Journal issue
-    pub_year : Optional[str]
-        Year of publication
-    pub_month : Optional[str]
-        Month of publication
-    pub_day : Optional[str]
-        Day of publication
-    """
-
-    title: Optional[str]
-    issn: Optional[List[str]]
-    volume: Optional[str]
-    issue: Optional[str]
-    pub_year: Optional[str]
-    pub_month: Optional[str]
-    pub_day: Optional[str]
-
-
-class Citation(BaseModel):
-    """
-    A custom represenation of Pubmed article data
-
-    Attributes
-    ----------
-    pmid : str
-        PubMed unique id (uid)
-    pmc : Optional[str]
-        PubMedCentral id
-    doi : Optional[str]
-        Digital Object Identifier
-    title : str
-        Article title
-    abstract : Optional[str]
-        Sanitized and joined from various text elements
-    author_list : Optional[List[Author]]
-        List of Authors
-
-    """
-
-    pmid: str
-    pmc: Optional[str]
-    doi: Optional[str]
-    title: str
-    abstract: Optional[str]
-    author_list: Optional[List[Author]]
-    journal: Journal
-    publication_type_list: List[str]
 
 
 class PubmedXmlParser(BaseModel):
@@ -166,18 +26,10 @@ class PubmedXmlParser(BaseModel):
     Capabilities to parse PubMed XML.
     See DTD http://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_190101.dtd
 
-    Class attributes
-    ----------
-
-    Attributes
-    ----------
-    citations : List[Optional[PubMedCitation]] = []
-        List of PubMedCitation
-
     Methods
     ----------
-    parse(text: str) -> List[Optional[PubMedCitation]]
-        Return a list of article data given PubMed XML text
+    parse(data: bytes) -> Generator[Citation, None, None]
+        Return a list of article data given PubMed XML bytes
 
     """
 
@@ -261,9 +113,8 @@ class PubmedXmlParser(BaseModel):
         uids = [element.get('UI') for element in publication_types]
         return uids
 
-    def parse(self, data: bytes) -> Generator[Citation, None, None]:
+    def parse(self, xml_tree: XmlTree) -> Generator[Citation, None, None]:
         """Parse an XML document to a list of custom citations"""
-        xml_tree = _from_raw(data)
         pubmed_article_set = self._get_PubmedArticleSet(xml_tree)
         pubmed_articles = _find_all(pubmed_article_set, './/PubmedArticle')
 
@@ -285,5 +136,6 @@ class PubmedXmlParser(BaseModel):
                 author_list=author_list,
                 journal=journal,
                 publication_type_list=publication_type_list,
+                correspondence=[],
             )
             yield citation

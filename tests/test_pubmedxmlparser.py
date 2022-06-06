@@ -1,5 +1,7 @@
 import pytest
-from ncbiutils.pubmedxmlparser import PubmedXmlParser, Citation, _from_raw
+from ncbiutils.pubmedxmlparser import PubmedXmlParser
+from ncbiutils.pubmed import Citation
+from ncbiutils.xml import _from_raw
 
 #############################
 #   Unit tests
@@ -19,7 +21,8 @@ class TestPubmedXmlParserClass(object):
     @pytest.fixture
     def double_xml(self, shared_datadir):
         data = (shared_datadir / 'double.xml').read_bytes()
-        return data
+        xml_tree = _from_raw(data)
+        return xml_tree
 
     def test_parse_returns_citation_list(self, double_xml):
         parse_result = self.xmlparser.parse(double_xml)
@@ -28,8 +31,7 @@ class TestPubmedXmlParserClass(object):
         assert isinstance(first_result, Citation)
 
     def test_get_pubmed_article_set(self, double_xml):
-        xml_tree = _from_raw(double_xml)
-        pubmed_article_set = self.xmlparser._get_PubmedArticleSet(xml_tree)
+        pubmed_article_set = self.xmlparser._get_PubmedArticleSet(double_xml)
         assert len(pubmed_article_set) == 2
 
     def test_parse_no_pubmedarticleset(self, shared_datadir):
@@ -40,7 +42,7 @@ class TestPubmedXmlParserClass(object):
 
     def test_duplicate_pmid(self, shared_datadir):
         data = (shared_datadir / 'duplicate.xml').read_bytes()
-        parse_result = self.xmlparser.parse(data)
+        parse_result = self.xmlparser.parse(_from_raw(data))
         result = list(parse_result)
         assert len(result) == 0
 
@@ -80,7 +82,21 @@ class TestPubmedXmlParserClass(object):
         ],
     )
     def test_complete_citation_attributes_match(
-        self, pmid, pmc, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type, double_xml
+        self,
+        pmid,
+        pmc,
+        doi,
+        abstract,
+        title,
+        last_name,
+        email,
+        jtitle,
+        issn,
+        volume,
+        issue,
+        pub_year,
+        pub_type,
+        double_xml,
     ):
         parse_result = self.xmlparser.parse(double_xml)
         result = next(r for r in parse_result if r.pmid == pmid)
@@ -135,7 +151,7 @@ class TestPubmedXmlParserClass(object):
         shared_datadir,
     ):
         data = (shared_datadir / 'no_title_abstract.xml').read_bytes()
-        parse_result = self.xmlparser.parse(data)
+        parse_result = self.xmlparser.parse(_from_raw(data))
         result = next(r for r in parse_result if r.pmid == pmid)
         assert result.doi == doi
         assert result.abstract is abstract
@@ -192,7 +208,7 @@ class TestPubmedXmlParserClass(object):
         shared_datadir,
     ):
         data = (shared_datadir / 'markup.xml').read_bytes()
-        parse_result = self.xmlparser.parse(data)
+        parse_result = self.xmlparser.parse(_from_raw(data))
         result = next(r for r in parse_result if r.pmid == pmid)
         assert result.pmc == pmc
         assert result.doi == doi
@@ -249,7 +265,7 @@ class TestPubmedXmlParserClass(object):
         shared_datadir,
     ):
         data = (shared_datadir / 'orcid.xml').read_bytes()
-        parse_result = self.xmlparser.parse(data)
+        parse_result = self.xmlparser.parse(_from_raw(data))
         result = next(r for r in parse_result if r.pmid == pmid)
         assert result.pmc == pmc
         assert result.doi == doi

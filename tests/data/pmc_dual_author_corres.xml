@@ -1,0 +1,3979 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+	<article
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article" dtd-version="1.3">
+		<?properties open_access?>
+		<processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+			<restricted-by>pmc</restricted-by>
+		</processing-meta>
+		<front>
+			<journal-meta>
+				<journal-id journal-id-type="nlm-ta">iScience</journal-id>
+				<journal-id journal-id-type="iso-abbrev">iScience</journal-id>
+				<journal-title-group>
+					<journal-title>iScience</journal-title>
+				</journal-title-group>
+				<issn pub-type="epub">2589-0042</issn>
+				<publisher>
+					<publisher-name>Elsevier</publisher-name>
+				</publisher>
+			</journal-meta>
+			<article-meta>
+				<article-id pub-id-type="pmid">34841223</article-id>
+				<article-id pub-id-type="pmc">8604799</article-id>
+				<article-id pub-id-type="pii">S2589-0042(21)01450-4</article-id>
+				<article-id pub-id-type="doi">10.1016/j.isci.2021.103479</article-id>
+				<article-id pub-id-type="publisher-id">103479</article-id>
+				<article-categories>
+					<subj-group subj-group-type="heading">
+						<subject>Article</subject>
+					</subj-group>
+				</article-categories>
+				<title-group>
+					<article-title>The mRNA-LNP platform's lipid nanoparticle component used in preclinical vaccine studies is highly inflammatory</article-title>
+				</title-group>
+				<contrib-group>
+					<contrib contrib-type="author" id="au1">
+						<name>
+							<surname>Ndeupen</surname>
+							<given-names>Sonia</given-names>
+						</name>
+						<xref rid="aff1" ref-type="aff">1</xref>
+						<xref rid="fn1" ref-type="fn">2</xref>
+					</contrib>
+					<contrib contrib-type="author" id="au2">
+						<name>
+							<surname>Qin</surname>
+							<given-names>Zhen</given-names>
+						</name>
+						<xref rid="aff1" ref-type="aff">1</xref>
+						<xref rid="fn1" ref-type="fn">2</xref>
+					</contrib>
+					<contrib contrib-type="author" id="au3">
+						<name>
+							<surname>Jacobsen</surname>
+							<given-names>Sonya</given-names>
+						</name>
+						<xref rid="aff1" ref-type="aff">1</xref>
+					</contrib>
+					<contrib contrib-type="author" id="au4">
+						<name>
+							<surname>Bouteau</surname>
+							<given-names>Aur&#xE9;lie</given-names>
+						</name>
+						<xref rid="aff1" ref-type="aff">1</xref>
+					</contrib>
+					<contrib contrib-type="author" id="au5">
+						<name>
+							<surname>Estanbouli</surname>
+							<given-names>Henri</given-names>
+						</name>
+						<xref rid="aff1" ref-type="aff">1</xref>
+					</contrib>
+					<contrib contrib-type="author" id="au6">
+						<name>
+							<surname>Igy&#xE1;rt&#xF3;</surname>
+							<given-names>Botond Z.</given-names>
+						</name>
+						<email>botond.igyarto@jefferson.edu</email>
+						<xref rid="aff1" ref-type="aff">1</xref>
+						<xref rid="fn2" ref-type="fn">3</xref>
+						<xref rid="cor1" ref-type="corresp">&#x2217;</xref>
+					</contrib>
+					<aff id="aff1">
+						<label>1</label>Department of Microbiology and Immunology, Thomas Jefferson University, Philadelphia 19107 PA, USA
+					</aff>
+				</contrib-group>
+				<author-notes>
+					<corresp id="cor1">
+						<label>&#x2217;</label>Corresponding author
+						<email>botond.igyarto@jefferson.edu</email>
+					</corresp>
+					<fn id="fn1">
+						<label>2</label>
+						<p id="ntpara0010">These authors contributed equally</p>
+					</fn>
+					<fn id="fn2">
+						<label>3</label>
+						<p id="ntpara0015">Lead contact</p>
+					</fn>
+				</author-notes>
+				<pub-date pub-type="pmc-release">
+					<day>20</day>
+					<month>11</month>
+					<year>2021</year>
+				</pub-date>
+				<!-- PMC Release delay is 0 months and 0 days and was based on <pub-date
+						pub-type="epub">.-->
+				<pub-date pub-type="collection">
+					<day>17</day>
+					<month>12</month>
+					<year>2021</year>
+				</pub-date>
+				<pub-date pub-type="epub">
+					<day>20</day>
+					<month>11</month>
+					<year>2021</year>
+				</pub-date>
+				<volume>24</volume>
+				<issue>12</issue>
+				<elocation-id>103479</elocation-id>
+				<history>
+					<date date-type="received">
+						<day>10</day>
+						<month>5</month>
+						<year>2021</year>
+					</date>
+					<date date-type="rev-recd">
+						<day>3</day>
+						<month>9</month>
+						<year>2021</year>
+					</date>
+					<date date-type="accepted">
+						<day>17</day>
+						<month>11</month>
+						<year>2021</year>
+					</date>
+				</history>
+				<permissions>
+					<copyright-statement>&#xA9; 2021 The Author(s)</copyright-statement>
+					<copyright-year>2021</copyright-year>
+					<license>
+						<ali:license_ref
+							xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbyncndlicense">https://creativecommons.org/licenses/by-nc-nd/4.0/
+						</ali:license_ref>
+						<license-p>This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).</license-p>
+					</license>
+				</permissions>
+				<abstract id="abs0010">
+					<title>Summary</title>
+					<p>Vaccines based on mRNA-containing lipid nanoparticles (LNPs) are a promising new platform used by two leading vaccines against COVID-19. Clinical trials and ongoing vaccinations present with varying degrees of protection levels and side effects. However, the drivers of the reported side effects remain poorly defined. Here we present evidence that Acuitas' LNPs used in preclinical nucleoside-modified mRNA vaccine studies are highly inflammatory in mice. Intradermal and intramuscular injection of these LNPs led to rapid and robust inflammatory responses, characterized by massive neutrophil infiltration, activation of diverse inflammatory pathways, and production of various inflammatory cytokines and chemokines. The same dose of LNP delivered intranasally led to similar inflammatory responses in the lung and resulted in a high mortality rate, with mechanism unresolved. Thus, the mRNA-LNP platforms' potency in supporting the induction of adaptive immune responses and the observed side effects may stem from the LNPs' highly inflammatory nature.</p>
+				</abstract>
+				<abstract abstract-type="graphical" id="abs0015">
+					<title>Graphical abstract</title>
+					<fig id="undfig1" position="anchor">
+						<graphic xlink:href="fx1"/>
+					</fig>
+				</abstract>
+				<abstract abstract-type="author-highlights" id="abs0020">
+					<title>Highlights</title>
+					<p>
+						<list list-type="simple" id="ulist0010">
+							<list-item id="u0010">
+								<label>&#x2022;</label>
+								<p id="p0010">Lipid nanoparticles (LNPs) used for preclinical studies are highly inflammatory</p>
+							</list-item>
+							<list-item id="u0015">
+								<label>&#x2022;</label>
+								<p id="p0015">The LNPs activate multiple inflammatory pathways and induce IL-1&#x3B2; and IL-6</p>
+							</list-item>
+							<list-item id="u0020">
+								<label>&#x2022;</label>
+								<p id="p0020">The LNPs' inflammatory properties stem from their ionizable lipid component</p>
+							</list-item>
+							<list-item id="u0025">
+								<label>&#x2022;</label>
+								<p id="p0025">The LNPs could be responsible for adjuvanticity and some of the side effects</p>
+							</list-item>
+						</list>
+					</p>
+				</abstract>
+				<abstract abstract-type="teaser" id="abs0025">
+					<p>Biological sciences; Immunology; Biotechnology</p>
+				</abstract>
+				<kwd-group id="kwrds0010">
+					<title>Subject areas</title>
+					<kwd>Biological sciences</kwd>
+					<kwd>Immunology</kwd>
+					<kwd>Biotechnology</kwd>
+				</kwd-group>
+			</article-meta>
+			<notes>
+				<p id="misc0010">Published: December 17, 2021</p>
+			</notes>
+		</front>
+		<body>
+			<sec id="sec1">
+				<title>Introduction</title>
+				<p id="p0050">The nucleoside-modified mRNA-LNP vaccine platform used by Pfizer/BioNTech and Moderna in their SARS-CoV-2 vaccines has been widely tested in preclinical studies, and its effectiveness in supporting Tfh cells and protective humoral immune responses matches or surpasses other vaccines (
+					<xref rid="bib3" ref-type="bibr">Alameh et al., 2020</xref>). These vaccines' mRNA component is nucleoside modified to decrease potential innate immune recognition (
+					<xref rid="bib31" ref-type="bibr">Karik&#xF3; et&#xA0;al., 2005</xref>;
+					<xref rid="bib32" ref-type="bibr">Karik&#xF3; et al., 2008</xref>). The LNP was chosen as a carrier vehicle to protect the mRNA from degradation and aid intracellular delivery and endosomal escape. The LNPs consist of a mixture of phospholipids, cholesterol, PEGylated lipids, and cationic or ionizable lipids. The phospholipids and cholesterol have structural and stabilizing roles, whereas the PEGylated lipids support prolonged circulation. The cationic/ionizable lipids are included to allow the complexing of the negatively charged mRNA molecules and enable the exit of the mRNA from the endosome to the cytosol for translation (
+					<xref rid="bib66" ref-type="bibr">Samaridou et&#xA0;al., 2020</xref>). The ionizable lipids were developed to decrease the highly inflammatory and cytotoxic effects of some of the permanently charged cationic lipids (
+					<xref rid="bib38" ref-type="bibr">Kulkarni et&#xA0;al., 2018</xref>). A preclinical study showed that nucleoside-modified mRNA complexed with Acuitas Therapeutics' LNPs containing proprietary ionizable lipid has adjuvant activity (
+					<xref rid="bib61" ref-type="bibr">Pardi et&#xA0;al., 2018a</xref>). However, the potential inflammatory nature of these LNPs was not assessed (
+					<xref rid="bib3" ref-type="bibr">Alameh et al., 2020</xref>;
+					<xref rid="bib61" ref-type="bibr">Pardi et&#xA0;al., 2018a</xref>).
+				</p>
+				<p id="p0055">The human clinical trials of the Pfizer/BioNTech and Moderna vaccines have reported side effects such as pain, swelling, fever, and sleepiness (
+					<xref rid="bib28" ref-type="bibr">Jackson et&#xA0;al., 2020</xref>;
+					<xref rid="bib65" ref-type="bibr">Sahin et&#xA0;al., 2020</xref>;
+					<xref rid="bib80" ref-type="bibr">Walsh et&#xA0;al., 2020</xref>). Under the presumption that this vaccine platform is noninflammatory, some of the clinicians and public health communicators interpreted these reported acute side effects as the vaccine being potent and generating an adaptive immune response. These side effects, however, are more in line with acute inflammatory responses induced by the vaccine. Still, no studies have been undertaken to characterize the immediate innate inflammatory reactions induced by this vaccine platform that could potentially cause the local and systemic side effects. Therefore, in this study, we took a systematic approach, focusing our attention on the injection site and analyzing the inflammatory reactions caused by the LNPs used for preclinical vaccine studies (
+					<xref rid="bib4" ref-type="bibr">Awasthi et&#xA0;al., 2019</xref>;
+					<xref rid="bib39" ref-type="bibr">Laczk&#xF3; et&#xA0;al., 2020</xref>;
+					<xref rid="bib41" ref-type="bibr">Lederer et&#xA0;al., 2020</xref>;
+					<xref rid="bib60" ref-type="bibr">Pardi et&#xA0;al., 2017</xref>,
+					<xref rid="bib61" ref-type="bibr">Pardi et&#xA0;al., 2018a</xref>,
+					<xref rid="bib62" ref-type="bibr">Pardi et&#xA0;al., 2018b</xref>). Using complementary techniques, we show that in mice intradermal, intramuscular, or intranasal delivery of LNPs used in preclinical studies triggers inflammation characterized by leukocytic infiltration, activation of different inflammatory pathways, and secretion of a diverse pool of inflammatory cytokines and chemokines. Thus, the inflammatory milieu induced by the LNPs could be partially responsible for reported side effects of mRNA-LNP-based SARS-CoV-2 vaccines in humans and are possibly contributory to their reported high potency for eliciting antibody responses.
+				</p>
+			</sec>
+			<sec id="sec2">
+				<title>Results</title>
+				<sec id="sec2.1">
+					<title>Intradermal and intramuscular inoculation with LNPs induces robust inflammation</title>
+					<p id="p0060">mRNAs combined with LNPs were used in many preclinical studies and are key components of the recent Pfizer/BioNTech and Moderna SARS-CoV-2 vaccine (
+						<xref rid="bib3" ref-type="bibr">Alameh et al., 2020</xref>;
+						<xref rid="bib28" ref-type="bibr">Jackson et&#xA0;al., 2020</xref>;
+						<xref rid="bib65" ref-type="bibr">Sahin et&#xA0;al., 2020</xref>;
+						<xref rid="bib80" ref-type="bibr">Walsh et&#xA0;al., 2020</xref>). The mechanism of action of this mRNA-LNP platform is not well defined. The mRNA component is modified to decrease the engagement of innate immune sensors (
+						<xref rid="bib31" ref-type="bibr">Karik&#xF3; et&#xA0;al., 2005</xref>;
+						<xref rid="bib32" ref-type="bibr">Karik&#xF3; et al., 2008</xref>), but the mRNA complexed with LNPs was shown to have adjuvant activity (
+						<xref rid="bib61" ref-type="bibr">Pardi et&#xA0;al., 2018a</xref>). The mRNA-LNP platform promotes robust humoral immune responses, and humans receiving the vaccine often presented with typical acute side effects of inflammation, such as pain, swelling, and fever (
+						<xref rid="bib28" ref-type="bibr">Jackson et&#xA0;al., 2020</xref>). Based on these observations, we hypothesized that mRNA-LNP adjuvant activity and the reported side effects in humans could stem from the LNPs' inflammatory properties. mRNAs complexed with LNPs were used in preclinical studies at doses ranging from 3 to 30&#xA0;&#x3BC;g/mouse (
+						<xref rid="bib39" ref-type="bibr">Laczk&#xF3; et&#xA0;al., 2020</xref>;
+						<xref rid="bib61" ref-type="bibr">Pardi et&#xA0;al., 2018a</xref>). We injected 10&#xA0;&#x3BC;g (4 spots; 2.5&#xA0;&#x3BC;g/spot) of these empty LNPs formulated in phosphate buffered saline (PBS) or control PBS intradermally into adult wild-type (WT) C57BL/6 (B6) mice. We sacrificed the mice at different time points post-injection, and &#x223C;1&#xA0;cm
+						<sup>2</sup> skin samples from the injection sites were collected. The LNP-injected skin samples macroscopically showed signs of intense inflammation, such as redness and swelling (
+						<xref rid="fig1" ref-type="fig">Figure&#xA0;1</xref>A). Single-cell suspensions were prepared from these samples and analyzed for infiltrates using flow cytometry (
+						<xref rid="fig1" ref-type="fig">Figures 1</xref>B and
+						<xref rid="mmc1" ref-type="supplementary-material">S1</xref>A). Flow cytometry revealed massive and rapid leukocytic infiltrates dominated by neutrophils that slowly resolved by day 14 (
+						<xref rid="fig1" ref-type="fig">Figure&#xA0;1</xref>B). Removal of the ionizable lipid component from the LNPs abolished visible skin inflammation (
+						<xref rid="fig1" ref-type="fig">Figure&#xA0;1</xref>C) and the leukocytic infiltration (
+						<xref rid="fig1" ref-type="fig">Figure&#xA0;1</xref>D). Thus, LNPs used in preclinical studies promote swift inflammatory responses at the injection site, which depends on the ionizable lipid component.
+						<fig id="fig1">
+							<label>Figure&#xA0;1</label>
+							<caption>
+								<p>Intradermal inoculation with LNPs induces robust inflammation</p>
+								<p>(A) Intradermal inoculation with LNP induced visible levels of inflammation. Pictures were taken 24&#xA0;h after PBS or LNP injection.</p>
+								<p>(B) Skin samples from the mice injected with PBS or LNPs (2.5&#xA0;&#x3BC;g/spot) were harvested at the indicated time points, analyzed by flow cytometry, and displayed as cell percentages.</p>
+								<p>(C) As in A, but LNPs with (iLNP) or without (nLNP) ionizable lipids were used. Unlike iLNPs the nLNPs induced no visible signs of inflammation.</p>
+								<p>(D) Skin samples from C were analyzed for leukocytic infiltration 24&#xA0;h post-inoculation.</p>
+								<p>(E) Muscle samples from the mice injected with PBS or 10&#xA0;&#x3BC;g LNPs were analyzed for neutrophil infiltration 24&#xA0;h post-inoculation.</p>
+								<p>(F) The weight of muscle samples from E are shown. For all the charts the data were pooled from two separate experiments and displayed as percent&#xA0;&#xB1;SD. Each dot represents a separate animal. Student's two-tailed t test was used to determine the significance between naive and the experimental samples. &#x2217;&#x2217;&#x2217;&#x2217;p&#xA0;&lt; 0.0001, &#x2217;&#x2217;&#x2217;p&#xA0;&lt; 0.0005, &#x2217;&#x2217;p&#xA0;&lt; 0.005, &#x2217;p&#xA0;&lt; 0.05, ns&#xA0;= not significant. No significant differences were observed between samples harvested from naive or PBS-treated animals and are used interchangeably throughout the manuscript.</p>
+								<p>See also
+									<xref rid="mmc1" ref-type="supplementary-material">Figure&#xA0;S1</xref>.
+								</p>
+							</caption>
+							<graphic xlink:href="gr1"/>
+						</fig>
+					</p>
+					<p id="p0065">The preclinical animal vaccine studies with this mRNA-LNP platform were carried out through intramuscular and intradermal inoculations. Both delivery routes led to robust humoral immune responses (
+						<xref rid="bib39" ref-type="bibr">Laczk&#xF3; et&#xA0;al., 2020</xref>;
+						<xref rid="bib61" ref-type="bibr">Pardi et&#xA0;al., 2018a</xref>). The current mRNA-LNP-based human SARS-CoV-2 vaccines are delivered intramuscularly, which might be motivated by clinical practicality (
+						<xref rid="bib58" ref-type="bibr">Ols et&#xA0;al., 2020</xref>). To test whether intramuscular delivery also leads to inflammation, we injected animals intramuscularly with 10&#xA0;&#x3BC;g of LNPs in 30&#xA0;&#x3BC;L of PBS or PBS alone. Twenty-four hours later, the injected muscles were collected for analysis. Similar to the skin, we observed robust neutrophil infiltration to the muscle samples that received LNPs (
+						<xref rid="fig1" ref-type="fig">Figures 1</xref>E and
+						<xref rid="mmc1" ref-type="supplementary-material">S1</xref>B). The muscles injected with LNPs also showed a significant increase in weight (
+						<xref rid="fig1" ref-type="fig">Figure&#xA0;1</xref>F). Thus, these findings collectively indicate massive local inflammation that could account for some of the reported local side effects.
+					</p>
+					<p id="p0070">To acquire a more in-depth understanding of the global changes triggered by the injection of the LNPs, we repeated the intradermal experiments presented above with LNPs complexed with control, noncoding poly-cytosine mRNA. Skin samples harvested one day after injection were split into two and analyzed using Luminex and bulk RNA-seq (
+						<xref rid="fig2" ref-type="fig">Figure&#xA0;2</xref>A). The Luminex data corroborated the flow cytometry findings and demonstrated the presence of a variety of inflammatory cytokines and chemokines (
+						<xref rid="fig2" ref-type="fig">Figures 2</xref>B, 2C and
+						<xref rid="mmc1" ref-type="supplementary-material">S2</xref>), in comparison to control samples. Chemokines that attract neutrophils and monocytes and promote their functions, such as CCL2, CCL3, CCL4, CCL7, CCL12, CXCL1, and CXCL2, dominated the panel (
+						<xref rid="fig2" ref-type="fig">Figure&#xA0;2</xref>B). We further found large amounts of interleukin-1&#x3B2; (IL-1&#x3B2;), granulocyte-macrophage colony-stimulating factor (GM-CSF), and IL-6, the signature cytokines of inflammatory responses (
+						<xref rid="fig2" ref-type="fig">Figure&#xA0;2</xref>C). Our RNA-seq analysis revealed that thousands of genes were upregulated (
+						<xref rid="fig2" ref-type="fig">Figure&#xA0;2</xref>D) upon LNP injection. With p&#xA0;&lt; 0.05 and FDR&lt;0.05, 9,508 genes and 8,883 genes, respectively, were differentially expressed. More importantly, confirming our flow cytometry and Luminex data, the genes associated with monocyte/granulocyte development, recruitment, and function (
+						<italic>Cxcl1</italic>,
+						<italic>Cxcl2</italic>,
+						<italic>Cxcl5</italic>,
+						<italic>Cxcl10</italic>,
+						<italic>Ccl2</italic>,
+						<italic>Ccl3</italic>,
+						<italic>Ccl4</italic>,
+						<italic>Ccl7</italic>,
+						<italic>Ccl12</italic>,
+						<italic>Csf2</italic>,
+						<italic>and Csf3</italic>) and inflammation (
+						<italic>Il1b</italic> and
+						<italic>Il6</italic>) showed the highest fold increases over the control samples (
+						<xref rid="fig2" ref-type="fig">Figure&#xA0;2</xref>E). We also observed significant upregulation of gene transcripts associated with activation of inflammasomes, such as
+						<italic>Il1b</italic> and
+						<italic>Nlrp3</italic>, and downregulation of
+						<italic>Nlrp10</italic>, which is known to inhibit inflammasomes (
+						<xref rid="fig2" ref-type="fig">Figure&#xA0;2</xref>E). Gene set enrichment analyses (GSEA) showed the activation of many different inflammatory pathways, including, but not limited to, viral infections, RIG-I, NOD-like, and Toll-like receptor signaling (
+						<xref rid="fig2" ref-type="fig">Figure&#xA0;2</xref>F). Pro-apoptotic and necroptotic gene sets were also significantly upregulated, as well as interferon signaling (
+						<xref rid="fig2" ref-type="fig">Figure&#xA0;2</xref>F).
+						<fig id="fig2">
+							<label>Figure&#xA0;2</label>
+							<caption>
+								<p>Intradermal inoculation with LNPs complexed with noncoding poly-cytosine mRNA leads to an inflammatory milieu</p>
+								<p>(A) Experimental design. The mice were treated as indicated, and 24&#xA0;h later, the skin samples were prepared for Luminex and bulk RNA-seq analyses.</p>
+								<p>(B and C) Luminex data summarizing inflammatory chemokines and cytokines induced by the LNPs.</p>
+								<p>See also
+									<xref rid="mmc1" ref-type="supplementary-material">Figure&#xA0;S2</xref>.
+								</p>
+								<p>(D) Heatmap of gene expression changes triggered by the LNPs (FDR &lt;0.05, log2 FC &gt; 1&#x2013;4091 genes).</p>
+								<p>(E) Volcano plot summarizing the up- and downregulated genes upon LNP injection.</p>
+								<p>(F) GSEA analyses of the KEGG pathways and displayed as normalized enrichment score (NES). FDR&lt;0.05. Pathways with NES less than&#xA0;&#xB1;2 are not displayed. N&#xA0;= 4.</p>
+							</caption>
+							<graphic xlink:href="gr2"/>
+						</fig>
+					</p>
+					<p id="p0075">In summary, using different techniques, we show that LNPs, alone or complexed with control noncoding poly-cytosine mRNA, are highly inflammatory in mice, likely through the engagement and activation of various distinct and convergent inflammatory pathways.</p>
+				</sec>
+				<sec id="sec2.2">
+					<title>Intranasal inoculation with LNPs leads to robust inflammatory responses in the lung</title>
+					<p id="p0080">Respiratory infections, including with SARS-CoV-2, induce a dominant mucosa-protective antibody response and local T-cell-mediated immunity (
+						<xref rid="bib24" ref-type="bibr">Grau-Exp&#xF3;sito et&#xA0;al., 2021</xref>;
+						<xref rid="bib64" ref-type="bibr">Russell et&#xA0;al., 2020</xref>;
+						<xref rid="bib71" ref-type="bibr">Sterlin et&#xA0;al., 2021</xref>). Therefore, to achieve an immune response that mimic natural infection and might confer more protection against SARS-CoV-2 at the levels of the respiratory tract (
+						<xref rid="bib48" ref-type="bibr">Lund and Randall, 2021</xref>;
+						<xref rid="bib64" ref-type="bibr">Russell&#xA0;et&#xA0;al., 2020</xref>;
+						<xref rid="bib84" ref-type="bibr">Zens et&#xA0;al., 2019</xref>), researchers are actively working on developing SARS-CoV-2 vaccines that could be administered intranasally (
+						<xref rid="bib9" ref-type="bibr">Buschmann et&#xA0;al., 2021</xref>;
+						<xref rid="bib10" ref-type="bibr">Chavda et al., 2021</xref>;
+						<xref rid="bib18" ref-type="bibr">van Doremalen et&#xA0;al., 2021</xref>). Therefore, we first tested whether the LNPs can reach the lungs upon intranasal delivery. For this purpose, we inoculated mice intranasally with PBS or 10&#xA0;&#x3BC;g of DiI-labeled LNPs. Six hours later histology showed a homogeneous distribution of the LNPs in the lung tissue (
+						<xref rid="fig3" ref-type="fig">Figure&#xA0;3</xref>A). Next, we tested whether intranasal delivery leads to inflammation in the lungs. For this, we intranasally inoculated adult WT B6 mice with PBS or 10&#xA0;&#x3BC;g of LNPs in PBS/mouse. Lung samples from PBS- and 10&#xA0;&#x3BC;g LNP-treated mice were prepared for macroscopic analyses 9 and 24&#xA0;h post-inoculation and for flow cytometry 9&#xA0;h post-inoculation. In a matter of hours, the lungs turned red in color in the LNP-inoculated group (
+						<xref rid="fig3" ref-type="fig">Figure&#xA0;3</xref>B). As was observed for the skin and muscle, flow cytometric analyses revealed significant leukocytic infiltration dominated by neutrophils and eosinophils and a decrease in macrophages and certain dendritic cell (DC) subsets (
+						<xref rid="fig3" ref-type="fig">Figures 3</xref>C and
+						<xref rid="mmc1" ref-type="supplementary-material">S3</xref>). Thus, intranasal delivery of LNPs leads to massive inflammation in the lungs.
+						<fig id="fig3">
+							<label>Figure&#xA0;3</label>
+							<caption>
+								<p>Intranasal LNP delivery induces robust lung inflammation</p>
+								<p>(A) LNP injection leads to fast and homogeneous dispersion in the lung. Animals were inoculated with PBS or 10&#xA0;&#x3BC;g of DiI-labeled LNP. Six hours later the lungs were harvested, prepared for histology, stained with DAPI, and imaged using a confocal microscope. One representative image is shown.</p>
+								<p>(B) Lungs harvested at the indicated time points from PBS, and the 10&#xA0;&#x3BC;g LNP group were harvested and photographed.</p>
+								<p>(C) Animals inoculated with 10&#xA0;&#x3BC;g of LNP were sacrificed 9&#xA0;h post inoculation and their lungs' leukocytic composition determined by flow cytometry following a published gating strategy (
+									<xref rid="bib83" ref-type="bibr">Yu et&#xA0;al., 2016</xref>). Neut.&#xA0;= neutrophils, Eosi.&#xA0;= eosinophils, DC&#xA0;= dendritic cells, NK&#xA0;= natural killer, aMac.&#xA0;= alveolar macrophages, iMac.&#xA0;= interstitial macrophages, iMon.&#xA0;= inflammatory monocytes, rMon.&#xA0;= resident monocytes.
+								</p>
+								<p>(D&#x2013;F) Animals were inoculated with the indicated doses of LNP and the survival rate (D), weight (E), and clinical scores (F) recorded daily for up to 8&#xA0;days. Data were pooled from two independent experiments. N&#xA0;= 9 for each group except PBS/naive where n&#xA0;= 5. For all the charts the data were pooled from at least two separate experiments and displayed as percent&#xA0;&#xB1;SD. Each dot represents a separate animal. Student's two-tailed t test was used to determine the significance between naive and the experimental samples. &#x2217;&#x2217;&#x2217;p&#xA0;&lt; 0.0005, &#x2217;&#x2217;p&#xA0;&lt; 0.005, &#x2217;p&#xA0;&lt; 0.05, ns&#xA0;= not significant.</p>
+								<p>See also
+									<xref rid="mmc1" ref-type="supplementary-material">Figure&#xA0;S3</xref>.
+								</p>
+							</caption>
+							<graphic xlink:href="gr3"/>
+						</fig>
+					</p>
+					<p id="p0085">With the experiments presented earlier, we observed a high mortality rate among the mice inoculated with LNPs. These findings prompted us to perform a dose-response experiment to determine the amounts of LNPs that might be safe to use for mucosal vaccination. We intranasally inoculated adult WT B6 mice with LNPs ranging from 2.5&#xA0;&#x3BC;g to 10&#xA0;&#x3BC;g/mouse and monitored their health and weight for up to 8&#xA0;days. We found that &#x223C;80% of mice treated with 10&#xA0;&#x3BC;g of LNP died in less than 24&#xA0;h (
+						<xref rid="fig3" ref-type="fig">Figure&#xA0;3</xref>D). The 5&#xA0;&#x3BC;g dose killed &#x223C;20% of the mice by that time, whereas all the 2.5&#xA0;&#x3BC;g-treated mice survived and showed no weight drop (
+						<xref rid="fig3" ref-type="fig">Figure&#xA0;3</xref>D) and no significant clinical signs of distress (
+						<xref rid="fig3" ref-type="fig">Figure&#xA0;3</xref>E). For the 5 and 10&#xA0;&#x3BC;g doses, the surviving mice showed notable clinical scores of distress, such as shaking/shivering, and they lost weight significantly during the first 2&#xA0;days of treatment (
+						<xref rid="fig3" ref-type="fig">Figures 3</xref>E and 3F). After the first &#x223C;3&#xA0;days, these mice did not continue to show significant clinical scores anymore, and their weight slowly started to normalize (
+						<xref rid="fig3" ref-type="fig">Figure&#xA0;3</xref>E). These data suggest that careful optimization of the LNP dose might allow the use of the mRNA-LNP platform for intranasal vaccination.
+					</p>
+				</sec>
+			</sec>
+			<sec id="sec3">
+				<title>Discussion</title>
+				<p id="p0090">Here we show that the LNPs used for many preclinical studies (
+					<xref rid="bib22" ref-type="bibr">Freyn et&#xA0;al., 2020</xref>;
+					<xref rid="bib39" ref-type="bibr">Laczk&#xF3; et&#xA0;al., 2020</xref>;
+					<xref rid="bib41" ref-type="bibr">Lederer et&#xA0;al., 2020</xref>;
+					<xref rid="bib60" ref-type="bibr">Pardi et&#xA0;al., 2017</xref>,
+					<xref rid="bib61" ref-type="bibr">Pardi et&#xA0;al., 2018a</xref>,
+					<xref rid="bib62" ref-type="bibr">Pardi et&#xA0;al., 2018b</xref>) are highly inflammatory. This could explain their potent adjuvant activity and their superiority, compared with other adjuvants, in supporting the induction of adaptive immune responses.
+				</p>
+				<p id="p0095">Previous preclinical mouse data suggested that mRNA complexed with LNPs have adjuvant activity (
+					<xref rid="bib61" ref-type="bibr">Pardi et&#xA0;al., 2018a</xref>). The mRNA is nucleoside modified and purified to decrease activation of certain innate inflammatory pathways (
+					<xref rid="bib31" ref-type="bibr">Karik&#xF3; et&#xA0;al., 2005</xref>;
+					<xref rid="bib32" ref-type="bibr">Karik&#xF3; et al., 2008</xref>,
+					<xref rid="bib33" ref-type="bibr">2011</xref>). Our injection-site-focused analyses revealed the inflammatory nature of these LNPs, which likely provides a basis for their adjuvant properties. The cationic lipid component of the lipid carriers is often inflammatory and cytotoxic (
+					<xref rid="bib20" ref-type="bibr">Filion and Phillips, 1997</xref>,
+					<xref rid="bib21" ref-type="bibr">1998</xref>;
+					<xref rid="bib49" ref-type="bibr">Lv et&#xA0;al., 2006</xref>;
+					<xref rid="bib66" ref-type="bibr">Samaridou et&#xA0;al., 2020</xref>;
+					<xref rid="bib67" ref-type="bibr">Sedic et&#xA0;al., 2018</xref>;
+					<xref rid="bib79" ref-type="bibr">Tao et&#xA0;al., 2011</xref>). The ionizable lipids were developed to overcome the inflammatory nature of the permanently charged cationic lipids (
+					<xref rid="bib38" ref-type="bibr">Kulkarni et&#xA0;al., 2018</xref>). However, we found that the proprietary ionizable lipid component of these LNPs is inflammatory (
+					<xref rid="fig1" ref-type="fig">Figures 1</xref>C and 1D). The inflammatory responses triggered by the LNPs alone or complexed with mRNAs were independent of the delivery route and were dominated by neutrophil infiltration. Despite the induction of phenotypically similar innate inflammatory responses, unlike intradermal and intramuscular inoculations, intranasal delivery of 2.5&#xA0;&#x3BC;g of mRNA-LNP coding for PR8 HA did not lead to detectable levels of adaptive immune responses (unpublished observation). Thus, slight differences are likely to exist between the route of administration, which warrants further investigation to optimize this platform for intranasal use. Understanding the cellular and molecular differences between intradermal/intramuscular and intranasal delivery sites that underline this dissimilarity in adaptive immune responses might also help to decipher why certain people do not react to the intramuscularly delivered mRNA-LNP vaccines.
+				</p>
+				<p id="p0100">Humans present various side effects, most often pain, swelling, fever, and chills, after intramuscular vaccination with the Pfizer/BioNTech or Moderna vaccines (
+					<xref rid="bib28" ref-type="bibr">Jackson et&#xA0;al., 2020</xref>;
+					<xref rid="bib65" ref-type="bibr">Sahin et&#xA0;al., 2020</xref>;
+					<xref rid="bib80" ref-type="bibr">Walsh et&#xA0;al., 2020</xref>). These are typical symptoms associated with inflammation triggered by cytokines such as IL-1&#x3B2; and IL-6 (
+					<xref rid="bib16" ref-type="bibr">Dinarello, 2018</xref>;
+					<xref rid="bib78" ref-type="bibr">Tanaka et&#xA0;al., 2014</xref>). Along with causing local inflammatory responses, these cytokines also act as major endogenous pyrogens (
+					<xref rid="bib12" ref-type="bibr">Conti, 2004</xref>) and instruct the hypothalamus to increase the body's temperature (fever) to help overcome possible infections. In concordance with this, the intradermal inoculation of LNPs in mice led to the secretion of large amounts of major and minor pyrogens, IL-1&#x3B2;/IL-6 and macrophage inflammatory protein-&#x3B1; (CCL3) and macrophage inflammatory protein-&#x3B2; (CCL4), respectively (
+					<xref rid="fig2" ref-type="fig">Figures 2</xref>B and 2C). Furthermore, the observed activation of other inflammatory pathways and cell death could further accentuate the experienced side effects. However, further studies will be needed to determine the exact nature of the inflammatory responses triggered by mRNA-LNP vaccines in humans and how much overlap there might be with the inflammatory signatures documented here for mice.
+				</p>
+				<p id="p0105">It remains to be determined how these LNPs or their ionizable lipid component activate distinct inflammatory pathways. In theory, LNPs could activate multiple pathways or alternatively engage only one that would initiate an inflammatory cascade. Some cationic/ionizable lipids bind and activate TLRs (
+					<xref rid="bib45" ref-type="bibr">Lonez et&#xA0;al., 2012</xref>,
+					<xref rid="bib46" ref-type="bibr">2014</xref>;
+					<xref rid="bib66" ref-type="bibr">Samaridou et&#xA0;al., 2020</xref>;
+					<xref rid="bib77" ref-type="bibr">Tanaka et&#xA0;al., 2008</xref>). Our GSEA analyses are consistent with TLR engagement by these proprietary LNPs, among others (
+					<xref rid="fig2" ref-type="fig">Figure&#xA0;2</xref>F). We also observed upregulation of inflammasome components such
+					<italic>Nlrp3</italic> and enrichment of genes involved in necroptosis. Inflammatory cell death, such as necroptosis and pyroptosis, could cause the release of DAMPs and the further enhancement of inflammation. The synthetic ionizable lipid in the Pfizer SARS-CoV-2 vaccine has been speculated to have approximately 20&#x2013;30&#xA0;days of half-life in humans (
+					<xref rid="bib11" ref-type="bibr">Comirnaty, 2021</xref>). Whether the long-term presence of ionizable lipid could lead to low levels of chronic inflammation and immune exhaustion (
+					<xref rid="bib81" ref-type="bibr">Wherry and Kurachi, 2015</xref>) remain to be determined.
+				</p>
+				<p id="p0110">Intranasal inoculation with higher doses of LNPs led to a significant mortality rate. Hypothetically, the massive innate inflammatory responses induced in the lung (
+					<xref rid="fig3" ref-type="fig">Figure&#xA0;3</xref>) and chemical disruption of the pulmonary surfactant by cationic lipids (
+					<xref rid="bib7" ref-type="bibr">Boncuk et&#xA0;al., 1997</xref>), i.e., reduced gas exchange, cytotoxicity to alveolar cells, or other mechanisms, could all have contributed to animal death (
+					<xref rid="bib17" ref-type="bibr">Dokka et&#xA0;al., 2000</xref>). Thus, further experimentation is needed to investigate the mechanism of the toxicity. Materials of different nature including nanoparticles inoculated intranasally readily enter the central nervous system (CNS), and it is the preferred method to overcome the blood-brain barrier and deliver active substances to the brain (
+					<xref rid="bib13" ref-type="bibr">Costa et&#xA0;al., 2021</xref>;
+					<xref rid="bib19" ref-type="bibr">Elder et&#xA0;al., 2006</xref>;
+					<xref rid="bib23" ref-type="bibr">Gao et&#xA0;al., 2006</xref>;
+					<xref rid="bib25" ref-type="bibr">Hanson et al., 2013</xref>;
+					<xref rid="bib44" ref-type="bibr">Lockman et&#xA0;al., 2004</xref>). LNPs as lipid particles can quickly diffuse (
+					<xref rid="fig3" ref-type="fig">Figure&#xA0;3</xref>A) (
+					<xref rid="bib59" ref-type="bibr">Pardi et&#xA0;al., 2015</xref>) and, through intranasal delivery, could potentially gain access to the CNS at high enough levels to induce significant inflammation. Whether these LNPs reach the CNS and induce levels of inflammation that could have contributed to the animal death observed at higher doses remains to be determined. Interestingly, it has been reported that the mRNA from Moderna's mRNA-LNP vaccine injected intramuscularly could be detected in very low levels in the brain, potentially indicating that the mRNA-LNP platform might cross the blood-brain barrier and reach the CNS (
+					<xref rid="bib53" ref-type="bibr">Moderna, 2021</xref>). However, in this case, the scant amounts detected in the CNS would likely not induce significant inflammation but might trigger hypothalamus-driven side effects such as fever, nausea, and sleepiness. Further studies will be needed to determine whether these minimal amounts of vaccine components detected in the CNS are physiologically relevant and define whether they could exacerbate preexisting inflammatory responses reported in a small case report with MS autoimmune patients (
+					<xref rid="bib36" ref-type="bibr">Khayat-Khoei et al., 2021</xref>). It is important to note that a medium-sized observational study did not find an increased risk of relapse activity after mRNA-LNP vaccination in MS patients (
+					<xref rid="bib2" ref-type="bibr">Achiron et&#xA0;al., 2021</xref>), whereas others have noted a slight but increased risk of hemorrhagic stroke. However, the risk of these complications was greater following a positive SARS-CoV-2 test (
+					<xref rid="bib63" ref-type="bibr">Patone et al., 2021</xref>).
+				</p>
+				<p id="p0115">People often present with more severe and systemic side effects after the booster shot. This raises the possibility that the adaptive immune response might somehow amplify side effects induced by the vaccine. One culprit identified so far is PEG, which is immunogenic. Antibodies formed against PEG have been reported to support a so-called anaphylactoid, complement activation-related pseudoallergy (CARPA) reaction (
+					<xref rid="bib37" ref-type="bibr">Kozma et&#xA0;al., 2020</xref>;
+					<xref rid="bib75" ref-type="bibr">Szebeni, 2005</xref>,
+					<xref rid="bib76" ref-type="bibr">Szebeni, 2014</xref>). Of note, because PEG is a compound frequently used in cosmetics and toothpaste, many individuals could have anti-PEG antibodies. We have discussed other possible mechanisms in our recent opinion article (
+					<xref rid="bib27" ref-type="bibr">Igy&#xE1;rt&#xF3; et&#xA0;al., 2021</xref>). Briefly, although mRNA mainly transfects cells near the injection site, it could hypothetically reach any cell in the body (
+					<xref rid="bib52" ref-type="bibr">Maugeri et&#xA0;al., 2019</xref>;
+					<xref rid="bib59" ref-type="bibr">Pardi et&#xA0;al., 2015</xref>). The resulting translated protein could be presented on MHC-I in the form of peptides or displayed as a whole protein in the cell membrane. In both cases, cells with the vaccine peptide/protein on their surfaces could be targeted and killed by cells of the adaptive and innate immune system, CD8
+					<sup>+</sup> T and natural killer (NK) cells (via antibody-dependent cellular toxicity [ADCC]), respectively. In line with this, the so-called &#x201C;Covid-arm,&#x201D; a delayed-type hypersensitivity reaction that develops in some patients several days after vaccination (
+					<xref rid="bib6" ref-type="bibr">Blumenthal et&#xA0;al., 2021</xref>), or the myocarditis/pericarditis recently reported with some of the vaccinated people (
+					<xref rid="bib1" ref-type="bibr">Abu Mouch et&#xA0;al., 2021</xref>;
+					<xref rid="bib15" ref-type="bibr">Diaz et&#xA0;al., 2021</xref>;
+					<xref rid="bib50" ref-type="bibr">Marshall et&#xA0;al., 2021</xref>;
+					<xref rid="bib54" ref-type="bibr">Montgomery et&#xA0;al., 2021</xref>;
+					<xref rid="bib68" ref-type="bibr">Shay et&#xA0;al., 2021</xref>), or the CNS inflammation observed in a small number of vaccinated MS patients (
+					<xref rid="bib36" ref-type="bibr">Khayat-Khoei et al., 2021</xref>) could be indeed an indication of immune responses targeting the cells expressing the vaccine-derived peptides/proteins.
+				</p>
+				<p id="p0120">In summary, the first vaccination's side effects, except for CARPA, are likely associated with robust innate inflammation induced by the LNPs. In contrast, after the second vaccination, side effects could be further exacerbated by immune responses targeting cells expressing the vaccine protein or its peptide derivatives. Whether innate memory responses (
+					<xref rid="bib57" ref-type="bibr">Netea et&#xA0;al., 2011</xref>) to LNPs also contribute to amplifying the side effects remains to be determined (
+					<xref rid="fig4" ref-type="fig">Figure&#xA0;4</xref>). Overall, the robust inflammatory milieu induced by LNPs, combined with presentation of the vaccine-derived peptides/protein outside of antigen-presenting cells, might cause tissue damage and exacerbate side effects. Because self-antigen presentation in an inflammatory environment has been linked to autoimmune disease development (
+					<xref rid="bib29" ref-type="bibr">Janeway et&#xA0;al., 2001</xref>), this merits further investigation.
+					<fig id="fig4">
+						<label>Figure&#xA0;4</label>
+						<caption>
+							<p>Potential mechanism of side effects</p>
+							<p>The side effects observed with the SARS-CoV-2 vaccine's first dose are likely associated with the LNPs' inflammatory properties. LNPs activate different inflammatory pathways that will lead to the production of inflammatory cytokines, such as IL-1&#x3B2; and IL-6, that can initiate and sustain local and systemic inflammations and side effects. The dashed line indicates the possibility that the LNPs might also diffuse from the periphery and reach any organs in the body, including CNS (hypothalamus) where they could directly induce side effects. PEG is widely used as a food and medicine additive, and many of us develop antibodies to PEG. Therefore, the LNPs' PEGylated lipids can induce CARPA in humans with preexisting PEG-specific antibodies. Humans often experience more severe side effects with the second dose. Here we posit that might be due to multiple reasons. Firstly, innate immune memory against the LNPs might form after the first vaccination and that could lead to even more robust inflammatory responses upon the second vaccination. Secondly, after the first vaccination, adaptive immune responses are formed targeting the viral protein coded by the mRNA. As such, cells (shown as red shape) expressing the&#xA0;viral protein-derived peptides or protein itself can become the target of CD8
+								<sup>+</sup> T- or NK-cell-mediated killing (ADCC), respectively. Because the LNPs could diffuse throughout the body and transfect any cell in their path with the mRNA, and the mRNA could also be further distributed through extracellular vesicles (
+								<xref rid="bib52" ref-type="bibr">Maugeri et&#xA0;al., 2019</xref>), the target population could potentially be vast and diverse.
+							</p>
+						</caption>
+						<graphic xlink:href="gr4"/>
+					</fig>
+				</p>
+				<p id="p0125">mRNA-LNPs support very robust adaptive immune responses in animal models and humans (
+					<xref rid="bib3" ref-type="bibr">Alameh et al., 2020</xref>;
+					<xref rid="bib28" ref-type="bibr">Jackson et&#xA0;al., 2020</xref>;
+					<xref rid="bib65" ref-type="bibr">Sahin et&#xA0;al., 2020</xref>). The mechanism of induction of these immune responses so far has not been fully elucidated (
+					<xref rid="bib56" ref-type="bibr">Ndeupen et al., 2021</xref>). Our findings revealed that LNPs used in some preclinical studies are highly inflammatory, which could explain their superiority to Food and Drug Administration (FDA)-approved adjuvants in supporting the development of Tfh cells and humoral immune responses. Of note, their higher efficacy probably relies on activation of different inflammatory pathways exacerbated by direct cellular toxicity. In accordance with the highly inflammatory nature of the mRNA-LNPs, we recently found that certain innate immune cells and cytokines, such as some DC subsets, neutrophils, and IL-6, show redundancy in supporting adaptive immune responses by this platform (
+					<xref rid="bib56" ref-type="bibr">Ndeupen et al., 2021</xref>). The inflammatory properties of these LNPs' should certainly be further exploited as an adjuvant platform in combination with proteins, subunit vaccines, or even in combination with existing attenuated vaccines (
+					<xref rid="bib5" ref-type="bibr">Bernasconi et&#xA0;al., 2021</xref>;
+					<xref rid="bib14" ref-type="bibr">Debin et&#xA0;al., 2002</xref>;
+					<xref rid="bib51" ref-type="bibr">Martins et&#xA0;al., 2007</xref>;
+					<xref rid="bib69" ref-type="bibr">Shirai et&#xA0;al., 2020</xref>;
+					<xref rid="bib74" ref-type="bibr">Swaminathan et&#xA0;al., 2016</xref>). LNPs, unlike other adjuvants, could thus serve a dual purpose as both delivery vehicles for different cargos and as an adjuvant. However, it will be necessary to strike a balance between positive adjuvant and negative inflammatory properties as LNP-associated vaccines move forward. Because vaccine doses and volumes utilized in rodents are much higher than those used in humans (
+					<xref rid="bib55" ref-type="bibr">Nair and Jacob, 2016</xref>), detailed dose/volume response studies will be required. Because some of the DCs can support humoral immune responses in the absence of adjuvant, noninflammatory LNPs could also be developed (
+					<xref rid="bib8" ref-type="bibr">Bouteau et&#xA0;al., 2019</xref>;
+					<xref rid="bib35" ref-type="bibr">Kato et&#xA0;al., 2020</xref>;
+					<xref rid="bib42" ref-type="bibr">Li et&#xA0;al., 2015</xref>;
+					<xref rid="bib82" ref-type="bibr">Yao et&#xA0;al., 2015</xref>).
+				</p>
+				<sec id="sec3.1">
+					<title>Limitations of the study</title>
+					<p id="p0130">Further studies will be needed to determine the exact nature of the inflammatory responses triggered by mRNA-LNP vaccines in humans and how much overlap there might be with the inflammatory signatures documented here for mice. Because vaccine doses and volumes utilized in rodents are much higher than those in humans, detailed dose/volume response studies will be required. Optimization of the delivery volume will be likely essential with the vaccines designed for intranasal human inoculation. Here we used a delivery volume that likely suffused the mouse lungs, whereas the amount used for humans is anticipated to limit the exposure to the nasopharynx.</p>
+				</sec>
+			</sec>
+			<sec id="sec5">
+				<title>STAR&#x2605;Methods</title>
+				<sec id="sec5.1">
+					<title>Key resources table</title>
+					<p id="p0140">
+						<table-wrap position="float" id="undtbl1">
+							<table frame="hsides" rules="groups">
+								<thead>
+									<tr>
+										<th>REAGENT or RESOURCE</th>
+										<th>SOURCE</th>
+										<th>IDENTIFIER</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="3">
+											<bold>Antibodies</bold>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td>CD11b - BV711</td>
+										<td>BioLegend</td>
+										<td>BioLegend Cat# 101242; RRID:
+											<ext-link ext-link-type="uri" xlink:href="nif-antibody:AB_2563310" id="intref0015">AB_2563310</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td>CD11c - PeCy7</td>
+										<td>BioLegend</td>
+										<td>BioLegend Cat# 117318; RRID:
+											<ext-link ext-link-type="uri" xlink:href="nif-antibody:AB_493568" id="intref0020">AB_493568</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td>CD24 - PE-Cy5</td>
+										<td>BioLegend</td>
+										<td>BioLegend Cat# 101811; RRID:
+											<ext-link ext-link-type="uri" xlink:href="nif-antibody:AB_439713" id="intref0025">AB_439713</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td>CD45 - BUV395</td>
+										<td>BD Biosciences</td>
+										<td>BD Biosciences Cat# 564279; RRID:
+											<ext-link ext-link-type="uri" xlink:href="nif-antibody:AB_2651134" id="intref0030">AB_2651134</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td>CD64 &#x2013; BV605</td>
+										<td>BioLegend</td>
+										<td>BioLegend Cat# 139323; RRID:
+											<ext-link ext-link-type="uri" xlink:href="nif-antibody:AB_2629778" id="intref0035">AB_2629778</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td>MHCII - AF700</td>
+										<td>BioLegend</td>
+										<td>BioLegend Cat# 107622; RRID:
+											<ext-link ext-link-type="uri" xlink:href="nif-antibody:AB_493727" id="intref0040">AB_493727</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td>Ly6C - FITC</td>
+										<td>BioLegend</td>
+										<td>BioLegend Cat# 128006; RRID:
+											<ext-link ext-link-type="uri" xlink:href="nif-antibody:AB_1186135" id="intref0045">AB_1186135</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td>Ly-6G - BV510</td>
+										<td>BioLegend</td>
+										<td>BioLegend Cat# 127633; RRID:
+											<ext-link ext-link-type="uri" xlink:href="nif-antibody:AB_2562937" id="intref0050">AB_2562937</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td>F4/80 - PB</td>
+										<td>BioLegend</td>
+										<td>BioLegend Cat# 123124; RRID:
+											<ext-link ext-link-type="uri" xlink:href="nif-antibody:AB_893475" id="intref0055">AB_893475</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td>eF780-live/dead</td>
+										<td>Fisher Scientific</td>
+										<td>Fisher Scientific Cat# BDB564279; NA</td>
+									</tr>
+									<tr>
+										<td>Fc-block</td>
+										<td>BioLegend</td>
+										<td>BioLegend Cat# 422302; RRID:
+											<ext-link ext-link-type="uri" xlink:href="nif-antibody:AB_2818986" id="intref0060">AB_2818986</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<bold>Biological samples</bold>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td>Mouse tissues and organs</td>
+										<td>Mice</td>
+										<td>N/A</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<bold>Critical commercial assays</bold>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td>RNeasy Mini Kit</td>
+										<td>Qiagen</td>
+										<td>Cat# 74104</td>
+									</tr>
+									<tr>
+										<td>RNA 6000 Pico Kit</td>
+										<td>Agilent</td>
+										<td>Cat# 5067-1513</td>
+									</tr>
+									<tr>
+										<td>Bio-Plex Pro
+											<sup>TM</sup> Mouse Chemokine Panel 33-Plex
+										</td>
+										<td>Bio-Rad</td>
+										<td>Cat# 12002231</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<bold>Deposited data</bold>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td>RNA-seq data</td>
+										<td>This paper</td>
+										<td>GSE167521</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<bold>Experimental models: Organisms/strains</bold>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td>Mouse C57BL/6J</td>
+										<td>The Jackson Laboratory</td>
+										<td>Stock No: 000664</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<bold>Software and algorithms</bold>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td>FlowJo&#x2122; v10.8</td>
+										<td>BD Biosciences</td>
+										<td>
+											<ext-link ext-link-type="uri" xlink:href="https://www.flowjo.com/" id="intref0065">https://www.flowjo.com/</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td>GraphPad Prism 9</td>
+										<td>GraphPad</td>
+										<td>
+											<ext-link ext-link-type="uri" xlink:href="https://www.graphpad.com/" id="intref0070">https://www.graphpad.com/</ext-link>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<bold>Other</bold>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<hr/>
+										</td>
+									</tr>
+									<tr>
+										<td>Different lipid nanoparticle formulations</td>
+										<td>Dr. Norbert Pardi/Acuitas</td>
+										<td>N/A</td>
+									</tr>
+								</tbody>
+							</table>
+						</table-wrap>
+					</p>
+				</sec>
+				<sec id="sec5.2">
+					<title>Resource availability</title>
+					<sec id="sec5.2.1">
+						<title>Lead contact</title>
+						<p id="p0145">Further information and requests should be directed to the lead contact, Botond Z. Igy&#xE1;rt&#xF3; (
+							<ext-link ext-link-type="uri" xlink:href="mailto:botond.igyarto@jefferson.edu" id="intref0075">botond.igyarto@jefferson.edu</ext-link>).
+						</p>
+					</sec>
+					<sec id="sec5.2.2">
+						<title>Materials availability</title>
+						<p id="p0150">This study did not generate new unique reagents.</p>
+					</sec>
+				</sec>
+				<sec id="sec5.3">
+					<title>Experimental model and subject details</title>
+					<sec id="sec5.3.1">
+						<title>Mice</title>
+						<p id="p0155">WT C57BL/6J mice of different ages and gender were purchased from Jax&#xAE; or bred in house. All experiments were performed with 6-12&#xA0;weeks old male and female mice. Mice were housed in microisolator cages and fed autoclaved food. Institutional Care and Use Committee approved all mouse protocols.</p>
+					</sec>
+				</sec>
+				<sec id="sec5.4">
+					<title>Method details</title>
+					<sec id="sec5.4.1">
+						<title>Reagents</title>
+						<p id="p0160">For our studies, we used an LNP formulation proprietary to Acuitas Therapeutics described in US patent US10,221,127. These LNPs were previously carefully characterized and widely tested in preclinical vaccine studies in combination with nucleoside-modified mRNAs (
+							<xref rid="bib39" ref-type="bibr">Laczk&#xF3; et&#xA0;al., 2020</xref>;
+							<xref rid="bib41" ref-type="bibr">Lederer et&#xA0;al., 2020</xref>;
+							<xref rid="bib60" ref-type="bibr">Pardi et&#xA0;al., 2017</xref>,
+							<xref rid="bib61" ref-type="bibr">Pardi et&#xA0;al., 2018a</xref>,
+							<xref rid="bib62" ref-type="bibr">Pardi et&#xA0;al., 2018b</xref>). The following LNP formulations were used: empty LNPs with or without proprietary ionizable lipid, DiI-labeled LNPs, and LNPs complexed with non-coding poly-cytosine mRNA. The mRNA:lipid mass ratio was 1:20.
+						</p>
+					</sec>
+					<sec id="sec5.4.2">
+						<title>Intradermal inoculation and flow cytometry analyses</title>
+						<p id="p0165">The day before injections, the hair from the back skin of adult WT B6 mice was removed using an electric clipper, and then the site of injections wet-shaved using Personna razor blades. The next day the mice were injected intradermally with 2.5&#xA0;&#x3BC;g/spot LNPs in PBS (4 spots, 10&#xA0;&#x3BC;g total) or PBS. At different time points post-injection, the mice were sacrificed and &#x223C;1cm
+							<sup>2</sup> skin around the injection site harvested. The skin samples were then chopped into small pieces using a curved scissor and exposed to collagenase/hyaluronidase digestion (
+							<xref rid="bib34" ref-type="bibr">Kashem and Kaplan, 2018</xref>). Single-cell suspensions were stained for the following markers: fixable viability dye (Thermo Fisher), MHC-II, CD11b, CD11c, CD45, CD64, F4/80, and Ly6G (All from BioLegend, except CD45 was from BD). The stained samples were run on LSRFortessa&#x2122; (BD Biosciences) and the resulting data analyzed with FlowJo 10.
+						</p>
+					</sec>
+					<sec id="sec5.4.3">
+						<title>Intramuscular inoculation and flow cytometry analyses</title>
+						<p id="p0170">Cohorts of WT mice were injected with 10&#xA0;&#x3BC;g of LNPs in 30&#xA0;&#x3BC;l of PBS or PBS alone in the quadriceps of the right posterior limb. The muscle samples were harvested 24 hours later, chopped into small pieces using a curved scissor and exposed to collagenase/hyaluronidase digestion as described for the skin samples. Single-cell suspensions were stained for the following markers: fixable viability dye (Thermo Fisher), CD45, and Ly6G (All from BioLegend).</p>
+					</sec>
+					<sec id="sec5.4.4">
+						<title>Luminex&#xAE;</title>
+						<p id="p0175">The day before injections, the hair from the back skin of adult WT B6 mice was removed using an electric clipper, and then the site of injections wet-shaved using Personna razor blades. The next day the mice were injected intradermally with 2.5&#xA0;&#x3BC;g/spot LNPs complexed with non-coding poly-cytosine mRNA or PBS (
+							<xref rid="fig2" ref-type="fig">Figure&#xA0;2</xref>A). Twenty-four hours later, the skin samples were collected and processed for Luminex&#xAE; and RNA-seq. The samples for Luminex were weighed and homogenized using a Dounce tissue grinder in 1.5&#xA0;ml of 10&#xA0;mM Tris pH 7.4, 150&#xA0;mM NaCl, 1% Triton-X-100 per gram of tissue in the presence of Roche protease inhibitor cocktail. After incubation on ice for 30&#xA0;minutes, the samples were spun at 10K RPM for 10&#xA0;minutes at 4&#xB0;C. The supernatants were harvested and filtered with a 0.22&#xA0;&#x3BC;m Eppendorf tube filter (MilliporeSigma). The supernatants were aliquoted and kept at -80&#xB0;C until further use. The samples were tested using the Bio-Plex Pro
+							<sup>TM</sup> Mouse Chemokine Panel 33-Plex as per manufacturer's instruction.
+						</p>
+					</sec>
+					<sec id="sec5.4.5">
+						<title>RNA preparation, sequencing, data analyses and visualization</title>
+						<p id="p0180">Total RNA was isolated from tissue lysates using the RNeasy Mini Kit (Qiagen), including on-column DNase digestion. Total RNA was analyzed for quantity and quality using the RNA 6000 Pico Kit (Agilent). Sequencing, data analyses and visualization were performed as we and others previously described in details (
+							<xref rid="bib30" ref-type="bibr">Kanehisa, 2000</xref>;
+							<xref rid="bib43" ref-type="bibr">Liberzon et&#xA0;al., 2011</xref>;
+							<xref rid="bib47" ref-type="bibr">Love et&#xA0;al., 2014</xref>;
+							<xref rid="bib72" ref-type="bibr">Su et&#xA0;al., 2020</xref>;
+							<xref rid="bib73" ref-type="bibr">Subramanian et&#xA0;al., 2005</xref>).
+						</p>
+					</sec>
+					<sec id="sec5.4.6">
+						<title>Intranasal inoculation and flow cytometry analyses</title>
+						<p id="p0185">Mice were anesthetized by intraperitoneal injection with a mixture of Xylazine/Ketamine. The LNPs were given intranasally at the doses of 2.5, 5 and 10&#xA0;&#x3BC;g in 30&#xA0;&#x3BC;L sterile PBS by placing droplets gently on the left nostril and allowed the mice to inhale. The clinical performances of the mice were scored daily for 8&#xA0;days as described previously (
+							<xref rid="bib70" ref-type="bibr">Shrum et&#xA0;al., 2014</xref>). Besides, the body weight was also measured daily. Some of the mice from the 10&#xA0;&#x3BC;g LNP dose and corresponding PBS controls were sacrificed at indicated time points post-inoculation, and lung samples were harvested for histology and flow cytometry. For histology, the samples were fixed in 4% PFA overnight and then embedded in OCT. Eight micrometer thick sections were prepared using a cryostat and counterstained with DAPI. Stitched confocal pictures were taken using a Nikon A1 microscope. The lung samples for flow cytometry were digested using the collagenase/hyaluronidase technique also used for the skin samples (
+							<xref rid="bib34" ref-type="bibr">Kashem and Kaplan, 2018</xref>). The resulting single-cell suspensions were stained with the following markers: fixable viability dye (Thermo Fisher), MHC-II, CD11b, CD11c, CD24, CD45, CD64, Ly6G and Ly6C (All from BioLegend, except CD45 was from BD) (
+							<xref rid="bib83" ref-type="bibr">Yu&#xA0;et&#xA0;al., 2016</xref>).
+						</p>
+					</sec>
+				</sec>
+				<sec id="sec5.5">
+					<title>Quantification and statistical analysis</title>
+					<p id="p0190">All data were analyzed with GraphPad Prism version 9.0.0. Statistical methods used to determine significance are listed under each figure.</p>
+				</sec>
+			</sec>
+		</body>
+		<back>
+			<ref-list id="cebib0010">
+				<title>References</title>
+				<ref id="bib1">
+					<element-citation publication-type="journal" id="sref1">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Abu Mouch</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Roguin</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Hellou</surname>
+								<given-names>E.</given-names>
+							</name>
+							<name>
+								<surname>Ishai</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Shoshan</surname>
+								<given-names>U.</given-names>
+							</name>
+							<name>
+								<surname>Mahamid</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Zoabi</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Aisman</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Goldschmid</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Berar Yanay</surname>
+								<given-names>N.</given-names>
+							</name>
+						</person-group>
+						<article-title>Myocarditis following COVID-19 mRNA vaccination</article-title>
+						<source>Vaccine</source>
+						<volume>39</volume>
+						<year>2021</year>
+						<fpage>3790</fpage>
+						<lpage>3793</lpage>
+						<pub-id pub-id-type="pmid">34092429</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib2">
+					<element-citation publication-type="journal" id="sref2">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Achiron</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Dolev</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Menascu</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Zohar</surname>
+								<given-names>D.-N.</given-names>
+							</name>
+							<name>
+								<surname>Dreyer-Alster</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Miron</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Shirbint</surname>
+								<given-names>E.</given-names>
+							</name>
+							<name>
+								<surname>Magalashvili</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Flechter</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Givon</surname>
+								<given-names>U.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>COVID-19 vaccination in patients with multiple sclerosis: what we have learnt by February 2021</article-title>
+						<source>Mult. Scler. J.</source>
+						<volume>27</volume>
+						<year>2021</year>
+						<fpage>864</fpage>
+						<lpage>870</lpage>
+					</element-citation>
+				</ref>
+				<ref id="bib3">
+					<element-citation publication-type="journal" id="sref3">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Alameh</surname>
+								<given-names>M.-G.</given-names>
+							</name>
+							<name>
+								<surname>Weissman</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Pardi</surname>
+								<given-names>N.</given-names>
+							</name>
+						</person-group>
+						<article-title>Messenger RNA-based vaccines against infectious diseases</article-title>
+						<source>Curr. Top. Microbiol. Immunol.</source>
+						<year>2020</year>
+						<fpage>1</fpage>
+						<lpage>35</lpage>
+						<pub-id pub-id-type="doi">10.1007/82_2020_202</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib4">
+					<element-citation publication-type="journal" id="sref4">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Awasthi</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Hook</surname>
+								<given-names>L.M.</given-names>
+							</name>
+							<name>
+								<surname>Pardi</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Wang</surname>
+								<given-names>F.</given-names>
+							</name>
+							<name>
+								<surname>Myles</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Cancro</surname>
+								<given-names>M.P.</given-names>
+							</name>
+							<name>
+								<surname>Cohen</surname>
+								<given-names>G.H.</given-names>
+							</name>
+							<name>
+								<surname>Weissman</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Friedman</surname>
+								<given-names>H.M.</given-names>
+							</name>
+						</person-group>
+						<article-title>Nucleoside-modified mRNA encoding HSV-2 glycoproteins C, D, and E prevents clinical and subclinical genital herpes</article-title>
+						<source>Sci. Immunol.</source>
+						<volume>4</volume>
+						<year>2019</year>
+						<fpage>eaaw7083</fpage>
+						<pub-id pub-id-type="pmid">31541030</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib5">
+					<element-citation publication-type="journal" id="sref5">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Bernasconi</surname>
+								<given-names>V.</given-names>
+							</name>
+							<name>
+								<surname>Norling</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Gribonika</surname>
+								<given-names>I.</given-names>
+							</name>
+							<name>
+								<surname>Ong</surname>
+								<given-names>L.C.</given-names>
+							</name>
+							<name>
+								<surname>Burazerovic</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Parveen</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Sch&#xF6;n</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Stensson</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Bally</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Larson</surname>
+								<given-names>G.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>A vaccine combination of lipid nanoparticles and a cholera toxin adjuvant derivative greatly improves lung protection against influenza virus infection</article-title>
+						<source>Mucosal Immunol.</source>
+						<volume>14</volume>
+						<year>2021</year>
+						<fpage>523</fpage>
+						<lpage>536</lpage>
+						<pub-id pub-id-type="pmid">32807838</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib6">
+					<element-citation publication-type="journal" id="sref6">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Blumenthal</surname>
+								<given-names>K.G.</given-names>
+							</name>
+							<name>
+								<surname>Freeman</surname>
+								<given-names>E.E.</given-names>
+							</name>
+							<name>
+								<surname>Saff</surname>
+								<given-names>R.R.</given-names>
+							</name>
+							<name>
+								<surname>Robinson</surname>
+								<given-names>L.B.</given-names>
+							</name>
+							<name>
+								<surname>Wolfson</surname>
+								<given-names>A.R.</given-names>
+							</name>
+							<name>
+								<surname>Foreman</surname>
+								<given-names>R.K.</given-names>
+							</name>
+							<name>
+								<surname>Hashimoto</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Banerji</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Li</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Anvari</surname>
+								<given-names>S.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Delayed large local reactions to mRNA-1273 vaccine against SARS-CoV-2</article-title>
+						<source>N.&#xA0;Engl. J. Med.</source>
+						<volume>384</volume>
+						<year>2021</year>
+						<fpage>1273</fpage>
+						<lpage>1277</lpage>
+						<pub-id pub-id-type="pmid">33657292</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib7">
+					<element-citation publication-type="journal" id="sref7">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Boncuk</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Kaser</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Yu</surname>
+								<given-names>Y.</given-names>
+							</name>
+							<name>
+								<surname>Taeusch</surname>
+								<given-names>H.W.</given-names>
+							</name>
+						</person-group>
+						<article-title>Effects of cationic liposome-DNA complexes on pulmonary surfactant function in&#xA0;vitro and in&#xA0;vivo</article-title>
+						<source>Lipids</source>
+						<volume>32</volume>
+						<year>1997</year>
+						<fpage>247</fpage>
+						<lpage>253</lpage>
+						<pub-id pub-id-type="pmid">9076661</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib8">
+					<element-citation publication-type="journal" id="sref8">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Bouteau</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Kervevan</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Su</surname>
+								<given-names>Q.</given-names>
+							</name>
+							<name>
+								<surname>Zurawski</surname>
+								<given-names>S.M.</given-names>
+							</name>
+							<name>
+								<surname>Contreras</surname>
+								<given-names>V.</given-names>
+							</name>
+							<name>
+								<surname>Dereuddre-Bosquet</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Le Grand</surname>
+								<given-names>R.</given-names>
+							</name>
+							<name>
+								<surname>Zurawski</surname>
+								<given-names>G.</given-names>
+							</name>
+							<name>
+								<surname>Cardinaud</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Levy</surname>
+								<given-names>Y.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>DC subsets regulate humoral immune responses by supporting the differentiation of distinct Tfh cells</article-title>
+						<source>Front. Immunol.</source>
+						<volume>10</volume>
+						<year>2019</year>
+						<fpage>1134</fpage>
+						<pub-id pub-id-type="pmid">31191525</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib9">
+					<element-citation publication-type="journal" id="sref9">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Buschmann</surname>
+								<given-names>M.D.</given-names>
+							</name>
+							<name>
+								<surname>Carrasco</surname>
+								<given-names>M.J.</given-names>
+							</name>
+							<name>
+								<surname>Alishetty</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Paige</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Alameh</surname>
+								<given-names>M.G.</given-names>
+							</name>
+							<name>
+								<surname>Weissman</surname>
+								<given-names>D.</given-names>
+							</name>
+						</person-group>
+						<article-title>Nanomaterial delivery systems for mrna vaccines</article-title>
+						<source>Vaccines</source>
+						<volume>9</volume>
+						<year>2021</year>
+						<fpage>1</fpage>
+						<lpage>30</lpage>
+					</element-citation>
+				</ref>
+				<ref id="bib10">
+					<element-citation publication-type="journal" id="sref10">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Chavda</surname>
+								<given-names>V.P.</given-names>
+							</name>
+							<name>
+								<surname>Vora</surname>
+								<given-names>L.K.</given-names>
+							</name>
+							<name>
+								<surname>Pandya</surname>
+								<given-names>A.K.</given-names>
+							</name>
+							<name>
+								<surname>Patravale</surname>
+								<given-names>V.B.</given-names>
+							</name>
+						</person-group>
+						<article-title>Intranasal vaccines for SARS-CoV-2: from challenges to potential in COVID-19 management</article-title>
+						<source>Drug Discov. Today</source>
+						<volume>26</volume>
+						<year>2021</year>
+						<fpage>2619</fpage>
+						<lpage>2636</lpage>
+						<pub-id pub-id-type="pmid">34332100</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib11">
+					<element-citation publication-type="book" id="sref11">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Comirnaty</surname>
+							</name>
+						</person-group>
+						<part-title>Assessment Report COVID-19 Vaccine Comirnaty. EMA/707383/2020 Corr.1&#x2217; 31</part-title>
+						<year>2021</year>
+						<fpage>1</fpage>
+						<lpage>140</lpage>
+						<ext-link ext-link-type="uri" xlink:href="https://www.ema.europa.eu/en/documents/assessment-report/comirnaty-epar-public-assessment-report_en.pdf" id="intref0085">https://www.ema.europa.eu/en/documents/assessment-report/comirnaty-epar-public-assessment-report_en.pdf</ext-link>
+					</element-citation>
+				</ref>
+				<ref id="bib12">
+					<element-citation publication-type="journal" id="sref12">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Conti</surname>
+								<given-names>B.</given-names>
+							</name>
+						</person-group>
+						<article-title>Cytokines and fever</article-title>
+						<source>Front. Biosci.</source>
+						<volume>9</volume>
+						<year>2004</year>
+						<fpage>1433</fpage>
+						<pub-id pub-id-type="pmid">14977558</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib13">
+					<element-citation publication-type="journal" id="sref13">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Costa</surname>
+								<given-names>C.P.</given-names>
+							</name>
+							<name>
+								<surname>Moreira</surname>
+								<given-names>J.N.</given-names>
+							</name>
+							<name>
+								<surname>Sousa Lobo</surname>
+								<given-names>J.M.</given-names>
+							</name>
+							<name>
+								<surname>Silva</surname>
+								<given-names>A.C.</given-names>
+							</name>
+						</person-group>
+						<article-title>Intranasal delivery of nanostructured lipid carriers, solid lipid nanoparticles and nanoemulsions: a current overview of in&#xA0;vivo studies</article-title>
+						<source>Acta Pharm. Sin. B</source>
+						<volume>11</volume>
+						<year>2021</year>
+						<fpage>925</fpage>
+						<lpage>940</lpage>
+						<pub-id pub-id-type="pmid">33996407</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib14">
+					<element-citation publication-type="journal" id="sref14">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Debin</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Kravtzoff</surname>
+								<given-names>R.</given-names>
+							</name>
+							<name>
+								<surname>Santiago</surname>
+								<given-names>J.V.</given-names>
+							</name>
+							<name>
+								<surname>Cazales</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Sperandio</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Melber</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Janowicz</surname>
+								<given-names>Z.</given-names>
+							</name>
+							<name>
+								<surname>Betbeder</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Moynier</surname>
+								<given-names>M.</given-names>
+							</name>
+						</person-group>
+						<article-title>Intranasal immunization with recombinant antigens associated with new cationic particles induces strong mucosal as well as systemic antibody and CTL responses</article-title>
+						<source>Vaccine</source>
+						<volume>20</volume>
+						<year>2002</year>
+						<fpage>2752</fpage>
+						<lpage>2763</lpage>
+						<pub-id pub-id-type="pmid">12034102</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib15">
+					<element-citation publication-type="journal" id="sref15">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Diaz</surname>
+								<given-names>G.A.</given-names>
+							</name>
+							<name>
+								<surname>Parsons</surname>
+								<given-names>G.T.</given-names>
+							</name>
+							<name>
+								<surname>Gering</surname>
+								<given-names>S.K.</given-names>
+							</name>
+							<name>
+								<surname>Meier</surname>
+								<given-names>A.R.</given-names>
+							</name>
+							<name>
+								<surname>Hutchinson</surname>
+								<given-names>I.V.</given-names>
+							</name>
+							<name>
+								<surname>Robicsek</surname>
+								<given-names>A.</given-names>
+							</name>
+						</person-group>
+						<article-title>Myocarditis and pericarditis after vaccination for COVID-19</article-title>
+						<source>JAMA</source>
+						<volume>326</volume>
+						<year>2021</year>
+						<fpage>1210</fpage>
+						<lpage>1212</lpage>
+						<pub-id pub-id-type="pmid">34347001</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib16">
+					<element-citation publication-type="journal" id="sref16">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Dinarello</surname>
+								<given-names>C.A.</given-names>
+							</name>
+						</person-group>
+						<article-title>Overview of the IL-1 family in innate inflammation and acquired immunity</article-title>
+						<source>Immunol. Rev.</source>
+						<volume>281</volume>
+						<year>2018</year>
+						<fpage>8</fpage>
+						<lpage>27</lpage>
+						<pub-id pub-id-type="pmid">29247995</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib17">
+					<element-citation publication-type="journal" id="sref17">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Dokka</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Toledo</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Shi</surname>
+								<given-names>X.</given-names>
+							</name>
+							<name>
+								<surname>Castranova</surname>
+								<given-names>V.</given-names>
+							</name>
+							<name>
+								<surname>Rojanasakul</surname>
+								<given-names>Y.</given-names>
+							</name>
+						</person-group>
+						<article-title>Oxygen Radical-Mediated Pulmonary lack of immunogenicity, simplicity and ease of production make</article-title>
+						<source>Pharm. Res.</source>
+						<volume>17</volume>
+						<year>2000</year>
+						<fpage>521</fpage>
+						<lpage>525</lpage>
+						<pub-id pub-id-type="pmid">10888302</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib18">
+					<element-citation publication-type="journal" id="sref18">
+						<person-group person-group-type="author">
+							<name>
+								<surname>van Doremalen</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Purushotham</surname>
+								<given-names>J.N.</given-names>
+							</name>
+							<name>
+								<surname>Schulz</surname>
+								<given-names>J.E.</given-names>
+							</name>
+							<name>
+								<surname>Holbrook</surname>
+								<given-names>M.G.</given-names>
+							</name>
+							<name>
+								<surname>Bushmaker</surname>
+								<given-names>T.</given-names>
+							</name>
+							<name>
+								<surname>Carmody</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Port</surname>
+								<given-names>J.R.</given-names>
+							</name>
+							<name>
+								<surname>Yinda</surname>
+								<given-names>C.K.</given-names>
+							</name>
+							<name>
+								<surname>Okumura</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Saturday</surname>
+								<given-names>G.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Intranasal ChAdOx1 nCoV-19/AZD1222 vaccination reduces viral shedding after SARS-CoV-2 D614G challenge in preclinical models</article-title>
+						<source>Sci. Transl. Med.</source>
+						<volume>13</volume>
+						<year>2021</year>
+						<fpage>eabh0755</fpage>
+						<pub-id pub-id-type="pmid">34315826</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib19">
+					<element-citation publication-type="journal" id="sref19">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Elder</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Gelein</surname>
+								<given-names>R.</given-names>
+							</name>
+							<name>
+								<surname>Silva</surname>
+								<given-names>V.</given-names>
+							</name>
+							<name>
+								<surname>Feikert</surname>
+								<given-names>T.</given-names>
+							</name>
+							<name>
+								<surname>Opanashuk</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Carter</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Potter</surname>
+								<given-names>R.</given-names>
+							</name>
+							<name>
+								<surname>Maynard</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Ito</surname>
+								<given-names>Y.</given-names>
+							</name>
+							<name>
+								<surname>Finkelstein</surname>
+								<given-names>J.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Translocation of inhaled ultrafine manganese oxide particles to the central nervous system</article-title>
+						<source>Environ. Health Perspect.</source>
+						<volume>114</volume>
+						<year>2006</year>
+						<fpage>1172</fpage>
+						<lpage>1178</lpage>
+						<pub-id pub-id-type="pmid">16882521</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib20">
+					<element-citation publication-type="journal" id="sref20">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Filion</surname>
+								<given-names>M.C.</given-names>
+							</name>
+							<name>
+								<surname>Phillips</surname>
+								<given-names>N.C.</given-names>
+							</name>
+						</person-group>
+						<article-title>Toxicity and immunomodulatory activity of liposomal vectors formulated with cationic lipids toward immune effector cells</article-title>
+						<source>Biochim. Biophys. Acta. Biomembr.</source>
+						<volume>1329</volume>
+						<year>1997</year>
+						<fpage>345</fpage>
+						<lpage>356</lpage>
+					</element-citation>
+				</ref>
+				<ref id="bib21">
+					<element-citation publication-type="journal" id="sref21">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Filion</surname>
+								<given-names>M.C.</given-names>
+							</name>
+							<name>
+								<surname>Phillips</surname>
+								<given-names>N.C.</given-names>
+							</name>
+						</person-group>
+						<article-title>Major Limitations in the Use of Cationic Liposomes for DNA Delivery</article-title>
+						<source>Int. J. Pharm.</source>
+						<volume>162</volume>
+						<year>1998</year>
+						<fpage>159</fpage>
+						<lpage>170</lpage>
+					</element-citation>
+				</ref>
+				<ref id="bib22">
+					<element-citation publication-type="journal" id="sref22">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Freyn</surname>
+								<given-names>A.W.</given-names>
+							</name>
+							<name>
+								<surname>Ramos da Silva</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Rosado</surname>
+								<given-names>V.C.</given-names>
+							</name>
+							<name>
+								<surname>Bliss</surname>
+								<given-names>C.M.</given-names>
+							</name>
+							<name>
+								<surname>Pine</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Mui</surname>
+								<given-names>B.L.</given-names>
+							</name>
+							<name>
+								<surname>Tam</surname>
+								<given-names>Y.K.</given-names>
+							</name>
+							<name>
+								<surname>Madden</surname>
+								<given-names>T.D.</given-names>
+							</name>
+							<name>
+								<surname>de Souza Ferreira</surname>
+								<given-names>L.C.</given-names>
+							</name>
+							<name>
+								<surname>Weissman</surname>
+								<given-names>D.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>A multi-targeting, nucleoside-modified mRNA influenza virus vaccine provides broad protection in mice</article-title>
+						<source>Mol. Ther.</source>
+						<volume>28</volume>
+						<year>2020</year>
+						<fpage>1569</fpage>
+						<lpage>1584</lpage>
+						<pub-id pub-id-type="pmid">32359470</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib23">
+					<element-citation publication-type="journal" id="sref23">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Gao</surname>
+								<given-names>X.</given-names>
+							</name>
+							<name>
+								<surname>Tao</surname>
+								<given-names>W.</given-names>
+							</name>
+							<name>
+								<surname>Lu</surname>
+								<given-names>W.</given-names>
+							</name>
+							<name>
+								<surname>Zhang</surname>
+								<given-names>Q.</given-names>
+							</name>
+							<name>
+								<surname>Zhang</surname>
+								<given-names>Y.</given-names>
+							</name>
+							<name>
+								<surname>Jiang</surname>
+								<given-names>X.</given-names>
+							</name>
+							<name>
+								<surname>Fu</surname>
+								<given-names>S.</given-names>
+							</name>
+						</person-group>
+						<article-title>Lectin-conjugated PEG-PLA nanoparticles: preparation and brain delivery after intranasal administration</article-title>
+						<source>Biomaterials</source>
+						<volume>27</volume>
+						<year>2006</year>
+						<fpage>3482</fpage>
+						<lpage>3490</lpage>
+						<pub-id pub-id-type="pmid">16510178</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib24">
+					<element-citation publication-type="journal" id="sref24">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Grau-Exp&#xF3;sito</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>S&#xE1;nchez-Gaona</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Massana</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Suppi</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Astorga-Gamaza</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Perea</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Rosado</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Falc&#xF3;</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Kirkegaard</surname>
+								<given-names>C.</given-names>
+							</name>
+							<name>
+								<surname>Torrella</surname>
+								<given-names>A.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Peripheral and lung resident memory T&#xA0;cell responses against SARS-CoV-2</article-title>
+						<source>Nat. Commun.</source>
+						<volume>12</volume>
+						<year>2021</year>
+						<fpage>3010</fpage>
+						<pub-id pub-id-type="pmid">34021148</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib25">
+					<element-citation publication-type="journal" id="sref25">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Hanson</surname>
+								<given-names>L.R.</given-names>
+							</name>
+							<name>
+								<surname>Fine</surname>
+								<given-names>J.M.</given-names>
+							</name>
+							<name>
+								<surname>Svitak</surname>
+								<given-names>A.L.</given-names>
+							</name>
+							<name>
+								<surname>Faltesek</surname>
+								<given-names>K.A.</given-names>
+							</name>
+						</person-group>
+						<article-title>Intranasal administration of CNS Therapeutics to awake mice</article-title>
+						<source>J.&#xA0;Vis. Exp.</source>
+						<year>2013</year>
+						<fpage>e4440</fpage>
+						<pub-id pub-id-type="doi">10.3791/4440</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib27">
+					<element-citation publication-type="journal" id="sref27">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Igy&#xE1;rt&#xF3;</surname>
+								<given-names>B.Z.</given-names>
+							</name>
+							<name>
+								<surname>Jacobsen</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Ndeupen</surname>
+								<given-names>S.</given-names>
+							</name>
+						</person-group>
+						<article-title>Future considerations for the mRNA-lipid nanoparticle vaccine platform</article-title>
+						<source>Curr. Opin. Virol.</source>
+						<volume>48</volume>
+						<year>2021</year>
+						<fpage>65</fpage>
+						<lpage>72</lpage>
+						<pub-id pub-id-type="pmid">33906124</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib28">
+					<element-citation publication-type="journal" id="sref28">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Jackson</surname>
+								<given-names>L.A.</given-names>
+							</name>
+							<name>
+								<surname>Anderson</surname>
+								<given-names>E.J.</given-names>
+							</name>
+							<name>
+								<surname>Rouphael</surname>
+								<given-names>N.G.</given-names>
+							</name>
+							<name>
+								<surname>Roberts</surname>
+								<given-names>P.C.</given-names>
+							</name>
+							<name>
+								<surname>Makhene</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Coler</surname>
+								<given-names>R.N.</given-names>
+							</name>
+							<name>
+								<surname>McCullough</surname>
+								<given-names>M.P.</given-names>
+							</name>
+							<name>
+								<surname>Chappell</surname>
+								<given-names>J.D.</given-names>
+							</name>
+							<name>
+								<surname>Denison</surname>
+								<given-names>M.R.</given-names>
+							</name>
+							<name>
+								<surname>Stevens</surname>
+								<given-names>L.J.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>An mRNA vaccine against SARS-CoV-2 &#x2014; preliminary report</article-title>
+						<source>N.&#xA0;Engl. J. Med.</source>
+						<volume>383</volume>
+						<year>2020</year>
+						<fpage>1920</fpage>
+						<lpage>1931</lpage>
+						<pub-id pub-id-type="pmid">32663912</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib29">
+					<element-citation publication-type="book" id="sref29">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Janeway</surname>
+								<given-names>C.A.</given-names>
+							</name>
+							<name>
+								<surname>Travers</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Walport</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Shlomchik</surname>
+								<given-names>M.J.</given-names>
+							</name>
+						</person-group>
+						<part-title>Self-tolerance and its loss</part-title>
+						<source>Immunobiology: The Immune System in Health and Disease</source>
+						<edition>Fifth Edition</edition>
+						<year>2001</year>
+						<fpage>636</fpage>
+						<lpage>654</lpage>
+					</element-citation>
+				</ref>
+				<ref id="bib30">
+					<element-citation publication-type="journal" id="sref30">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Kanehisa</surname>
+								<given-names>M.</given-names>
+							</name>
+						</person-group>
+						<article-title>KEGG: kyoto encyclopedia of genes and genomes</article-title>
+						<source>Nucleic Acids Res.</source>
+						<volume>28</volume>
+						<year>2000</year>
+						<fpage>27</fpage>
+						<lpage>30</lpage>
+						<pub-id pub-id-type="pmid">10592173</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib31">
+					<element-citation publication-type="journal" id="sref31">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Karik&#xF3;</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Buckstein</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Ni</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Weissman</surname>
+								<given-names>D.</given-names>
+							</name>
+						</person-group>
+						<article-title>Suppression of RNA recognition by toll-like receptors: the impact of nucleoside modification and the evolutionary origin of RNA</article-title>
+						<source>Immunity</source>
+						<volume>23</volume>
+						<year>2005</year>
+						<fpage>165</fpage>
+						<lpage>175</lpage>
+						<pub-id pub-id-type="pmid">16111635</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib33">
+					<element-citation publication-type="journal" id="sref33">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Karik&#xF3;</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Muramatsu</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Ludwig</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Weissman</surname>
+								<given-names>D.</given-names>
+							</name>
+						</person-group>
+						<article-title>Generating the optimal mRNA for therapy: HPLC purification eliminates immune activation and improves translation of nucleoside-modified, protein-encoding mRNA</article-title>
+						<source>Nucleic Acids Res.</source>
+						<volume>39</volume>
+						<year>2011</year>
+						<fpage>e142</fpage>
+						<pub-id pub-id-type="pmid">21890902</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib32">
+					<element-citation publication-type="journal" id="sref32">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Karik&#xF3;</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Muramatsu</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Welsh</surname>
+								<given-names>F.A.</given-names>
+							</name>
+							<name>
+								<surname>Ludwig</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Kato</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Akira</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Weissman</surname>
+								<given-names>D.</given-names>
+							</name>
+						</person-group>
+						<article-title>Incorporation of pseudouridine into mRNA yields superior nonimmunogenic vector with increased translational capacity and biological stability</article-title>
+						<source>Mol. Ther.</source>
+						<volume>16</volume>
+						<year>2008</year>
+						<fpage>1833</fpage>
+						<lpage>1840</lpage>
+						<pub-id pub-id-type="pmid">18797453</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib34">
+					<element-citation publication-type="journal" id="sref34">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Kashem</surname>
+								<given-names>S.W.</given-names>
+							</name>
+							<name>
+								<surname>Kaplan</surname>
+								<given-names>D.H.</given-names>
+							</name>
+						</person-group>
+						<article-title>Isolation of murine skin resident and migratory dendritic cells via enzymatic digestion</article-title>
+						<source>Curr. Protoc. Immunol.</source>
+						<volume>121</volume>
+						<year>2018</year>
+						<fpage>e45</fpage>
+						<pub-id pub-id-type="pmid">30040218</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib35">
+					<element-citation publication-type="journal" id="sref35">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Kato</surname>
+								<given-names>Y.</given-names>
+							</name>
+							<name>
+								<surname>Steiner</surname>
+								<given-names>T.M.</given-names>
+							</name>
+							<name>
+								<surname>Park</surname>
+								<given-names>H.-Y.</given-names>
+							</name>
+							<name>
+								<surname>Hitchcock</surname>
+								<given-names>R.O.</given-names>
+							</name>
+							<name>
+								<surname>Zaid</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Hor</surname>
+								<given-names>J.L.</given-names>
+							</name>
+							<name>
+								<surname>Devi</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Davey</surname>
+								<given-names>G.M.</given-names>
+							</name>
+							<name>
+								<surname>Vremec</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Tullett</surname>
+								<given-names>K.M.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Display of native antigen on cDC1 that have spatial access to both T and B cells underlies efficient humoral vaccination</article-title>
+						<source>J.&#xA0;Immunol.</source>
+						<volume>205</volume>
+						<year>2020</year>
+						<fpage>1842</fpage>
+						<lpage>1856</lpage>
+						<pub-id pub-id-type="pmid">32839238</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib36">
+					<element-citation publication-type="journal" id="sref36">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Khayat-Khoei</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Bhattacharyya</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Katz</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Harrison</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Tauhid</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Bruso</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Houtchens</surname>
+								<given-names>M.K.</given-names>
+							</name>
+							<name>
+								<surname>Edwards</surname>
+								<given-names>K.R.</given-names>
+							</name>
+							<name>
+								<surname>Bakshi</surname>
+								<given-names>R.</given-names>
+							</name>
+						</person-group>
+						<article-title>COVID-19 mRNA vaccination leading to CNS inflammation: a case series</article-title>
+						<source>J.&#xA0;Neurol.</source>
+						<year>2021</year>
+						<pub-id pub-id-type="doi">10.1007/s00415-021-10780-7</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib37">
+					<element-citation publication-type="journal" id="sref37">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Kozma</surname>
+								<given-names>G.T.</given-names>
+							</name>
+							<name>
+								<surname>Shimizu</surname>
+								<given-names>T.</given-names>
+							</name>
+							<name>
+								<surname>Ishida</surname>
+								<given-names>T.</given-names>
+							</name>
+							<name>
+								<surname>Szebeni</surname>
+								<given-names>J.</given-names>
+							</name>
+						</person-group>
+						<article-title>Anti-PEG antibodies: properties, formation, testing and role in adverse immune reactions to PEGylated nano-biopharmaceuticals</article-title>
+						<source>Adv. Drug Deliv. Rev.</source>
+						<volume>154&#x2013;155</volume>
+						<year>2020</year>
+						<fpage>163</fpage>
+						<lpage>175</lpage>
+					</element-citation>
+				</ref>
+				<ref id="bib38">
+					<element-citation publication-type="journal" id="sref38">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Kulkarni</surname>
+								<given-names>J.A.</given-names>
+							</name>
+							<name>
+								<surname>Cullis</surname>
+								<given-names>P.R.</given-names>
+							</name>
+							<name>
+								<surname>Van Der Meel</surname>
+								<given-names>R.</given-names>
+							</name>
+						</person-group>
+						<article-title>Lipid nanoparticles enabling gene therapies: from concepts to clinical utility</article-title>
+						<source>Nucleic Acid Ther.</source>
+						<volume>28</volume>
+						<year>2018</year>
+						<fpage>146</fpage>
+						<lpage>157</lpage>
+						<pub-id pub-id-type="pmid">29683383</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib39">
+					<element-citation publication-type="journal" id="sref39">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Laczk&#xF3;</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Hogan</surname>
+								<given-names>M.J.</given-names>
+							</name>
+							<name>
+								<surname>Toulmin</surname>
+								<given-names>S.A.</given-names>
+							</name>
+							<name>
+								<surname>Hicks</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Lederer</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Gaudette</surname>
+								<given-names>B.T.</given-names>
+							</name>
+							<name>
+								<surname>Casta&#xF1;o</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Amanat</surname>
+								<given-names>F.</given-names>
+							</name>
+							<name>
+								<surname>Muramatsu</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Oguin</surname>
+								<given-names>T.H.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>A single immunization with nucleoside-modified mRNA vaccines elicits strong cellular and humoral immune responses against SARS-CoV-2 in mice</article-title>
+						<source>Immunity</source>
+						<volume>53</volume>
+						<year>2020</year>
+						<fpage>724</fpage>
+						<lpage>732.e7</lpage>
+						<pub-id pub-id-type="pmid">32783919</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib41">
+					<element-citation publication-type="journal" id="sref41">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Lederer</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Casta&#xF1;o</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>G&#xF3;mez Atria</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Oguin</surname>
+								<given-names>T.H.</given-names>
+							</name>
+							<name>
+								<surname>Wang</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Manzoni</surname>
+								<given-names>T.B.</given-names>
+							</name>
+							<name>
+								<surname>Muramatsu</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Hogan</surname>
+								<given-names>M.J.</given-names>
+							</name>
+							<name>
+								<surname>Amanat</surname>
+								<given-names>F.</given-names>
+							</name>
+							<name>
+								<surname>Cherubin</surname>
+								<given-names>P.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>SARS-CoV-2 mRNA vaccines foster potent antigen-specific germinal center responses associated with neutralizing antibody generation</article-title>
+						<source>Immunity</source>
+						<volume>53</volume>
+						<year>2020</year>
+						<fpage>1281</fpage>
+						<lpage>1295.e5</lpage>
+						<pub-id pub-id-type="pmid">33296685</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib42">
+					<element-citation publication-type="journal" id="sref42">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Li</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Ahmet</surname>
+								<given-names>F.</given-names>
+							</name>
+							<name>
+								<surname>Sullivan</surname>
+								<given-names>L.C.</given-names>
+							</name>
+							<name>
+								<surname>Brooks</surname>
+								<given-names>A.G.</given-names>
+							</name>
+							<name>
+								<surname>Kent</surname>
+								<given-names>S.J.</given-names>
+							</name>
+							<name>
+								<surname>De Rose</surname>
+								<given-names>R.</given-names>
+							</name>
+							<name>
+								<surname>Salazar</surname>
+								<given-names>A.M.</given-names>
+							</name>
+							<name>
+								<surname>Reis e Sousa</surname>
+								<given-names>C.</given-names>
+							</name>
+							<name>
+								<surname>Shortman</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Lahoud</surname>
+								<given-names>M.H.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Antibodies targeting Clec9A promote strong humoral immunity without adjuvant in mice and non-human primates</article-title>
+						<source>Eur. J. Immunol.</source>
+						<volume>45</volume>
+						<year>2015</year>
+						<fpage>854</fpage>
+						<lpage>864</lpage>
+						<pub-id pub-id-type="pmid">25487143</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib43">
+					<element-citation publication-type="journal" id="sref43">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Liberzon</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Subramanian</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Pinchback</surname>
+								<given-names>R.</given-names>
+							</name>
+							<name>
+								<surname>Thorvaldsdottir</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Tamayo</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Mesirov</surname>
+								<given-names>J.P.</given-names>
+							</name>
+						</person-group>
+						<article-title>Molecular signatures database (MSigDB) 3.0</article-title>
+						<source>Bioinformatics</source>
+						<volume>27</volume>
+						<year>2011</year>
+						<fpage>1739</fpage>
+						<lpage>1740</lpage>
+						<pub-id pub-id-type="pmid">21546393</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib44">
+					<element-citation publication-type="journal" id="sref44">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Lockman</surname>
+								<given-names>P.R.</given-names>
+							</name>
+							<name>
+								<surname>Koziara</surname>
+								<given-names>J.M.</given-names>
+							</name>
+							<name>
+								<surname>Mumper</surname>
+								<given-names>R.J.</given-names>
+							</name>
+							<name>
+								<surname>Allen</surname>
+								<given-names>D.D.</given-names>
+							</name>
+						</person-group>
+						<article-title>Nanoparticle surface charges alter blood&#x2013;brain barrier integrity and permeability</article-title>
+						<source>J.&#xA0;Drug Target.</source>
+						<volume>12</volume>
+						<year>2004</year>
+						<fpage>635</fpage>
+						<lpage>641</lpage>
+						<pub-id pub-id-type="pmid">15621689</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib45">
+					<element-citation publication-type="journal" id="sref45">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Lonez</surname>
+								<given-names>C.</given-names>
+							</name>
+							<name>
+								<surname>Vandenbranden</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Ruysschaert</surname>
+								<given-names>J.-M.</given-names>
+							</name>
+						</person-group>
+						<article-title>Cationic lipids activate intracellular signaling pathways</article-title>
+						<source>Adv. Drug Deliv. Rev.</source>
+						<volume>64</volume>
+						<year>2012</year>
+						<fpage>1749</fpage>
+						<lpage>1758</lpage>
+						<pub-id pub-id-type="pmid">22634161</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib46">
+					<element-citation publication-type="journal" id="sref46">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Lonez</surname>
+								<given-names>C.</given-names>
+							</name>
+							<name>
+								<surname>Bessodes</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Scherman</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Vandenbranden</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Escriou</surname>
+								<given-names>V.</given-names>
+							</name>
+							<name>
+								<surname>Ruysschaert</surname>
+								<given-names>J.-M.</given-names>
+							</name>
+						</person-group>
+						<article-title>Cationic lipid nanocarriers activate Toll-like receptor 2 and NLRP3 inflammasome pathways</article-title>
+						<source>Nanomed. Nanotechnol. Biol. Med.</source>
+						<volume>10</volume>
+						<year>2014</year>
+						<fpage>775</fpage>
+						<lpage>782</lpage>
+					</element-citation>
+				</ref>
+				<ref id="bib47">
+					<element-citation publication-type="journal" id="sref47">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Love</surname>
+								<given-names>M.I.</given-names>
+							</name>
+							<name>
+								<surname>Huber</surname>
+								<given-names>W.</given-names>
+							</name>
+							<name>
+								<surname>Anders</surname>
+								<given-names>S.</given-names>
+							</name>
+						</person-group>
+						<article-title>Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2</article-title>
+						<source>Genome Biol.</source>
+						<volume>15</volume>
+						<year>2014</year>
+						<fpage>550</fpage>
+						<pub-id pub-id-type="pmid">25516281</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib48">
+					<element-citation publication-type="journal" id="sref48">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Lund</surname>
+								<given-names>F.E.</given-names>
+							</name>
+							<name>
+								<surname>Randall</surname>
+								<given-names>T.D.</given-names>
+							</name>
+						</person-group>
+						<article-title>Scent of a vaccine</article-title>
+						<source>Science</source>
+						<volume>373</volume>
+						<year>2021</year>
+						<fpage>397</fpage>
+						<lpage>399</lpage>
+						<pub-id pub-id-type="pmid">34437109</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib49">
+					<element-citation publication-type="journal" id="sref49">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Lv</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Zhang</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Wang</surname>
+								<given-names>B.</given-names>
+							</name>
+							<name>
+								<surname>Cui</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Yan</surname>
+								<given-names>J.</given-names>
+							</name>
+						</person-group>
+						<article-title>Toxicity of cationic lipids and cationic polymers in gene delivery</article-title>
+						<source>J.&#xA0;Control Release</source>
+						<volume>114</volume>
+						<year>2006</year>
+						<fpage>100</fpage>
+						<lpage>109</lpage>
+						<pub-id pub-id-type="pmid">16831482</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib50">
+					<element-citation publication-type="journal" id="sref50">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Marshall</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Ferguson</surname>
+								<given-names>I.D.</given-names>
+							</name>
+							<name>
+								<surname>Lewis</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Jaggi</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Gagliardo</surname>
+								<given-names>C.</given-names>
+							</name>
+							<name>
+								<surname>Collins</surname>
+								<given-names>J.S.</given-names>
+							</name>
+							<name>
+								<surname>Shaughnessya</surname>
+								<given-names>R.</given-names>
+							</name>
+							<name>
+								<surname>Carona</surname>
+								<given-names>R.</given-names>
+							</name>
+							<name>
+								<surname>Fuss</surname>
+								<given-names>C.</given-names>
+							</name>
+							<name>
+								<surname>Corbin</surname>
+								<given-names>K.J.E.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Symptomatic acute myocarditis in seven adolescents following pfizer-BioNTech COVID-19 vaccination</article-title>
+						<source>Pediatrics</source>
+						<volume>148</volume>
+						<year>2021</year>
+						<comment>e2021052478</comment>
+					</element-citation>
+				</ref>
+				<ref id="bib51">
+					<element-citation publication-type="journal" id="sref51">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Martins</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Sarmento</surname>
+								<given-names>B.</given-names>
+							</name>
+							<name>
+								<surname>Ferreira</surname>
+								<given-names>D.C.</given-names>
+							</name>
+							<name>
+								<surname>Souto</surname>
+								<given-names>E.B.</given-names>
+							</name>
+						</person-group>
+						<article-title>Lipid-based colloidal carriers for peptide and protein delivery--liposomes versus lipid nanoparticles</article-title>
+						<source>Int. J. Nanomed.</source>
+						<volume>2</volume>
+						<year>2007</year>
+						<fpage>595</fpage>
+						<lpage>607</lpage>
+					</element-citation>
+				</ref>
+				<ref id="bib52">
+					<element-citation publication-type="journal" id="sref52">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Maugeri</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Nawaz</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Papadimitriou</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Angerfors</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Camponeschi</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Na</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>H&#xF6;ltt&#xE4;</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Skantze</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Johansson</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Sundqvist</surname>
+								<given-names>M.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Linkage between endosomal escape of LNP-mRNA and loading into EVs for transport to other cells</article-title>
+						<source>Nat. Commun.</source>
+						<volume>10</volume>
+						<year>2019</year>
+						<fpage>4333</fpage>
+						<pub-id pub-id-type="pmid">31551417</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib53">
+					<element-citation publication-type="book" id="sref53">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Moderna</surname>
+							</name>
+						</person-group>
+						<part-title>Assessment Report COVID-19 Vaccine Moderna Common. EMA/15689/2021 Corr.1&#x2217;1 31</part-title>
+						<year>2021</year>
+						<fpage>1</fpage>
+						<lpage>169</lpage>
+						<ext-link ext-link-type="uri" xlink:href="https://www.ema.europa.eu/en/documents/assessment-report/spikevax-previously-covid-19-vaccine-moderna-epar-public-assessment-report_en.pdf" id="intref0090">https://www.ema.europa.eu/en/documents/assessment-report/spikevax-previously-covid-19-vaccine-moderna-epar-public-assessment-report_en.pdf</ext-link>
+					</element-citation>
+				</ref>
+				<ref id="bib54">
+					<element-citation publication-type="journal" id="sref54">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Montgomery</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Ryan</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Engler</surname>
+								<given-names>R.</given-names>
+							</name>
+							<name>
+								<surname>Hoffman</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>McClenathan</surname>
+								<given-names>B.</given-names>
+							</name>
+							<name>
+								<surname>Collins</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Loran</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Hrncir</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Herring</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Platzer</surname>
+								<given-names>M.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Myocarditis following immunization with mRNA COVID-19 vaccines in members of the US military</article-title>
+						<source>JAMA Cardiol.</source>
+						<volume>6</volume>
+						<year>2021</year>
+						<fpage>1202</fpage>
+						<lpage>1206</lpage>
+						<pub-id pub-id-type="pmid">34185045</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib55">
+					<element-citation publication-type="journal" id="sref55">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Nair</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Jacob</surname>
+								<given-names>S.</given-names>
+							</name>
+						</person-group>
+						<article-title>A simple practice guide for dose conversion between animals and human</article-title>
+						<source>J.&#xA0;Basic Clin. Pharm.</source>
+						<volume>7</volume>
+						<year>2016</year>
+						<fpage>27</fpage>
+						<pub-id pub-id-type="pmid">27057123</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib56">
+					<element-citation publication-type="journal" id="sref56">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Ndeupen</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Bouteau</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Herbst</surname>
+								<given-names>C.</given-names>
+							</name>
+							<name>
+								<surname>Qin</surname>
+								<given-names>Z.</given-names>
+							</name>
+							<name>
+								<surname>Hutchins</surname>
+								<given-names>Z.</given-names>
+							</name>
+							<name>
+								<surname>Kurup</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Diba</surname>
+								<given-names>L.Z.</given-names>
+							</name>
+							<name>
+								<surname>Igy&#xE1;rt&#xF3;</surname>
+								<given-names>B.Z.</given-names>
+							</name>
+						</person-group>
+						<article-title>Langerhans cells and cDC1s play redundant roles in mRNA-LNP induced protective anti-influenza and anti-SARS-CoV-2 responses</article-title>
+						<source>BioRxiv Prepr. Serv. Biol.</source>
+						<year>2021</year>
+						<pub-id pub-id-type="doi">10.1101/2021.08.01.454662</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib57">
+					<element-citation publication-type="journal" id="sref57">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Netea</surname>
+								<given-names>M.G.</given-names>
+							</name>
+							<name>
+								<surname>Quintin</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>van der Meer</surname>
+								<given-names>J.W.M.</given-names>
+							</name>
+						</person-group>
+						<article-title>Trained immunity: a memory for innate host defense</article-title>
+						<source>Cell Host Microbe.</source>
+						<volume>9</volume>
+						<year>2011</year>
+						<fpage>355</fpage>
+						<lpage>361</lpage>
+						<pub-id pub-id-type="pmid">21575907</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib58">
+					<element-citation publication-type="journal" id="sref58">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Ols</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Yang</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Thompson</surname>
+								<given-names>E.A.</given-names>
+							</name>
+							<name>
+								<surname>Pushparaj</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Tran</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Liang</surname>
+								<given-names>F.</given-names>
+							</name>
+							<name>
+								<surname>Lin</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Eriksson</surname>
+								<given-names>B.</given-names>
+							</name>
+							<name>
+								<surname>Karlsson Hedestam</surname>
+								<given-names>G.B.</given-names>
+							</name>
+							<name>
+								<surname>Wyatt</surname>
+								<given-names>R.T.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Route of vaccine administration alters antigen trafficking but not innate or adaptive immunity</article-title>
+						<source>Cell Rep.</source>
+						<volume>30</volume>
+						<year>2020</year>
+						<fpage>3964</fpage>
+						<lpage>3971.e7</lpage>
+						<pub-id pub-id-type="pmid">32209459</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib59">
+					<element-citation publication-type="journal" id="sref59">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Pardi</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Tuyishime</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Muramatsu</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Karik&#xF3;</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Mui</surname>
+								<given-names>B.L.</given-names>
+							</name>
+							<name>
+								<surname>Tam</surname>
+								<given-names>Y.K.</given-names>
+							</name>
+							<name>
+								<surname>Madden</surname>
+								<given-names>T.D.</given-names>
+							</name>
+							<name>
+								<surname>Hope</surname>
+								<given-names>M.J.</given-names>
+							</name>
+							<name>
+								<surname>Weissman</surname>
+								<given-names>D.</given-names>
+							</name>
+						</person-group>
+						<article-title>Expression kinetics of nucleoside-modified mRNA delivered in lipid nanoparticles to mice by various routes</article-title>
+						<source>J.&#xA0;Control Release</source>
+						<volume>217</volume>
+						<year>2015</year>
+						<fpage>345</fpage>
+						<lpage>351</lpage>
+						<pub-id pub-id-type="pmid">26264835</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib60">
+					<element-citation publication-type="journal" id="sref60">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Pardi</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Hogan</surname>
+								<given-names>M.J.</given-names>
+							</name>
+							<name>
+								<surname>Pelc</surname>
+								<given-names>R.S.</given-names>
+							</name>
+							<name>
+								<surname>Muramatsu</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Andersen</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>DeMaso</surname>
+								<given-names>C.R.</given-names>
+							</name>
+							<name>
+								<surname>Dowd</surname>
+								<given-names>K.A.</given-names>
+							</name>
+							<name>
+								<surname>Sutherland</surname>
+								<given-names>L.L.</given-names>
+							</name>
+							<name>
+								<surname>Scearce</surname>
+								<given-names>R.M.</given-names>
+							</name>
+							<name>
+								<surname>Parks</surname>
+								<given-names>R.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Zika virus protection by a single low-dose nucleoside-modified mRNA vaccination</article-title>
+						<source>Nature</source>
+						<volume>543</volume>
+						<year>2017</year>
+						<fpage>248</fpage>
+						<lpage>251</lpage>
+						<pub-id pub-id-type="pmid">28151488</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib61">
+					<element-citation publication-type="journal" id="sref61">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Pardi</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Hogan</surname>
+								<given-names>M.J.</given-names>
+							</name>
+							<name>
+								<surname>Naradikian</surname>
+								<given-names>M.S.</given-names>
+							</name>
+							<name>
+								<surname>Parkhouse</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Cain</surname>
+								<given-names>D.W.</given-names>
+							</name>
+							<name>
+								<surname>Jones</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Moody</surname>
+								<given-names>M.A.</given-names>
+							</name>
+							<name>
+								<surname>Verkerke</surname>
+								<given-names>H.P.</given-names>
+							</name>
+							<name>
+								<surname>Myles</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Willis</surname>
+								<given-names>E.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Nucleoside-modified mRNA vaccines induce potent T follicular helper and germinal center B cell responses</article-title>
+						<source>J.&#xA0;Exp. Med.</source>
+						<volume>215</volume>
+						<year>2018</year>
+						<fpage>1571</fpage>
+						<lpage>1588</lpage>
+						<pub-id pub-id-type="pmid">29739835</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib62">
+					<element-citation publication-type="journal" id="sref62">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Pardi</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Parkhouse</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Kirkpatrick</surname>
+								<given-names>E.</given-names>
+							</name>
+							<name>
+								<surname>McMahon</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Zost</surname>
+								<given-names>S.J.</given-names>
+							</name>
+							<name>
+								<surname>Mui</surname>
+								<given-names>B.L.</given-names>
+							</name>
+							<name>
+								<surname>Tam</surname>
+								<given-names>Y.K.</given-names>
+							</name>
+							<name>
+								<surname>Karik&#xF3;</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Barbosa</surname>
+								<given-names>C.J.</given-names>
+							</name>
+							<name>
+								<surname>Madden</surname>
+								<given-names>T.D.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Nucleoside-modified mRNA immunization elicits influenza virus hemagglutinin stalk-specific antibodies</article-title>
+						<source>Nat. Commun.</source>
+						<volume>9</volume>
+						<year>2018</year>
+						<fpage>3361</fpage>
+						<pub-id pub-id-type="pmid">30135514</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib63">
+					<element-citation publication-type="journal" id="sref63">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Patone</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Handunnetthi</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Saatci</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Pan</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Katikireddi</surname>
+								<given-names>S.V.</given-names>
+							</name>
+							<name>
+								<surname>Razvi</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Hunt</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Mei</surname>
+								<given-names>X.W.</given-names>
+							</name>
+							<name>
+								<surname>Dixon</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Zaccardi</surname>
+								<given-names>F.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Neurological complications after first dose of COVID-19 vaccines and SARS-CoV-2 infection</article-title>
+						<source>Nat. Med.</source>
+						<year>2021</year>
+						<pub-id pub-id-type="doi">10.1038/s41591-021-01556-7</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib64">
+					<element-citation publication-type="journal" id="sref64">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Russell</surname>
+								<given-names>M.W.</given-names>
+							</name>
+							<name>
+								<surname>Moldoveanu</surname>
+								<given-names>Z.</given-names>
+							</name>
+							<name>
+								<surname>Ogra</surname>
+								<given-names>P.L.</given-names>
+							</name>
+							<name>
+								<surname>Mestecky</surname>
+								<given-names>J.</given-names>
+							</name>
+						</person-group>
+						<article-title>Mucosal immunity in COVID-19: a neglected but critical aspect of SARS-CoV-2 infection</article-title>
+						<source>Front. Immunol.</source>
+						<volume>11</volume>
+						<year>2020</year>
+						<fpage>611337</fpage>
+						<pub-id pub-id-type="pmid">33329607</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib65">
+					<element-citation publication-type="journal" id="sref65">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Sahin</surname>
+								<given-names>U.</given-names>
+							</name>
+							<name>
+								<surname>Muik</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Derhovanessian</surname>
+								<given-names>E.</given-names>
+							</name>
+							<name>
+								<surname>Vogler</surname>
+								<given-names>I.</given-names>
+							</name>
+							<name>
+								<surname>Kranz</surname>
+								<given-names>L.M.</given-names>
+							</name>
+							<name>
+								<surname>Vormehr</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Baum</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Pascal</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Quandt</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Maurus</surname>
+								<given-names>D.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>COVID-19 vaccine BNT162b1 elicits human antibody and TH1 T&#xA0;cell responses</article-title>
+						<source>Nature</source>
+						<volume>586</volume>
+						<year>2020</year>
+						<fpage>594</fpage>
+						<lpage>599</lpage>
+						<pub-id pub-id-type="pmid">32998157</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib66">
+					<element-citation publication-type="journal" id="sref66">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Samaridou</surname>
+								<given-names>E.</given-names>
+							</name>
+							<name>
+								<surname>Heyes</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Lutwyche</surname>
+								<given-names>P.</given-names>
+							</name>
+						</person-group>
+						<article-title>Lipid nanoparticles for nucleic acid delivery: current perspectives</article-title>
+						<source>Adv. Drug Deliv. Rev.</source>
+						<volume>154&#x2013;155</volume>
+						<year>2020</year>
+						<fpage>37</fpage>
+						<lpage>63</lpage>
+					</element-citation>
+				</ref>
+				<ref id="bib67">
+					<element-citation publication-type="journal" id="sref67">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Sedic</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Senn</surname>
+								<given-names>J.J.</given-names>
+							</name>
+							<name>
+								<surname>Lynn</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Laska</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Smith</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Platz</surname>
+								<given-names>S.J.</given-names>
+							</name>
+							<name>
+								<surname>Bolen</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Hoge</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Bulychev</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Jacquinet</surname>
+								<given-names>E.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Safety evaluation of lipid nanoparticle&#x2013;formulated modified mRNA in the sprague-dawley rat and cynomolgus monkey</article-title>
+						<source>Vet. Pathol.</source>
+						<volume>55</volume>
+						<year>2018</year>
+						<fpage>341</fpage>
+						<lpage>354</lpage>
+						<pub-id pub-id-type="pmid">29191134</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib68">
+					<element-citation publication-type="journal" id="sref68">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Shay</surname>
+								<given-names>D.K.</given-names>
+							</name>
+							<name>
+								<surname>Shimabukuro</surname>
+								<given-names>T.T.</given-names>
+							</name>
+							<name>
+								<surname>DeStefano</surname>
+								<given-names>F.</given-names>
+							</name>
+						</person-group>
+						<article-title>Myocarditis occurring after immunization with mRNA-based COVID-19 vaccines</article-title>
+						<source>JAMA Cardiol.</source>
+						<volume>6</volume>
+						<year>2021</year>
+						<fpage>1115</fpage>
+						<lpage>1117</lpage>
+						<pub-id pub-id-type="pmid">34185047</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib69">
+					<element-citation publication-type="journal" id="sref69">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Shirai</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Shibuya</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Kawai</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Tamiya</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Munakata</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Omata</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Suzuki</surname>
+								<given-names>R.</given-names>
+							</name>
+							<name>
+								<surname>Aoshi</surname>
+								<given-names>T.</given-names>
+							</name>
+							<name>
+								<surname>Yoshioka</surname>
+								<given-names>Y.</given-names>
+							</name>
+						</person-group>
+						<article-title>Lipid nanoparticles potentiate CpG-oligodeoxynucleotide-based vaccine for influenza virus</article-title>
+						<source>Front. Immunol.</source>
+						<volume>10</volume>
+						<year>2020</year>
+						<fpage>3018</fpage>
+						<pub-id pub-id-type="pmid">31998305</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib70">
+					<element-citation publication-type="journal" id="sref70">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Shrum</surname>
+								<given-names>B.</given-names>
+							</name>
+							<name>
+								<surname>Anantha</surname>
+								<given-names>R.V.</given-names>
+							</name>
+							<name>
+								<surname>Xu</surname>
+								<given-names>S.X.</given-names>
+							</name>
+							<name>
+								<surname>Donnelly</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Haeryfar</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>McCormick</surname>
+								<given-names>J.K.</given-names>
+							</name>
+							<name>
+								<surname>Mele</surname>
+								<given-names>T.</given-names>
+							</name>
+						</person-group>
+						<article-title>A robust scoring system to evaluate sepsis severity in an animal model</article-title>
+						<source>BMC Res. Notes</source>
+						<volume>7</volume>
+						<year>2014</year>
+						<fpage>233</fpage>
+						<pub-id pub-id-type="pmid">24725742</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib71">
+					<element-citation publication-type="journal" id="sref71">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Sterlin</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Mathian</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Miyara</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Mohr</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Anna</surname>
+								<given-names>F.</given-names>
+							</name>
+							<name>
+								<surname>Cla&#xEB;r</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Quentric</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Fadlallah</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Devilliers</surname>
+								<given-names>H.</given-names>
+							</name>
+							<name>
+								<surname>Ghillani</surname>
+								<given-names>P.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>IgA dominates the early neutralizing antibody response to SARS-CoV-2</article-title>
+						<source>Sci. Transl. Med.</source>
+						<volume>13</volume>
+						<year>2021</year>
+						<fpage>2223</fpage>
+					</element-citation>
+				</ref>
+				<ref id="bib72">
+					<element-citation publication-type="journal" id="sref72">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Su</surname>
+								<given-names>Q.</given-names>
+							</name>
+							<name>
+								<surname>Bouteau</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Cardenas</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Uthra</surname>
+								<given-names>B.</given-names>
+							</name>
+							<name>
+								<surname>Wang</surname>
+								<given-names>Y.</given-names>
+							</name>
+							<name>
+								<surname>Smitherman</surname>
+								<given-names>C.</given-names>
+							</name>
+							<name>
+								<surname>Gu</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Igy&#xE1;rt&#xF3;</surname>
+								<given-names>B.Z.</given-names>
+							</name>
+						</person-group>
+						<article-title>Brief communication: long-term absence of Langerhans cells alters the gene expression profile of keratinocytes and dendritic epidermal T&#xA0;cells</article-title>
+						<source>PLoS One</source>
+						<volume>15</volume>
+						<year>2020</year>
+						<fpage>e0223397</fpage>
+						<pub-id pub-id-type="pmid">31923202</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib73">
+					<element-citation publication-type="journal" id="sref73">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Subramanian</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Tamayo</surname>
+								<given-names>P.</given-names>
+							</name>
+							<name>
+								<surname>Mootha</surname>
+								<given-names>V.K.</given-names>
+							</name>
+							<name>
+								<surname>Mukherjee</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Ebert</surname>
+								<given-names>B.L.</given-names>
+							</name>
+							<name>
+								<surname>Gillette</surname>
+								<given-names>M.A.</given-names>
+							</name>
+							<name>
+								<surname>Paulovich</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Pomeroy</surname>
+								<given-names>S.L.</given-names>
+							</name>
+							<name>
+								<surname>Golub</surname>
+								<given-names>T.R.</given-names>
+							</name>
+							<name>
+								<surname>Lander</surname>
+								<given-names>E.S.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles</article-title>
+						<source>Proc. Natl. Acad. Sci. U S A</source>
+						<volume>102</volume>
+						<year>2005</year>
+						<fpage>15545</fpage>
+						<lpage>15550</lpage>
+						<pub-id pub-id-type="pmid">16199517</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib74">
+					<element-citation publication-type="journal" id="sref74">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Swaminathan</surname>
+								<given-names>G.</given-names>
+							</name>
+							<name>
+								<surname>Thoryk</surname>
+								<given-names>E.A.</given-names>
+							</name>
+							<name>
+								<surname>Cox</surname>
+								<given-names>K.S.</given-names>
+							</name>
+							<name>
+								<surname>Smith</surname>
+								<given-names>J.S.</given-names>
+							</name>
+							<name>
+								<surname>Wolf</surname>
+								<given-names>J.J.</given-names>
+							</name>
+							<name>
+								<surname>Gindy</surname>
+								<given-names>M.E.</given-names>
+							</name>
+							<name>
+								<surname>Casimiro</surname>
+								<given-names>D.R.</given-names>
+							</name>
+							<name>
+								<surname>Bett</surname>
+								<given-names>A.J.</given-names>
+							</name>
+						</person-group>
+						<article-title>A tetravalent sub-unit dengue vaccine formulated with ionizable cationic lipid nanoparticle induces significant immune responses in rodents and non-human primates</article-title>
+						<source>Sci. Rep.</source>
+						<volume>6</volume>
+						<year>2016</year>
+						<fpage>34215</fpage>
+						<pub-id pub-id-type="pmid">27703172</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib75">
+					<element-citation publication-type="journal" id="sref75">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Szebeni</surname>
+								<given-names>J.</given-names>
+							</name>
+						</person-group>
+						<article-title>Complement activation-related pseudoallergy: a new class of drug-induced acute immune toxicity</article-title>
+						<source>Toxicology</source>
+						<volume>216</volume>
+						<year>2005</year>
+						<fpage>106</fpage>
+						<lpage>121</lpage>
+						<pub-id pub-id-type="pmid">16140450</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib76">
+					<element-citation publication-type="journal" id="sref76">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Szebeni</surname>
+								<given-names>J.</given-names>
+							</name>
+						</person-group>
+						<article-title>Complement activation-related pseudoallergy: a stress reaction in blood triggered by nanomedicines and biologicals</article-title>
+						<source>Mol. Immunol.</source>
+						<volume>61</volume>
+						<year>2014</year>
+						<fpage>163</fpage>
+						<lpage>173</lpage>
+						<pub-id pub-id-type="pmid">25124145</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib77">
+					<element-citation publication-type="journal" id="sref77">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Tanaka</surname>
+								<given-names>T.</given-names>
+							</name>
+							<name>
+								<surname>Legat</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Adam</surname>
+								<given-names>E.</given-names>
+							</name>
+							<name>
+								<surname>Steuve</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Gatot</surname>
+								<given-names>J.-S.</given-names>
+							</name>
+							<name>
+								<surname>Vandenbranden</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Ulianov</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Lonez</surname>
+								<given-names>C.</given-names>
+							</name>
+							<name>
+								<surname>Ruysschaert</surname>
+								<given-names>J.-M.</given-names>
+							</name>
+							<name>
+								<surname>Muraille</surname>
+								<given-names>E.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>DiC14-amidine cationic liposomes stimulate myeloid dendritic cells through Toll-like receptor 4</article-title>
+						<source>Eur. J. Immunol.</source>
+						<volume>38</volume>
+						<year>2008</year>
+						<fpage>1351</fpage>
+						<lpage>1357</lpage>
+						<pub-id pub-id-type="pmid">18389479</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib78">
+					<element-citation publication-type="journal" id="sref78">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Tanaka</surname>
+								<given-names>T.</given-names>
+							</name>
+							<name>
+								<surname>Narazaki</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Kishimoto</surname>
+								<given-names>T.</given-names>
+							</name>
+						</person-group>
+						<article-title>IL-6 in inflammation, immunity, and disease</article-title>
+						<source>Cold Spring Harb. Perspect. Biol.</source>
+						<volume>6</volume>
+						<year>2014</year>
+						<fpage>a016295</fpage>
+						<pub-id pub-id-type="pmid">25190079</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib79">
+					<element-citation publication-type="journal" id="sref79">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Tao</surname>
+								<given-names>W.</given-names>
+							</name>
+							<name>
+								<surname>Mao</surname>
+								<given-names>X.</given-names>
+							</name>
+							<name>
+								<surname>Davide</surname>
+								<given-names>J.P.</given-names>
+							</name>
+							<name>
+								<surname>Ng</surname>
+								<given-names>B.</given-names>
+							</name>
+							<name>
+								<surname>Cai</surname>
+								<given-names>M.</given-names>
+							</name>
+							<name>
+								<surname>Burke</surname>
+								<given-names>P.A.</given-names>
+							</name>
+							<name>
+								<surname>Sachs</surname>
+								<given-names>A.B.</given-names>
+							</name>
+							<name>
+								<surname>Sepp-Lorenzino</surname>
+								<given-names>L.</given-names>
+							</name>
+						</person-group>
+						<article-title>Mechanistically probing lipid-sirna nanoparticle-associated toxicities identifies jak inhibitors effective in mitigating multifaceted toxic responses</article-title>
+						<source>Mol. Ther.</source>
+						<volume>19</volume>
+						<year>2011</year>
+						<fpage>567</fpage>
+						<lpage>575</lpage>
+						<pub-id pub-id-type="pmid">21179008</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib80">
+					<element-citation publication-type="journal" id="sref80">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Walsh</surname>
+								<given-names>E.E.</given-names>
+							</name>
+							<name>
+								<surname>Frenck</surname>
+								<given-names>R.W.</given-names>
+							</name>
+							<name>
+								<surname>Falsey</surname>
+								<given-names>A.R.</given-names>
+							</name>
+							<name>
+								<surname>Kitchin</surname>
+								<given-names>N.</given-names>
+							</name>
+							<name>
+								<surname>Absalon</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Gurtman</surname>
+								<given-names>A.</given-names>
+							</name>
+							<name>
+								<surname>Lockhart</surname>
+								<given-names>S.</given-names>
+							</name>
+							<name>
+								<surname>Neuzil</surname>
+								<given-names>K.</given-names>
+							</name>
+							<name>
+								<surname>Mulligan</surname>
+								<given-names>M.J.</given-names>
+							</name>
+							<name>
+								<surname>Bailey</surname>
+								<given-names>R.</given-names>
+							</name>
+							<etal/>
+						</person-group>
+						<article-title>Safety and immunogenicity of two RNA-based covid-19 vaccine candidates</article-title>
+						<source>N.&#xA0;Engl. J. Med.</source>
+						<volume>383</volume>
+						<year>2020</year>
+						<fpage>2439</fpage>
+						<lpage>2450</lpage>
+						<pub-id pub-id-type="pmid">33053279</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib81">
+					<element-citation publication-type="journal" id="sref81">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Wherry</surname>
+								<given-names>E.J.</given-names>
+							</name>
+							<name>
+								<surname>Kurachi</surname>
+								<given-names>M.</given-names>
+							</name>
+						</person-group>
+						<article-title>Molecular and cellular insights into T&#xA0;cell exhaustion</article-title>
+						<source>Nat. Rev. Immunol.</source>
+						<volume>15</volume>
+						<year>2015</year>
+						<fpage>486</fpage>
+						<lpage>499</lpage>
+						<pub-id pub-id-type="pmid">26205583</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib82">
+					<element-citation publication-type="journal" id="sref82">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Yao</surname>
+								<given-names>C.</given-names>
+							</name>
+							<name>
+								<surname>Zurawski</surname>
+								<given-names>S.M.</given-names>
+							</name>
+							<name>
+								<surname>Jarrett</surname>
+								<given-names>E.S.</given-names>
+							</name>
+							<name>
+								<surname>Chicoine</surname>
+								<given-names>B.</given-names>
+							</name>
+							<name>
+								<surname>Crabtree</surname>
+								<given-names>J.</given-names>
+							</name>
+							<name>
+								<surname>Peterson</surname>
+								<given-names>E.J.</given-names>
+							</name>
+							<name>
+								<surname>Zurawski</surname>
+								<given-names>G.</given-names>
+							</name>
+							<name>
+								<surname>Kaplan</surname>
+								<given-names>D.H.</given-names>
+							</name>
+							<name>
+								<surname>Igy&#xE1;rt&#xF3;</surname>
+								<given-names>B.Z.</given-names>
+							</name>
+						</person-group>
+						<article-title>Skin dendritic cells induce follicular helper T&#xA0;cells and protective humoral immune responses</article-title>
+						<source>J.&#xA0;Allergy Clin. Immunol.</source>
+						<volume>136</volume>
+						<year>2015</year>
+						<fpage>1387</fpage>
+						<lpage>1397.e7</lpage>
+						<pub-id pub-id-type="pmid">25962902</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib83">
+					<element-citation publication-type="journal" id="sref83">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Yu</surname>
+								<given-names>Y.-R.A.</given-names>
+							</name>
+							<name>
+								<surname>O&#x2019;Koren</surname>
+								<given-names>E.G.</given-names>
+							</name>
+							<name>
+								<surname>Hotten</surname>
+								<given-names>D.F.</given-names>
+							</name>
+							<name>
+								<surname>Kan</surname>
+								<given-names>M.J.</given-names>
+							</name>
+							<name>
+								<surname>Kopin</surname>
+								<given-names>D.</given-names>
+							</name>
+							<name>
+								<surname>Nelson</surname>
+								<given-names>E.R.</given-names>
+							</name>
+							<name>
+								<surname>Que</surname>
+								<given-names>L.</given-names>
+							</name>
+							<name>
+								<surname>Gunn</surname>
+								<given-names>M.D.</given-names>
+							</name>
+						</person-group>
+						<article-title>A protocol for the comprehensive flow cytometric analysis of immune cells in normal and inflamed murine non-lymphoid tissues</article-title>
+						<source>PLoS One</source>
+						<volume>11</volume>
+						<year>2016</year>
+						<fpage>e0150606</fpage>
+						<pub-id pub-id-type="pmid">26938654</pub-id>
+					</element-citation>
+				</ref>
+				<ref id="bib84">
+					<element-citation publication-type="journal" id="sref84">
+						<person-group person-group-type="author">
+							<name>
+								<surname>Zens</surname>
+								<given-names>K.D.</given-names>
+							</name>
+							<name>
+								<surname>Chen</surname>
+								<given-names>J.K.</given-names>
+							</name>
+							<name>
+								<surname>Farber</surname>
+								<given-names>D.L.</given-names>
+							</name>
+						</person-group>
+						<article-title>Vaccine-generated lung tissue&#x2013;resident memory T&#xA0;cells provide heterosubtypic protection to influenza infection</article-title>
+						<source>JCI Insight</source>
+						<volume>1</volume>
+						<year>2019</year>
+						<fpage>e85832</fpage>
+					</element-citation>
+				</ref>
+			</ref-list>
+			<sec id="appsec2" sec-type="supplementary-material">
+				<title>Supplemental information</title>
+				<p id="p0215">
+					<supplementary-material content-type="local-data" id="mmc1">
+						<caption>
+							<title>Document S1. Figures S1&#x2013;S3</title>
+						</caption>
+						<media xlink:href="mmc1.pdf"/>
+					</supplementary-material>
+				</p>
+			</sec>
+			<sec sec-type="data-availability">
+				<title>Data and code availability</title>
+				<p id="p0030">
+					<list list-type="simple" id="ulist0015">
+						<list-item id="u0030">
+							<label>&#x2022;</label>
+							<p id="p0035">The RNA-seq data can be found at the following GEO accession number:
+								<ext-link ext-link-type="uri" xlink:href="ncbi-geo:GSE167521" id="intref0010">GSE167521</ext-link>
+							</p>
+						</list-item>
+						<list-item id="u0035">
+							<label>&#x2022;</label>
+							<p id="p0040">This paper does not report original code.</p>
+						</list-item>
+						<list-item id="u0040">
+							<label>&#x2022;</label>
+							<p id="p0045">Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.</p>
+						</list-item>
+					</list>
+				</p>
+			</sec>
+			<ack id="ack0010">
+				<title>Acknowledgments</title>
+				<p id="p0195">This work was supported by
+					<funding-source id="gs1">departmental start-up funds</funding-source> and by R01AI146420 to B.Z.I. We thank the following core facilities for their help and assistance: genomic, proteomics, flow cytometry, and the imaging core. Special thank you for the constructive comments received online. Figures were generated using BioRender.
+				</p>
+				<sec id="sec6">
+					<title>Author contributions</title>
+					<p id="p0200">B.Z.I. conceptualized the study, interpreted the data, and wrote the manuscript. S.N. and A.B. performed the intradermal/intramuscular mouse experiments and analyzed data. S.J. prepared figures. Z.Q. did the intranasal/intramuscular experiments and analyzed the resulting data. H.E. assisted with the microscopy.</p>
+				</sec>
+				<sec sec-type="COI-statement" id="sec7">
+					<title>Declaration of interests</title>
+					<p id="p0205">Authors declare no conflict of any sort.</p>
+				</sec>
+			</ack>
+			<fn-group>
+				<fn id="appsec1" fn-type="supplementary-material">
+					<p id="p0210">Supplemental information can be found online at
+						<ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.isci.2021.103479" id="intref0080">https://doi.org/10.1016/j.isci.2021.103479</ext-link>.
+					</p>
+				</fn>
+			</fn-group>
+		</back>
+	</article>
+</pmc-articleset>

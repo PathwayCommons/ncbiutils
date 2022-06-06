@@ -53,6 +53,8 @@ for chunk in chunks:
 
 Configure the `PubMedFetch` instance through its constructor:
 
+- db: DbEnum
+  - Set the database to process either `<!DOCTYPE pmc-articleset ...>` or `<!DOCTYPE PubmedArticleSet ...>` (default)
 - retmax : int
   - Maximum number of records to return in a chunk (default/max 10000)
 - api_key : str
@@ -60,7 +62,8 @@ Configure the `PubMedFetch` instance through its constructor:
 
 ---
 
-Also available is `PubMedDownload` that can retrieve records from the PubMed FTP server for both [baseline and daily updates](https://pubmed.ncbi.nlm.nih.gov/download/).
+Also available is:
+  - `PubMedDownload` that can retrieve records from the PubMed FTP server for both [baseline and daily updates](https://pubmed.ncbi.nlm.nih.gov/download/).
 
 ## Testing
 
