@@ -54,14 +54,18 @@ class TestPubMedFetchClass:
         return MockResponse(pubmed_data)
 
     def test_attributes(self):
-        assert PubMedFetch.db == DbEnum.pubmed
+        assert self.pubmed_fetch.db == DbEnum.pubmed
         assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
         assert self.pubmed_fetch.rettype is None
 
-    def test_parse_reponse(self):
+    def test_parse_response_raises(self):
         uilist_pubmed_fetch = PubMedFetch(rettype=RetTypeEnum.uilist)
         with pytest.raises(ValueError):
             uilist_pubmed_fetch._parse_response(b'')
+
+    def test_parse_xml_raises(self):
+        with pytest.raises(ValueError):
+            self.pubmed_fetch._parse_xml(b'<!DOCTYPE html><html></html>')
 
     def test_get_citations(self, mocker, fetch_response):
         uids = ['35196497', '33278872', '24792780', '30158200', '151222']
@@ -110,3 +114,30 @@ class TestPubMedDownload:
         assert chunk.error is None
         assert chunk.ids[0] == first_file
         assert len(chunk.citations) == 3
+
+
+class TestPubMedFetchPmcClass:
+    pubmed_fetch = PubMedFetch(db=DbEnum.pmc)
+
+    @pytest.fixture
+    def pmc_data(self, shared_datadir):
+        data = (shared_datadir / 'pmc.xml').read_bytes()
+        return data
+
+    @pytest.fixture
+    def fetch_response(self, pmc_data):
+        return MockResponse(pmc_data)
+
+    def test_attributes(self):
+        assert self.pubmed_fetch.db == DbEnum.pmc
+        assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
+        assert self.pubmed_fetch.rettype is None
+
+    def test_get_citations(self, mocker, fetch_response):
+        uids = ['7857436', '9023058', '8809986', '7953258', '6745503']
+        mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(None, fetch_response))
+        chunks = self.pubmed_fetch.get_citations(uids)
+        chunk = list(chunks)[0]
+        assert chunk.error is None
+        assert len(chunk.ids) == len(uids)
+        assert len(chunk.citations) == len(uids)

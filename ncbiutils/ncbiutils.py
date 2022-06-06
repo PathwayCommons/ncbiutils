@@ -1,9 +1,11 @@
 from pydantic import BaseModel, validator
 from typing import ClassVar, Any, Optional, Tuple, List, Dict, Generator, Union, NamedTuple
-from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum, DownloadPathEnum
+from ncbiutils.types import HttpMethodEnum, DbEnum, RetModeEnum, RetTypeEnum, DownloadPathEnum, DocTypeEnum
 from ncbiutils.http import safe_requests
 from ncbiutils.pubmedxmlparser import PubmedXmlParser
+from ncbiutils.pmcxmlparser import PmcXmlParser
 from ncbiutils.pubmed import Citation
+from ncbiutils.xml import _from_raw
 import gzip
 
 
@@ -95,7 +97,7 @@ class PubMedFetch(Efetch):
     """
     A class that retrieves article information from PubMed
 
-    Class attributes
+    Attributes
     ----------
     db : DbEnum
         The pubmed database
@@ -107,7 +109,7 @@ class PubMedFetch(Efetch):
 
     """
 
-    db: ClassVar[DbEnum] = DbEnum.pubmed
+    db: DbEnum = DbEnum.pubmed
 
     retmode: RetModeEnum = RetModeEnum.xml
     rettype: Optional[RetTypeEnum]
@@ -124,8 +126,15 @@ class PubMedFetch(Efetch):
 
     def _parse_xml(self, data: bytes) -> List[Citation]:
         """Return a list of Citations given the server response"""
-        parser = PubmedXmlParser()
-        records = parser.parse(data)
+        xml_tree = _from_raw(data)
+        root = xml_tree.docinfo.root_name
+        if root == DocTypeEnum.pubmedArticleSet:
+            parser = PubmedXmlParser()
+        elif root == DocTypeEnum.pmcArticleset:
+            parser = PmcXmlParser()
+        else:
+            raise ValueError(f'Unsupported DOCTYPE root: {root}')
+        records = parser.parse(xml_tree)
         return list(records)
 
     def _parse_response(self, data: bytes) -> List[Citation]:
@@ -189,7 +198,8 @@ class PubMedDownload(BaseModel):
     def _parse_xml(self, data: bytes) -> List[Citation]:
         """Return a list of Citations given the server response"""
         parser = PubmedXmlParser()
-        records = parser.parse(data)
+        xml_tree = _from_raw(data)
+        records = parser.parse(xml_tree)
         return list(records)
 
     def _parse_response(self, data: bytes) -> List[Citation]:

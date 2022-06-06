@@ -6,7 +6,6 @@ from ncbiutils.pubmed import Author, Journal, Citation
 from ncbiutils.xml import (
     Element,
     XmlTree,
-    _from_raw,
     _find_safe,
     _text_safe,
     _find_all,
@@ -114,9 +113,8 @@ class PubmedXmlParser(BaseModel):
         uids = [element.get('UI') for element in publication_types]
         return uids
 
-    def parse(self, data: bytes) -> Generator[Citation, None, None]:
+    def parse(self, xml_tree: XmlTree) -> Generator[Citation, None, None]:
         """Parse an XML document to a list of custom citations"""
-        xml_tree = _from_raw(data)
         pubmed_article_set = self._get_PubmedArticleSet(xml_tree)
         pubmed_articles = _find_all(pubmed_article_set, './/PubmedArticle')
 
