@@ -95,7 +95,7 @@ class PubMedFetch(Efetch):
     """
     A class that retrieves article information from PubMed
 
-    Class attributes
+    Attributes
     ----------
     db : DbEnum
         The pubmed database
@@ -107,7 +107,7 @@ class PubMedFetch(Efetch):
 
     """
 
-    db: ClassVar[DbEnum] = DbEnum.pubmed
+    db: DbEnum = DbEnum.pubmed
 
     retmode: RetModeEnum = RetModeEnum.xml
     rettype: Optional[RetTypeEnum]
