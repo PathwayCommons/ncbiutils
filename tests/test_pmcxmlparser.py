@@ -111,3 +111,34 @@ class TestPmcXmlParserClass(object):
         assert journal.volume == volume
         assert journal.issue == issue
         assert journal.pub_year == pub_year
+
+    @pytest.mark.parametrize(
+        'pmid, last_name, email',
+        [
+            (
+                '34723746',
+                'Mokarram',
+                'mokaram2@gmail.com'
+            ),
+            (
+                '33704371',
+                'Barabino',
+                'silvia.barabino@unimib.it'
+            )
+        ],
+    )
+    def test_contrib_xref_email_match(
+        self,
+        pmid,
+        last_name,
+        email,
+        shared_datadir
+    ):
+        data = (shared_datadir / 'pmc_corres_author.xml').read_bytes()
+        parse_result = self.xmlparser.parse(data)
+        result = next(r for r in parse_result if r.pmid == pmid)
+        anauthor = next(author for author in result.author_list if author.last_name == last_name)
+        assert email in anauthor.emails if email is not None else True
+
+        assert True
+

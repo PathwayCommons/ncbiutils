@@ -67,10 +67,17 @@ class PmcXmlParser(BaseModel):
     def _get_emails(self, author: Element, pmc_article: PmcArticle) -> Optional[List[str]]:
         emails: List[str] = []
         contrib_emails = _find_all(author, './/email')
+        corresp_xrefs = _find_all(author, './/xref[@ref-type="corresp"]')
         # embedded within <contrib>
         for contrib_email in contrib_emails:
             emails.append(_collect_element_text(contrib_email))
         # referenced within <contrib>
+        for corresp_xref in corresp_xrefs:
+            rid = corresp_xref.get('rid')
+            corresp_elt = _find_safe(pmc_article, f'.//author-notes/corresp[@id="{rid}"]')
+            corresp_emails = _find_all(corresp_elt, './/email')
+            for corresp_email in corresp_emails:
+                emails.append(_collect_element_text(corresp_email))
         return emails if len(emails) > 0 else None
 
     def _get_author(self, author: Element, pmc_article: PmcArticle) -> Author:
