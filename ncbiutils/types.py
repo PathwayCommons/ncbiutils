@@ -15,6 +15,7 @@ class EutilEnum(str, Enum):
 
 class DbEnum(str, Enum):
     pubmed = 'pubmed'
+    pmc = 'pmc'
 
 
 class RetModeEnum(str, Enum):
