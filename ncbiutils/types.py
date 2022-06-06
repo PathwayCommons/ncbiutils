@@ -34,3 +34,8 @@ class RetTypeEnum(str, Enum):
 class DownloadPathEnum(str, Enum):
     updatefiles = 'updatefiles'
     baseline = 'baseline'
+
+
+class DocTypeEnum(str, Enum):
+    pubmedArticleSet = 'PubmedArticleSet'
+    pmcArticleset = 'pmc-articleset'

@@ -5,7 +5,6 @@ from ncbiutils.pubmed import Citation, Author, Journal
 from ncbiutils.xml import (
     Element,
     XmlTree,
-    _from_raw,
     _find_safe,
     _text_safe,
     _find_all,
@@ -135,9 +134,8 @@ class PmcXmlParser(BaseModel):
             correspondence.append({'emails': emails, 'notes': notes})
         return correspondence
 
-    def parse(self, data: bytes) -> Generator[Citation, None, None]:
+    def parse(self, xml_tree: XmlTree) -> Generator[Citation, None, None]:
         """Parse an XML document to a list of custom citations"""
-        xml_tree = _from_raw(data)
         pmc_article_set = self._get_PmcArticleSet(xml_tree)
         pmc_articles = _find_all(pmc_article_set, './/article')
 

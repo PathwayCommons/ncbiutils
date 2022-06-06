@@ -58,10 +58,14 @@ class TestPubMedFetchClass:
         assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
         assert self.pubmed_fetch.rettype is None
 
-    def test_parse_reponse(self):
+    def test_parse_response_raises(self):
         uilist_pubmed_fetch = PubMedFetch(rettype=RetTypeEnum.uilist)
         with pytest.raises(ValueError):
             uilist_pubmed_fetch._parse_response(b'')
+
+    def test_parse_xml_raises(self):
+        with pytest.raises(ValueError):
+            self.pubmed_fetch._parse_xml(b'<!DOCTYPE html><html></html>')
 
     def test_get_citations(self, mocker, fetch_response):
         uids = ['35196497', '33278872', '24792780', '30158200', '151222']
@@ -124,29 +128,16 @@ class TestPubMedFetchPmcClass:
     def fetch_response(self, pmc_data):
         return MockResponse(pmc_data)
 
-    # def test_attributes(self):
-    #     assert PubMedFetch.db == DbEnum.pmc
-    #     assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
-    #     assert self.pubmed_fetch.rettype is None
+    def test_attributes(self):
+        assert self.pubmed_fetch.db == DbEnum.pmc
+        assert isinstance(self.pubmed_fetch.retmode, RetModeEnum)
+        assert self.pubmed_fetch.rettype is None
 
-    # def test_parse_reponse(self):
-    #     uilist_pubmed_fetch = PubMedFetch(rettype=RetTypeEnum.uilist)
-    #     with pytest.raises(ValueError):
-    #         uilist_pubmed_fetch._parse_response(b'')
-
-    # def test_get_citations(self, mocker, fetch_response):
-    #     uids = ['35196497', '33278872', '24792780', '30158200', '151222']
-    #     mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(None, fetch_response))
-    #     chunks = self.pubmed_fetch.get_citations(uids)
-    #     chunk = list(chunks)[0]
-    #     assert chunk.error is None
-    #     assert len(chunk.ids) == len(uids)
-    #     assert len(chunk.citations) == len(uids)
-
-    # def test_get_citations_on_error(self, mocker):
-    #     uids = ['35196497', '33890651', '33279447', '33278872', '24792780', '30158200', '151222']
-    #     mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(Exception, None))
-    #     chunks = self.pubmed_fetch.get_citations(uids)
-    #     error, _, ids = list(chunks)[0]
-    #     assert error is not None
-    #     assert len(ids) == len(uids)
+    def test_get_citations(self, mocker, fetch_response):
+        uids = ['7857436', '9023058', '8809986', '7953258', '6745503']
+        mocker.patch('ncbiutils.ncbiutils.PubMedFetch.fetch', return_value=(None, fetch_response))
+        chunks = self.pubmed_fetch.get_citations(uids)
+        chunk = list(chunks)[0]
+        assert chunk.error is None
+        assert len(chunk.ids) == len(uids)
+        assert len(chunk.citations) == len(uids)

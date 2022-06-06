@@ -14,7 +14,8 @@ class TestPmcXmlParserClass(object):
     @pytest.fixture
     def author_xml(self, shared_datadir):
         data = (shared_datadir / 'pmc_author.xml').read_bytes()
-        return data
+        xml_tree = _from_raw(data)
+        return xml_tree
 
     def test_parse_returns_citation_list(self, author_xml):
         parse_result = self.xmlparser.parse(author_xml)
@@ -23,8 +24,7 @@ class TestPmcXmlParserClass(object):
         assert isinstance(first_result, Citation)
 
     def test_get_pmc_article_set(self, author_xml):
-        xml_tree = _from_raw(author_xml)
-        pubmed_article_set = self.xmlparser._get_PmcArticleSet(xml_tree)
+        pubmed_article_set = self.xmlparser._get_PmcArticleSet(author_xml)
         assert len(pubmed_article_set) == 3
 
     def test_parse_no_pubmedarticleset(self, shared_datadir):
@@ -122,7 +122,7 @@ class TestPmcXmlParserClass(object):
     )
     def test_contrib_xref_email_match(self, pmid, last_name, fore_name, email, shared_datadir):
         data = (shared_datadir / 'pmc_corres_author.xml').read_bytes()
-        parse_result = self.xmlparser.parse(data)
+        parse_result = self.xmlparser.parse(_from_raw(data))
         result = next(r for r in parse_result if r.pmid == pmid)
         anauthor = next(
             author for author in result.author_list if author.last_name == last_name and author.fore_name == fore_name
@@ -135,7 +135,7 @@ class TestPmcXmlParserClass(object):
     )
     def test_contrib_direct_xref_email_match(self, pmid, last_name, email, shared_datadir):
         data = (shared_datadir / 'pmc_dual_author_corres.xml').read_bytes()
-        parse_result = self.xmlparser.parse(data)
+        parse_result = self.xmlparser.parse(_from_raw(data))
         result = next(r for r in parse_result if r.pmid == pmid)
         anauthor = next(author for author in result.author_list if author.last_name == last_name)
         assert email in anauthor.emails
@@ -150,7 +150,7 @@ class TestPmcXmlParserClass(object):
     )
     def test_corres_match(self, pmid, email, note, shared_datadir):
         data = (shared_datadir / 'pmc_corres_ambiguous.xml').read_bytes()
-        parse_result = self.xmlparser.parse(data)
+        parse_result = self.xmlparser.parse(_from_raw(data))
         result = next(r for r in parse_result if r.pmid == pmid)
         assert email in result.correspondence[0]['emails']
         assert note in result.correspondence[0]['notes']
