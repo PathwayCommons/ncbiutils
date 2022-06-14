@@ -47,7 +47,8 @@ class TestPubmedXmlParserClass(object):
         assert len(result) == 0
 
     @pytest.mark.parametrize(
-        'pmid, pmc, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type, mesh_heading',
+        'pmid, pmc, doi, abstract, title, last_name, email, jtitle,'
+        ' issn, volume, issue, pub_year, pub_type, mesh_heading',
         [
             (
                 '31302001',
@@ -64,25 +65,13 @@ class TestPubmedXmlParserClass(object):
                 '2019',
                 'D016428',
                 {
-                    'descriptor_name': {
-                        'ui': 'D008928',
-                        'value': 'Mitochondria'
-                    },
+                    'descriptor_name': {'ui': 'D008928', 'value': 'Mitochondria'},
                     'qualifier_name': [
-                        {
-                            'ui': 'Q000235',
-                            'value': 'genetics'
-                        },
-                        {
-                            'ui': 'Q000378',
-                            'value': 'metabolism'
-                        }
-                        {
-                            'ui': 'Q000473',
-                            'value': 'pathology'
-                        }
-                    ]
-                }
+                        {'ui': 'Q000235', 'value': 'genetics'},
+                        {'ui': 'Q000378', 'value': 'metabolism'},
+                        {'ui': 'Q000473', 'value': 'pathology'},
+                    ],
+                },
             ),
             (
                 '22454523',
@@ -98,6 +87,10 @@ class TestPubmedXmlParserClass(object):
                 'Pt 13',
                 '2012',
                 'D016428',
+                {
+                    'descriptor_name': {'ui': 'D050861', 'value': 'Synaptotagmin II'},
+                    'qualifier_name': [{'ui': 'Q000378', 'value': 'metabolism'}],
+                },
             ),
         ],
     )
@@ -135,10 +128,18 @@ class TestPubmedXmlParserClass(object):
         assert journal.issue == issue
         assert journal.pub_year == pub_year
         assert pub_type in result.publication_type_list
-        ameshheading = next(heading for heading in result.mesh_list if heading['descriptor_name']['ui'] == mesh_heading['descriptor_name']['ui'])
+        ameshheading = next(
+            heading
+            for heading in result.mesh_list
+            if heading['descriptor_name']['ui'] == mesh_heading['descriptor_name']['ui']
+        )
         assert ameshheading['descriptor_name']['value'] == mesh_heading['descriptor_name']['value']
         qualifier_values = [qualifier['value'] for qualifier in mesh_heading['qualifier_name']]
-        aqualifiername = next(qualifier for qualifier in ameshheading['qualifier_name'] if qualifier['ui'] == qualifier_values[0])
+        aqualifiername = next(
+            qualifier
+            for qualifier in ameshheading['qualifier_name']
+            if qualifier['ui'] == mesh_heading['qualifier_name'][0]['ui']
+        )
         assert aqualifiername['value'] in qualifier_values
 
     @pytest.mark.parametrize(
@@ -192,10 +193,11 @@ class TestPubmedXmlParserClass(object):
         assert journal.issue == issue
         assert journal.pub_year == pub_year
         assert pub_type in result.publication_type_list
+        assert result.mesh_list is None
 
     @pytest.mark.parametrize(
         'pmid, pmc, doi, abstract, title, last_name, email, collective_name, jtitle,'
-        ' issn, volume, issue, pub_year, pub_type',
+        ' issn, volume, issue, pub_year, pub_type, mesh_heading',
         [
             (
                 '30158200',
@@ -212,6 +214,14 @@ class TestPubmedXmlParserClass(object):
                 None,
                 '2018',
                 'D017418',
+                {
+                    'descriptor_name': {'ui': 'D010024', 'value': 'Osteoporosis'},
+                    'qualifier_name': [
+                        {'ui': 'Q000453', 'value': 'epidemiology'},
+                        {'ui': 'Q000235', 'value': 'genetics'},
+                        {'ui': 'Q000503', 'value': 'physiopathology'},
+                    ],
+                },
             ),
         ],
     )
@@ -231,6 +241,7 @@ class TestPubmedXmlParserClass(object):
         issue,
         pub_year,
         pub_type,
+        mesh_heading,
         shared_datadir,
     ):
         data = (shared_datadir / 'markup.xml').read_bytes()
@@ -252,9 +263,23 @@ class TestPubmedXmlParserClass(object):
         assert journal.issue == issue
         assert journal.pub_year == pub_year
         assert pub_type in result.publication_type_list
+        ameshheading = next(
+            heading
+            for heading in result.mesh_list
+            if heading['descriptor_name']['ui'] == mesh_heading['descriptor_name']['ui']
+        )
+        assert ameshheading['descriptor_name']['value'] == mesh_heading['descriptor_name']['value']
+        qualifier_values = [qualifier['value'] for qualifier in mesh_heading['qualifier_name']]
+        aqualifiername = next(
+            qualifier
+            for qualifier in ameshheading['qualifier_name']
+            if qualifier['ui'] == mesh_heading['qualifier_name'][0]['ui']
+        )
+        assert aqualifiername['value'] in qualifier_values
 
     @pytest.mark.parametrize(
-        'pmid, pmc, doi, abstract, title, last_name, orcid, jtitle, issn, volume, issue, pub_year, pub_type',
+        'pmid, pmc, doi, abstract, title, last_name, orcid, jtitle,'
+        ' issn, volume, issue, pub_year, pub_type, mesh_heading',
         [
             (
                 '32820036',
@@ -270,6 +295,10 @@ class TestPubmedXmlParserClass(object):
                 '17-18',
                 '2020',
                 'D052061',
+                {
+                    'descriptor_name': {'ui': 'D015972', 'value': 'Gene Expression Regulation, Neoplastic'},
+                    'qualifier_name': [{'ui': 'Q000235', 'value': 'genetics'}],
+                },
             ),
         ],
     )
@@ -288,6 +317,7 @@ class TestPubmedXmlParserClass(object):
         issue,
         pub_year,
         pub_type,
+        mesh_heading,
         shared_datadir,
     ):
         data = (shared_datadir / 'orcid.xml').read_bytes()
@@ -307,3 +337,16 @@ class TestPubmedXmlParserClass(object):
         assert journal.issue == issue
         assert journal.pub_year == pub_year
         assert pub_type in result.publication_type_list
+        ameshheading = next(
+            heading
+            for heading in result.mesh_list
+            if heading['descriptor_name']['ui'] == mesh_heading['descriptor_name']['ui']
+        )
+        assert ameshheading['descriptor_name']['value'] == mesh_heading['descriptor_name']['value']
+        qualifier_values = [qualifier['value'] for qualifier in mesh_heading['qualifier_name']]
+        aqualifiername = next(
+            qualifier
+            for qualifier in ameshheading['qualifier_name']
+            if qualifier['ui'] == mesh_heading['qualifier_name'][0]['ui']
+        )
+        assert aqualifiername['value'] in qualifier_values
