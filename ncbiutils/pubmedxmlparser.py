@@ -123,7 +123,8 @@ class PubmedXmlParser(BaseModel):
         descriptor_name = _find_safe(mesh_heading, './/DescriptorName')
         heading['descriptor_name'] = self._get_ui(descriptor_name)
         qualifier_name_list = _find_all(mesh_heading, './/QualifierName')
-        heading['qualifier_name'] = [self._get_ui(qualifier_name) for qualifier_name in qualifier_name_list]
+        if len(qualifier_name_list) > 0:
+            heading['qualifier_name'] = [self._get_ui(qualifier_name) for qualifier_name in qualifier_name_list]
         return heading
 
     def _get_mesh_list(self, pubmed_article: PubmedArticle) -> Optional[List[Dict[str, Any]]]:
