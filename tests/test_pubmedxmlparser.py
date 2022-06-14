@@ -47,7 +47,7 @@ class TestPubmedXmlParserClass(object):
         assert len(result) == 0
 
     @pytest.mark.parametrize(
-        'pmid, pmc, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type',
+        'pmid, pmc, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type, mesh_heading',
         [
             (
                 '31302001',
@@ -63,6 +63,26 @@ class TestPubmedXmlParserClass(object):
                 '4',
                 '2019',
                 'D016428',
+                {
+                    'descriptor_name': {
+                        'ui': 'D008928',
+                        'value': 'Mitochondria'
+                    },
+                    'qualifier_name': [
+                        {
+                            'ui': 'Q000235',
+                            'value': 'genetics'
+                        },
+                        {
+                            'ui': 'Q000378',
+                            'value': 'metabolism'
+                        }
+                        {
+                            'ui': 'Q000473',
+                            'value': 'pathology'
+                        }
+                    ]
+                }
             ),
             (
                 '22454523',
@@ -96,6 +116,7 @@ class TestPubmedXmlParserClass(object):
         issue,
         pub_year,
         pub_type,
+        mesh_heading,
         double_xml,
     ):
         parse_result = self.xmlparser.parse(double_xml)
@@ -114,6 +135,11 @@ class TestPubmedXmlParserClass(object):
         assert journal.issue == issue
         assert journal.pub_year == pub_year
         assert pub_type in result.publication_type_list
+        ameshheading = next(heading for heading in result.mesh_list if heading['descriptor_name']['ui'] == mesh_heading['descriptor_name']['ui'])
+        assert ameshheading['descriptor_name']['value'] == mesh_heading['descriptor_name']['value']
+        qualifier_values = [qualifier['value'] for qualifier in mesh_heading['qualifier_name']]
+        aqualifiername = next(qualifier for qualifier in ameshheading['qualifier_name'] if qualifier['ui'] == qualifier_values[0])
+        assert aqualifiername['value'] in qualifier_values
 
     @pytest.mark.parametrize(
         'pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type',
