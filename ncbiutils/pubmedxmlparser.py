@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional, List, Generator
+from typing import Optional, List, Generator, Dict, Any
 import re
 from typing_extensions import TypeAlias
 from ncbiutils.pubmed import Author, Journal, Citation
@@ -113,6 +113,25 @@ class PubmedXmlParser(BaseModel):
         uids = [element.get('UI') for element in publication_types]
         return uids
 
+    def _get_ui(self, element: Element) -> Dict[str, str]:
+        ui = element.get('UI')
+        value = _collect_element_text(element)
+        return {'ui': ui, 'value': value}
+
+    def _get_mesh_heading(self, mesh_heading: Element) -> Dict[str, Any]:
+        heading: Dict[str, Any] = {}
+        descriptor_name = _find_safe(mesh_heading, './/DescriptorName')
+        heading['descriptor_name'] = self._get_ui(descriptor_name)
+        qualifier_name_list = _find_all(mesh_heading, './/QualifierName')
+        if len(qualifier_name_list) > 0:
+            heading['qualifier_name'] = [self._get_ui(qualifier_name) for qualifier_name in qualifier_name_list]
+        return heading
+
+    def _get_mesh_list(self, pubmed_article: PubmedArticle) -> Optional[List[Dict[str, Any]]]:
+        mesh_heading_list = _find_all(pubmed_article, './/MedlineCitation/MeshHeadingList/MeshHeading')
+        mesh_list = [self._get_mesh_heading(mesh_heading) for mesh_heading in mesh_heading_list]
+        return mesh_list if len(mesh_list) > 0 else None
+
     def parse(self, xml_tree: XmlTree) -> Generator[Citation, None, None]:
         """Parse an XML document to a list of custom citations"""
         pubmed_article_set = self._get_PubmedArticleSet(xml_tree)
@@ -127,6 +146,7 @@ class PubmedXmlParser(BaseModel):
             author_list = self._get_author_list(pubmed_article)
             journal = self._get_journal(pubmed_article)
             publication_type_list = self._get_pubtypes(pubmed_article)
+            mesh_list = self._get_mesh_list(pubmed_article)
             citation = Citation(
                 pmid=pmid,
                 pmc=pmc,
@@ -137,5 +157,6 @@ class PubmedXmlParser(BaseModel):
                 journal=journal,
                 publication_type_list=publication_type_list,
                 correspondence=[],
+                mesh_list=mesh_list,
             )
             yield citation
