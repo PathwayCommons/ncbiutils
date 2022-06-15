@@ -26,6 +26,7 @@ The `ncbiutils` module exposes a `PubMedFetch` class that provides an easy to co
 
 ```python
 from ncbiutils.ncbiutils import PubMedFetch
+import json
 
 # Initalize a list of PubMed identifiers for those records we wish to retrieve
 uids = ['16186693', '29083299']
@@ -46,7 +47,75 @@ for chunk in chunks:
     error, citations, ids = chunk
 
     # Citation class can be represented as a dict
-    print(citations[0].dict())
+    print(json.dumps(citations[0].dict()))
+
+# Output as JSON
+{
+   "pmid":"16186693",
+   "pmc":"None",
+   "doi":"10.1159/000087186",
+   "title":"Searching the MEDLINE literature database through PubMed: a short guide.",
+   "abstract":"The Medline database from the National Library of Medicine (NLM) contains more than 12 million bibliographic citations from over 4,600 international biomedical journals...",
+   "author_list":[
+      {
+         "fore_name":"Edith",
+         "last_name":"Motschall",
+         "initials":"E",
+         "collective_name":"None",
+         "orcid":"None",
+         "affiliations":[
+            "Institut für Medizinische Biometrie und Medizinische Informatik, Universität Freiburg, Germany. motschall@mi.ukl.uni-freiburg.de"
+         ],
+         "emails":[
+            "motschall@..."
+         ]
+      },
+      ...
+   ],
+   "journal":{
+      "title":"Onkologie",
+      "issn":[
+         "0378-584X"
+      ],
+      "volume":"28",
+      "issue":"10",
+      "pub_year":"2005",
+      "pub_month":"Oct",
+      "pub_day":"None"
+   },
+   "publication_type_list":[
+      "D016428",
+      "D016454"
+   ],
+   "correspondence":[],
+   "mesh_list":[
+      {
+         "descriptor_name":{
+            "ui":"D003628",
+            "value":"Database Management Systems"
+         }
+      },
+      {
+         "descriptor_name":{
+            "ui":"D016206",
+            "value":"Databases, Bibliographic"
+         }
+      },
+      {
+         "descriptor_name":{
+            "ui":"D016247",
+            "value":"Information Storage and Retrieval"
+         },
+         "qualifier_name":[
+            {
+               "ui":"Q000379",
+               "value":"methods"
+            }
+         ]
+      },
+     ...
+   ]
+}
 ```
 
 *Options*
