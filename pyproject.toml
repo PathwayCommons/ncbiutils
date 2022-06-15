@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ncbiutils"
-version = "0.5.2"
+version = "0.6.0"
 description = "Retrieve article records from NCBI via E-utilities"
 license = "MIT"
 authors = ["Biofactoid <support@biofactoid.org>"]
