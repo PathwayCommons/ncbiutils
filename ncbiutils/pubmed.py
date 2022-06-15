@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 
+
 #############################
 #   Classes
 #############################
@@ -91,6 +92,9 @@ class Citation(BaseModel):
         MeSH codes https://www.nlm.nih.gov/mesh/pubtypes.html
     correspondence: List[Dict[str, Any]]
         Catch-all for correspondence fields
+    correspondence: List[Dict[str, Any]]
+    mesh_list
+        Collection of MeSH DescriptorName, QualifierName(s)
     """
 
     pmid: str
@@ -102,3 +106,4 @@ class Citation(BaseModel):
     journal: Journal
     publication_type_list: List[str]
     correspondence: List[Dict[str, Any]]
+    mesh_list: Optional[List[Dict[str, Any]]]
