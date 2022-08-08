@@ -99,13 +99,21 @@ class PubmedXmlParser(BaseModel):
         journal = _find_safe(pubmed_article, './/MedlineCitation/Article/Journal')
         issn = [_collect_element_text(issn) for issn in _find_all(journal, './/ISSN')]
         title = _text_safe(journal, './/Title')
+        iso_abbreviation = _text_safe(journal, './/ISOAbbreviation')
         volume = _text_safe(journal, './/JournalIssue/Volume')
         issue = _text_safe(journal, './/JournalIssue/Issue')
         pub_year = _text_safe(journal, './/JournalIssue/PubDate/Year')
         pub_month = _text_safe(journal, './/JournalIssue/PubDate/Month')
         pub_day = _text_safe(journal, './/JournalIssue/PubDate/Day')
         return Journal(
-            issn=issn, title=title, volume=volume, issue=issue, pub_year=pub_year, pub_month=pub_month, pub_day=pub_day
+            issn=issn,
+            title=title,
+            iso_abbreviation=iso_abbreviation,
+            volume=volume,
+            issue=issue,
+            pub_year=pub_year,
+            pub_month=pub_month,
+            pub_day=pub_day,
         )
 
     def _get_pubtypes(self, pubmed_article: PubmedArticle) -> List[str]:

@@ -34,7 +34,7 @@ class TestPmcXmlParserClass(object):
             self.xmlparser._get_PmcArticleSet(xml_tree)
 
     @pytest.mark.parametrize(
-        'pmid, pmc, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year',
+        'pmid, pmc, doi, abstract, title, last_name, email, jtitle, isoabbrev, issn, volume, issue, pub_year',
         [
             (
                 '33393230',
@@ -45,7 +45,8 @@ class TestPmcXmlParserClass(object):
                 'You',
                 'fupingyou@bjmu.edu.cn',
                 'EMBO Reports',
-                '1469-221X',
+                'EMBO Rep',
+                '' '1469-221X',
                 '22',
                 '2',
                 '2021',
@@ -59,6 +60,7 @@ class TestPmcXmlParserClass(object):
                 'Milagre',
                 'imilagre@igc.gulbenkian.pt',
                 'eLife',
+                'Elife',
                 '2050-084X',
                 '11',
                 None,
@@ -73,6 +75,7 @@ class TestPmcXmlParserClass(object):
                 'Draleru',
                 None,
                 'The Pan African Medical Journal',
+                'Pan Afr Med J',
                 '1937-8688',
                 '33',
                 None,
@@ -90,6 +93,7 @@ class TestPmcXmlParserClass(object):
         last_name,
         email,
         jtitle,
+        isoabbrev,
         issn,
         volume,
         issue,
@@ -107,6 +111,7 @@ class TestPmcXmlParserClass(object):
         assert email in anauthor.emails if email is not None else True
         journal = result.journal
         assert journal.title == jtitle
+        assert journal.iso_abbreviation == isoabbrev
         assert issn in journal.issn
         assert journal.volume == volume
         assert journal.issue == issue
