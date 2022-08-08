@@ -59,6 +59,11 @@ class PmcXmlParser(BaseModel):
         text = _collect_element_text(title)
         return text
 
+    def _get_iso_abbreviation(self, pmc_article: PmcArticle) -> str:
+        isoabbrev = pmc_article.find('.//front/journal-meta/journal-id[@journal-id-type="iso-abbrev"]')
+        text = _collect_element_text(isoabbrev)
+        return text
+
     def _get_affiliations(self, author: Element, pmc_article: PmcArticle) -> Optional[List[str]]:
         alist = []
         affiliation_xrefs = _find_all(author, './/xref[@ref-type="aff"]')
@@ -110,6 +115,7 @@ class PmcXmlParser(BaseModel):
         journal = _find_safe(pmc_article, './/front/journal-meta')
         issn = [_collect_element_text(issn) for issn in _find_all(journal, './/issn')]
         title = _text_safe(journal, './/journal-title-group/journal-title')
+        iso_abbreviation = self._get_iso_abbreviation(pmc_article)
         article = _find_safe(pmc_article, './/front/article-meta')
         volume = _text_safe(article, './/volume')
         issue = _text_safe(article, './/issue')
@@ -119,7 +125,14 @@ class PmcXmlParser(BaseModel):
             pub_month = _text_safe(pub_date, './/month')
             pub_day = _text_safe(pub_date, './/day')
         return Journal(
-            issn=issn, title=title, volume=volume, issue=issue, pub_year=pub_year, pub_month=pub_month, pub_day=pub_day
+            issn=issn,
+            title=title,
+            iso_abbreviation=iso_abbreviation,
+            volume=volume,
+            issue=issue,
+            pub_year=pub_year,
+            pub_month=pub_month,
+            pub_day=pub_day,
         )
 
     def _get_correspondence(self, pmc_article: PmcArticle) -> List[Dict[str, Any]]:

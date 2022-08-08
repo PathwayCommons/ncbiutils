@@ -47,6 +47,8 @@ class Journal(BaseModel):
     ----------
     title : Optional[str]
         Journal name
+    iso_abbreviation : Optional[str]
+        Journal title ISO Abbreviation
     issn : Optional[List[str]]
         International Standard Serial Number
     volume : Optional[str]
@@ -68,6 +70,7 @@ class Journal(BaseModel):
     pub_year: Optional[str]
     pub_month: Optional[str]
     pub_day: Optional[str]
+    iso_abbreviation: Optional[str]
 
 
 class Citation(BaseModel):

@@ -47,7 +47,7 @@ class TestPubmedXmlParserClass(object):
         assert len(result) == 0
 
     @pytest.mark.parametrize(
-        'pmid, pmc, doi, abstract, title, last_name, email, jtitle,'
+        'pmid, pmc, doi, abstract, title, last_name, email, jtitle, isoabbrev,'
         ' issn, volume, issue, pub_year, pub_type, mesh_heading',
         [
             (
@@ -59,6 +59,7 @@ class TestPubmedXmlParserClass(object):
                 'Cheng',
                 'jkcheng@shsmu.edu.cn',
                 'Molecular cell',
+                'Mol Cell',
                 '1097-4164',
                 '75',
                 '4',
@@ -82,6 +83,7 @@ class TestPubmedXmlParserClass(object):
                 'Dong',
                 None,
                 'Journal of cell science',
+                'J Cell Sci',
                 '1477-9137',
                 '125',
                 'Pt 13',
@@ -104,6 +106,7 @@ class TestPubmedXmlParserClass(object):
         last_name,
         email,
         jtitle,
+        isoabbrev,
         issn,
         volume,
         issue,
@@ -123,6 +126,7 @@ class TestPubmedXmlParserClass(object):
         assert email in anauthor.emails if email is not None else True
         journal = result.journal
         assert journal.title == jtitle
+        assert journal.iso_abbreviation == isoabbrev
         assert issn in journal.issn
         assert journal.volume == volume
         assert journal.issue == issue
@@ -143,7 +147,7 @@ class TestPubmedXmlParserClass(object):
         assert aqualifiername['value'] in qualifier_values
 
     @pytest.mark.parametrize(
-        'pmid, doi, abstract, title, last_name, email, jtitle, issn, volume, issue, pub_year, pub_type',
+        'pmid, doi, abstract, title, last_name, email, jtitle, isoabbrev, issn, volume, issue, pub_year, pub_type',
         [
             (
                 '33279447',
@@ -153,6 +157,7 @@ class TestPubmedXmlParserClass(object):
                 'Vicente Moreno',
                 'dr.vicentemoreno@gmail.com',
                 'Reumatologia clinica',
+                'Reumatol Clin (Engl Ed)',
                 '2173-5743',
                 None,
                 None,
@@ -170,6 +175,7 @@ class TestPubmedXmlParserClass(object):
         last_name,
         email,
         jtitle,
+        isoabbrev,
         issn,
         volume,
         issue,
@@ -188,6 +194,7 @@ class TestPubmedXmlParserClass(object):
         assert email in anauthor.emails if email is not None else True
         journal = result.journal
         assert journal.title == jtitle
+        assert journal.iso_abbreviation == isoabbrev
         assert issn in journal.issn
         assert journal.volume == volume
         assert journal.issue == issue
@@ -196,7 +203,7 @@ class TestPubmedXmlParserClass(object):
         assert result.mesh_list is None
 
     @pytest.mark.parametrize(
-        'pmid, pmc, doi, abstract, title, last_name, email, collective_name, jtitle,'
+        'pmid, pmc, doi, abstract, title, last_name, email, collective_name, jtitle, isoabbrev,'
         ' issn, volume, issue, pub_year, pub_type, mesh_heading',
         [
             (
@@ -209,6 +216,7 @@ class TestPubmedXmlParserClass(object):
                 'brent.richards@mcgill.ca',
                 'GEFOS/GENOMOS consortium and the 23andMe research team',
                 'BMJ (Clinical research ed.)',
+                'BMJ',
                 '1756-1833',
                 '362',
                 None,
@@ -236,6 +244,7 @@ class TestPubmedXmlParserClass(object):
         email,
         collective_name,
         jtitle,
+        isoabbrev,
         issn,
         volume,
         issue,
@@ -258,6 +267,7 @@ class TestPubmedXmlParserClass(object):
         assert cauthor is not None
         journal = result.journal
         assert journal.title == jtitle
+        assert journal.iso_abbreviation == isoabbrev
         assert issn in journal.issn
         assert journal.volume == volume
         assert journal.issue == issue
@@ -278,7 +288,7 @@ class TestPubmedXmlParserClass(object):
         assert aqualifiername['value'] in qualifier_values
 
     @pytest.mark.parametrize(
-        'pmid, pmc, doi, abstract, title, last_name, orcid, jtitle,'
+        'pmid, pmc, doi, abstract, title, last_name, orcid, jtitle, isoabbrev,'
         ' issn, volume, issue, pub_year, pub_type, mesh_heading',
         [
             (
@@ -290,6 +300,7 @@ class TestPubmedXmlParserClass(object):
                 'Kutscher',
                 '0000-0002-1130-4582',
                 'Genes & development',
+                'Genes Dev',
                 '1549-5477',
                 '34',
                 '17-18',
@@ -312,6 +323,7 @@ class TestPubmedXmlParserClass(object):
         last_name,
         orcid,
         jtitle,
+        isoabbrev,
         issn,
         volume,
         issue,
@@ -332,6 +344,7 @@ class TestPubmedXmlParserClass(object):
         assert orcid == anauthor.orcid
         journal = result.journal
         assert journal.title == jtitle
+        assert journal.iso_abbreviation == isoabbrev
         assert issn in journal.issn
         assert journal.volume == volume
         assert journal.issue == issue
