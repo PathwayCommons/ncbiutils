@@ -159,3 +159,17 @@ class TestPmcXmlParserClass(object):
         result = next(r for r in parse_result if r.pmid == pmid)
         assert email in result.correspondence[0]['emails']
         assert note in result.correspondence[0]['notes']
+
+    @pytest.mark.parametrize(
+        'pmid, pmc, doi, iso_abbrev',
+        [
+            ('35703276', '9512138', '10.1097/SPV.0000000000001223', None),
+            ('35273692', '8902543', None, 'Am J Transl Res')
+        ],
+    )
+    def test_missing_fields(self, pmid, pmc, doi, iso_abbrev, shared_datadir):
+        data = (shared_datadir / 'pmc_no_iso_doi.xml').read_bytes()
+        parse_result = self.xmlparser.parse(_from_raw(data))
+        result = next(r for r in parse_result if r.pmid == pmid)
+        assert iso_abbrev == result.journal.iso_abbreviation
+        assert doi == result.doi
