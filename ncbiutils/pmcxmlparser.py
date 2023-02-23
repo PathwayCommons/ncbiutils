@@ -60,8 +60,7 @@ class PmcXmlParser(BaseModel):
         return text
 
     def _get_iso_abbreviation(self, pmc_article: PmcArticle) -> str:
-        isoabbrev = pmc_article.find('.//front/journal-meta/journal-id[@journal-id-type="iso-abbrev"]')
-        text = _collect_element_text(isoabbrev)
+        text = _text_safe(pmc_article, './/front/journal-meta/journal-id[@journal-id-type="iso-abbrev"]')
         return text
 
     def _get_affiliations(self, author: Element, pmc_article: PmcArticle) -> Optional[List[str]]:

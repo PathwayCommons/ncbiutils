@@ -161,15 +161,15 @@ class TestPmcXmlParserClass(object):
         assert note in result.correspondence[0]['notes']
 
     @pytest.mark.parametrize(
-        'pmid, doi',
+        'pmid, pmc, doi, iso_abbrev',
         [
-            # ('33393230', '10.15252/embr.202051162'),
-            ('35703276', '10.1097/SPV.0000000000001223')
+            ('35703276', '9512138', '10.1097/SPV.0000000000001223', None),
+            ('35273692', '8902543', None, 'Am J Transl Res')
         ],
     )
-    def test_corres_match(self, pmid, doi, shared_datadir):
-        data = (shared_datadir / 'pmc_no_iso_abbrev.xml').read_bytes()
-        # data = (shared_datadir / 'pmc_author.xml').read_bytes()
+    def test_missing_fields(self, pmid, pmc, doi, iso_abbrev, shared_datadir):
+        data = (shared_datadir / 'pmc_no_iso_doi.xml').read_bytes()
         parse_result = self.xmlparser.parse(_from_raw(data))
         result = next(r for r in parse_result if r.pmid == pmid)
-        assert doi in result.doi
+        assert iso_abbrev == result.journal.iso_abbreviation
+        assert doi == result.doi
