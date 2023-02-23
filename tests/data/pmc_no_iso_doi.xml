@@ -1,0 +1,1823 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+  <article xmlns:mml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+    <?properties open_access?>
+    <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+      <restricted-by>pmc</restricted-by>
+    </processing-meta>
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="publisher-id">UROGYN</journal-id>
+        <journal-title-group>
+          <journal-title>Urogynecology</journal-title>
+        </journal-title-group>
+        <issn pub-type="ppub">2771-1897</issn>
+        <publisher>
+          <publisher-name>Lippincott Williams &amp; Wilkins</publisher-name>
+        </publisher>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmid">35703276</article-id>
+        <article-id pub-id-type="pmc">9512138</article-id>
+        <article-id pub-id-type="publisher-id">JPMS_220209</article-id>
+        <article-id pub-id-type="doi">10.1097/SPV.0000000000001223</article-id>
+        <article-id pub-id-type="art-access-id">00007</article-id>
+        <article-version vocab="JAV" vocab-identifier="http://www.niso.org/publications/rp/RP-8-2008.pdf" article-version-type="Version of Record">3</article-version>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Original Research</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>Synchronous Telemedicine Model in Urogynecology: Are Patients Willing to Continue Telemedicine in the Post&#x2013;COVID-19 Pandemic Era?</article-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author">
+            <name>
+              <surname>Kim</surname>
+              <given-names>Youngwu</given-names>
+            </name>
+            <degrees>MD</degrees>
+            <xref rid="aff1" ref-type="aff">&#x2217;</xref>
+            <xref rid="aff2" ref-type="aff">&#x2020;</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name>
+              <surname>Ortega</surname>
+              <given-names>Marcus V.</given-names>
+            </name>
+            <degrees>MD</degrees>
+            <email>mavortega1@gmail.com</email>
+            <xref rid="aff1" ref-type="aff">&#x2217;</xref>
+            <xref rid="aff2" ref-type="aff">&#x2020;</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name>
+              <surname>Acker</surname>
+              <given-names>Rachael</given-names>
+            </name>
+            <degrees>MD</degrees>
+            <email>RACKER@mgh.harvard.edu</email>
+            <xref rid="aff3" ref-type="aff">&#x2021;</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name>
+              <surname>Valentine</surname>
+              <given-names>Kathrene D.</given-names>
+            </name>
+            <degrees>PhD</degrees>
+            <email>KVALENTINE2@mgh.harvard.edu</email>
+            <xref rid="aff4" ref-type="aff">&#xA7;</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name>
+              <surname>Ayati</surname>
+              <given-names>Elnaz</given-names>
+            </name>
+            <degrees>MD</degrees>
+            <email>EAYATIAFIN@mgh.harvard.edu</email>
+            <xref rid="aff2" ref-type="aff">&#x2020;</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name>
+              <surname>Von Bargen</surname>
+              <given-names>Emily</given-names>
+            </name>
+            <degrees>DO</degrees>
+            <email>evonbargen@mgh.harvard.edu</email>
+            <xref rid="aff1" ref-type="aff">&#x2217;</xref>
+            <xref rid="aff2" ref-type="aff">&#x2020;</xref>
+          </contrib>
+        </contrib-group>
+        <aff id="aff1">
+          <label>&#x2217;</label>Department of Obstetrics, Gynecology, and Reproductive Biology, Harvard Medical School
+        </aff>
+        <aff id="aff2">
+          <label>&#x2020;</label>Division of Female Pelvic Medicine and Reconstructive Surgery, Vincent Obstetrics and Gynecology, Massachusetts General Hospital
+        </aff>
+        <aff id="aff3">
+          <label>&#x2021;</label>Harvard Medical School
+        </aff>
+        <aff id="aff4">
+          <label>&#xA7;</label>Massachusetts General Hospital, Boston, MA.
+        </aff>
+        <author-notes>
+          <corresp id="corr1">Correspondence: Youngwu Kim, MD. E-mail:
+            <email>ykim65@mgh.harvard.edu</email>.
+          </corresp>
+        </author-notes>
+        <pub-date pub-type="ppub">
+          <month>10</month>
+          <year>2022</year>
+        </pub-date>
+        <pub-date pub-type="epub">
+          <day>13</day>
+          <month>6</month>
+          <year>2022</year>
+        </pub-date>
+        <pub-date pub-type="pmc-release">
+          <day>13</day>
+          <month>6</month>
+          <year>2022</year>
+        </pub-date>
+        <!--PMC Release delay is 0 months and 0 days and was based on the <pub-date pub-type="epub"/>.-->
+        <volume>28</volume>
+        <issue>10</issue>
+        <fpage>679</fpage>
+        <lpage>686</lpage>
+        <permissions>
+          <copyright-statement>&#xA9; 2022 American Urogynecologic Society. All rights reserved.</copyright-statement>
+          <copyright-year>2022</copyright-year>
+          <copyright-holder>American Urogynecologic Society. All rights reserved.</copyright-holder>
+          <license>
+            <license-p>This article is made available via the PMC Open Access Subset for unrestricted re-use and analyses in any form or by any means with acknowledgement of the original source. These permissions are granted for the duration of the COVID-19 pandemic or until permissions are revoked in writing. Upon expiration of these permissions, PMC is granted a perpetual license to make this article available via PMC and Europe PMC, consistent with existing copyright protections.</license-p>
+          </license>
+        </permissions>
+        <self-uri xlink:href="urogyn-28-679.pdf"/>
+        <abstract>
+          <title>Importance</title>
+          <p>Following the recent expansion of telemedicine during the COVID-19 pandemic, this remote model of care in female pelvic medicine and reconstructive surgery will likely remain and continue to evolve.</p>
+          <sec>
+            <title>Objective</title>
+            <p>This study was conducted to assess patients&#x2019; perceptions of and willingness to participate in a synchronous telemedicine visit beyond the COVID-19 pandemic for women with pelvic floor disorders.</p>
+          </sec>
+          <sec>
+            <title>Study Design</title>
+            <p>We conducted a cross-sectional study of women who completed a synchronous telemedicine visit from March 16 through May 22, 2020, at a urogynecology practice in an academic medical center. An electronic survey was distributed to women after all telemedicine visits. Demographic data, visit type, and survey responses were analyzed.</p>
+          </sec>
+          <sec>
+            <title>Results</title>
+            <p>Two hundred two women received the survey, and 135 women completed it (response rate of 66.8%). The mean age of the respondents was 62.9 &#xB1; 16.4 years, and the 3 most common visit diagnoses were overactive bladder (43.7%), stress urinary incontinence (22.2%), and pelvic organ prolapse (21.4%). Most survey participants (88.9%) found that the quality of their telemedicine visits was better than expected, and 89.6% reported that they would like to continue telemedicine care. Our survey showed that 19.4% of women reported difficulty with technology.</p>
+          </sec>
+          <sec>
+            <title>Conclusions</title>
+            <p>We found that most women presenting for synchronous telemedicine urogynecology care had a positive visit experience and would continue to use telemedicine for their care. Further developmental work needs to be done on improving the ease of technology as well as availability of telemedicine in the care of women affected by pelvic floor disorders.</p>
+          </sec>
+        </abstract>
+        <kwd-group>
+          <title>Key Words</title>
+          <kwd>telemedicine</kwd>
+          <kwd>urogynecology</kwd>
+          <kwd>willingness</kwd>
+          <kwd>COVID-19</kwd>
+          <kwd>pandemic</kwd>
+        </kwd-group>
+      </article-meta>
+    </front>
+    <body>
+      <p>The COVID-19 pandemic and the enactment of the Federal Emergency Act in March of 2020 catalyzed the use of telemedicine.
+        <sup>
+          <xref rid="bib1" ref-type="bibr">1</xref>&#x2013;
+          <xref rid="bib4" ref-type="bibr">4</xref>
+        </sup> With the easing of policy restrictions on the use of telemedicine, many health care systems across the United States redistributed resources to build the necessary infrastructure for virtual care visits. Most health care providers were then mandated to adopt this model to optimize care delivery.
+        <sup>
+          <xref rid="bib2" ref-type="bibr">2</xref>,
+          <xref rid="bib3" ref-type="bibr">3</xref>,
+          <xref rid="bib5" ref-type="bibr">5</xref>&#x2013;
+          <xref rid="bib8" ref-type="bibr">8</xref>
+        </sup> Through this process, many clinicians experienced telemedicine care benefits, including cost-effectiveness and shorter visits without sacrificing clinical efficacy and patient satisfaction.
+        <sup>
+          <xref rid="bib9" ref-type="bibr">9</xref>&#x2013;
+          <xref rid="bib11" ref-type="bibr">11</xref>
+        </sup> Previous telemedicine studies have not shown a loss of clinical care quality with virtual delivery.
+        <sup>
+          <xref rid="bib4" ref-type="bibr">4</xref>,
+          <xref rid="bib12" ref-type="bibr">12</xref>&#x2013;
+          <xref rid="bib14" ref-type="bibr">14</xref>
+        </sup> Furthermore, although telemedicine for female pelvic medicine and reconstructive surgery (FPMRS) is not a novel concept, previous virtual visits have been limited to investigational initiatives and rural settings.
+        <sup>
+          <xref rid="bib12" ref-type="bibr">12</xref>,
+          <xref rid="bib15" ref-type="bibr">15</xref>&#x2013;
+          <xref rid="bib17" ref-type="bibr">17</xref>
+        </sup> With the temporary nature of the Federal Emergency Act, we sought to use this unprecedented time to answer if FPMRS patients believe that synchronous telemedicine care is a desirable alternative for health care delivery beyond the pandemic.
+      </p>
+      <sec sec-type="methods">
+        <title>MATERIALS AND METHODS</title>
+        <p>This study is a cross-sectional survey of patients who completed a synchronous telemedicine visit from March 16, 2020, through May 22, 2020, at an academic FPMRS clinic. We distributed the electronic survey using the REDCap (Research Electronic Data Capture) survey tool to patients who presented for telemedicine visits during the COVID-19 pandemic.</p>
+        <p>On March 16, 2020, the FPMRS ambulatory in-person clinic underwent a mandated transition to synchronous telemedicine care for all nonurgent patients. The hospital underwent a system-wide implementation of synchronous videoconferencing through the Health Insurance Portability and Accountability Act&#x2013;compliant platforms. Alternatively, telephone calls without a video connection were used for those patients whose visits could not be completed through video technology. Synchronous visits are a telehealth model between the patient and the clinician designed to occur simultaneously. All patients were encouraged to participate in synchronous video telemedicine care without exceptions. Even those patients who needed in-person follow-up examinations were encouraged to establish care with an initial telemedicine visit. Call-in video or telephone translator services were used for those who needed an interpretation service for their telemedicine visits. In advance of the telemedicine visit, participants received written instructions from our administrative team and phone-based technology support at the time of the visit.</p>
+        <p>In addition to the survey, we collected basic demographic data and patients&#x2019; answers to the Pelvic Floor Distress Inventory. Visit information during the study period, including the types and length of the visit and the billing diagnoses, were also collected by reviewing the electronic health record. After the telemedicine visit on the same day, patients were invited to participate in the electronic survey using an automatically generated link. If the participant had more than 1 telemedicine visit during the study period, we included the survey based on her first telemedicine visit experience only. Survey completion was voluntary, and no financial compensation was provided. The survey was specifically designed to assess participants&#x2019; perceptions of telemedicine use in an FPMRS clinic and their willingness to continue this model beyond the period of social distancing and government recommended restrictions. The perceptions were measured using a 3-point Likert scale (&#x201C;definitely agree,&#x201D; &#x201C;somewhat agree,&#x201D; &#x201C;disagree&#x201D;) by asking participants about their experiences of using telemedicine in FPMRS in similarity to what has previously been reported in prior studies.
+          <sup>
+            <xref rid="bib8" ref-type="bibr">8</xref>,
+            <xref rid="bib10" ref-type="bibr">10</xref>,
+            <xref rid="bib18" ref-type="bibr">18</xref>&#x2013;
+            <xref rid="bib20" ref-type="bibr">20</xref>
+          </sup> The survey construction was reviewed by the consortium of 8 FPMRS clinicians in our practice and experts in survey clinical research and the Health Education Project Specialist within the Patient and Family Learning Center at Mass General Brigham to promote straightforward language uses.
+        </p>
+        <p>Basic descriptive statistics were used to describe the demographics of the response population. Normally distributed continuous data are summarized using means and standard deviations; one variable (distance to the hospital) was skewed and is summarized using a median and interquartile range. Categorical data are summarized with the frequency and percentage of their occurrence. Differences between responders and nonresponders were analyzed using independent
+          <italic toggle="yes">t</italic> tests for continuous data and &#x3C7;
+          <sup>2</sup> tests for categorical data; the Fisher exact test was used when small cell sizes were present for race/ethnicity analyses. Willingness to continue with telemedicine was recoded to create a binary variable. Participants responding either &#x201C;yes&#x2014;with telephone only,&#x201D; &#x201C;yes&#x2014;with video,&#x201D; or &#x201C;yes&#x2014;with either&#x201D; to the willingness to continue question were coded as willing to continue. Those responding &#x201C;no&#x201D; were coded as unwilling to continue. Those responding &#x201C;my doctor/nurse practitioner requested me to have an in-person visit the next time&#x201D; were excluded from analyses using this binary indicator of willingness. The fisher exact test was used to analyze differences in the 8 key perception questions between willing and unwilling participants to continue with telemedicine. All tests were 2-sided, and
+          <italic toggle="yes">P</italic> values less than 0.05 were considered statistically significant. Study data were collected and managed using REDCap hosted at Mass General Brigham health care,
+          <sup>
+            <xref rid="bib21" ref-type="bibr">21</xref>,
+            <xref rid="bib22" ref-type="bibr">22</xref>
+          </sup> and analyzed using R version 3.5.2.
+          <sup>
+            <xref rid="bib23" ref-type="bibr">23</xref>
+          </sup> The study was approved by the institutional review board at Massachusetts General Hospital (Boston, MA).
+        </p>
+      </sec>
+      <sec sec-type="results">
+        <title>RESULTS</title>
+        <sec sec-type="subjects">
+          <title>Characteristics of Patients Participating in Telemedicine</title>
+          <p>During the study period, 135 of 202 respondents (66.8%) completed the survey. The respondents&#x2019; mean age was 62.9 &#xB1; 16.4 years. The majority were White non-Hispanic (85.9%), and 96.3% did not require an interpreter to complete the survey (Table
+            <xref rid="T1" ref-type="table">1</xref>). Seventy-six participants (56.3%) were 65 years or older, and 59 participants (43.7%) were younger than 65 years. Most participants (49.6%) used a smartphone, followed by a personal computer (26.7%) for their telemedicine visit. Ninety participants (66.7%) lived within a 20-mile radius of the main hospital in Boston, MA. Although the majority (94.1%) lived within a 100-mile radius of the hospital, 8 participants (5.9%) lived more than 100 miles away, and 5 participants lived more than 500 miles away. The average Charlson Comorbidity Score among all respondents was 2.9 (SD, 2.3). The 5 most common visit diagnoses managed during this period included the following: overactive bladder (43.7%), stress urinary incontinence (22.2%), pelvic organ prolapse (21.4%), genitourinary syndrome of menopause (20.0%), and pessary care (13.3%) (Table
+            <xref rid="T1" ref-type="table">1</xref>).
+          </p>
+          <table-wrap position="float" id="T1">
+            <label>TABLE 1</label>
+            <caption>
+              <p>Characteristics of Survey Respondents</p>
+            </caption>
+            <table frame="hsides" rules="groups">
+              <thead valign="bottom">
+                <tr>
+                  <th align="left" rowspan="1" colspan="1">Characteristics</th>
+                  <th align="center" rowspan="1" colspan="1">n = 135</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Age, y*</td>
+                  <td align="center" rowspan="1" colspan="1">62.9 (16.5)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Age
+                    <bold>
+                      <italic toggle="yes">&#x2265;</italic>
+                    </bold>65
+                  </td>
+                  <td align="center" rowspan="1" colspan="1">76 (56.3)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Age &lt;65</td>
+                  <td align="center" rowspan="1" colspan="1">59 (43.7)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Charlson Comorbidity Score*</td>
+                  <td align="center" rowspan="1" colspan="1">2.71 (2.3)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Race</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;White</td>
+                  <td align="center" rowspan="1" colspan="1">116 (85.9)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Interpreter used to complete the survey</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Yes</td>
+                  <td align="center" rowspan="1" colspan="1">5 (3.7)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;No</td>
+                  <td align="center" rowspan="1" colspan="1">130 (96.3)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Non-White</td>
+                  <td align="center" rowspan="1" colspan="1">19 (14.1)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Encounter type</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Consult</td>
+                  <td align="center" rowspan="1" colspan="1">38 (28.1)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Established follow-up</td>
+                  <td align="center" rowspan="1" colspan="1">97 (71.9)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Mode of telemedicine</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Video technology</td>
+                  <td align="center" rowspan="1" colspan="1">78 (57.8)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Telephone technology</td>
+                  <td align="center" rowspan="1" colspan="1">57 (42.2)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Device used</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Smartphone</td>
+                  <td align="center" rowspan="1" colspan="1">67 (49.6)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Personal computer</td>
+                  <td align="center" rowspan="1" colspan="1">36 (26.7)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Nonsmart phone</td>
+                  <td align="center" rowspan="1" colspan="1">24 (17.8)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Personal tablet</td>
+                  <td align="center" rowspan="1" colspan="1">8 (5.9)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Distance to the main hospital</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Within 20 miles</td>
+                  <td align="center" rowspan="1" colspan="1">90 (66.7)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;20&#x2013;100 miles</td>
+                  <td align="center" rowspan="1" colspan="1">37 (27.4)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;100&#x2013;500 miles</td>
+                  <td align="center" rowspan="1" colspan="1">3 (2.2)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Greater than 500 miles</td>
+                  <td align="center" rowspan="1" colspan="1">5 (3.7)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Prior exposure to telemedicine</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Yes</td>
+                  <td align="center" rowspan="1" colspan="1">58 (43.0)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;No</td>
+                  <td align="center" rowspan="1" colspan="1">77 (57.0)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Visit diagnoses&#x2020;</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Overactive bladder</td>
+                  <td align="center" rowspan="1" colspan="1">59 (43.7)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Stress urinary incontinence</td>
+                  <td align="center" rowspan="1" colspan="1">30 (22.2)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Pelvic organ prolapse</td>
+                  <td align="center" rowspan="1" colspan="1">29 (21.4)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Genitourinary syndrome of menopause</td>
+                  <td align="center" rowspan="1" colspan="1">27 (20.0)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Pessary care</td>
+                  <td align="center" rowspan="1" colspan="1">18 (13.3)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Postoperative visit within 8 wk</td>
+                  <td align="center" rowspan="1" colspan="1">17 (12.6)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Recurrent urinary tract infection</td>
+                  <td align="center" rowspan="1" colspan="1">16 (11.9)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Long term (6 mo&#x2013;3 y) postoperative follow-up</td>
+                  <td align="center" rowspan="1" colspan="1">14 (10.4)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Constipation</td>
+                  <td align="center" rowspan="1" colspan="1">12 (8.9)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Pelvic pain</td>
+                  <td align="center" rowspan="1" colspan="1">12 (8.9)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Preoperative evaluation</td>
+                  <td align="center" rowspan="1" colspan="1">3 (2.2)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Sex dysphoria</td>
+                  <td align="center" rowspan="1" colspan="1">3 (2.2)</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Others (1 occurrence each)&#x2021;</td>
+                  <td align="center" rowspan="1" colspan="1">3 (2.2)</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <fn fn-type="other">
+                <p>Data reported in as number (percentage) unless indicated otherwise.</p>
+              </fn>
+              <fn fn-type="other">
+                <p>*Mean (SD).</p>
+              </fn>
+              <fn fn-type="other">
+                <p>&#x2020;Includes all diagnoses used for billing of the visit.</p>
+              </fn>
+              <fn fn-type="other">
+                <p>&#x2021;Abnormal uterine bleeding, lichen sclerosis, wound breakdown.</p>
+              </fn>
+            </table-wrap-foot>
+          </table-wrap>
+        </sec>
+        <sec>
+          <title>Responders Versus Nonresponders</title>
+          <p>Responders were more likely to be White compared with nonresponders (
+            <italic toggle="yes">P</italic> = 0.03). There were no differences in age, visit type (consult or established), or primary visit diagnoses (28% of new consult and 71.9% of established follow-up patients responded to the survey
+            <italic toggle="yes">P</italic> &gt; 0.67) between responders and nonresponders. There was also no difference between responders and nonresponders whether the virtual visit was performed during the early stages of the telemedicine care implementation.
+          </p>
+        </sec>
+        <sec sec-type="subjects">
+          <title>Patient Perceptions of Telemedicine Care in FPMRS</title>
+          <p>Most participants (88.8%) found that the telemedicine visit&#x2019;s overall quality was better than expected (29.1% definitely agreed) (Fig.
+            <xref rid="F1" ref-type="fig">1</xref>). Furthermore, 96.2% of participants thought telemedicine decreased travel time and waiting time (87.3%), in addition to allowing them to spend more time with their health care providers (70.9%).
+          </p>
+          <fig position="float" id="F1">
+            <label>FIGURE 1</label>
+            <caption>
+              <p>Patients&#x2019; perceptions with synchronous telemedicine in urogynecology.</p>
+            </caption>
+            <graphic xlink:href="urogyn-28-679-g001" position="float"/>
+          </fig>
+          <p>Despite the overall excellent patient experience, 19.4% of participants reported difficulty with technology, and 9.7% reported difficulty finding a private place to have the visit. Among the reasons for unwillingness with the telehealth platform, 26.9% of respondents reported that they missed the in-person interaction with ancillary office staff members, and 15.7% reported difficulty forming a personal connection with their health care providers.</p>
+        </sec>
+        <sec>
+          <title>Willingness to Participate in Future Telemedicine Visits</title>
+          <p>Twenty-one respondents (15.6%) were considered &#x201C;neutral&#x201D; on the willingness question and excluded because they were told that they needed to have an in-person evaluation after their telemedicine visit. One hundred fourteen responses were analyzed for willingness to participate in future telemedicine visits. Most participants (88.5%) reported that they would continue to receive urogynecology care through the telemedicine platform (Fig.
+            <xref rid="F2" ref-type="fig">2</xref>). Participants&#x2019; willingness to continue telemedicine care was high regardless of the age group, 65 years and older or younger than 65 years (87.5% and 90.0%, respectively;
+            <italic toggle="yes">P</italic> = 0.68 (Table
+            <xref rid="T2" ref-type="table">2</xref>). Participants&#x2019; willingness to continue telemedicine care was also high in both new consults (93.8%) and established follow-up visits (86.6%).
+          </p>
+          <fig position="float" id="F2">
+            <label>FIGURE 2</label>
+            <caption>
+              <p>Patient willingness to accept telemedicine care in urogynecology.</p>
+            </caption>
+            <graphic xlink:href="urogyn-28-679-g002" position="float"/>
+          </fig>
+          <table-wrap position="float" id="T2">
+            <label>TABLE 2</label>
+            <caption>
+              <p>Willingness to Engage in Telemedicine by the Respondent Characteristics</p>
+            </caption>
+            <table frame="hsides" rules="groups">
+              <thead valign="bottom">
+                <tr>
+                  <th align="left" rowspan="1" colspan="1">Variable</th>
+                  <th align="center" rowspan="1" colspan="1">Willing, n = 101</th>
+                  <th align="center" rowspan="1" colspan="1">Not Willing, n = 13</th>
+                  <th align="center" rowspan="1" colspan="1">
+                    <italic toggle="yes">P</italic>*
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Age, y&#x2020;</td>
+                  <td align="center" rowspan="1" colspan="1">62.0 (16.5)</td>
+                  <td align="center" rowspan="1" colspan="1">65.5 (19.5)</td>
+                  <td align="center" rowspan="1" colspan="1">0.54</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;65 or greater</td>
+                  <td align="center" rowspan="1" colspan="1">56 (87.5)</td>
+                  <td align="center" rowspan="1" colspan="1">8 (12.5)</td>
+                  <td align="center" rowspan="1" colspan="1">0.68</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;&lt;65</td>
+                  <td align="center" rowspan="1" colspan="1">45 (90.0)</td>
+                  <td align="center" rowspan="1" colspan="1">5 (10.0)</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Encounter type</td>
+                  <td rowspan="1" colspan="1"/>
+                  <td rowspan="1" colspan="1"/>
+                  <td align="center" rowspan="1" colspan="1">0.28</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Consult</td>
+                  <td align="center" rowspan="1" colspan="1">30 (93.7)</td>
+                  <td align="center" rowspan="1" colspan="1">2 (6.3)</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Established follow-up</td>
+                  <td align="center" rowspan="1" colspan="1">71 (86.6)</td>
+                  <td align="center" rowspan="1" colspan="1">11 (13.4)</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Mode of telemedicine</td>
+                  <td rowspan="1" colspan="1"/>
+                  <td rowspan="1" colspan="1"/>
+                  <td align="center" rowspan="1" colspan="1">0.55</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Video visit</td>
+                  <td align="center" rowspan="1" colspan="1">63 (90.0)</td>
+                  <td align="center" rowspan="1" colspan="1">7 (10.0)</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Telephone technology</td>
+                  <td align="center" rowspan="1" colspan="1">38 (86.4)</td>
+                  <td align="center" rowspan="1" colspan="1">6 (13.6)</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Prior exposure to telemedicine</td>
+                  <td rowspan="1" colspan="1"/>
+                  <td rowspan="1" colspan="1"/>
+                  <td align="center" rowspan="1" colspan="1">1.00</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Yes</td>
+                  <td align="center" rowspan="1" colspan="1">46 (88.5)</td>
+                  <td align="center" rowspan="1" colspan="1">6 (11.5)</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;No</td>
+                  <td align="center" rowspan="1" colspan="1">55 (88.7)</td>
+                  <td align="center" rowspan="1" colspan="1">7 (11.3)</td>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Distances to the main hospital&#x2021;</td>
+                  <td align="center" rowspan="1" colspan="1">14.1 (7.4&#x2013;29.3)</td>
+                  <td align="center" rowspan="1" colspan="1">8.1 (3.0&#x2013;11.3)</td>
+                  <td align="center" rowspan="1" colspan="1">0.02*</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Charlson Comorbidity Score&#x2020;</td>
+                  <td align="center" rowspan="1" colspan="1">2.81 (2.3)</td>
+                  <td align="center" rowspan="1" colspan="1">3.54 (2.5)</td>
+                  <td align="center" rowspan="1" colspan="1">0.34</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <fn fn-type="other">
+                <p>Data reported in as number (percentage) unless indicated otherwise.</p>
+              </fn>
+              <fn fn-type="other">
+                <p>*
+                  <italic toggle="yes">P</italic> &lt; 0.05.
+                </p>
+              </fn>
+              <fn fn-type="other">
+                <p>&#x2020;Mean (SD).</p>
+              </fn>
+              <fn fn-type="other">
+                <p>&#x2021;Median (IQR).</p>
+              </fn>
+            </table-wrap-foot>
+          </table-wrap>
+          <p>Regarding the device used for the virtual care, our participants preferred video technology over a telephone visit to continue their care in telemedicine (Fig.
+            <xref rid="F2" ref-type="fig">2</xref>). However, the modality used for telemedicine did not show association to how they answered the willingness question (Table
+            <xref rid="T2" ref-type="table">2</xref>). Of the women who indicated a willingness to continue their care with telemedicine, 58.4% reported no preference for either a telephone or a video visit, whereas 27.7% and 13.9% of respondents showed a preference for video and telephone, respectively (Fig.
+            <xref rid="F2" ref-type="fig">2</xref>). Although 19.4% of all respondents reported that they had difficulty with technology, there was no association between difficulty with technology and willingness to continue with telemedicine among those who were included in the analysis for the willingness (Table
+            <xref rid="T3" ref-type="table">3</xref>).
+          </p>
+          <table-wrap position="float" id="T3">
+            <label>TABLE 3</label>
+            <caption>
+              <p>Patients&#x2019; Perception of Telemedicine Visit</p>
+            </caption>
+            <table frame="hsides" rules="groups">
+              <thead valign="bottom">
+                <tr>
+                  <th align="left" rowspan="1" colspan="1">Agreed Perception Statements</th>
+                  <th align="center" rowspan="1" colspan="1">Willing, n = 101</th>
+                  <th align="center" rowspan="1" colspan="1">Not Willing, n = 13</th>
+                  <th align="center" rowspan="1" colspan="1">
+                    <italic toggle="yes">P</italic>*
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Positive perceptions</td>
+                  <td rowspan="1" colspan="1"/>
+                  <td rowspan="1" colspan="1"/>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Virtual visit decreased my travel time</td>
+                  <td align="center" rowspan="1" colspan="1">98 (97.3)</td>
+                  <td align="center" rowspan="1" colspan="1">11 (84.6)</td>
+                  <td align="center" rowspan="1" colspan="1">0.10</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;The overall quality of the virtual visit was better than I expected</td>
+                  <td align="center" rowspan="1" colspan="1">92 (91.1)</td>
+                  <td align="center" rowspan="1" colspan="1">9 (69.2)</td>
+                  <td align="center" rowspan="1" colspan="1">0.04*</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;Virtual visit decreased the amount of time spent waiting for my provider</td>
+                  <td align="center" rowspan="1" colspan="1">90 (89.1)</td>
+                  <td align="center" rowspan="1" colspan="1">8 (61.5)</td>
+                  <td align="center" rowspan="1" colspan="1">0.02*</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;I felt I had more time to talk to my provider during my virtual visit than in-office</td>
+                  <td align="center" rowspan="1" colspan="1">75 (74.3)</td>
+                  <td align="center" rowspan="1" colspan="1">6 (46.2)</td>
+                  <td align="center" rowspan="1" colspan="1">0.05</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">Negative perceptions</td>
+                  <td rowspan="1" colspan="1"/>
+                  <td rowspan="1" colspan="1"/>
+                  <td rowspan="1" colspan="1"/>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;I missed the in-person interactions with other staffs (nurses, schedulers/admins, medical assistants) of my provider&#x2019;s office</td>
+                  <td align="center" rowspan="1" colspan="1">29 (28.7)</td>
+                  <td align="center" rowspan="1" colspan="1">7 (53.9)</td>
+                  <td align="center" rowspan="1" colspan="1">0.11</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;I felt it was harder to connect (form a relationship) with my provider</td>
+                  <td align="center" rowspan="1" colspan="1">16 (15.8)</td>
+                  <td align="center" rowspan="1" colspan="1">5 (38.5)</td>
+                  <td align="center" rowspan="1" colspan="1">0.06</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;I had difficulty with the technology (ie, Internet connection, call quality, sound issues)</td>
+                  <td align="center" rowspan="1" colspan="1">16 (15.8)</td>
+                  <td align="center" rowspan="1" colspan="1">5 (38.5)</td>
+                  <td align="center" rowspan="1" colspan="1">0.06</td>
+                </tr>
+                <tr>
+                  <td align="left" rowspan="1" colspan="1">&#x2003;I had difficulty finding a private place to have the virtual visit</td>
+                  <td align="center" rowspan="1" colspan="1">8 (7.9)</td>
+                  <td align="center" rowspan="1" colspan="1">2 (15.4)</td>
+                  <td align="center" rowspan="1" colspan="1">0.32</td>
+                </tr>
+              </tbody>
+            </table>
+            <table-wrap-foot>
+              <fn fn-type="other">
+                <p>Data reported in as number (percentage) of respondents who agreed (&#x201C;definitely agreed&#x201D; and &#x201C;agreed&#x201D;) with the given perception statement.</p>
+              </fn>
+            </table-wrap-foot>
+          </table-wrap>
+          <p>When the willingness answer was analyzed in the context of their perceptions of their telemedicine experience, it showed that those who found that the quality of telemedicine exceeded their expectation were willing to participate in a future telemedicine visit than those who did not (
+            <italic toggle="yes">P</italic> = 0.019). Similarly, those who agreed that telemedicine decreased the waiting time or that more time was spent talking with the provider than in-office also were more accepting of the future telemedicine visits in FPMRS (
+            <italic toggle="yes">P</italic> = 0.041 and
+            <italic toggle="yes">P</italic> = 0.051, respectively) (Table
+            <xref rid="T3" ref-type="table">3</xref>). No other perceptions of telemedicine were significantly associated with the willingness to continue telemedicine.
+          </p>
+        </sec>
+        <sec sec-type="subjects">
+          <title>New Patient Consults and Follow-up Physical Examination Findings</title>
+          <p>Of the participants who presented for a new consult telemedicine visit, 34.0% had the visit diagnosis of pelvic organ prolapse. With the easing of social distancing restrictions, 11 of the 13 consult patients with pelvic organ prolapse had an in-person follow-up visit where all except 1 participant was found to have stage II or greater pelvic organ prolapse. When Pelvic Organ Prolapse Distress Inventory 6 reports of these patients were reviewed, all reported symptoms of feeling a bulge &#x201C;somewhat&#x201D; to &#x201C;quite a bit&#x201D; of the time.
+            <sup>
+              <xref rid="bib24" ref-type="bibr">24</xref>
+            </sup> All subsequently underwent appropriate treatments within 6 months of their initial telemedicine visit. In addition, of the 5 participants who were given a telemedicine diagnosis of genitourinary syndrome of menopause, all had physical examination findings consistent with this diagnosis at their follow-up in-person examination visit.
+          </p>
+        </sec>
+      </sec>
+      <sec sec-type="discussions">
+        <title>DISCUSSION</title>
+        <p>Since the beginning of the social distancing order, our practice has rapidly adapted to using a synchronous telemedicine model for all nonemergent FPMRS ambulatory visits. During this period, most participants had a positive experience with telemedicine and were willing to continue their FPMRS telemedicine care after the pandemic. More specifically, the participants who were satisfied with the telemedicine visit&#x2019;s overall quality and decreased travel time were more likely to want to participate in telemedicine care in the future.</p>
+        <p>Unlike previous descriptive studies on synchronized telemedicine care in FPMRS, this study did not limit the participant pool to visit type or visit diagnoses.
+          <sup>
+            <xref rid="bib15" ref-type="bibr">15</xref>,
+            <xref rid="bib16" ref-type="bibr">16</xref>,
+            <xref rid="bib22" ref-type="bibr">22</xref>,
+            <xref rid="bib23" ref-type="bibr">23</xref>
+          </sup> Both established and new consult patients were included in the analysis, and both groups reported similarly positive perceptions of telemedicine care. This positive perception was also similar among the participants regardless of their age, comorbidities, previous exposure to telemedicine, or the distance from our facility, further increasing the generalizability of telemedicine&#x2019;s application.
+        </p>
+        <p>Before the COVID-19 pandemic, telemedicine was used to provide health care in resourceless and remote parts of the country by eliminating physicians or patients&#x2019; need to travel for medical care. However, recent temporary suspensions on telemedicine restrictions allowed us to experience the merits of telemedicine and support those advocating for the expansion of the model beyond the pandemic period. Although it is important to note that a patient&#x2019;s distance from our clinic was positively associated with how they answered the willingness question, it is also notable for remarking that the perception with most agreement regardless of the distance from the clinic was that telemedicine decreases travel time. This finding aligns with previous studies that found telemedicine can reduce medical transportation-associated health care costs.
+          <sup>
+            <xref rid="bib19" ref-type="bibr">19</xref>,
+            <xref rid="bib25" ref-type="bibr">25</xref>
+          </sup>
+        </p>
+        <p>The temporary expansion of telemedicine also relieved the licensure restrictions, allowing health care providers to see patients across state lines without being licensed by the state where the patient is located.
+          <sup>
+            <xref rid="bib26" ref-type="bibr">26</xref>,
+            <xref rid="bib27" ref-type="bibr">27</xref>
+          </sup> Therefore, we were able to provide not only continued care for our established patients, but we were also able to establish new patient relationships without patients having to travel to a metropolis location. This enhanced access to health care may dissipate health care disparities by increasing access to high-volume medical centers that are often in urban settings.
+          <sup>
+            <xref rid="bib28" ref-type="bibr">28</xref>
+          </sup>
+        </p>
+        <p>Perhaps the most commonly hypothesized concern for using telemedicine care in the medical field with a large geriatric population such as in FPMRS is difficulty with technology.
+          <sup>
+            <xref rid="bib4" ref-type="bibr">4</xref>,
+            <xref rid="bib20" ref-type="bibr">20</xref>,
+            <xref rid="bib29" ref-type="bibr">29</xref>
+          </sup> Using data from the National Health and Aging Trends Study, Lam et al
+          <sup>
+            <xref rid="bib20" ref-type="bibr">20</xref>
+          </sup> estimated that 20% of older adults were unready for telemedicine care. This study cited that unreadiness was associated with men, poorer self-reported health, and residing in a nonmetropolitan area. Similarly, our study found that 19.4% of respondents reported having technical difficulties. Albeit anecdotal, the older patients (&#x2265;65 years) often needed more time connecting onto the video platform, which we hypothesized to have a negative impact on their perception of the visit. However, our results showed the contrary. Older age or difficulty connecting to telemedicine did not impact the acceptance of telemedicine. This finding may be secondary to selection bias because participants accepted telemedicine in lieu of delaying care. In addition, the nationwide advertisement of the telemedicine model during COVID-19, the transition of nonmedical public systems to virtual services, and increased availability for telemedicine infrastructures may have effectively lowered the psychological barrier of patients&#x2019; unfamiliarity and improved the acceptance of this model. Despite our patient population, most respondents preferred videoconferencing over telephone visits even though the former required a smartphone or a personal computer and required additional steps to connect. This observation adds to the known benefit of video conferencing as it has been shown to provide greater diagnostic accuracy and fewer medication errors compared with the telephone-only model.
+          <sup>
+            <xref rid="bib30" ref-type="bibr">30</xref>
+          </sup>
+        </p>
+        <p>This study further supports the feasibility of telemedicine use in urogynecology by demonstrating the reliability of pelvic organ prolapse subjective symptoms both on history and on the Pelvic Organ Prolapse Distress Inventory 6.
+          <sup>
+            <xref rid="bib4" ref-type="bibr">4</xref>
+          </sup> Although the staging of pelvic organ prolapse requires a pelvic examination, this study shows that we could provide an overview of treatment options for pelvic organ prolapse based on the patient&#x2019;s history alone. Within the field of FPMRS, the patient&#x2019;s ultimate treatment is based on shared decision-making and tailoring treatment to meet the patient&#x2019;s goals and expectations. Although we acknowledge the additional barrier of finding a private location, telemedicine visits allowed discussion of treatment options and gave patients more time to review these options before returning to the office for an examination. Future studies are needed to investigate patients&#x2019; satisfaction with treatment and telemedicine care.
+        </p>
+        <p>Despite many favorable findings, telemedicine&#x2019;s permanent utilization relies on either continuing pandemic-driven restrictions or the institutionalization of telemedicine-friendly policies. As such, it is pertinent to continue building further evidence with high-quality comparative studies that will support telemedicine use as an effective, efficient, and patient-centered model. In conjunction with this, standardization of telemedicine delivery policies should be carefully studied and developed to avoid any potential barriers to care and reduce health care disparity. Furthermore, establishing a validated method of educating the next generations of health care providers in best practices for telemedicine is essential to ensure that we continue to provide high-quality care across all modalities moving forward.</p>
+        <p>Unlike prior studies,
+          <sup>
+            <xref rid="bib4" ref-type="bibr">4</xref>,
+            <xref rid="bib12" ref-type="bibr">12</xref>,
+            <xref rid="bib15" ref-type="bibr">15</xref>,
+            <xref rid="bib17" ref-type="bibr">17</xref>,
+            <xref rid="bib31" ref-type="bibr">31</xref>,
+            <xref rid="bib32" ref-type="bibr">32</xref>
+          </sup> this study evaluated patients&#x2019; perceptions of telehealth for a broad range of diagnoses commonly seen within a urogynecology office. However, our findings should be discussed along with several significant limitations. First, the inherent selection bias present within the survey study design should be recognized because the survey was only sent to the pool of patients whose alternative to telemedicine was to delay care until in-person visits became available. This study may have overestimated the willingness to participate because the patients unwilling to accept or who did not accept a virtual visit with us may be marginalized and lack the necessary resources to participate in telemedicine care. In addition, the study was in a metropolitan city in the New England area serving mostly a privately insured White patient population, which limited the generalizability to a more diverse U.S. population. Future studies should investigate whether the willingness to participate in telemedicine is as prevalent among those who are not proficient in English. Finally, survey analysis did not include longitudinal measures to see if participants&#x2019; perceptions changed as social distancing orders continued or lifted restrictions. Telemedicine care was a novel approach to our practice with a brief time between its introduction and implementation. As such, participants&#x2019; perceptions may have been affected as the new practice model&#x2019;s efficiency evolved over time.
+        </p>
+        <p>In conclusion, this study demonstrated the acceptability of a telemedicine model within FPMRS. Regardless of the patient type, telemedicine modality, or visit diagnoses, telemedicine was well perceived. This study builds enthusiasm to develop further the research and clinical use of telemedicine for women with pelvic floor disorders.</p>
+      </sec>
+    </body>
+    <back>
+      <fn-group>
+        <fn fn-type="COI-statement">
+          <p>The authors have declared they have no conflicts of interest.</p>
+        </fn>
+        <fn fn-type="presented-at">
+          <p>This submission was presented at the Society of Gynecologic Surgeons meeting in June 2021 in Palm Springs, California.</p>
+        </fn>
+      </fn-group>
+      <ref-list>
+        <title>REFERENCES</title>
+        <ref id="bib1">
+          <label>1</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Rogers</surname>
+                <given-names>RG</given-names>
+              </name>
+              <name>
+                <surname>Swift</surname>
+                <given-names>S</given-names>
+              </name>
+            </person-group>.
+            <article-title>The world is upside down; how coronavirus changes the way we care for our patients</article-title>.
+            <source>
+              <italic toggle="yes">Int Urogynecol J</italic>
+            </source>
+            <year>2020</year>;
+            <volume>31</volume>(
+            <issue>5</issue>):
+            <fpage>853</fpage>&#x2013;
+            <lpage>854</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1007/s00192-020-04292-7</pub-id>.
+            <pub-id pub-id-type="pmid">32236661</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib2">
+          <label>2</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Frey</surname>
+                <given-names>MK</given-names>
+              </name>
+              <name>
+                <surname>Ellis</surname>
+                <given-names>AE</given-names>
+              </name>
+              <name>
+                <surname>Zeligs</surname>
+                <given-names>K</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Impact of the coronavirus disease 2019 pandemic on the quality of life for women with ovarian cancer</article-title>.
+            <source>
+              <italic toggle="yes">Am J Obstet Gynecol</italic>
+            </source>
+            <year>2020</year>;
+            <volume>223</volume>(
+            <issue>5</issue>):
+            <fpage>725.e1</fpage>&#x2013;
+            <lpage>725.e9</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.ajog.2020.06.049</pub-id>.
+            <pub-id pub-id-type="pmid">32598911</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib3">
+          <label>3</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Peahl</surname>
+                <given-names>AF</given-names>
+              </name>
+              <name>
+                <surname>Powell</surname>
+                <given-names>A</given-names>
+              </name>
+              <name>
+                <surname>Berlin</surname>
+                <given-names>H</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Patient and provider perspectives of a new prenatal care model introduced in response to the coronavirus disease 2019 pandemic</article-title>.
+            <source>
+              <italic toggle="yes">Am J Obstet Gynecol</italic>
+            </source>
+            <year>2021</year>;
+            <volume>224</volume>:
+            <fpage>384.e1</fpage>&#x2013;
+            <lpage>384.e11</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.ajog.2020.10.008</pub-id>.
+            <pub-id pub-id-type="pmid">33039393</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib4">
+          <label>4</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Grimes</surname>
+                <given-names>CL</given-names>
+              </name>
+              <name>
+                <surname>Balk</surname>
+                <given-names>EM</given-names>
+              </name>
+              <name>
+                <surname>Crisp</surname>
+                <given-names>CC</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>A guide for urogynecologic patient care utilizing telemedicine during the COVID-19 pandemic: review of existing evidence</article-title>.
+            <source>
+              <italic toggle="yes">Int Urogynecol J</italic>
+            </source>
+            <year>2020</year>;
+            <volume>31</volume>(
+            <issue>6</issue>):
+            <fpage>1063</fpage>&#x2013;
+            <lpage>1089</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1007/s00192-020-04314-4</pub-id>.
+            <pub-id pub-id-type="pmid">32342112</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib5">
+          <label>5</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Portnoy</surname>
+                <given-names>J</given-names>
+              </name>
+              <name>
+                <surname>Waller</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Elliott</surname>
+                <given-names>T</given-names>
+              </name>
+            </person-group>.
+            <article-title>Telemedicine in the era of COVID-19</article-title>.
+            <source>
+              <italic toggle="yes">J Allergy Clin Immunol Pract</italic>
+            </source>
+            <year>2020</year>;
+            <volume>8</volume>(
+            <issue>5</issue>):
+            <fpage>1489</fpage>&#x2013;
+            <lpage>1491</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.jaip.2020.03.008</pub-id>.
+            <pub-id pub-id-type="pmid">32220575</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib6">
+          <label>6</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Moazzami</surname>
+                <given-names>B</given-names>
+              </name>
+              <name>
+                <surname>Razavi-Khorasani</surname>
+                <given-names>N</given-names>
+              </name>
+              <name>
+                <surname>Dooghaie Moghadam</surname>
+                <given-names>A</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>COVID-19 and telemedicine: immediate action required for maintaining healthcare providers well-being</article-title>.
+            <source>
+              <italic toggle="yes">J Clin Virol</italic>
+            </source>
+            <year>2020</year>;
+            <volume>126</volume>:
+            <fpage>104345</fpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.jcv.2020.104345</pub-id>.
+            <pub-id pub-id-type="pmid">32278298</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib7">
+          <label>7</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Alvarez</surname>
+                <given-names>RD</given-names>
+              </name>
+              <name>
+                <surname>Goff</surname>
+                <given-names>BA</given-names>
+              </name>
+              <name>
+                <surname>Chelmow</surname>
+                <given-names>D</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Reengineering academic departments of obstetrics and gynecology to operate in a pandemic world and beyond: a joint American Gynecological and Obstetrical Society and Council of University Chairs of Obstetrics and Gynecology statement</article-title>.
+            <source>
+              <italic toggle="yes">Am J Obstet Gynecol</italic>
+            </source>
+            <year>2020</year>;
+            <volume>223</volume>(
+            <issue>3</issue>):
+            <fpage>383.e1</fpage>&#x2013;
+            <lpage>383.e7</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.ajog.2020.06.024</pub-id>.
+            <pub-id pub-id-type="pmid">32561227</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib8">
+          <label>8</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Serper</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Volk</surname>
+                <given-names>ML</given-names>
+              </name>
+            </person-group>.
+            <article-title>Current and future applications of telemedicine to optimize the delivery of care in chronic liver disease</article-title>.
+            <source>
+              <italic toggle="yes">Clin Gastroenterol Hepatol</italic>
+            </source>
+            <year>2018</year>;
+            <volume>16</volume>(
+            <issue>2</issue>):
+            <fpage>157</fpage>&#x2013;
+            <lpage>161.e8</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.cgh.2017.10.004</pub-id>.
+            <pub-id pub-id-type="pmid">29389489</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib9">
+          <label>9</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Miah</surname>
+                <given-names>S</given-names>
+              </name>
+              <name>
+                <surname>Dunford</surname>
+                <given-names>C</given-names>
+              </name>
+              <name>
+                <surname>Edison</surname>
+                <given-names>M</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>A prospective clinical, cost and environmental analysis of a clinician-led virtual urology clinic</article-title>.
+            <source>
+              <italic toggle="yes">Ann R Coll Surg Engl</italic>
+            </source>
+            <year>2019</year>;
+            <volume>101</volume>(
+            <issue>1</issue>):
+            <fpage>30</fpage>&#x2013;
+            <lpage>34</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1308/rcsann.2018.0151</pub-id>.
+            <pub-id pub-id-type="pmid">30286648</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib10">
+          <label>10</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Flodgren</surname>
+                <given-names>G</given-names>
+              </name>
+              <name>
+                <surname>Rachas</surname>
+                <given-names>A</given-names>
+              </name>
+              <name>
+                <surname>Farmer</surname>
+                <given-names>AJ</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Interactive telemedicine: effects on professional practice and health care outcomes</article-title>.
+            <source>
+              <italic toggle="yes">Cochrane Database Syst Rev</italic>
+            </source>
+            <year>2015</year>;
+            <volume>2015</volume>:
+            <fpage>CD002098</fpage>. doi:
+            <pub-id pub-id-type="doi">10.1002/14651858.CD002098.pub2</pub-id>.
+          </mixed-citation>
+        </ref>
+        <ref id="bib11">
+          <label>11</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Tates</surname>
+                <given-names>K</given-names>
+              </name>
+              <name>
+                <surname>Antheunis</surname>
+                <given-names>ML</given-names>
+              </name>
+              <name>
+                <surname>Kanters</surname>
+                <given-names>S</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>The effect of screen-to-screen versus face-to-face consultation on doctor-patient communication: an experimental study with simulated patients</article-title>.
+            <source>
+              <italic toggle="yes">J Med Internet Res</italic>
+            </source>
+            <year>2017</year>;
+            <volume>19</volume>(
+            <issue>12</issue>):
+            <fpage>e421</fpage>. doi:
+            <pub-id pub-id-type="doi">10.2196/jmir.8033</pub-id>.
+            <pub-id pub-id-type="pmid">29263017</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib12">
+          <label>12</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Jones</surname>
+                <given-names>G</given-names>
+              </name>
+              <name>
+                <surname>Brennan</surname>
+                <given-names>V</given-names>
+              </name>
+              <name>
+                <surname>Jacques</surname>
+                <given-names>R</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Evaluating the impact of a &#x201C;virtual clinic&#x201D; on patient experience, personal and provider costs of care in urinary incontinence: a randomised controlled trial</article-title>.
+            <source>
+              <italic toggle="yes">PloS One</italic>
+            </source>
+            <year>2018</year>;
+            <volume>13</volume>(
+            <issue>1</issue>):
+            <fpage>e0189174</fpage>. doi:
+            <pub-id pub-id-type="doi">10.1371/journal.pone.0189174</pub-id>.
+            <pub-id pub-id-type="pmid">29346378</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib13">
+          <label>13</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Iwanoff</surname>
+                <given-names>C</given-names>
+              </name>
+              <name>
+                <surname>Giannopoulos</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Salamon</surname>
+                <given-names>C</given-names>
+              </name>
+            </person-group>.
+            <article-title>Follow-up postoperative calls to reduce common postoperative complaints among urogynecology patients</article-title>.
+            <source>
+              <italic toggle="yes">Int Urogynecol J</italic>
+            </source>
+            <year>2019</year>;
+            <volume>30</volume>(
+            <issue>10</issue>):
+            <fpage>1667</fpage>&#x2013;
+            <lpage>1672</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1007/s00192-018-3809-x</pub-id>.
+            <pub-id pub-id-type="pmid">30413866</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib14">
+          <label>14</label>
+          <mixed-citation publication-type="journal">
+            <article-title>Implementing telehealth in practice: ACOG Committee Opinion Summary, number 798</article-title>.
+            <source>
+              <italic toggle="yes">Obstet Gynecol</italic>
+            </source>
+            <year>2020</year>;
+            <volume>135</volume>(
+            <issue>2</issue>):
+            <fpage>493</fpage>&#x2013;
+            <lpage>494</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1097/AOG.0000000000003672</pub-id>.
+            <pub-id pub-id-type="pmid">31977794</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib15">
+          <label>15</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Asklund</surname>
+                <given-names>I</given-names>
+              </name>
+              <name>
+                <surname>Nystr&#xF6;m</surname>
+                <given-names>E</given-names>
+              </name>
+              <name>
+                <surname>Sj&#xF6;str&#xF6;m</surname>
+                <given-names>M</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Mobile app for treatment of stress urinary incontinence: a randomized controlled trial</article-title>.
+            <source>
+              <italic toggle="yes">Neurourol Urodyn</italic>
+            </source>
+            <year>2017</year>;
+            <volume>36</volume>(
+            <issue>5</issue>):
+            <fpage>1369</fpage>&#x2013;
+            <lpage>1376</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1002/nau.23116</pub-id>.
+            <pub-id pub-id-type="pmid">27611958</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib16">
+          <label>16</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Asklund</surname>
+                <given-names>I</given-names>
+              </name>
+              <name>
+                <surname>Samuelsson</surname>
+                <given-names>E</given-names>
+              </name>
+              <name>
+                <surname>Hamberg</surname>
+                <given-names>K</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>User experience of an app-based treatment for stress urinary incontinence: qualitative interview study</article-title>.
+            <source>
+              <italic toggle="yes">J Med Internet Res</italic>
+            </source>
+            <year>2019</year>;
+            <volume>21</volume>(
+            <issue>3</issue>):
+            <fpage>e11296</fpage>. doi:
+            <pub-id pub-id-type="doi">10.2196/11296</pub-id>.
+            <pub-id pub-id-type="pmid">30869644</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib17">
+          <label>17</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Schlittenhardt</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Smith</surname>
+                <given-names>SC</given-names>
+              </name>
+              <name>
+                <surname>Ward-Smith</surname>
+                <given-names>P</given-names>
+              </name>
+            </person-group>.
+            <article-title>Tele-continence care: a novel approach for providers</article-title>.
+            <source>
+              <italic toggle="yes">Urol Nurs</italic>
+            </source>
+            <year>2016</year>;
+            <volume>36</volume>(
+            <issue>5</issue>):
+            <fpage>217</fpage>&#x2013;
+            <lpage>223</lpage>.
+            <pub-id pub-id-type="pmid">29240333</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib18">
+          <label>18</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Donelan</surname>
+                <given-names>K</given-names>
+              </name>
+              <name>
+                <surname>Barreto</surname>
+                <given-names>EA</given-names>
+              </name>
+              <name>
+                <surname>Sossong</surname>
+                <given-names>S</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Patient and clinician experiences with telehealth for patient follow-up care</article-title>.
+            <source>
+              <italic toggle="yes">Am J Manag Care</italic>
+            </source>
+            <year>2019</year>;
+            <volume>25</volume>(
+            <issue>1</issue>):
+            <fpage>40</fpage>&#x2013;
+            <lpage>44</lpage>.
+            <pub-id pub-id-type="pmid">30667610</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib19">
+          <label>19</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Liz&#xE9;e</surname>
+                <given-names>T</given-names>
+              </name>
+              <name>
+                <surname>Basch</surname>
+                <given-names>E</given-names>
+              </name>
+              <name>
+                <surname>Tr&#xE9;moli&#xE8;res</surname>
+                <given-names>P</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Cost-effectiveness of web-based patient-reported outcome surveillance in patients with lung cancer</article-title>.
+            <source>
+              <italic toggle="yes">J Thorac Oncol</italic>
+            </source>
+            <year>2019</year>;
+            <volume>14</volume>(
+            <issue>6</issue>):
+            <fpage>1012</fpage>&#x2013;
+            <lpage>1020</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.jtho.2019.02.005</pub-id>.
+            <pub-id pub-id-type="pmid">30776447</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib20">
+          <label>20</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Lam</surname>
+                <given-names>K</given-names>
+              </name>
+              <name>
+                <surname>Lu</surname>
+                <given-names>AD</given-names>
+              </name>
+              <name>
+                <surname>Shi</surname>
+                <given-names>Y</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Assessing telemedicine unreadiness among older adults in the United States during the COVID-19 pandemic</article-title>.
+            <source>
+              <italic toggle="yes">JAMA Intern Med</italic>
+            </source>
+            <year>2020</year>;
+            <volume>180</volume>(
+            <issue>10</issue>):
+            <fpage>1389</fpage>&#x2013;
+            <lpage>1391</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1001/jamainternmed.2020.2671</pub-id>.
+            <pub-id pub-id-type="pmid">32744593</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib21">
+          <label>21</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Harris</surname>
+                <given-names>PA</given-names>
+              </name>
+              <name>
+                <surname>Taylor</surname>
+                <given-names>R</given-names>
+              </name>
+              <name>
+                <surname>Thielke</surname>
+                <given-names>R</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Research electronic data capture (REDCap)&#x2014;a metadata-driven methodology and workflow process for providing translational research informatics support</article-title>.
+            <source>
+              <italic toggle="yes">J Biomed Inform</italic>
+            </source>
+            <year>2009</year>;
+            <volume>42</volume>(
+            <issue>2</issue>):
+            <fpage>377</fpage>&#x2013;
+            <lpage>381</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.jbi.2008.08.010</pub-id>.
+            <pub-id pub-id-type="pmid">18929686</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib22">
+          <label>22</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Harris</surname>
+                <given-names>PA</given-names>
+              </name>
+              <name>
+                <surname>Taylor</surname>
+                <given-names>R</given-names>
+              </name>
+              <name>
+                <surname>Minor</surname>
+                <given-names>BL</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>The REDCap consortium: building an international community of software platform partners</article-title>.
+            <source>
+              <italic toggle="yes">J Biomed Inform</italic>
+            </source>
+            <year>2019</year>;
+            <volume>95</volume>:
+            <fpage>103208</fpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.jbi.2019.103208</pub-id>.
+            <pub-id pub-id-type="pmid">31078660</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib23">
+          <label>23</label>
+          <mixed-citation publication-type="book">
+            <source>
+              <italic toggle="yes">R: A language and environment for statistical computing</italic>
+            </source>.
+            <publisher-loc>Vienna, Austria</publisher-loc>:
+            <publisher-name>R Foundation for Statistical Computing</publisher-name>.
+            <comment>Available at:
+              <ext-link xlink:href="https://www.R-project.org" ext-link-type="uri">https://www.R-project.org</ext-link>. Accessed January 1, 2021
+            </comment>.
+          </mixed-citation>
+        </ref>
+        <ref id="bib24">
+          <label>24</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Barber</surname>
+                <given-names>MD</given-names>
+              </name>
+              <name>
+                <surname>Walters</surname>
+                <given-names>MD</given-names>
+              </name>
+              <name>
+                <surname>Bump</surname>
+                <given-names>RC</given-names>
+              </name>
+            </person-group>.
+            <article-title>Short forms of two condition-specific quality-of-life questionnaires for women with pelvic floor disorders (PFDI-20 and PFIQ-7)</article-title>.
+            <source>
+              <italic toggle="yes">Am J Obstet Gynecol</italic>
+            </source>
+            <year>2005</year>;
+            <volume>193</volume>(
+            <issue>1</issue>):
+            <fpage>103</fpage>&#x2013;
+            <lpage>113</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.ajog.2004.12.025</pub-id>.
+            <pub-id pub-id-type="pmid">16021067</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib25">
+          <label>25</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Zholudev</surname>
+                <given-names>V</given-names>
+              </name>
+              <name>
+                <surname>Safir</surname>
+                <given-names>IJ</given-names>
+              </name>
+              <name>
+                <surname>Painter</surname>
+                <given-names>MN</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Comparative cost analysis: teleurology vs conventional face-to-face clinics</article-title>.
+            <source>
+              <italic toggle="yes">Urology</italic>
+            </source>
+            <year>2018</year>;
+            <volume>113</volume>:
+            <fpage>40</fpage>&#x2013;
+            <lpage>44</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.urology.2017.07.034</pub-id>.
+            <pub-id pub-id-type="pmid">28780298</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib26">
+          <label>26</label>
+          <mixed-citation publication-type="webpage">
+            <article-title>Telemedicine: Provider and Facility Guidelines. Centers for Medicare &amp; Medicaid Services</article-title>.
+            <comment>Available at:
+              <ext-link xlink:href="https://www.medicaid.gov/medicaid/benefits/telemedicine/index.html" ext-link-type="uri">https://www.medicaid.gov/medicaid/benefits/telemedicine/index.html</ext-link>. Accessed January 31, 2021
+            </comment>.
+          </mixed-citation>
+        </ref>
+        <ref id="bib27">
+          <label>27</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Bush</surname>
+                <given-names>ML</given-names>
+              </name>
+              <name>
+                <surname>Sprang</surname>
+                <given-names>R</given-names>
+              </name>
+            </person-group>.
+            <article-title>Management of hearing loss through telemedicine</article-title>.
+            <source>
+              <italic toggle="yes">JAMA Otolaryngol Head Neck Surg</italic>
+            </source>
+            <year>2019</year>;
+            <volume>145</volume>(
+            <issue>3</issue>):
+            <fpage>204</fpage>&#x2013;
+            <lpage>205</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1001/jamaoto.2018.3885</pub-id>.
+            <pub-id pub-id-type="pmid">30629087</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib28">
+          <label>28</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Trinh</surname>
+                <given-names>Q-D</given-names>
+              </name>
+              <name>
+                <surname>Sun</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Sammon</surname>
+                <given-names>J</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Disparities in access to care at high-volume institutions for uro-oncologic procedures</article-title>.
+            <source>
+              <italic toggle="yes">Cancer</italic>
+            </source>
+            <year>2012</year>;
+            <volume>118</volume>(
+            <issue>18</issue>):
+            <fpage>4421</fpage>&#x2013;
+            <lpage>4426</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1002/cncr.27440</pub-id>.
+            <pub-id pub-id-type="pmid">22298310</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib29">
+          <label>29</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Kichloo</surname>
+                <given-names>A</given-names>
+              </name>
+              <name>
+                <surname>Albosta</surname>
+                <given-names>M</given-names>
+              </name>
+              <name>
+                <surname>Dettloff</surname>
+                <given-names>K</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Telemedicine, the current COVID-19 pandemic and the future: a narrative review and perspectives moving forward in the USA</article-title>.
+            <source>
+              <italic toggle="yes">Fam Med Community Health</italic>
+            </source>
+            <year>2020</year>;
+            <volume>8</volume>(
+            <issue>3</issue>):
+            <fpage>e000530</fpage>. doi:
+            <pub-id pub-id-type="doi">10.1136/fmch-2020-000530</pub-id>.
+            <pub-id pub-id-type="pmid">32816942</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib30">
+          <label>30</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Rush</surname>
+                <given-names>KL</given-names>
+              </name>
+              <name>
+                <surname>Howlett</surname>
+                <given-names>L</given-names>
+              </name>
+              <name>
+                <surname>Munro</surname>
+                <given-names>A</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Videoconference compared to telephone in healthcare delivery: a systematic review</article-title>.
+            <source>
+              <italic toggle="yes">Int J Med Inform</italic>
+            </source>
+            <year>2018</year>;
+            <volume>118</volume>:
+            <fpage>44</fpage>&#x2013;
+            <lpage>53</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1016/j.ijmedinf.2018.07.007</pub-id>.
+            <pub-id pub-id-type="pmid">30153920</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib31">
+          <label>31</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Hui</surname>
+                <given-names>E</given-names>
+              </name>
+              <name>
+                <surname>Lee</surname>
+                <given-names>PS</given-names>
+              </name>
+              <name>
+                <surname>Woo</surname>
+                <given-names>J</given-names>
+              </name>
+            </person-group>.
+            <article-title>Management of urinary incontinence in older women using videoconferencing versus conventional management: a randomized controlled trial</article-title>.
+            <source>
+              <italic toggle="yes">J Telemed Telecare</italic>
+            </source>
+            <year>2006</year>;
+            <volume>12</volume>(
+            <issue>7</issue>):
+            <fpage>343</fpage>&#x2013;
+            <lpage>347</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1258/135763306778682413</pub-id>.
+            <pub-id pub-id-type="pmid">17059650</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib32">
+          <label>32</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Hoffman</surname>
+                <given-names>V</given-names>
+              </name>
+              <name>
+                <surname>S&#xF6;derstr&#xF6;m</surname>
+                <given-names>L</given-names>
+              </name>
+              <name>
+                <surname>Samuelsson</surname>
+                <given-names>E</given-names>
+              </name>
+            </person-group>.
+            <article-title>Self-management of stress urinary incontinence via a mobile app: two-year follow-up of a randomized controlled trial</article-title>.
+            <source>
+              <italic toggle="yes">Acta Obstet Gynecol Scand</italic>
+            </source>
+            <year>2017</year>;
+            <volume>96</volume>(
+            <issue>10</issue>):
+            <fpage>1180</fpage>&#x2013;
+            <lpage>1187</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1111/aogs.13192</pub-id>.
+            <pub-id pub-id-type="pmid">28718223</pub-id>
+          </mixed-citation>
+        </ref>
+        <ref id="bib33">
+          <label>33</label>
+          <mixed-citation publication-type="journal">
+            <person-group>
+              <name>
+                <surname>Thompson</surname>
+                <given-names>JC</given-names>
+              </name>
+              <name>
+                <surname>Cichowski</surname>
+                <given-names>SB</given-names>
+              </name>
+              <name>
+                <surname>Rogers</surname>
+                <given-names>RG</given-names>
+              </name>,
+              <etal/>
+            </person-group>.
+            <article-title>Outpatient visits versus telephone interviews for postoperative care: a randomized controlled trial</article-title>.
+            <source>
+              <italic toggle="yes">Int Urogynecol J</italic>
+            </source>
+            <year>2019</year>;
+            <volume>30</volume>(
+            <issue>10</issue>):
+            <fpage>1639</fpage>&#x2013;
+            <lpage>1646</lpage>. doi:
+            <pub-id pub-id-type="doi">10.1007/s00192-019-03895-z</pub-id>.
+            <pub-id pub-id-type="pmid">30783704</pub-id>
+          </mixed-citation>
+        </ref>
+      </ref-list>
+    </back>
+  </article>
+  <article xmlns:mml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+    <!--The publisher of this article does not allow downloading of the full text in XML form.-->
+    <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+      <restricted-by>pmc</restricted-by>
+    </processing-meta>
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="nlm-ta">Am J Transl Res</journal-id>
+        <journal-id journal-id-type="iso-abbrev">Am J Transl Res</journal-id>
+        <journal-id journal-id-type="publisher-id">ajtr</journal-id>
+        <journal-title-group>
+          <journal-title>American Journal of Translational Research</journal-title>
+        </journal-title-group>
+        <issn pub-type="epub">1943-8141</issn>
+        <publisher>
+          <publisher-name>e-Century Publishing Corporation</publisher-name>
+        </publisher>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmid">35273692</article-id>
+        <article-id pub-id-type="pmc">8902543</article-id>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Original Article</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>LINC00961 functions as an anti-oncogene in non-small cell lung carcinoma by regulation of miR-3127</article-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>Yong-Gang</given-names>
+            </name>
+            <xref rid="au1" ref-type="aff">1</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>Jia</given-names>
+            </name>
+            <xref rid="au2" ref-type="aff">2</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name>
+              <surname>Nie</surname>
+              <given-names>Fang</given-names>
+            </name>
+            <xref rid="au1" ref-type="aff">1</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name>
+              <surname>Jin</surname>
+              <given-names>Gao-Wa</given-names>
+            </name>
+            <xref rid="au3" ref-type="aff">3</xref>
+          </contrib>
+          <aff id="au1">
+            <label>1</label>
+            <institution>Department of Thoracic Oncology, Baotou Cancer Hospital</institution>
+            <addr-line>Baotou 014000, Inner Mongolia, China</addr-line>
+          </aff>
+          <aff id="au2">
+            <label>2</label>
+            <institution>Department of Immunization Planning, Baotou Disease Control and Defense Center</institution>
+            <addr-line>Baotou 014000, Inner Mongolia, China</addr-line>
+          </aff>
+          <aff id="au3">
+            <label>3</label>
+            <institution>Department of Oncology, Ordos Central Hospital</institution>
+            <addr-line>Ordos 017000, Inner Mongolia, China</addr-line>
+          </aff>
+        </contrib-group>
+        <author-notes>
+          <corresp>
+            <bold>Address correspondence to:</bold> Gao-Wa Jin, Department of Oncology, Ordos Central Hospital, 23 Ijinholuoxi Street, Dongsheng District, Ordos 017000, Inner Mongolia, China. Tel: +86-13327060498; E-mail:
+            <email>jvrd72@163.com</email>
+          </corresp>
+        </author-notes>
+        <pub-date pub-type="collection">
+          <year>2022</year>
+        </pub-date>
+        <pub-date pub-type="epub">
+          <day>15</day>
+          <month>2</month>
+          <year>2022</year>
+        </pub-date>
+        <volume>14</volume>
+        <issue>2</issue>
+        <fpage>888</fpage>
+        <lpage>898</lpage>
+        <history>
+          <date date-type="received">
+            <day>22</day>
+            <month>10</month>
+            <year>2021</year>
+          </date>
+          <date date-type="accepted">
+            <day>15</day>
+            <month>12</month>
+            <year>2021</year>
+          </date>
+        </history>
+        <permissions>
+          <copyright-statement>AJTR Copyright &#xA9; 2022</copyright-statement>
+          <copyright-year>2022</copyright-year>
+        </permissions>
+        <abstract>
+          <p>Background: This study set out to explore the regulatory relationship between LINC00961/miR-3127 axis and non-small-cell lung carcinoma (NSCLC), so as to provide a new and effective molecular target for targeted therapy of NSCLC. Methods: RNA-seq and miRNA-seq data of NSCLC and normal samples were obtained from The Cancer Genome Atlas (TCGA) database for analyzing LINC00961 and miR-3127 expression. Eighty-six pairs of clinical NSCLC tissues and adjacent normal tissues as well as NSCLC cell lines were obtained. Measurements of LINK00961 and miR-3127 levels were done using real-time-quantitative polymerase chain reaction (RT-qPCR). Furthermore, LINK00961 and miR-3127 in NSCLC cell were regulated respectively. The NSCLC cell proliferation, invasion and migration were determined with MTT assay, Transwell and wound healing assays, respectively. The levels of invasion- and apoptosis-related proteins were detected using western blots, and the connection of LINC00961 and miR-3127 was identified using dual luciferase reporter (DLR) assay. Results: Differential analysis results of TCGA databases identified that LINC00961 was ubiquitously expressed at low levels in NSCLC, while miR-3127 was highly expressed. Similar expression trends of LINC00961 and miR-3127 were observed in clinical NSCLC samples and cell lines. Overexpression of LINC00961 and knockdown of miR-3127 significantly reduced NCI-H1299 cell migration, invasiveness, and multiplication, decreased MMP-2, MMP-9 and Bcl-2 protein levels, and increased E-cadherin, Bax and Caspase-3 protein levels. The DLR assay confirmed that miR-3127 can be targeted by LINC00961. Conclusion: LINC00961 functions as an anti-oncogene in NSCLC by modulating miR-3127.</p>
+        </abstract>
+        <kwd-group>
+          <kwd>LINC00961</kwd>
+          <kwd>miR-3127</kwd>
+          <kwd>NSCLC</kwd>
+          <kwd>invasion</kwd>
+          <kwd>anti-oncogene</kwd>
+        </kwd-group>
+      </article-meta>
+    </front>
+  </article>
+</pmc-articleset>
