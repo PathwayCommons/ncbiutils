@@ -59,7 +59,7 @@ class PmcXmlParser(BaseModel):
         text = _collect_element_text(title)
         return text
 
-    def _get_iso_abbreviation(self, pmc_article: PmcArticle) -> str:
+    def _get_iso_abbreviation(self, pmc_article: PmcArticle) -> Optional[str]:
         text = _text_safe(pmc_article, './/front/journal-meta/journal-id[@journal-id-type="iso-abbrev"]')
         return text
 
